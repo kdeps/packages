@@ -1,0 +1,25 @@
+apiVersion: kdeps.io/v1
+kind: Component
+metadata:
+  name: remoteagent
+  description: Call a remote kdeps agent via HTTP
+  version: "1.0.0"
+interface:
+  inputs:
+    - name: url
+      type: string
+      required: true
+      description: Base URL of the remote kdeps agent (e.g. http://host:3000)
+    - name: query
+      type: string
+      required: true
+      description: Query or request body to send to the agent
+resources:
+  - name: Call Agent
+    actionId: call-agent
+    httpClient:
+      url: "{{ get('remoteagent.url') }}"
+      method: POST
+      headers:
+        Content-Type: application/json
+      data: '{"query":"{{ get(''remoteagent.query'') }}"}'

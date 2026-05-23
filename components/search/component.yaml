@@ -1,0 +1,30 @@
+apiVersion: kdeps.io/v1
+kind: Component
+metadata:
+  name: search
+  description: Web search via Tavily API
+  version: "1.0.0"
+interface:
+  inputs:
+    - name: query
+      type: string
+      required: true
+      description: Search query string
+    - name: apiKey
+      type: string
+      required: true
+      description: Tavily API key
+    - name: maxResults
+      type: integer
+      required: false
+      default: 5
+      description: Maximum number of results to return
+resources:
+  - name: Web Search
+    actionId: web-search
+    httpClient:
+      url: "https://api.tavily.com/search"
+      method: POST
+      headers:
+        Content-Type: application/json
+      data: '{"api_key":"{{ get("search.apiKey") }}","query":"{{ get("search.query") }}","max_results":{{ get("search.maxResults", "5") }}}'

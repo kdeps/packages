@@ -1,0 +1,62 @@
+apiVersion: kdeps.io/v1
+kind: Component
+metadata:
+  name: email
+  description: Send email via Python smtplib
+  version: "1.0.0"
+interface:
+  inputs:
+    - name: to
+      type: string
+      required: true
+      description: Recipient email address
+    - name: subject
+      type: string
+      required: true
+      description: Email subject line
+    - name: body
+      type: string
+      required: true
+      description: Email body (plain text)
+    - name: smtpHost
+      type: string
+      required: true
+      description: SMTP server hostname
+    - name: smtpPort
+      type: integer
+      required: false
+      default: 587
+      description: SMTP server port
+    - name: smtpUser
+      type: string
+      required: true
+      description: SMTP username / sender address
+    - name: smtpPass
+      type: string
+      required: true
+      description: SMTP password
+resources:
+  - name: Send Email
+    actionId: send-email
+    python:
+      script: |
+        import smtplib, json
+        from email.mime.text import MIMEText
+        from email.mime.multipart import MIMEMultipart
+        host = "{{ get('email.smtpHost') }}"
+        port = int("{{ get('email.smtpPort', '587') }}")
+        user = "{{ get('email.smtpUser') }}"
+        password = "{{ get('email.smtpPass') }}"
+        to = "{{ get('email.to') }}"
+        subject = "{{ get('email.subject') }}"
+        body = "{{ get('email.body') }}"
+        msg = MIMEMultipart()
+        msg["From"] = user
+        msg["To"] = to
+        msg["Subject"] = subject
+        msg.attach(MIMEText(body, "plain"))
+        with smtplib.SMTP(host, port) as server:
+            server.starttls()
+            server.login(user, password)
+            server.sendmail(user, to, msg.as_string())
+        print(json.dumps({"sent": True, "to": to}))
