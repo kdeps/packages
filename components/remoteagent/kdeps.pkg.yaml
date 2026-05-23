@@ -1,0 +1,6 @@
+name: kdeps-remoteagent
+version: 1.0.0
+type: component
+description: "Call a remote kdeps agent via HTTP — delegate tasks to agents running on other servers."
+license: Apache-2.0
+tags: [agent, remote, http, delegate]

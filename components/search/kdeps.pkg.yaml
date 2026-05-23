@@ -1,0 +1,6 @@
+name: kdeps-search
+version: 1.0.0
+type: component
+description: "Web search via Tavily API — query the web and get structured results."
+license: Apache-2.0
+tags: [search, web, tavily, api]

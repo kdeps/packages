@@ -1,0 +1,6 @@
+name: kdeps-search-local
+version: 1.0.0
+type: component
+description: "Search local files by keyword or glob pattern — recursive directory search with content matching."
+license: Apache-2.0
+tags: [search, local, files, glob, keyword]

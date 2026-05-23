@@ -1,0 +1,6 @@
+name: kdeps-autopilot
+version: 1.0.0
+type: component
+description: "Autonomous task execution via LLM planning — break down goals into executable steps."
+license: Apache-2.0
+tags: [autopilot, agent, planning, llm]

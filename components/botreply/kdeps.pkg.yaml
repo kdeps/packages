@@ -1,0 +1,6 @@
+name: kdeps-botreply
+version: 1.0.0
+type: component
+description: "Chat bot reply via HTTP API — send messages to Telegram, Discord, Slack."
+license: Apache-2.0
+tags: [bot, telegram, discord, slack, reply]

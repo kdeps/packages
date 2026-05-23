@@ -1,0 +1,6 @@
+name: kdeps-memory
+version: 1.0.0
+type: component
+description: "Persistent key-value memory store backed by SQLite."
+license: Apache-2.0
+tags: [memory, storage, sqlite, key-value]

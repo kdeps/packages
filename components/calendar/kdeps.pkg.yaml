@@ -1,0 +1,6 @@
+name: kdeps-calendar
+version: 1.0.0
+type: component
+description: "Generate iCalendar (.ics) event files — meeting invites, reminders, scheduling."
+license: Apache-2.0
+tags: [calendar, ics, scheduling, events]

@@ -1,0 +1,6 @@
+name: kdeps-email
+version: 1.0.0
+type: component
+description: "Send email via SMTP — supports TLS, HTML and plain text."
+license: Apache-2.0
+tags: [email, smtp, notification]

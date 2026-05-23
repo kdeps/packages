@@ -1,0 +1,6 @@
+name: kdeps-embedding
+version: 1.0.0
+type: component
+description: "Local document store with keyword similarity search — SQLite-backed, fully on-prem."
+license: Apache-2.0
+tags: [embedding, search, rag, sqlite, local]

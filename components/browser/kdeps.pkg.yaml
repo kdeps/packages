@@ -1,0 +1,6 @@
+name: kdeps-browser
+version: 1.0.0
+type: component
+description: "Browser automation via Playwright — navigate, click, fill forms, screenshot, and extract content."
+license: Apache-2.0
+tags: [browser, playwright, automation, scraper]

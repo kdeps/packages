@@ -1,0 +1,6 @@
+name: kdeps-input
+version: 1.0.0
+type: component
+description: "Input processing — parse and validate incoming data from multiple sources."
+license: Apache-2.0
+tags: [input, parsing, validation]

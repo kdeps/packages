@@ -1,0 +1,6 @@
+name: kdeps-tts
+version: 1.0.0
+type: component
+description: "Text-to-speech synthesis — offline via espeak or online via OpenAI TTS API."
+license: Apache-2.0
+tags: [tts, speech, audio, espeak, openai]

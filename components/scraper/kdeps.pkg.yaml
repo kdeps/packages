@@ -1,0 +1,6 @@
+name: kdeps-scraper
+version: 1.0.0
+type: component
+description: "Web scraper — fetch a URL and extract text content, with optional CSS selector filtering."
+license: Apache-2.0
+tags: [scraper, web, html, extraction]
