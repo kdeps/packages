@@ -1,0 +1,15 @@
+actionId: labelDelete
+name: Delete Redundant Folders
+requires: [mergeMove]              # delete only after merges have moved the mail out
+# Runs once per folder to delete (merged sources + explicit deletes). The email
+# delete action refuses INBOX and [Gmail]/... as a final safeguard.
+validations:
+  skip:
+    - get('action') != 'labelsApply'
+items:
+  - "{{ safe(output('labelApplyPrep'), 'deletes') }}"
+email:
+  action: delete
+  imapConnection: inbox
+  mailbox: "{{ get('current') }}"   # each item is a folder name string
+  timeout: 30s

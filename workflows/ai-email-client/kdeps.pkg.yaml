@@ -1,0 +1,6 @@
+name: kdeps-ai-email-client   # registry install name
+version: "1.0.0"              # matches workflow metadata.version
+type: workflow
+description: "AI email client — triage, summarize, draft, reorganize labels, and unsubscribe, with a web UI"
+license: Apache-2.0
+tags: [llm, email, api, web, agent]

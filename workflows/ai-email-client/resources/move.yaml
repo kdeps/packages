@@ -1,0 +1,19 @@
+actionId: move
+name: Move Emails to Folders
+# Runs once per requested move (items: expands get('moves')), moving one email
+# into its target folder via IMAP. Target folders must already exist in the
+# mailbox (Gmail: create the label first) or that move errors.
+validations:
+  skip:
+    - get('action') != 'apply'
+items:
+  - "{{ get('moves') }}"          # [{uid, folder}] from the request body; expanded to one run each
+email:
+  action: modify
+  imapConnection: inbox
+  mailbox: "INBOX"
+  uids:
+    - "{{ get('current').uid }}"  # single uid per iteration
+  modify:
+    moveTo: "{{ get('current').folder }}"
+  timeout: 30s

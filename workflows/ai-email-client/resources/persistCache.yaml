@@ -1,0 +1,12 @@
+actionId: persistCache
+name: Persist Triage Cache
+requires: [triageMerge]
+# Writes the merged cache back to the session. Kept separate from triageMerge
+# because a resource cannot read its own output inside its own after: hook.
+validations:
+  skip:
+    - get('action') not in ['inbox', 'reorganize']
+after:
+  - set('triageCache', json(safe(output('triageMerge'), 'cache') ?? []), 'session')
+exec:
+  command: "true"              # no-op; the work is the after: persistence above

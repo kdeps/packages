@@ -1,0 +1,41 @@
+actionId: labelApplyPrep
+name: Prepare Label Ops
+# Normalizes the request into concrete moves and a delete list. Every merged
+# "from" folder is scheduled for deletion after its mail is moved. Protected
+# mailboxes (INBOX, [Gmail]/...) are filtered out as a safety net.
+validations:
+  skip:
+    - get('action') != 'labelsApply'
+python:
+  timeout: 30s
+  script: |
+    import sys, json
+    merges = json.loads(sys.argv[1] or "[]")
+    deletes = json.loads(sys.argv[2] or "[]")
+    user_protected = {p.strip().lower() for p in json.loads(sys.argv[3] or "[]") if p and p.strip()}
+
+    def protected(f):
+        # System-protected (INBOX, [Gmail]/...) or user-protected. Protection blocks
+        # a label from being a merge SOURCE or a delete; it may still be a target.
+        if (not f) or f.upper() == "INBOX" or f.startswith("[Gmail]"):
+            return True
+        return f.strip().lower() in user_protected
+
+    moves, del_list = [], []
+    for m in merges:
+        frm, to = (m.get("from") or "").strip(), (m.get("to") or "").strip()
+        if frm and to and not protected(frm) and not (not to or to.upper() == "INBOX" or to.startswith("[Gmail]")):
+            moves.append({"from": frm, "to": to})
+            del_list.append(frm)
+    for d in deletes:
+        f = (d if isinstance(d, str) else d.get("folder", "")).strip()
+        if f and not protected(f):
+            del_list.append(f)
+
+    seen = set()
+    dels = [x for x in del_list if not (x in seen or seen.add(x))]
+    print(json.dumps({"moves": moves, "deletes": dels}))
+  args:
+    - "{{ json(get('merges')) }}"
+    - "{{ json(get('deletes')) }}"
+    - "{{ get('protectedLabels', 'session') ?? '[]' }}"

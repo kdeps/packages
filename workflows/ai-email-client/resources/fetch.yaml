@@ -1,0 +1,14 @@
+actionId: fetch
+name: Fetch Inbox
+# Runs for inbox listing and for reorganize planning. IMAP credentials live in
+# ~/.kdeps/config.yaml under imap_connections.inbox.
+validations:
+  skip:
+    - get('action') not in ['inbox', 'reorganize', 'unsubscribe']
+email:
+  action: read
+  imapConnection: inbox        # named connection in ~/.kdeps/config.yaml
+  mailbox: "INBOX"
+  limit: 15                    # newest 15 messages
+  markRead: false              # never mark read while triaging
+  timeout: 30s

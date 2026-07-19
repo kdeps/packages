@@ -1,0 +1,13 @@
+actionId: unsubGet
+name: Unsubscribe (GET)
+# Non-one-click subscriptions: open the List-Unsubscribe URL with a GET.
+validations:
+  skip:
+    - get('action') != 'unsubApply'
+items:
+  - "{{ filter(get('targets'), .oneClick != true) }}"   # [{url, oneClick}]
+httpClient:
+  method: GET
+  url: "{{ get('current').url }}"
+  followRedirects: true
+  timeout: 20s

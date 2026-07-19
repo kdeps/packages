@@ -1,0 +1,46 @@
+actionId: triageMerge
+name: Merge Triage Cache
+requires: [triage]
+# Merges freshly-triaged emails with cached ones, preserving inbox order, and
+# drops cache entries for emails no longer in the inbox. Persists the updated
+# cache back to the session so the next request reuses it.
+validations:
+  skip:
+    - get('action') not in ['inbox', 'reorganize']
+python:
+  timeout: 30s
+  script: |
+    import sys, json, re
+
+    fetched_uids = json.loads(sys.argv[1])          # [uid, ...] in inbox order
+    cached = json.loads(sys.argv[2] or "[]")        # [{uid, category, priority, summary, folder}]
+
+    raw = (sys.argv[3] or "").strip()               # fresh LLM output (may be fenced or empty)
+    raw = re.sub(r"^```(?:json)?\s*", "", raw)
+    raw = re.sub(r"\s*```$", "", raw)
+    try:
+        fresh = json.loads(raw) if raw else []
+    except Exception:
+        fresh = []
+
+    by_uid = {e.get("uid"): e for e in cached}
+    for e in fresh:
+        by_uid[e.get("uid")] = e
+
+    def entry(uid):
+        e = by_uid.get(uid, {})
+        return {
+            "uid": uid,
+            "category": e.get("category", "fyi"),
+            "priority": e.get("priority", "low"),
+            "summary": e.get("summary", ""),
+            "folder": e.get("folder") or e.get("category", "fyi"),
+        }
+
+    items = [entry(u) for u in fetched_uids]
+    cache = [entry(u) for u in fetched_uids if u in by_uid]  # keep only still-present emails
+    print(json.dumps({"items": items, "cache": cache}))
+  args:
+    - "{{ json(output('triagePrep').fetchedUids) }}"
+    - "{{ get('triageCache', 'session') ?? '[]' }}"
+    - "{{ safe(output('triage'), 'message.content') ?? '' }}"

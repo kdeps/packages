@@ -1,0 +1,21 @@
+actionId: send
+name: Send Email
+# Only runs for the "send" action. SMTP credentials live in ~/.kdeps/config.yaml
+# under smtp_connections.default (host, port, username, password, tls).
+validations:
+  skip:
+    - get('action') != 'send'
+  check:
+    - get('to') contains '@'      # reject a send with no valid recipient
+  error:
+    code: 400
+    message: "'to' must be a valid email address"
+email:
+  action: send
+  smtpConnection: default         # named connection in ~/.kdeps/config.yaml
+  from: "{{ get('from') }}"       # sender address (usually the authenticated account)
+  to: ["{{ get('to') }}"]
+  subject: "{{ get('subject') }}"
+  body: "{{ get('body') }}"       # the reply text, sent as-is
+  html: false
+  timeout: 30s

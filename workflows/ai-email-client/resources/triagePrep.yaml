@@ -1,0 +1,25 @@
+actionId: triagePrep
+name: Prepare Triage Set
+requires: [fetch]
+# Works on uids only (never bodies) so nothing large is passed to Python. Emits
+# the uids that are not yet cached; the triage prompt filters the full emails by
+# these uids.
+validations:
+  skip:
+    - get('action') not in ['inbox', 'reorganize']
+python:
+  timeout: 30s
+  script: |
+    import sys, json
+    fetched = json.loads(sys.argv[1] or "[]")       # [uid, ...] in inbox order
+    cache = json.loads(sys.argv[2] or "[]")         # [{uid, ...}]
+    cached_uids = {e.get('uid') for e in cache}
+    new_uids = [u for u in fetched if u not in cached_uids]
+    print(json.dumps({
+        "newUids": new_uids,
+        "hasNew": len(new_uids) > 0,
+        "fetchedUids": fetched,
+    }))
+  args:
+    - "{{ json(map(get('fetch').messages, .UID)) }}"
+    - "{{ get('triageCache', 'session') ?? '[]' }}"

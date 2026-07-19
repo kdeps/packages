@@ -1,0 +1,18 @@
+actionId: unsubPost
+name: Unsubscribe (one-click POST)
+# One-click subscriptions (RFC 8058): POST to the List-Unsubscribe URL with the
+# one-click form body.
+validations:
+  skip:
+    - get('action') != 'unsubApply'
+items:
+  - "{{ filter(get('targets'), .oneClick == true) }}"   # [{url, oneClick}]
+httpClient:
+  method: POST
+  url: "{{ get('current').url }}"
+  headers:
+    Content-Type: application/x-www-form-urlencoded
+  data:
+    List-Unsubscribe: One-Click
+  followRedirects: true
+  timeout: 20s
