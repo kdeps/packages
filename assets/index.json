@@ -957,6 +957,28 @@
         }
       ]
     },
+    "models/gguf": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "6057e47808db20bfa34384fe98f7b19daf5cd0ccd255e1863fc8117c61ce444b",
+          "commit": "988308a5bd3398bc8c76829400b486ed74ecee0c",
+          "date": "2026-10-10T04:17:03.159912639Z"
+        }
+      ]
+    },
+    "models/llamafile": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "c4876000a2be6e76317dda4e76800eb8c2a575c44af6899c9651e27efcf52da1",
+          "commit": "988308a5bd3398bc8c76829400b486ed74ecee0c",
+          "date": "2026-10-10T04:17:03.159912639Z"
+        }
+      ]
+    },
     "presets/balanced": {
       "latest": "1.0.0",
       "versions": [
