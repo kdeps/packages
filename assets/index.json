@@ -221,13 +221,23 @@
       ]
     },
     "commands/frugal": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "4bec3b0868836a4995afc07c27345f0855a13aad5fabb573c148834e1db8bec8",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "f901cdff741c24d1f97d7465d8536549f0321a05faaf2a9e78c1991e3864385a",
+          "requires": {
+            "commands/efficiency": "",
+            "presets/frugal": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
@@ -507,13 +517,23 @@
       ]
     },
     "commands/thorough": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "b956881d83c12bb453b3d3d78bb9b7f533d9332477e46a795f5ea124f7f30969",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "c576b7a9ab10d5c8f69350844191a7465684d41a67c0272a5c12554e58ba45bb",
+          "requires": {
+            "commands/efficiency": "",
+            "presets/thorough": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
@@ -562,18 +582,27 @@
       ]
     },
     "components/git": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "9a64851ae67191935a0213e8bde0997a4efb5b574c645cb0140c4ca9481220a8",
           "commit": "a8fb49370759a64ff4492836198ed2247223be09",
           "date": "2026-10-13T16:11:29.04849661Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "de40a15d6184761127bb2f0bed1038401e1ecd4670ac7f032919edac77d0296a",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "components/ocr": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -586,39 +615,75 @@
           "sha256": "eb05dd6b914ed9558ba87cb75d3c5e42bc362400198531e3e3630903a01358b9",
           "commit": "ff8055c27963385ef7a77c2124302a556989956b",
           "date": "2026-10-13T17:02:25.783630951Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "5416d99801382df0db11fb6db1e48b1833833be7f1d570decb46ce071f859c5d",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.1"
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "components/scraper": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "9ddf161fa249040d38569b4bbe1f11fa8be834afb70d8967cab012bb679b5dd3",
           "commit": "8c5af2d106729e810e6ee09ba21e6cbe5ea7e42f",
           "date": "2026-10-13T18:02:31.78907005Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "7ef905c3a83ca560a400c5e85478c393c8a7d9d40259a055c469ca5977638e01",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.2"
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "components/searchWeb": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "21ed191e34253d3a95fac41df1899c42b687e9eae7d3d1ff5bbddc38a7b1c387",
           "commit": "4a93d7c9bb7d0b9dee38fa4a3af92d2e22a3df3c",
           "date": "2026-10-13T21:18:01.840624829Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "44bd975ba6b0c01af485e18cee6d35655e4f1a6892c281285f320f156e759636",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.3"
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "components/transcribe": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "4fc34acccc4d9203080474b9213c500906e10e0075455561ed78f4b42c4152b2",
           "commit": "6f6f575531c95478a4c8c5c65fd553e2946a7992",
           "date": "2026-10-13T15:41:59.558069751Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "04fa917b950df31e2642ed8ac96eba070c0886aca59f646cf0383da015ed7372",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
@@ -657,7 +722,7 @@
       ]
     },
     "events/auto-compact": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -670,11 +735,20 @@
           "sha256": "03b6081e220925e614e3e5cabfc53b7ed7084d2beefde35f7ac669c7b46bbe76",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "1612bb1ffc5f6cc7ddd9425eef4153fb508dff69f7d297f6af214d0c4c49e8cc",
+          "requires": {
+            "actions/compact": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/bash-call-budget": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -687,11 +761,20 @@
           "sha256": "84516d0e2805ddc7c68523c843438e0b988f3b4448dc8d8a50fe3780d15b67ab",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "6e8659cb8fb8ab247f7958268fe630b5e47a6ec0b3cdd78c836a67d8f8ba155a",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/code-call-budget": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -704,11 +787,20 @@
           "sha256": "b0e78577c964c4ff217cf64a72d4ca2c82cd2fc37927454c9439a8704b867669",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "18bf113144b7dbff5cfc9d5365fac289238c5292f105191a4acc0a2b5803296b",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/convergence-block": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -721,132 +813,240 @@
           "sha256": "8eedf74e6571cecf684ef24139d0388d0c3327561cae3faa883996ed1a449806",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "ff3ab184edc957b43c6a1a7ae233be578d1df04f4efd17d326943c932dec01c5",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/efficiency": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "bdfd2c1e52f3bab6178ac584c27d90f088d022f137fa63e84f55644abb3091ef",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "481c15ade94bb8f4f0fd96a61a4a2352e727fccd348272241663fdadcc909931",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/efficiency-actions": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "6df1c611691c7729070c727acb02bddf0333c473bdd9a90abf42a11bad3b5e96",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "9fe1790fa8a9d42bd012e70173d1eb75bf7d9e84981c208a37a20607edbc8ad6",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/efficiency-bash": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "1655ecfb5b5403202a98c51401ea0c7c111607030f28639203f7d2a3a25dfb73",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "69894005fed2951acc309e11b388fc7a745ad462c9b4b7e600e8135fc3b13f23",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/efficiency-code": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "e8c70aad3cf305e13b7ca123421ee45f662e3a068a1cbbd08bbac1b20cc07bae",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "2854027bdeee11ea6732f4f36c0fa662c6680c7ff951f3933233380403e5f44a",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/efficiency-failures": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "7bc2b5d166e413dcc6fc3adcb6ae9d9df6c782bfbc3e61524f0cbe745127597c",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "35b5f7d1cce8724ec49dabd178291d1b0f4c118f58257e42fd53f6204bfbbd87",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/efficiency-file": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "3b74f50c81a4d1c18855d23d3b04e72bdd371ff9579c97f518f466ac64916c16",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "a1c5ad350ec1c252a3e29f952cf701f913979894043f8d1bcde911a88ab3580c",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/efficiency-reads": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "db28458aacbdd41c5100e7c13a1343176e5f4bd8a3800355d6d59d6c7e196213",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "afe7cba6f2964ddf224047cd638e6ee1625b9758a80aa61a231d9a39ebae3814",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/efficiency-stops": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "92c15e94f672e2ff6196b4295c61750b58daebb7f289914089f85c21da4b789c",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "31555336f82dd582b4e2c95ee2a062ea611138c8a0e675b5cf983c9a7d502d3c",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/efficiency-tighten": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "dce2f5e99f2e4571a194fabc4e95acfb141641b5dd8288f8858d527811504e9e",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "8d6f3a88fd9a006adde8a4435c0d811326546ae356f251c89077d3072996bfb6",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/efficiency-verbose": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "dedbccc67f0123b5a844d92534bbe2310c92841a73e9f4cb3a8bab7e85ae7364",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "bd7df19d7e66a480baf5e772bc2ea1170d7f716bf58c163380785736510d626b",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/efficiency-web": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "75468294c9efdebd4f5aeca3b36d26ee3cbde568a27444bc02cce3214ac940ca",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "15d2f3b509a7231c49b0f33df369c998dc2ef5767685e68bd43670374cba5732",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/file-call-budget": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -859,11 +1059,20 @@
           "sha256": "21cda32378590cdb5ce3fe8289cbbc704ad24eadfa1dbd703d58e3fec0fa1937",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "264b4d8ca4b44d0b1bf6cbf05e67997980aa015600f2b8b379e7a559c84180b2",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/file-read-limit": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -876,11 +1085,20 @@
           "sha256": "3426b1c43fdbbcf3dd54a94f57d901729540fd7503d1280ea827cee957ad655c",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "aa0eccf6b74ecb548bcbff010dd2db27ebcf3577a120996aeb3fe4a20ccd7ace",
+          "requires": {
+            "actions/reject": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/fold": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -893,11 +1111,20 @@
           "sha256": "a09a3cd180730f17135bc7620e068e780fe4d53bfb5561194a223e6d5944a684",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "6cd348466a3dfcf35421040122e345d503f24c008a3bbef423383e5b217786f1",
+          "requires": {
+            "actions/compact": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/force-answer-digest": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -910,11 +1137,20 @@
           "sha256": "5d3f86d2b189a248a93c2309f74b40e5111295befd68ea63dc182d209a8e8059",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "6fbf6dfa844008abe672d3296681b3e14c390182355bf77ca9bef3f86d6ea5e1",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/handshake-timeout": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -927,11 +1163,20 @@
           "sha256": "26308d9851ac9936db6b25e80d2b549b59daf3d487dc7626c526d95b4e5fd585",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "369ae5439857bb41a3f6fa17f855c4ee27144874762b81c45344943438c0029e",
+          "requires": {
+            "actions/fail_handshake": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/history-window-trim": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -944,11 +1189,20 @@
           "sha256": "b850422cb0cd2c7267dedfdbfb7d08e0614dec165d4d51b3bccedaa7f3504da0",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "e81ec269a79887f78ff57d8dd6c303f52de6c1af1164f49932a5aac576d34e03",
+          "requires": {
+            "actions/drop_oldest": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/identical-tool-calls": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -961,11 +1215,20 @@
           "sha256": "c3c3d612ffd872224cbbd42f89dbfe43687146c3c0068d032f6cc80b0a5e5dce",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "185e7148e0b918e82c6a1241e278501803aacb048e960596ab04f2fbb375f3b9",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/judge-iterations": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -978,11 +1241,20 @@
           "sha256": "1fe1d3872487c00dc69dbd9eadc24e47db7932605f9838f8338094addc19bc13",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "fe33ffdad9ac4a6bad1df10f42008e033b3e6dba5c523274ca8a65144a9fadfa",
+          "requires": {
+            "actions/accept_last": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/judge-max-rounds": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -995,11 +1267,20 @@
           "sha256": "2cd756d5b195ecc454bc759e702b5440e6349403602abcf1445cf1f4eb4efb20",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "c371cf09f28ebf9584cb5b63930f35267456e33d6c0ffe2d6d71aa45a2c04595",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/memory-chain-max": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -1012,11 +1293,20 @@
           "sha256": "c8e0d720d727f1b9fbc2c9a8ee64fc616cff1e29c006c9ccecd8eb3d3e037b81",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "5e1ee0c2cd755b250f52054daaa0b43ff4d9e2509b407e999cf0202876b0b97d",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/memory-focus-max": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -1029,11 +1319,20 @@
           "sha256": "d6e124a3967ee0741b01338e0d150f3ba6e735efc44ba1feecb636fd68946152",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "d65ad8183e5cb860e9939d54ced2b421f6623973249386ad0d87f1db7ddbe461",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/memory-keys-limit": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -1046,11 +1345,20 @@
           "sha256": "260a3df78b1e8737b915e5a9b3213cdb0009451ee3b9c495733310a1bc8c1bb2",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "17e49cb9d8247435375bd8cca4e0357ee44e5bbacb470778b968ff90d992dd86",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/memory-prompt-limit": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -1063,11 +1371,20 @@
           "sha256": "9cebf477784b8891a50c3aaef7238d68db2dbb408febbdb548cf74dcc4c9e803",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "11b6b8480dab7ac6df7815248074d8288ede1df972ccf0503e123c9dc67fe108",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/rel-memory-limit": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -1080,11 +1397,20 @@
           "sha256": "a2be1653e5ffdfd502c5bdc16e402b10e71852348e848e7d304cdefe7eb085ce",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "4df3d1697c8bb0fd2d3d40180d1dd8b09c1332eb288f7b4a0bf537346c32692b",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/task-round-budget": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -1097,11 +1423,20 @@
           "sha256": "7657a1acbcd5d6430e42e86983f1c84b4e76d3c91de870ee95d116d90a92d9c7",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "f830e1ac61a1089f22c08f41b9f199bb16b6d4a940979413b3511f895dfe60b7",
+          "requires": {
+            "actions/fail_task": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/tool-error-truncate": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -1114,11 +1449,20 @@
           "sha256": "7413785371f40acf6d78c88d4de00fc4e8098e5d805d9067d15133b57a53e5ef",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "7352ccbc7554ef39d909df6fc3a15a9f4ab131d2a87051582cf9f35c04c67b00",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/tool-result-truncate": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -1131,11 +1475,20 @@
           "sha256": "afeceacb1de23ca3e755b4c9fdcf894e8910e953cae55c1daa5a419bae1e74a1",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "5c78b37ab7f6a1227aa630b3e334b51daa17fb283872c58d4b0747b3fa6a1b2e",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/unproductive-rounds": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -1148,11 +1501,20 @@
           "sha256": "704da719750c62dfc0532c2179f97c4e1f1dec3ed89ab144fea1eafed188fdbc",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "b098297ba14b8c811d89a20cf797d1eef5d2953e440b243445b90aadfd798e8c",
+          "requires": {
+            "actions/fail_task": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "events/web-call-budget": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -1165,6 +1527,15 @@
           "sha256": "bca36e27be1294a6f944715b0ae8d85e061e65cb56be573480898c82fa5b6773",
           "commit": "b8f31d5037995b701f943bdd356c83e6cbe99454",
           "date": "2026-10-12T19:35:57.853970929Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "c3c8218a3899fb5d9f6cfce94b12999da5286fa87318981f42460f25a32873a4",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
@@ -1734,35 +2105,152 @@
       ]
     },
     "presets/balanced": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "427cbfa8f3ff161ad1ca7bd8f5ffa48276ded997a3c0e7dd8222b88b42ebd1af",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "4ac14699f4345fdb8d1eed4a9e91d2f9944edc57405f6772b0697ac9d1461512",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/efficiency": "",
+            "events/efficiency-actions": "",
+            "events/efficiency-bash": "",
+            "events/efficiency-code": "",
+            "events/efficiency-failures": "",
+            "events/efficiency-file": "",
+            "events/efficiency-reads": "",
+            "events/efficiency-stops": "",
+            "events/efficiency-tighten": "",
+            "events/efficiency-verbose": "",
+            "events/efficiency-web": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-trim": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "presets/frugal": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "86bb4266697e12cc4a110701ba10adf0f65ee2d1d740d80062b4ee7342317e3e",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "1525c99f05a020a0612b4a76a759011a60d3f44b0deead56ce41d80539778d16",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/efficiency": "",
+            "events/efficiency-actions": "",
+            "events/efficiency-bash": "",
+            "events/efficiency-code": "",
+            "events/efficiency-failures": "",
+            "events/efficiency-file": "",
+            "events/efficiency-reads": "",
+            "events/efficiency-stops": "",
+            "events/efficiency-tighten": "",
+            "events/efficiency-verbose": "",
+            "events/efficiency-web": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-trim": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
     "presets/thorough": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "22b19cb2ecc10883247369e7e33044b0832236bec1b5d340e394f8a525a01418",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "aeca6b2d0243eac6cdbdaaa83eb8c099868ff03b81696f51361804037666e70d",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/efficiency": "",
+            "events/efficiency-actions": "",
+            "events/efficiency-bash": "",
+            "events/efficiency-code": "",
+            "events/efficiency-failures": "",
+            "events/efficiency-file": "",
+            "events/efficiency-reads": "",
+            "events/efficiency-stops": "",
+            "events/efficiency-tighten": "",
+            "events/efficiency-verbose": "",
+            "events/efficiency-web": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-trim": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
     },
