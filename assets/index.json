@@ -561,6 +561,17 @@
         }
       ]
     },
+    "components/ocr": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "2a41499c3eb657b32b42a377ac045525de17af916a0893b6c363126f534347ae",
+          "commit": "31a05955a51d4f65ae54f50cce06ecbf4b4592ec",
+          "date": "2026-10-13T11:19:53.906876865Z"
+        }
+      ]
+    },
     "defaults/executors": {
       "latest": "1.0.0",
       "versions": [
@@ -2416,13 +2427,19 @@
       ]
     },
     "tools/ocr_image": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "1119b273d15fa92ab4cef973391ac2debc52783bbe9872d0ff23d3e233a4ceb0",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "dab2e6dc91bf5e5ca4bef677ae5ad9856c3188cfa9954f960c2eadfd8c79b026",
+          "commit": "31a05955a51d4f65ae54f50cce06ecbf4b4592ec",
+          "date": "2026-10-13T11:19:53.906876865Z"
         }
       ]
     },
