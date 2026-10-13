@@ -1704,6 +1704,138 @@
         }
       ]
     },
+    "providers/cloudflare": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "b370d83365558ace46309fd7a88ebbea3c4009250a69db5f9dc3a5ccbe2e247a",
+          "commit": "b44cb57cf166d7dca09fa69bf4de5e485655f8de",
+          "date": "2026-10-13T14:58:58.111185664Z"
+        }
+      ]
+    },
+    "providers/deepseek": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "01bd0dc9d82159b4b1a6a7d5ff41ce95f410f745dee7d3193b43f83e4b26b943",
+          "commit": "b44cb57cf166d7dca09fa69bf4de5e485655f8de",
+          "date": "2026-10-13T14:58:58.111185664Z"
+        }
+      ]
+    },
+    "providers/ernie": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "a3de099eaec6a56ea1ac416a4bf8ad14ba207bf760a5b58087bb49f11cbfc9e8",
+          "commit": "b44cb57cf166d7dca09fa69bf4de5e485655f8de",
+          "date": "2026-10-13T14:58:58.111185664Z"
+        }
+      ]
+    },
+    "providers/groq": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "fd2ffc28b816d930ed104fa872e568e77f820737c89fc4c9001ca8904cbe8937",
+          "commit": "b44cb57cf166d7dca09fa69bf4de5e485655f8de",
+          "date": "2026-10-13T14:58:58.111185664Z"
+        }
+      ]
+    },
+    "providers/huggingface": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "d676df3d435b5fb6fb9fe30e56c5a4a015a3fc5229c40b55d7fe4d1fb4275e38",
+          "commit": "b44cb57cf166d7dca09fa69bf4de5e485655f8de",
+          "date": "2026-10-13T14:58:58.111185664Z"
+        }
+      ]
+    },
+    "providers/maritaca": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "592a4817672ce6913b36192fc2df4baf65cc8534fa9ce1c6f3464de535971cd7",
+          "commit": "b44cb57cf166d7dca09fa69bf4de5e485655f8de",
+          "date": "2026-10-13T14:58:58.111185664Z"
+        }
+      ]
+    },
+    "providers/mistral": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "403726c064a2a6de6b257ff87390c985f084fa1eeeb97c68f20a8fd427f98709",
+          "commit": "b44cb57cf166d7dca09fa69bf4de5e485655f8de",
+          "date": "2026-10-13T14:58:58.111185664Z"
+        }
+      ]
+    },
+    "providers/openai": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "bfbe3399a212a78783d31b0a6eff18f6548a3c4775d689ec2240962ed4930f77",
+          "commit": "b44cb57cf166d7dca09fa69bf4de5e485655f8de",
+          "date": "2026-10-13T14:58:58.111185664Z"
+        }
+      ]
+    },
+    "providers/openrouter": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "f794b5d0a9c8024481334630096700fc7ab5e930c5dd4adcffaf2c707e00486d",
+          "commit": "b44cb57cf166d7dca09fa69bf4de5e485655f8de",
+          "date": "2026-10-13T14:58:58.111185664Z"
+        }
+      ]
+    },
+    "providers/perplexity": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "da84d3e598bad104c1e222413eac0c83c1321a8feaee75d434cbabd84c6b1fe8",
+          "commit": "b44cb57cf166d7dca09fa69bf4de5e485655f8de",
+          "date": "2026-10-13T14:58:58.111185664Z"
+        }
+      ]
+    },
+    "providers/together": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "fd778b428f82f71d5d63c45747f01da9e03a7e515f9f8b6548b193bb0435a196",
+          "commit": "b44cb57cf166d7dca09fa69bf4de5e485655f8de",
+          "date": "2026-10-13T14:58:58.111185664Z"
+        }
+      ]
+    },
+    "providers/xai": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "1ec2d6c7c6cf6c07207bf70eab5be260c3bc77ecdf1c846bc5e04e7cfa519433",
+          "commit": "b44cb57cf166d7dca09fa69bf4de5e485655f8de",
+          "date": "2026-10-13T14:58:58.111185664Z"
+        }
+      ]
+    },
     "recipes/gguf": {
       "latest": "1.0.0",
       "versions": [
