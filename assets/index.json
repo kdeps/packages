@@ -561,6 +561,17 @@
         }
       ]
     },
+    "components/git": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "9a64851ae67191935a0213e8bde0997a4efb5b574c645cb0140c4ca9481220a8",
+          "commit": "a8fb49370759a64ff4492836198ed2247223be09",
+          "date": "2026-10-13T16:11:29.04849661Z"
+        }
+      ]
+    },
     "components/ocr": {
       "latest": "1.0.0",
       "versions": [
