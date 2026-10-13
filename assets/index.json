@@ -561,6 +561,28 @@
         }
       ]
     },
+    "defaults/executors": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "a55abb4d2e9f2c2938706504e7396158839de964f8aa6ab85ba70003ebe5f1d0",
+          "commit": "c6ce3d0e2a888a9b381baf855b5ff9b527c43cce",
+          "date": "2026-10-13T09:32:09.351981983Z"
+        }
+      ]
+    },
+    "docker/image": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "45b6c53c5be684b0fbfe8697be92019a4f9e1d0d5468c61906ea299874e55b21",
+          "commit": "c6ce3d0e2a888a9b381baf855b5ff9b527c43cce",
+          "date": "2026-10-13T09:32:09.351981983Z"
+        }
+      ]
+    },
     "events/auto-compact": {
       "latest": "1.0.1",
       "versions": [
@@ -1546,6 +1568,17 @@
         }
       ]
     },
+    "k8s/manifests": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "1eb5838cc7baba42dc5d7dc80a137113d62416464100e1a3d9297041d3c43a68",
+          "commit": "c6ce3d0e2a888a9b381baf855b5ff9b527c43cce",
+          "date": "2026-10-13T09:32:09.351981983Z"
+        }
+      ]
+    },
     "models/gguf": {
       "latest": "1.0.4",
       "versions": [
@@ -1756,6 +1789,17 @@
           "sha256": "186808391231220b672e9da21a99122f2ef4c212bc213ba2b9609bacfd59516b",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        }
+      ]
+    },
+    "schemas/v1": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "cd59f37556ed177728dad4742cdae3b1b5e8f2c88e5f484f147409ac14641289",
+          "commit": "c6ce3d0e2a888a9b381baf855b5ff9b527c43cce",
+          "date": "2026-10-13T09:32:09.351981983Z"
         }
       ]
     },
