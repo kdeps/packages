@@ -572,6 +572,17 @@
         }
       ]
     },
+    "components/transcribe": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "4fc34acccc4d9203080474b9213c500906e10e0075455561ed78f4b42c4152b2",
+          "commit": "6f6f575531c95478a4c8c5c65fd553e2946a7992",
+          "date": "2026-10-13T15:41:59.558069751Z"
+        }
+      ]
+    },
     "defaults/executors": {
       "latest": "1.0.0",
       "versions": [
@@ -2835,13 +2846,30 @@
       ]
     },
     "tools/transcribe_audio": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "56acc212c287835dca2da6d09660146d92ce1b09905325e5bbcc566f7255801e",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "b9cdb2ba5941be7cadc191716427fdaa9020b50a7b779dbf73949ef81e272042",
+          "commit": "6f6f575531c95478a4c8c5c65fd553e2946a7992",
+          "date": "2026-10-13T15:41:59.558069751Z"
+        }
+      ]
+    },
+    "tools/transcribe_audio_offline": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "e41d06c3b60f89ce6210b5146abb05c131af69e17064679c18e55b16144bf434",
+          "commit": "6f6f575531c95478a4c8c5c65fd553e2946a7992",
+          "date": "2026-10-13T15:41:59.558069751Z"
         }
       ]
     },
