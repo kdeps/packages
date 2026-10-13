@@ -600,6 +600,17 @@
         }
       ]
     },
+    "components/searchWeb": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "21ed191e34253d3a95fac41df1899c42b687e9eae7d3d1ff5bbddc38a7b1c387",
+          "commit": "4a93d7c9bb7d0b9dee38fa4a3af92d2e22a3df3c",
+          "date": "2026-10-13T21:18:01.840624829Z"
+        }
+      ]
+    },
     "components/transcribe": {
       "latest": "1.0.0",
       "versions": [
@@ -612,7 +623,7 @@
       ]
     },
     "defaults/executors": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "versions": [
         {
           "version": "1.0.0",
@@ -625,6 +636,12 @@
           "sha256": "908e219c263befc02ad1004626c7711c19b562e6be2031da5159eed45978006f",
           "commit": "8c5af2d106729e810e6ee09ba21e6cbe5ea7e42f",
           "date": "2026-10-13T18:02:31.78907005Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "700ebadddc6262c8904d20571cd4ed6d775679ff08c0ab9269d6c2834c5a3cf4",
+          "commit": "4a93d7c9bb7d0b9dee38fa4a3af92d2e22a3df3c",
+          "date": "2026-10-13T21:18:01.840624829Z"
         }
       ]
     },
@@ -1992,7 +2009,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "versions": [
         {
           "version": "1.0.0",
@@ -2011,6 +2028,12 @@
           "sha256": "bfb715bcf255026d1d776ae9ae3b8bdeb545fcb69d447edc328ba2f1423cf986",
           "commit": "8c5af2d106729e810e6ee09ba21e6cbe5ea7e42f",
           "date": "2026-10-13T18:02:31.78907005Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "0b384c5e164f9f2620c631ddd7daa29326c3ec3f8efebf5ff22d9dda7649c6c2",
+          "commit": "4a93d7c9bb7d0b9dee38fa4a3af92d2e22a3df3c",
+          "date": "2026-10-13T21:18:01.840624829Z"
         }
       ]
     },
