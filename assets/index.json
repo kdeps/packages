@@ -1590,6 +1590,17 @@
         }
       ]
     },
+    "models/cloud": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "99ac0a28ae3bcef25abb9a9fa39d72bd72b22109d5c3abd5dbc486cd15290215",
+          "commit": "fbe6f41504e499a05bc695d2f3ba58d0f25722b6",
+          "date": "2026-10-13T12:57:46.86637668Z"
+        }
+      ]
+    },
     "models/gguf": {
       "latest": "1.0.4",
       "versions": [
