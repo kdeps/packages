@@ -581,6 +581,20 @@
         }
       ]
     },
+    "components/file": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "f27f64c6d0ae0e5a06efc418a4488fcb3c80af0459a830322aeebd40c85deb5f",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "dba6fe8ec16bdc0ded769ea1d24bfaa1799f73db",
+          "date": "2026-10-14T06:13:43.698608646Z"
+        }
+      ]
+    },
     "components/git": {
       "latest": "1.0.1",
       "versions": [
