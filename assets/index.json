@@ -581,6 +581,20 @@
         }
       ]
     },
+    "components/browser": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "c224e60b64218b5cfab919755d637c56d652b0a0e9307d65ab875fc2cdb14f1b",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.4"
+          },
+          "commit": "e22e11458886f7619d75eddae502a12233041582",
+          "date": "2026-10-14T23:17:24.832802864Z"
+        }
+      ]
+    },
     "components/email": {
       "latest": "1.0.0",
       "versions": [
