@@ -581,6 +581,20 @@
         }
       ]
     },
+    "components/email": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "5302f3274b8aa683237f2dc0a509bf0c99ab8ce02fc0c4d8153fc3e0e9a4d0fa",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.4"
+          },
+          "commit": "539fb6f9bbc8beb6bf1a1599deb2fdf19803d30b",
+          "date": "2026-10-14T09:23:26.045413814Z"
+        }
+      ]
+    },
     "components/file": {
       "latest": "1.0.0",
       "versions": [
@@ -2523,7 +2537,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "versions": [
         {
           "version": "1.0.0",
@@ -2548,6 +2562,12 @@
           "sha256": "0b384c5e164f9f2620c631ddd7daa29326c3ec3f8efebf5ff22d9dda7649c6c2",
           "commit": "4a93d7c9bb7d0b9dee38fa4a3af92d2e22a3df3c",
           "date": "2026-10-13T21:18:01.840624829Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "03bb74f3bc1fdf110d481f531b596e21ad3b9cbaeae872481e6a29b05c86f951",
+          "commit": "539fb6f9bbc8beb6bf1a1599deb2fdf19803d30b",
+          "date": "2026-10-14T09:23:26.045413814Z"
         }
       ]
     },
