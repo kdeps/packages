@@ -2615,6 +2615,17 @@
         }
       ]
     },
+    "templates/whatsapp-bot": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "624d2fde28b1de54f888be7983b84d77fd7362a896a64f46dcc97925bfb22811",
+          "commit": "12911401f4349f7d4ac4d58fb37d3abb78a31e6b",
+          "date": "2026-10-14T21:25:09.203964682Z"
+        }
+      ]
+    },
     "themes/black": {
       "latest": "1.0.0",
       "versions": [
