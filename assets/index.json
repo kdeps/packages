@@ -715,6 +715,20 @@
         }
       ]
     },
+    "components/twiml": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "9b8808cb9fa2f275d1cfcbaaa097f2c207cb8ea53b7a937ccdd700792542bced",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.4"
+          },
+          "commit": "d4c1598f924e8b074ac779c61f7af9f2ae1f0552",
+          "date": "2026-10-14T22:32:08.758713765Z"
+        }
+      ]
+    },
     "defaults/executors": {
       "latest": "1.0.2",
       "versions": [
