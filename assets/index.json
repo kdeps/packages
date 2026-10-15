@@ -591,6 +591,7 @@
             "schemas/v1": "\u003e=1.0.4"
           },
           "commit": "e22e11458886f7619d75eddae502a12233041582",
+          "tokens": 364,
           "date": "2026-10-14T23:17:24.832802864Z"
         }
       ]
@@ -605,6 +606,7 @@
             "schemas/v1": "\u003e=1.0.4"
           },
           "commit": "539fb6f9bbc8beb6bf1a1599deb2fdf19803d30b",
+          "tokens": 620,
           "date": "2026-10-14T09:23:26.045413814Z"
         }
       ]
@@ -619,6 +621,7 @@
             "schemas/v1": ""
           },
           "commit": "dba6fe8ec16bdc0ded769ea1d24bfaa1799f73db",
+          "tokens": 414,
           "date": "2026-10-14T06:13:43.698608646Z"
         }
       ]
@@ -639,6 +642,7 @@
             "schemas/v1": ""
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "tokens": 340,
           "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
@@ -665,6 +669,7 @@
             "schemas/v1": "\u003e=1.0.1"
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "tokens": 152,
           "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
@@ -685,6 +690,7 @@
             "schemas/v1": "\u003e=1.0.2"
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "tokens": 115,
           "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
@@ -705,6 +711,7 @@
             "schemas/v1": "\u003e=1.0.3"
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "tokens": 187,
           "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
@@ -719,6 +726,7 @@
             "schemas/v1": "\u003e=1.0.4"
           },
           "commit": "b9ae9a26efea318866f7dcd77065cfbbeb8ea6be",
+          "tokens": 331,
           "date": "2026-10-15T00:24:30.02418423Z"
         }
       ]
@@ -739,6 +747,7 @@
             "schemas/v1": ""
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
+          "tokens": 362,
           "date": "2026-10-13T23:23:48.422354488Z"
         }
       ]
@@ -753,6 +762,7 @@
             "schemas/v1": "\u003e=1.0.4"
           },
           "commit": "d4c1598f924e8b074ac779c61f7af9f2ae1f0552",
+          "tokens": 83,
           "date": "2026-10-14T22:32:08.758713765Z"
         }
       ]
@@ -1622,6 +1632,7 @@
           "version": "1.0.0",
           "sha256": "1a6696eb6353eb49e2cd934011ab495ee7d3baed343c191040ee9f60f5483f01",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 88,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1633,6 +1644,7 @@
           "version": "1.0.0",
           "sha256": "5e7b273e35f2a4f168e4f0fd0163d74cd216ef86eb585187c0c6b018da30e8e6",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 156,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1644,6 +1656,7 @@
           "version": "1.0.0",
           "sha256": "e3fd4d4b93e149697b1acd6163a5dfbf5b95260b52de42589eaa3cfb96a7399b",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 214,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1655,6 +1668,7 @@
           "version": "1.0.0",
           "sha256": "4b1c76f06b2e1aa1ff66cb3bc9bd0a01021ba8a23327ae3d3a58ad985c3d7ef0",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 77,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1666,6 +1680,7 @@
           "version": "1.0.0",
           "sha256": "dcc9c8af8a793c09a8fcf721fdb3c0ac414553877f2366d6cbb7f45020d098fa",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 78,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1677,6 +1692,7 @@
           "version": "1.0.0",
           "sha256": "9d524255a9228efdd2ea642ffc74ee2dbd1d2f0bd23f8767523dcd58a72d7d24",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 356,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1688,6 +1704,7 @@
           "version": "1.0.0",
           "sha256": "b67470aa0a6727e267e1806f110eec63e70fe92f9439436ece7e885ffbc22970",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 262,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1699,6 +1716,7 @@
           "version": "1.0.0",
           "sha256": "338c2353c0162a196fd19305216885624887e8961cb4cebd49e7eb3d1f2115c2",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 254,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1710,6 +1728,7 @@
           "version": "1.0.0",
           "sha256": "cbfd8286ab823e0a18d4ec0fa4f8e2cf5283851550c64712af4ea94026c07c63",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 182,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1721,6 +1740,7 @@
           "version": "1.0.0",
           "sha256": "93601437bafcf23d5fdf8b8debfd221dd255f9270038bea06a70138af0521036",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 133,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1732,6 +1752,7 @@
           "version": "1.0.0",
           "sha256": "bc80de94046d7d50478702cbd46e4103a4d98fd26bd293a80b26f3fd169bf73d",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 267,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1743,6 +1764,7 @@
           "version": "1.0.0",
           "sha256": "8a4e82ab07286decab6f3f8f0d0d8059eecb62337b43f9632aae674bdf350810",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 295,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1754,6 +1776,7 @@
           "version": "1.0.0",
           "sha256": "ed912966c778171738477946e1227588cb47bebce2e8b5d7cb392aa1aa321b27",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 22,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1765,6 +1788,7 @@
           "version": "1.0.0",
           "sha256": "49dd0496ff40e6c1f2987cfc6b99e0c561d58bfc4290f3379d6ef6d3ef874564",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 269,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1776,6 +1800,7 @@
           "version": "1.0.0",
           "sha256": "0ac346d3bb30ae1ee2631d6a121e398bcd04b21e27a3640691dfd6a7ee5e4849",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 82,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1787,6 +1812,7 @@
           "version": "1.0.0",
           "sha256": "5d7bb6056290c82024c05f9e23da9a569ad27dedd133855e392728a3f6fb867c",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 147,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1798,6 +1824,7 @@
           "version": "1.0.0",
           "sha256": "912a151bddcb55b8dde857c00fcbca9821b06480076b7419587fb83b3f8d8180",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 57,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1809,6 +1836,7 @@
           "version": "1.0.0",
           "sha256": "68a02c3e7fa4b51f50dd58a476849b42ce16c7d06943f687f2ed4de57b1a162a",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 411,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1820,6 +1848,7 @@
           "version": "1.0.0",
           "sha256": "44298cd44ca2e45a1ed75d8fa53504e8c6348b9657129f5885e0c3d73a91e049",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 183,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1831,6 +1860,7 @@
           "version": "1.0.0",
           "sha256": "354ad7c057e4afd14e254fb73bda59132c6e5dcee17348021aaf656791006b77",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 126,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1842,6 +1872,7 @@
           "version": "1.0.0",
           "sha256": "acf978e23edbdc326de77359c85c9d6ca5a79a1ace120c682aeac4ef5cbce667",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 106,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1853,6 +1884,7 @@
           "version": "1.0.0",
           "sha256": "2fe13472bb22c22f168963f62d7c65ed42311abfd84093e20b90a5569df81a7f",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 228,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1864,6 +1896,7 @@
           "version": "1.0.0",
           "sha256": "d02eb154fe0d5e0e544cbe2e8f630cc7b2642fb6d607a0562f21de66abe573a8",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 222,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1875,6 +1908,7 @@
           "version": "1.0.0",
           "sha256": "a665c98ad54c69a4a0871c721322ce8b6c7f72bf252ac1bde8c58784720c4dde",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 82,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1886,6 +1920,7 @@
           "version": "1.0.0",
           "sha256": "cbcca60f63f2a7b5b2ef1ef42a5a55d61518be987ecf98835ac91b4ce248daed",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 46,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1897,6 +1932,7 @@
           "version": "1.0.0",
           "sha256": "f3d70aa66386986b3e5a778135f0a3ff1727e37a071589fe05b888690bca29be",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 65,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1908,6 +1944,7 @@
           "version": "1.0.0",
           "sha256": "5eae28ae258e9deb007e3dc71dee71c5a6a5cfab84c95a98f09fa02d16694de7",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 69,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1919,6 +1956,7 @@
           "version": "1.0.0",
           "sha256": "24ff85d24f93ab1acb6d8d72658056ce2ab79afb65e91963afb5e5175e7c4483",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 85,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1930,6 +1968,7 @@
           "version": "1.0.0",
           "sha256": "0d852a378aa50198dc2ff62717a2cf876b185e5f1ca736e6e8751de0c2ad5f16",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 118,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1941,6 +1980,7 @@
           "version": "1.0.0",
           "sha256": "50e878e4c3885793007cde28effa30f583725388643cea0aad83e127cd5e4097",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 18,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1952,6 +1992,7 @@
           "version": "1.0.0",
           "sha256": "c621aa102347a98f07b53af409dacf670fd7b583c86277b0cbce9727a34bd393",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 45,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1963,6 +2004,7 @@
           "version": "1.0.0",
           "sha256": "01e094f332fedfe5b6615181d2f8bede9e3abb65dc716279313d4016af0a1d13",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 454,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1974,6 +2016,7 @@
           "version": "1.0.0",
           "sha256": "b5e1e8599eeed7c67f095023259196dbf6fab4eb838c98b8e396c14cdf432a2a",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 216,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1985,6 +2028,7 @@
           "version": "1.0.0",
           "sha256": "64866a8e522d9ec1597bc9c3d14b878768aa4a6624247d4b3ee305a14cd40740",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 38,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -1996,6 +2040,7 @@
           "version": "1.0.0",
           "sha256": "5a2844c48fb2336ce15edb0a5295ac406e479a03e2efe16bf9f40c7074f93aee",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 166,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2007,6 +2052,7 @@
           "version": "1.0.0",
           "sha256": "7bc7107c0bd77624e82b342e6138e4d38c220ad377385eb9fbaa1ea9f9d6fd84",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 142,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2018,6 +2064,7 @@
           "version": "1.0.0",
           "sha256": "fcf1b170650693d6da4b5d6672c3dc467ef5c05bca421ebef2d2f5da609627ee",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 97,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2029,6 +2076,7 @@
           "version": "1.0.0",
           "sha256": "38bc3be74b545cae186949a14a0048ed0d395f675eb0b55b51c2526ec9a63d8c",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 20,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2040,6 +2088,7 @@
           "version": "1.0.0",
           "sha256": "3fb8d4b04d1f9f243e2a290413e5496aedcab007b16a50a1b38fc6929c00ee31",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 19,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2051,6 +2100,7 @@
           "version": "1.0.0",
           "sha256": "0364406656c28f0e2e7634f6f1e83350316257a764646643fa739d97f8abdd35",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 30,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2062,6 +2112,7 @@
           "version": "1.0.0",
           "sha256": "517f4bb24c3c23f930f5241eefa346445fc25be3c77d3d111343d4a2007cc3ed",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 260,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2073,6 +2124,7 @@
           "version": "1.0.0",
           "sha256": "7bc14870b68ab7a63152cf9704cb0222111b3e5a7356b6d863caa7074dae4a43",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 108,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2084,6 +2136,7 @@
           "version": "1.0.0",
           "sha256": "528d9ea643510304033e8b0d56211a6b2cf750bdbf6330ee5dbc9500ff79f583",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 656,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2766,6 +2819,7 @@
           "version": "1.0.0",
           "sha256": "454920276eb10a4c3b46469c51d87c11f49c008603f1bd3d5c267dcf7c878f58",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 57,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2777,6 +2831,7 @@
           "version": "1.0.0",
           "sha256": "83a8eb6367e700ecd33a76d80148a20cd3c5520935945236b101c590d5bb5885",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 19,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2788,6 +2843,7 @@
           "version": "1.0.0",
           "sha256": "19b4f3886527c8bb835d189422761ce447cc6209a01c04d61876d309e291bed2",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 99,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2799,6 +2855,7 @@
           "version": "1.0.0",
           "sha256": "1b7ec1ce83374509d800d1a84b5a4dc644b9671344ac8717fe0a1e4eb64ce763",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 37,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2810,6 +2867,7 @@
           "version": "1.0.0",
           "sha256": "7ced451b79e84f583d94fec54e655cc451ea4a165406a4fc5345da6ccd4ab72e",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 159,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2821,6 +2879,7 @@
           "version": "1.0.0",
           "sha256": "f1e204a6000c3ba13e9d75e523d61ce01fbc12ddfd1e5a3c5161bafdfa352d8c",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 43,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2832,6 +2891,7 @@
           "version": "1.0.0",
           "sha256": "7448c09680a3ea903e1df1fcabba07ec954bfd4ac626b74c4d8ceb8dbd4af036",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 73,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2843,6 +2903,7 @@
           "version": "1.0.0",
           "sha256": "2b41264fd3ddfe279672aed4045d9f2923b22157ddbf7179a702a976a5dc23a7",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 74,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2854,6 +2915,7 @@
           "version": "1.0.0",
           "sha256": "019c6ae3e37db18bd0cbc25d8be7d389965d4488b629eb47cb52366da7d9a564",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 85,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2865,6 +2927,7 @@
           "version": "1.0.0",
           "sha256": "0b04efd8684d14c01658c803c136e645009def590bc931ee128aa14eb3604c61",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 51,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2876,6 +2939,7 @@
           "version": "1.0.0",
           "sha256": "9fe56f621e9bcd5facc64af4b1a2b99250c66777599c444c49cd7492f71985cf",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 140,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2887,6 +2951,7 @@
           "version": "1.0.0",
           "sha256": "b27af452d8ad17a03dbd9def72f850e45876374047e2121a4ab2ac8a70b1cfb9",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 117,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2898,6 +2963,7 @@
           "version": "1.0.0",
           "sha256": "5dc2a3a8cfe84e6de1991222dc1e9cb1ae64b4fdd0c04889848362ab4e348742",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 166,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2909,6 +2975,7 @@
           "version": "1.0.0",
           "sha256": "941beab8de1f31a4836b3bc3430ef45eea118a3a2a722c0fb7ef667a7c9c3263",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 82,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2920,6 +2987,7 @@
           "version": "1.0.0",
           "sha256": "7aa488dafe8bdb5197c7fb37fcbb9e042fb47f63064f8e19f2ce02ac2fbd05bb",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 159,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2931,6 +2999,7 @@
           "version": "1.0.0",
           "sha256": "f26cfbb7283ab76c7b58bacd726f2f722d933190786e1ae27d57492a2c7c10d3",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 82,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2942,6 +3011,7 @@
           "version": "1.0.0",
           "sha256": "b99b9815ef889d2dab04b3f49c449b7da892d3587fcdd48d8168d4fb2da93810",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 92,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2953,6 +3023,7 @@
           "version": "1.0.0",
           "sha256": "74d6a06f5742ab6db81a2d9b575b4471e33571d7ed33c8e5505fdff769b0cc97",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 60,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2970,6 +3041,7 @@
           "version": "1.1.0",
           "sha256": "004799b383ebc966a912964d23aeb4f980d2f65f092b99fdcf5ef0e5d38725a0",
           "commit": "eb2225e3bb536184501ac840c1ed3be966bad6fe",
+          "tokens": 153,
           "date": "2026-10-13T10:21:23.350067888Z"
         }
       ]
@@ -2981,6 +3053,7 @@
           "version": "1.0.0",
           "sha256": "3e88a9077ef0c0020a96acc2ab5e929755d66e0b25ecee82a190039469df2cac",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 157,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -2992,6 +3065,7 @@
           "version": "1.0.0",
           "sha256": "c5ee69b426115608c4209976d678bdc7beb9a2720e87bc03a5992ce3bd38f07c",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 38,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3003,6 +3077,7 @@
           "version": "1.0.0",
           "sha256": "99603e03cc40466c1337f47db2e2671ecf32bfc27efc785a31a588e6e41c866d",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 26,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3014,6 +3089,7 @@
           "version": "1.0.0",
           "sha256": "8cb3a15a9ea7c8281a973e2594a4f075e7ed037704387a834a3974c1481d35ed",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 39,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3025,6 +3101,7 @@
           "version": "1.0.0",
           "sha256": "40fc51c502fd71ac56a518b0dd80fb7e82842381ad7a69334f4309bd24af497a",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 31,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3036,6 +3113,7 @@
           "version": "1.0.0",
           "sha256": "3a61c049922cef65ba820ccbbf0bbf9c0ac5461f3c8e4bed106b462ac3b04dcb",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 1353,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3047,6 +3125,7 @@
           "version": "1.0.0",
           "sha256": "99458e9b7402091ff0a080c910efcbc536aaa0cf1df21af8f0db48877f0d8bcb",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 142,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3058,6 +3137,7 @@
           "version": "1.0.0",
           "sha256": "12dba432c84bc5e61ab1cb6361af7764c57e7578cf431f30938629764f77ab25",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 138,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3075,6 +3155,7 @@
           "version": "1.1.0",
           "sha256": "0fe8ca2bc3c5a41377eec0859c48cbed7857b0585d3195ccc4dfa8bb8b79cecc",
           "commit": "eb2225e3bb536184501ac840c1ed3be966bad6fe",
+          "tokens": 89,
           "date": "2026-10-13T10:21:23.350067888Z"
         }
       ]
@@ -3086,6 +3167,7 @@
           "version": "1.0.0",
           "sha256": "418554ffd449d86283638a46a8472f31bda95b96c61c3b1c070158f630889382",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 172,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3097,6 +3179,7 @@
           "version": "1.0.0",
           "sha256": "462d22095db7c33d10460999ee3d2f80b78b19a54caebeea3e790f92da0c24bf",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 99,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3108,6 +3191,7 @@
           "version": "1.0.0",
           "sha256": "656c135baf0b7cbf14025d6007299439f8a13bacefce5cc7378d83a0ee22b965",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 149,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3119,6 +3203,7 @@
           "version": "1.0.0",
           "sha256": "36d5b7fab2b9c79900c088c394b8bed91eb766b686ae35a1ba976a18249ed4ee",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 66,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3130,6 +3215,7 @@
           "version": "1.0.0",
           "sha256": "12cb5088bbd53b650234eeec43ed62a5178c4d32e2926299140777616504e89a",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 37,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3141,6 +3227,7 @@
           "version": "1.0.0",
           "sha256": "2708c7a5067bd9fc331bc09dc0ab4df07bda557eabc51c73afb4192804250d5a",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 171,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3152,6 +3239,7 @@
           "version": "1.0.0",
           "sha256": "52664855c1b3f4da9eded552ed38a0cbbf164199fb02e9d434b1f2fedc4469ff",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 58,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3169,6 +3257,7 @@
           "version": "1.1.0",
           "sha256": "15e8e7fe7565ebadd41b75cfa31e7d8faff1f4d4bef80297f6234f7f8341e3cf",
           "commit": "eb2225e3bb536184501ac840c1ed3be966bad6fe",
+          "tokens": 146,
           "date": "2026-10-13T10:21:23.350067888Z"
         }
       ]
@@ -3180,6 +3269,7 @@
           "version": "1.0.0",
           "sha256": "b971c4f4635dacf13eeb1e500de4233c962a1a260f0e4f94bf3d40470f315cdf",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 82,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3191,6 +3281,7 @@
           "version": "1.0.0",
           "sha256": "5ae95c85288e79e5791c4dd8c1e48df640bd144555307273c88cff93ebfda8fa",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 86,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3202,6 +3293,7 @@
           "version": "1.0.0",
           "sha256": "6617d925da67aefcddba635c04529cee856b39d6513b6dfc7819b04ca1c0e2de",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 269,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3213,6 +3305,7 @@
           "version": "1.0.0",
           "sha256": "d7aae760790a4d25f0ed0693c243e8a85019f85b81f24bece1446c193b3a00fc",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 85,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3224,6 +3317,7 @@
           "version": "1.0.0",
           "sha256": "e17f194092dc2849c9424dc1b87e46983835237e5eb1311136b0a97bcf70258c",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 107,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3235,6 +3329,7 @@
           "version": "1.0.0",
           "sha256": "8ebd18ac3186d53a96777d3ed363295a5fbece63024374b048945b37cfb45282",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 52,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3246,6 +3341,7 @@
           "version": "1.0.0",
           "sha256": "ddc7431cc4e05aeb4d60975bb6622553e29cf527f53962f875a481825892f476",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 216,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3257,6 +3353,7 @@
           "version": "1.0.0",
           "sha256": "6bb3887347f5187fddc305f1945f2a5b23702e905e4c55713c6ec2521645bdb5",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 116,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3268,6 +3365,7 @@
           "version": "1.0.0",
           "sha256": "c729d46cebce8bd25c8b6472f6a8c173b13bb204b8f9c3217d8bc614a5cbf8e0",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 137,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3285,6 +3383,7 @@
           "version": "1.1.0",
           "sha256": "dab2e6dc91bf5e5ca4bef677ae5ad9856c3188cfa9954f960c2eadfd8c79b026",
           "commit": "31a05955a51d4f65ae54f50cce06ecbf4b4592ec",
+          "tokens": 145,
           "date": "2026-10-13T11:19:53.906876865Z"
         }
       ]
@@ -3296,6 +3395,7 @@
           "version": "1.0.0",
           "sha256": "e139ca1ec1d6f5c76c4c4862a63d81d71025bb713008d461fab763326bee2e23",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 111,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3307,6 +3407,7 @@
           "version": "1.0.0",
           "sha256": "da5106b2f5c0ba7b3c0a0ae4935f5b80e094c85913afdc67dfe3fa44d76a76ee",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 631,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3324,6 +3425,7 @@
           "version": "1.1.0",
           "sha256": "bacc79eea9d57fba3625c80f15f26e25709d81137c48019c6bd9085bd1682212",
           "commit": "eb2225e3bb536184501ac840c1ed3be966bad6fe",
+          "tokens": 119,
           "date": "2026-10-13T10:21:23.350067888Z"
         }
       ]
@@ -3335,6 +3437,7 @@
           "version": "1.0.0",
           "sha256": "b5e5b1f5c3aaa9c7e3aabef5725cc5a6b4d994a33e810fbdf17fe1b6ace17538",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 190,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3346,6 +3449,7 @@
           "version": "1.0.0",
           "sha256": "b05dcf1f47e367ea3f38acf720d629eaa910fa9e1e3a34763e073f1c70227f7c",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 104,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3357,6 +3461,7 @@
           "version": "1.0.0",
           "sha256": "9209e85de992eb1c6a4bd856066d4c1b44c2ee295ccc4f8f3bff3a0073b5a1c7",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 111,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3368,6 +3473,7 @@
           "version": "1.0.0",
           "sha256": "c45985a99c1ee25e3dc46ab3cb7903bb418246f43b2ecc501d97db7acba31341",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 95,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3379,6 +3485,7 @@
           "version": "1.0.0",
           "sha256": "f419af69db0a4f4cc340ee6832551c16e930e175c52c95596df582f2a5bbb465",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 72,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3390,6 +3497,7 @@
           "version": "1.0.0",
           "sha256": "05d92e2c478a75186b81bca4b17e4c78b66b3c8f2261ba2025f56f614deaff45",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 104,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3401,6 +3509,7 @@
           "version": "1.0.0",
           "sha256": "8254a039ea8201fae28354f7940a9f8b598f4263b60f23828e1ff46f3316e05f",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 127,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3412,6 +3521,7 @@
           "version": "1.0.0",
           "sha256": "9efcff6e5aae5d37b63f6537cd11022f4d4f9856021b2cb359a961a506f60535",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 72,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3423,6 +3533,7 @@
           "version": "1.0.0",
           "sha256": "1379af871c0f65de7694fce6391478ab98ac3e800f1db81dfd4e933a6d859149",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 62,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3434,6 +3545,7 @@
           "version": "1.0.0",
           "sha256": "4852e1cf0de82b3849c8c346d4bf257aa7372cd7f08f81e1c7249a8a1bd32684",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 43,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3445,6 +3557,7 @@
           "version": "1.0.0",
           "sha256": "b499de3634cd51d05fbc5ba6d7d37d8632e789cda8dda99faa6a05df2a8c9062",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 93,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3456,6 +3569,7 @@
           "version": "1.0.0",
           "sha256": "fe1137afcf0c6e97da54747113409efce90b1fd41e520396d04f7b344011e56e",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 51,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3467,6 +3581,7 @@
           "version": "1.0.0",
           "sha256": "aad9c54592faf920187aec7d0a3ac3cdf9b1ccbf29164264a615a9e650d3beee",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 27,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3478,6 +3593,7 @@
           "version": "1.0.0",
           "sha256": "636b633a5714dc3178fd4c0e287354e70b8ef6a9f49601584a0451dc16b0aaa5",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 47,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3489,6 +3605,7 @@
           "version": "1.0.0",
           "sha256": "d63f4379681fb2b61b5789dcbbab26b96ce5318a90861032b22810111e4ae7cd",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 50,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3500,6 +3617,7 @@
           "version": "1.0.0",
           "sha256": "1df55f78f033f65b845d7bddaf2f9c7eee45d33e28d07908affbd8d4c9d80372",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 42,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3511,6 +3629,7 @@
           "version": "1.0.0",
           "sha256": "2a11902d9287311ae05491d34efc93b5c87eb17501b29ecd55be18c360e6883e",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 32,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3522,6 +3641,7 @@
           "version": "1.0.0",
           "sha256": "dfa68b1f21a146c108cb75ab7eccfb13736ee213edbf2db103ebfa7c6e71da46",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 38,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3533,6 +3653,7 @@
           "version": "1.0.0",
           "sha256": "0ec849303dd5eed3c67c312e74c25b5d28152ecc4a551fe8202c0d96eb663731",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 12,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3550,6 +3671,7 @@
           "version": "1.1.0",
           "sha256": "b9cdb2ba5941be7cadc191716427fdaa9020b50a7b779dbf73949ef81e272042",
           "commit": "6f6f575531c95478a4c8c5c65fd553e2946a7992",
+          "tokens": 205,
           "date": "2026-10-13T15:41:59.558069751Z"
         }
       ]
@@ -3561,6 +3683,7 @@
           "version": "1.0.0",
           "sha256": "e41d06c3b60f89ce6210b5146abb05c131af69e17064679c18e55b16144bf434",
           "commit": "6f6f575531c95478a4c8c5c65fd553e2946a7992",
+          "tokens": 159,
           "date": "2026-10-13T15:41:59.558069751Z"
         }
       ]
@@ -3578,6 +3701,7 @@
           "version": "1.1.0",
           "sha256": "14828026d2853f6a98c01332e29f5abf0c92ee01d9a86b600470aa77134d6843",
           "commit": "eb2225e3bb536184501ac840c1ed3be966bad6fe",
+          "tokens": 137,
           "date": "2026-10-13T10:21:23.350067888Z"
         }
       ]
@@ -3589,6 +3713,7 @@
           "version": "1.0.0",
           "sha256": "560d348be6cd8430199cecb63f644dd8fb92e6a522a853cba9e0b090793a773c",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 130,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3600,6 +3725,7 @@
           "version": "1.0.0",
           "sha256": "ceba3b98dacf071f6a189c5bc381f7ae366df9020fcc1d1ea357821eccbb73cd",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 106,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3611,6 +3737,7 @@
           "version": "1.0.0",
           "sha256": "2d4e70277c50ab6f7818b471456401fd420612174b99887f167d11e811ab36c6",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 110,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3628,6 +3755,7 @@
           "version": "1.1.0",
           "sha256": "4c81f971271b4feac1a9ecb3240e413969d0375afb338f98fe2f87648a212e5a",
           "commit": "eb2225e3bb536184501ac840c1ed3be966bad6fe",
+          "tokens": 86,
           "date": "2026-10-13T10:21:23.350067888Z"
         }
       ]
@@ -3639,6 +3767,7 @@
           "version": "1.0.0",
           "sha256": "ed97205ae301b93d598b0da8fac9b9cd00a4bb6feac50662df2900f478145a01",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
+          "tokens": 153,
           "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
@@ -3656,6 +3785,7 @@
           "version": "1.1.0",
           "sha256": "84c279a21cd8431da53be7ca8a1e3324d181c71c29d6764a9aecec140fea7628",
           "commit": "eb2225e3bb536184501ac840c1ed3be966bad6fe",
+          "tokens": 61,
           "date": "2026-10-13T10:21:23.350067888Z"
         }
       ]
@@ -3673,6 +3803,7 @@
           "version": "1.1.0",
           "sha256": "3fb38dfd7f5eb2bff7f1d9c3a951d922c3169631e63df005808b88fe4ce938f4",
           "commit": "eb2225e3bb536184501ac840c1ed3be966bad6fe",
+          "tokens": 113,
           "date": "2026-10-13T10:21:23.350067888Z"
         }
       ]
