@@ -340,6 +340,17 @@
         }
       ]
     },
+    "commands/knowledge": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "4bc4f182a1b6797f9687f9dddcd213f0381c901545da60cd3dc4ec14fe6312ab",
+          "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
+          "date": "2026-10-15T17:26:07.241510474Z"
+        }
+      ]
+    },
     "commands/konfig": {
       "latest": "1.0.0",
       "versions": [
@@ -414,6 +425,17 @@
           "sha256": "75ac71f91c24911eb911f06d91095f98239232fffbdd3ef6d0170fd481efa99d",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        }
+      ]
+    },
+    "commands/recall": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "fc0c2ff2c98fe0b5dd1574e47c3a287036c34fc9399c5cea1e1e35bfb9280429",
+          "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
+          "date": "2026-10-15T17:26:07.241510474Z"
         }
       ]
     },
@@ -1686,7 +1708,7 @@
       ]
     },
     "harness/compaction-update-user": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
@@ -1694,11 +1716,18 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 356,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "8aae9c3af6ea66e2ac34cb4c2494355d3797f08372ae4b045222295e9c9b77bf",
+          "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
+          "tokens": 403,
+          "date": "2026-10-15T17:26:07.241510474Z"
         }
       ]
     },
     "harness/compaction-user": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "versions": [
         {
           "version": "1.0.0",
@@ -1706,6 +1735,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 262,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "c39ac07096ac4cd19e1f304773c5ef92f802703fe400afd66e6522a6f8a191c2",
+          "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
+          "tokens": 294,
+          "date": "2026-10-15T17:26:07.241510474Z"
         }
       ]
     },
@@ -1874,6 +1910,18 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 106,
           "date": "2026-10-10T03:09:18.488367863Z"
+        }
+      ]
+    },
+    "harness/knowledge-extract-system": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "ac3818fac81e50ea74c8e86dd256585d7fb8d957b15d6938cf8c5afa3bb2e76f",
+          "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
+          "tokens": 243,
+          "date": "2026-10-15T17:26:07.241510474Z"
         }
       ]
     },
@@ -2650,7 +2698,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "1.0.5",
+      "latest": "1.0.6",
       "versions": [
         {
           "version": "1.0.0",
@@ -2687,6 +2735,12 @@
           "sha256": "df019d07e6fb542b7ae3bfc67edc3bfac19cfc47524fb63c79679e4ea674e863",
           "commit": "b9ae9a26efea318866f7dcd77065cfbbeb8ea6be",
           "date": "2026-10-15T00:24:30.02418423Z"
+        },
+        {
+          "version": "1.0.6",
+          "sha256": "f38421b1a7b78cdc2304af2f88e33381a4c28bbc2585d16459b3f82e5fd56107",
+          "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
+          "date": "2026-10-15T17:26:07.241510474Z"
         }
       ]
     },
@@ -2709,6 +2763,17 @@
           "sha256": "07a6d50376abaa46d073e4eaa1bf4d3a2622424fa91e67df7e65340f0ac1d92b",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        }
+      ]
+    },
+    "templates/knowledge": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "3e11948a801ba8892b08193d370a82989f0bcabad6242407d261b2fe2305a244",
+          "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
+          "date": "2026-10-15T17:26:07.241510474Z"
         }
       ]
     },
@@ -3271,6 +3336,54 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 82,
           "date": "2026-10-10T03:09:18.488367863Z"
+        }
+      ]
+    },
+    "tools/knowledge_card_get": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "eb1260d805b5489af54090a08eb4cbc1f1f06da0bf9278a3ab851e7385a92f28",
+          "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
+          "tokens": 113,
+          "date": "2026-10-15T17:26:07.241510474Z"
+        }
+      ]
+    },
+    "tools/knowledge_card_update": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "38813eccbb84e1f74ed0a417739c9ee3958ffc8d588a1d3db0ca0c390f9fae1b",
+          "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
+          "tokens": 121,
+          "date": "2026-10-15T17:26:07.241510474Z"
+        }
+      ]
+    },
+    "tools/knowledge_note_save": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "da7435b305019210f1fef15ca87320cf9943dd1b7044e14017aa9d6d32f47212",
+          "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
+          "tokens": 287,
+          "date": "2026-10-15T17:26:07.241510474Z"
+        }
+      ]
+    },
+    "tools/knowledge_recall": {
+      "latest": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "7a77bbac2bc33f0e957db4bc783c911976cd28e1019c8752420b5223026aa8a3",
+          "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
+          "tokens": 143,
+          "date": "2026-10-15T17:26:07.241510474Z"
         }
       ]
     },
