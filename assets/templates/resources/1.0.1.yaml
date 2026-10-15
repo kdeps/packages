@@ -1,0 +1,183 @@
+version: 1.0.1
+files:
+    calendar.yaml.j2: |
+        apiVersion: v2
+        kind: Resource
+        metadata:
+          actionId: calendar
+          name: Calendar
+          description: Read and write local ICS (iCalendar) files
+        run:
+          calendar:
+            # action: list | create | modify | delete
+            action: list
+
+            # Path to the .ics file (relative to the agent's FSRoot)
+            filePath: "events.ics"
+
+            # ── list options ──────────────────────────────────────────────────────
+            # since: "2026-01-01"       # only events starting on or after this date
+            # before: "2026-12-31"      # only events starting before this date
+            # limit: 10                 # maximum number of events to return
+            # search: "team meeting"    # substring match on summary or description
+
+            # ── create / modify fields ────────────────────────────────────────────
+            # uid: "my-unique-event-id" # omit to auto-generate on create
+            # summary: "Team Meeting"
+            # description: "Weekly sync"
+            # location: "Conference Room A"
+            # start: "2026-03-16T10:00:00Z"
+            # end:   "2026-03-16T11:00:00Z"
+            # allDay: false
+            # attendees:
+            #   - "alice@example.com"
+            #   - "bob@example.com"
+            # recurrence: "FREQ=WEEKLY;BYDAY=MO"  # RRULE string
+
+            # ── timing ────────────────────────────────────────────────────────────
+            # timeout: "30s"
+    exec.yaml.j2: |
+        apiVersion: v2
+        kind: Resource
+        metadata:
+          actionId: exec
+          name: Shell Command
+          description: Execute shell commands
+        run:
+          exec:
+            command: "echo '{% raw %}{{ get('message', 'Hello World') }}{% endraw %}'"
+            timeout: "30s"
+    http-client.yaml.j2: |
+        apiVersion: v2
+        kind: Resource
+        metadata:
+          actionId: httpClient
+          name: HTTP Client
+          description: HTTP client for making API calls
+        run:
+          httpClient:
+            method: GET
+            url: "{% raw %}{{ get('url', 'https://api.example.com/data') }}{% endraw %}"
+            headers:
+              Content-Type: "application/json"
+              Authorization: "Bearer {% raw %}{{ get('token', '') }}{% endraw %}"
+            timeout: "30s"
+          validations:
+            required:
+              - url
+            rules:
+              - field: url
+                type: url
+                message: "URL must be a valid HTTP/HTTPS URL"
+    llm.yaml.j2: |
+        apiVersion: v2
+        kind: Resource
+        metadata:
+          actionId: llm
+          name: LLM Processing
+          description: Large Language Model interaction
+        run:
+          chat:
+            model: llama3.2:1b  # llamafile alias - auto-downloaded to ~/.kdeps/models (~1.1 GB, first run only)
+            # Default backend is "file": the model runs as a local llamafile, no server install needed.
+            # Quantization variants: llama3.2:1b-q6, llama3.2:1b-q8. List all: kdeps llamafile list
+            role: user
+            prompt: "{% raw %}{{ get('input', 'Hello, how can you help me?') }}{% endraw %}"
+            jsonResponse: true
+            jsonResponseKeys:
+              - answer
+              - reasoning
+            timeout: "60s"
+          validations:
+            required:
+              - input
+            rules:
+              - field: input
+                type: string
+                minLength: 1
+                message: "Input is required"
+    python.yaml.j2: |
+        apiVersion: v2
+        kind: Resource
+        metadata:
+          actionId: python
+          name: Python Script
+          description: Execute Python code
+        run:
+          python:
+            script: |
+              # Your Python code here
+              import json
+              import sys
+
+              # Access input via environment or stdin
+              input_data = "{% raw %}{{ get('input', '{}') }}{% endraw %}"
+
+              # Process data
+              result = {"processed": True, "input": input_data}
+
+              # Output result as JSON (will be captured as stdout)
+              print(json.dumps(result))
+            timeout: "60s"
+    response.yaml.j2: |
+        apiVersion: v2
+        kind: Resource
+        metadata:
+          actionId: response
+          name: API Response
+          description: Format API response
+        run:
+          apiResponse:
+            response:
+              success: true
+              data:
+                result: "{% raw %}{{ get('result') }}{% endraw %}"
+              meta:
+                timestamp: "{% raw %}{{ info('current_time') }}{% endraw %}"
+                requestId: "{% raw %}{{ info('request.ID') }}{% endraw %}"
+    search.yaml.j2: |
+        apiVersion: v2
+        kind: Resource
+        metadata:
+          actionId: search
+          name: Web Search
+          description: Search the web or local files and return URLs for use with the scraper resource
+        run:
+          search:
+            provider: brave         # brave | serpapi | duckduckgo | tavily | local
+            query: "{{ get('q') }}"
+            # apiKey: "{{ env('BRAVE_API_KEY') }}"
+            # limit: 10
+            # safeSearch: false
+            # region: "us"
+            # timeout: "30s"
+            #
+            # Local filesystem search (provider: local):
+            # path: "."             # root directory (default: FSRoot)
+            # glob: "**/*.md"       # filename pattern
+            # query: "search term"  # optional content match
+    sql.yaml.j2: |
+        apiVersion: v2
+        kind: Resource
+        metadata:
+          actionId: sql
+          name: SQL Query
+          description: Execute SQL database queries
+        run:
+          component:
+            name: sql
+            with:
+              connectionName: main
+              query: "SELECT * FROM users WHERE id = $1"
+              params:
+                - "{% raw %}{{ get('id') }}{% endraw %}"
+              format: json
+              maxRows: 100
+              timeout: "30s"
+          validations:
+            required:
+              - id
+            rules:
+              - field: id
+                type: integer
+                message: "ID must be a valid integer"
