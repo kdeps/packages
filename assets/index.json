@@ -515,7 +515,7 @@
       ]
     },
     "commands/search": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "description": "Search the indexed directory and feed the results to the model",
       "versions": [
         {
@@ -523,6 +523,12 @@
           "sha256": "bfff3caf046ee89ab5f0a5bac99292bd29496483749c7c66582f47d84cb609fa",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "1fbb415e9c6021ce5c896571ea5467f03e7f167e5b202dcc030d8ba0a6de44b1",
+          "commit": "89430f9d7c3a0a9daf3de7919abcab1f8b20f2e1",
+          "date": "2026-10-16T19:56:21.208887141Z"
         }
       ]
     },
@@ -3515,8 +3521,8 @@
       ]
     },
     "tools/knowledge_card_update": {
-      "latest": "1.1.0",
-      "description": "Set a card's status and/or next step and stamp its updated date. This is the only place status and the next step are written: never put them in a note. Without a name, updates the working directory's project card (created on first use). Status archived moves the project folder to archive/.",
+      "latest": "1.2.0",
+      "description": "Set a card's status and/or next step and stamp its updated date. This is the only place status and the next step are written: never put them in a note. Without a name, updates the working directory's project card (created on first use). Status archived moves the project folder to archive/. add_search_folder links a folder outside the project (docs, a shared library) so recall and search_local cover it too, and indexes it.",
       "versions": [
         {
           "version": "1.0.0",
@@ -3531,6 +3537,13 @@
           "commit": "b5797744e9751cc4c0fdba10325a2e13bed71ce2",
           "tokens": 139,
           "date": "2026-10-15T22:53:44.300825358Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "301195139a770ec4a5aab44712f895fc5598eb9eba812e98dc2ce704f7f4c028",
+          "commit": "89430f9d7c3a0a9daf3de7919abcab1f8b20f2e1",
+          "tokens": 231,
+          "date": "2026-10-16T19:56:21.208887141Z"
         }
       ]
     },
@@ -3736,8 +3749,8 @@
       ]
     },
     "tools/search_local": {
-      "latest": "1.0.0",
-      "description": "Search for text patterns in local files using ripgrep. Returns matching files with a snippet, and (when the query is found) a match_id/line/revision - pass match_id to read_file to jump straight to that hit. Use for finding usages, patterns, or strings across the codebase. Requires: path (directory to search), query (search term). Optional: glob (file pattern), limit (max results, default 3).",
+      "latest": "1.1.0",
+      "description": "Search for text patterns in local files using ripgrep. Returns matching files with a snippet, and (when the query is found) a match_id/line/revision - pass match_id to read_file to jump straight to that hit. Use for finding usages, patterns, or strings across the codebase. Requires: query (search term). path is the directory to search; leave it out to search every folder of the working project (its own and the search folders its card lists). Optional: glob (file pattern), limit (max results, default 3).",
       "versions": [
         {
           "version": "1.0.0",
@@ -3745,6 +3758,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 190,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "cb6b9bb8cd451c542c4ded80429e08ca40ec79c8c6981d94abd5d3f187cad92b",
+          "commit": "89430f9d7c3a0a9daf3de7919abcab1f8b20f2e1",
+          "tokens": 225,
+          "date": "2026-10-16T19:56:21.208887141Z"
         }
       ]
     },
