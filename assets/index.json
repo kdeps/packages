@@ -2767,7 +2767,7 @@
       ]
     },
     "templates/knowledge": {
-      "latest": "2.0.0",
+      "latest": "2.1.0",
       "versions": [
         {
           "version": "1.0.0",
@@ -2780,6 +2780,12 @@
           "sha256": "0c06714684c6a4f238d0a193f43ea581a11154b3f876972f1d9ad8ed28995afd",
           "commit": "b5797744e9751cc4c0fdba10325a2e13bed71ce2",
           "date": "2026-10-15T22:53:44.300825358Z"
+        },
+        {
+          "version": "2.1.0",
+          "sha256": "6925c32d39ee761eb14b567136525693e3b72cc230d342b051ce5ec2f2d12e84",
+          "commit": "c3de6d5e6d8f517a12b04975a3081826ff2bb6a9",
+          "date": "2026-10-16T02:13:17.63141169Z"
         }
       ]
     },
