@@ -3,6 +3,7 @@
     "actions/accept_last": {
       "latest": "1.0.0",
       "description": "Accept the most recent judge-panel response as final once the revise-and-rejudge iteration budget is spent, regardless of outcome -- a judge panel must never block a turn indefinitely.",
+      "category": "evals",
       "versions": [
         {
           "version": "1.0.0",
@@ -15,6 +16,7 @@
     "actions/block": {
       "latest": "1.0.0",
       "description": "Refuse further distinct tool calls in one category once its per-turn budget is exhausted. A repeat of an already-attempted call is never blocked -- only new, distinct calls draw from the budget.",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -27,6 +29,7 @@
     "actions/cap": {
       "latest": "1.0.0",
       "description": "Bound a collection to a fixed count while building it, keeping priority/recency order instead of growing unboundedly.",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -39,6 +42,7 @@
     "actions/compact": {
       "latest": "1.0.0",
       "description": "Summarize older conversation history into a checkpoint, keeping the most recent turns verbatim. Used by both auto-compact (full-context-window safety net) and fold (a tighter, more frequent trigger cadence for the same action).",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -51,6 +55,7 @@
     "actions/drop_oldest": {
       "latest": "1.0.0",
       "description": "Drop the oldest complete entries from a growing in-flight collection to stay under a size budget, announcing the drop so nothing goes unexplained.",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -63,6 +68,7 @@
     "actions/fail_handshake": {
       "latest": "1.0.0",
       "description": "End a session-integrity handshake challenge as failed once its round budget is spent without the model producing the expected grounding call.",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -75,6 +81,7 @@
     "actions/fail_task": {
       "latest": "1.0.0",
       "description": "Escalate a stalled goal-directed task (reanchor, narrow tools, force close, then fail forward) and eventually close it so the loop can never get trapped on one task.",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -87,6 +94,7 @@
     "actions/force_answer": {
       "latest": "1.0.0",
       "description": "End the current tool-calling loop and force a final text answer from whatever was gathered, instead of letting the model keep spinning.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -99,6 +107,7 @@
     "actions/reject": {
       "latest": "1.0.0",
       "description": "Refuse an operation whose input exceeds a size limit, returning an error instead of truncating and proceeding.",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -111,6 +120,7 @@
     "actions/truncate": {
       "latest": "1.0.0",
       "description": "Shorten oversized content to a size budget, appending a marker noting what was cut, instead of refusing the operation outright.",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -123,6 +133,7 @@
     "commands/autocontext": {
       "latest": "1.0.0",
       "description": "Show or toggle auto-detecting command/file mentions in chat input",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -135,6 +146,7 @@
     "commands/clear": {
       "latest": "1.0.0",
       "description": "Clear the conversation history",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -147,6 +159,7 @@
     "commands/compact": {
       "latest": "1.0.0",
       "description": "Compact conversation history (keep recent turns)",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -159,6 +172,7 @@
     "commands/context": {
       "latest": "1.0.0",
       "description": "Show current context window size",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -171,6 +185,7 @@
     "commands/copy": {
       "latest": "1.0.0",
       "description": "Copy the last assistant response to the system clipboard",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -183,6 +198,7 @@
     "commands/editor": {
       "latest": "1.0.0",
       "description": "Open $EDITOR to compose a long prompt",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -195,6 +211,7 @@
     "commands/efficiency": {
       "latest": "1.0.0",
       "description": "Show or tune efficiency enforcement (soft stops on read-only loops; persists)",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -207,6 +224,7 @@
     "commands/exit": {
       "latest": "1.0.0",
       "description": "Exit kdeps (also Ctrl+D)",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -219,6 +237,7 @@
     "commands/explain": {
       "latest": "1.0.0",
       "description": "Explain how something in this project works, reading the code first",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -231,6 +250,7 @@
     "commands/fold": {
       "latest": "1.0.0",
       "description": "Lighter, more frequent checkpoint-only summarize+archive (default: auto on, 2000 tokens, 5 items)",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -243,6 +263,7 @@
     "commands/frugal": {
       "latest": "1.0.1",
       "description": "Spend fewer tokens - apply the frugal preset to every token-economy event",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -265,6 +286,7 @@
     "commands/goal": {
       "latest": "1.0.0",
       "description": "Show the active goal's task list and progress",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -277,6 +299,7 @@
     "commands/handshake": {
       "latest": "1.0.0",
       "description": "Show or toggle the mandatory session-integrity tool-call check (off by default)",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -289,6 +312,7 @@
     "commands/harness": {
       "latest": "1.0.0",
       "description": "List harness sections (system-prompt text) with their enabled/disabled state",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -301,6 +325,7 @@
     "commands/help": {
       "latest": "1.0.0",
       "description": "Show this help message",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -313,6 +338,7 @@
     "commands/history": {
       "latest": "1.0.0",
       "description": "Show recent conversation turns",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -325,6 +351,7 @@
     "commands/instruct": {
       "latest": "1.0.0",
       "description": "Brief the model on kdeps (tools, calling, memory, modes); primes the next prompt",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -337,6 +364,7 @@
     "commands/instruct-now": {
       "latest": "1.0.0",
       "description": "Same briefing, sent as a turn now - the model reads and acknowledges it on the spot",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -347,20 +375,28 @@
       ]
     },
     "commands/judges": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "description": "Show the configured judge panel (reviews each turn's final output)",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
           "sha256": "7863e4a97d322cd2f76feae8026b60f4629dfa87dcc190564a5807414d6163d9",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "2115fb682d13fd9a055d98a27ffddd297c569c8923f2fa32e7183895ff1e23b6",
+          "commit": "96a6b82c433a8c582bc9ce9c2c1ac5e01359089e",
+          "date": "2026-10-17T21:32:39.977848455Z"
         }
       ]
     },
     "commands/kartographer": {
       "latest": "1.0.0",
       "description": "Show a live map of the internal data-flow pipelines",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -373,6 +409,7 @@
     "commands/knowledge": {
       "latest": "1.0.0",
       "description": "Show whether the knowledge vault is on, and where it is",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -385,6 +422,7 @@
     "commands/konfig": {
       "latest": "1.0.0",
       "description": "Export tuning, harness, themes, and skills to a self-contained YAML file (default ./konfig.yaml)",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -397,6 +435,7 @@
     "commands/login": {
       "latest": "1.0.0",
       "description": "Sign in again (m365 backend): switch accounts or recover a revoked session",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -409,6 +448,7 @@
     "commands/memory": {
       "latest": "1.0.0",
       "description": "Show memory store overview (entry count, most recent entries)",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -421,6 +461,7 @@
     "commands/model": {
       "latest": "1.0.0",
       "description": "Show or set the LLM model",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -433,6 +474,7 @@
     "commands/permission": {
       "latest": "1.0.0",
       "description": "Show or set the tool permission mode for this session",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -445,6 +487,7 @@
     "commands/prompt": {
       "latest": "1.0.0",
       "description": "Show the exact messages+tools sent to the LLM on the last call, with token estimates",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -457,6 +500,7 @@
     "commands/prompts": {
       "latest": "1.0.0",
       "description": "List loaded prompt templates",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -469,6 +513,7 @@
     "commands/recall": {
       "latest": "1.0.0",
       "description": "Show the knowledge vault notes recalled for the last turn, and why",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -481,6 +526,7 @@
     "commands/refine": {
       "latest": "1.0.0",
       "description": "Show or toggle pre-turn prompt refinement (on by default)",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -493,6 +539,7 @@
     "commands/reload": {
       "latest": "1.0.0",
       "description": "Reload skills, prompt templates, and instructions from disk",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -505,6 +552,7 @@
     "commands/review": {
       "latest": "1.0.0",
       "description": "Review the uncommitted changes in this repository (optionally with a focus, e.g. /review error handling)",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -517,6 +565,7 @@
     "commands/search": {
       "latest": "1.1.0",
       "description": "Search the indexed directory and feed the results to the model",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -535,6 +584,7 @@
     "commands/session": {
       "latest": "1.0.0",
       "description": "Manage saved sessions",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -547,6 +597,7 @@
     "commands/settings": {
       "latest": "1.0.0",
       "description": "Open the tool/skill selector and save selections",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -559,6 +610,7 @@
     "commands/skills": {
       "latest": "1.0.0",
       "description": "List loaded skills",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -571,6 +623,7 @@
     "commands/theme": {
       "latest": "1.0.0",
       "description": "Show or set the REPL's look (normal, black, linux, vim, emacs, or custom); list shows built-in vs custom",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -583,6 +636,7 @@
     "commands/thinking": {
       "latest": "1.0.0",
       "description": "Show or set extended reasoning/thinking mode",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -595,6 +649,7 @@
     "commands/thorough": {
       "latest": "1.0.1",
       "description": "Keep more context - apply the thorough preset to every token-economy event",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -617,6 +672,7 @@
     "commands/tools": {
       "latest": "1.0.0",
       "description": "Show or toggle the lean/full tool set for this session",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -629,6 +685,7 @@
     "commands/turo": {
       "latest": "1.0.0",
       "description": "Show or set the turo prompt reducer (turo backend only)",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -641,6 +698,7 @@
     "commands/update": {
       "latest": "1.0.0",
       "description": "Update harness, tools, themes, models, templates (no args: all)",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -653,6 +711,7 @@
     "commands/upgrade": {
       "latest": "1.0.0",
       "description": "Check for and install the latest stable kdeps release",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -665,6 +724,7 @@
     "components/browser": {
       "latest": "1.0.0",
       "description": "Drive a real browser with Playwright - navigate, click, fill, type, upload, select, check, hover, scroll, press, clear, evaluate, screenshot, wait",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -681,6 +741,7 @@
     "components/email": {
       "latest": "1.0.0",
       "description": "Send email over SMTP and read, search, modify, list or delete IMAP mailboxes",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -697,6 +758,7 @@
     "components/file": {
       "latest": "1.0.0",
       "description": "Structured filesystem operations (read, write, patch, list, delete, exists, mkdir, copy, move, append)",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -713,6 +775,7 @@
     "components/git": {
       "latest": "1.0.1",
       "description": "Structured git operations (status, diff, log, show, branch, remote, add, commit, checkout, init, clone, push, pull)",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -735,6 +798,7 @@
     "components/ocr": {
       "latest": "1.0.2",
       "description": "Extract text from an image with the tesseract CLI",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -763,6 +827,7 @@
     "components/scraper": {
       "latest": "1.0.1",
       "description": "Fetch a web page and return its text, optionally only the elements matching a CSS selector",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -785,6 +850,7 @@
     "components/searchWeb": {
       "latest": "1.0.1",
       "description": "Search the web - DuckDuckGo by default, Brave, Bing or Tavily with an API key - and return title/url/snippet results",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -807,6 +873,7 @@
     "components/sql": {
       "latest": "1.0.0",
       "description": "Run SQL against PostgreSQL, MySQL/MariaDB, SQLite, SQL Server or Oracle - one query, or several in a transaction",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -823,6 +890,7 @@
     "components/transcribe": {
       "latest": "1.0.1",
       "description": "Transcribe audio or video to text with a Whisper API or offline with whisper.cpp",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -845,6 +913,7 @@
     "components/twiml": {
       "latest": "1.0.0",
       "description": "Build a TwiML voice response (say, play, pause, gather, dial, record, hangup, reject, redirect) for a phone webhook",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -860,6 +929,7 @@
     },
     "defaults/executors": {
       "latest": "1.0.3",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -889,6 +959,7 @@
     },
     "docker/image": {
       "latest": "1.0.0",
+      "category": "deploy",
       "versions": [
         {
           "version": "1.0.0",
@@ -900,6 +971,7 @@
     },
     "events/auto-compact": {
       "latest": "1.0.2",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -926,6 +998,7 @@
     },
     "events/bash-call-budget": {
       "latest": "1.0.2",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -952,6 +1025,7 @@
     },
     "events/code-call-budget": {
       "latest": "1.0.2",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -978,6 +1052,7 @@
     },
     "events/convergence-block": {
       "latest": "1.0.2",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1004,6 +1079,7 @@
     },
     "events/efficiency": {
       "latest": "1.0.1",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1024,6 +1100,7 @@
     },
     "events/efficiency-actions": {
       "latest": "1.0.1",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1044,6 +1121,7 @@
     },
     "events/efficiency-bash": {
       "latest": "1.0.1",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1064,6 +1142,7 @@
     },
     "events/efficiency-code": {
       "latest": "1.0.1",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1084,6 +1163,7 @@
     },
     "events/efficiency-failures": {
       "latest": "1.0.1",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1104,6 +1184,7 @@
     },
     "events/efficiency-file": {
       "latest": "1.0.1",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1124,6 +1205,7 @@
     },
     "events/efficiency-reads": {
       "latest": "1.0.1",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1144,6 +1226,7 @@
     },
     "events/efficiency-stops": {
       "latest": "1.0.1",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1164,6 +1247,7 @@
     },
     "events/efficiency-tighten": {
       "latest": "1.0.1",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1184,6 +1268,7 @@
     },
     "events/efficiency-verbose": {
       "latest": "1.0.1",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1204,6 +1289,7 @@
     },
     "events/efficiency-web": {
       "latest": "1.0.1",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1224,6 +1310,7 @@
     },
     "events/file-call-budget": {
       "latest": "1.0.2",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1250,6 +1337,7 @@
     },
     "events/file-read-limit": {
       "latest": "1.0.2",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1276,6 +1364,7 @@
     },
     "events/fold": {
       "latest": "1.0.2",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -1302,6 +1391,7 @@
     },
     "events/force-answer-digest": {
       "latest": "1.0.2",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -1328,6 +1418,7 @@
     },
     "events/handshake-timeout": {
       "latest": "1.0.2",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1354,6 +1445,7 @@
     },
     "events/history-window-trim": {
       "latest": "1.0.2",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -1380,6 +1472,7 @@
     },
     "events/identical-tool-calls": {
       "latest": "1.0.2",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1406,6 +1499,7 @@
     },
     "events/judge-iterations": {
       "latest": "1.0.2",
+      "category": "evals",
       "versions": [
         {
           "version": "1.0.0",
@@ -1432,6 +1526,7 @@
     },
     "events/judge-max-rounds": {
       "latest": "1.0.2",
+      "category": "evals",
       "versions": [
         {
           "version": "1.0.0",
@@ -1458,6 +1553,7 @@
     },
     "events/memory-chain-max": {
       "latest": "1.0.2",
+      "category": "memory",
       "versions": [
         {
           "version": "1.0.0",
@@ -1484,6 +1580,7 @@
     },
     "events/memory-focus-max": {
       "latest": "1.0.2",
+      "category": "memory",
       "versions": [
         {
           "version": "1.0.0",
@@ -1510,6 +1607,7 @@
     },
     "events/memory-keys-limit": {
       "latest": "1.0.2",
+      "category": "memory",
       "versions": [
         {
           "version": "1.0.0",
@@ -1536,6 +1634,7 @@
     },
     "events/memory-prompt-limit": {
       "latest": "1.0.2",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -1562,6 +1661,7 @@
     },
     "events/rel-memory-limit": {
       "latest": "1.0.2",
+      "category": "memory",
       "versions": [
         {
           "version": "1.0.0",
@@ -1588,6 +1688,7 @@
     },
     "events/task-round-budget": {
       "latest": "1.0.2",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1614,6 +1715,7 @@
     },
     "events/tool-error-truncate": {
       "latest": "1.0.2",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -1640,6 +1742,7 @@
     },
     "events/tool-result-truncate": {
       "latest": "1.0.2",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -1666,6 +1769,7 @@
     },
     "events/unproductive-rounds": {
       "latest": "1.0.2",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1692,6 +1796,7 @@
     },
     "events/web-call-budget": {
       "latest": "1.0.2",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1718,6 +1823,7 @@
     },
     "harness/accuracy": {
       "latest": "1.1.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -1737,6 +1843,7 @@
     },
     "harness/autonomy": {
       "latest": "1.1.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -1756,6 +1863,7 @@
     },
     "harness/branch-summary": {
       "latest": "1.0.0",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -1768,6 +1876,7 @@
     },
     "harness/code": {
       "latest": "1.1.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -1787,6 +1896,7 @@
     },
     "harness/compaction-system": {
       "latest": "1.0.0",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -1799,6 +1909,7 @@
     },
     "harness/compaction-update-user": {
       "latest": "1.0.1",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -1818,6 +1929,7 @@
     },
     "harness/compaction-user": {
       "latest": "1.0.1",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -1837,6 +1949,7 @@
     },
     "harness/edit-workflow": {
       "latest": "1.1.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -1856,6 +1969,7 @@
     },
     "harness/errors": {
       "latest": "1.1.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -1875,6 +1989,7 @@
     },
     "harness/goal-confirm-system": {
       "latest": "1.0.0",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -1887,6 +2002,7 @@
     },
     "harness/goal-plan-system": {
       "latest": "1.0.0",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -1899,6 +2015,7 @@
     },
     "harness/handshake": {
       "latest": "1.0.0",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1911,6 +2028,7 @@
     },
     "harness/handshake-ack": {
       "latest": "1.0.0",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1923,6 +2041,7 @@
     },
     "harness/handshake-evidence": {
       "latest": "1.0.0",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1935,6 +2054,7 @@
     },
     "harness/handshake-evidence-praise": {
       "latest": "1.0.0",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1947,6 +2067,7 @@
     },
     "harness/handshake-evidence-retry": {
       "latest": "1.0.0",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -1959,6 +2080,7 @@
     },
     "harness/honesty": {
       "latest": "1.1.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -1978,6 +2100,7 @@
     },
     "harness/internals": {
       "latest": "1.1.0",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -1997,6 +2120,7 @@
     },
     "harness/invoke-example": {
       "latest": "1.0.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2009,6 +2133,7 @@
     },
     "harness/judge-roster-system": {
       "latest": "1.0.0",
+      "category": "evals",
       "versions": [
         {
           "version": "1.0.0",
@@ -2021,6 +2146,7 @@
     },
     "harness/judge-system": {
       "latest": "1.0.0",
+      "category": "evals",
       "versions": [
         {
           "version": "1.0.0",
@@ -2033,6 +2159,7 @@
     },
     "harness/knowledge-extract-system": {
       "latest": "1.0.0",
+      "category": "memory",
       "versions": [
         {
           "version": "1.0.0",
@@ -2045,6 +2172,7 @@
     },
     "harness/m365-sandbox": {
       "latest": "1.0.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2057,6 +2185,7 @@
     },
     "harness/memory": {
       "latest": "1.1.0",
+      "category": "memory",
       "versions": [
         {
           "version": "1.0.0",
@@ -2076,6 +2205,7 @@
     },
     "harness/narration": {
       "latest": "1.1.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2095,6 +2225,7 @@
     },
     "harness/nudge-action": {
       "latest": "1.0.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2107,6 +2238,7 @@
     },
     "harness/nudge-edit-unchanged": {
       "latest": "1.0.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2119,6 +2251,7 @@
     },
     "harness/nudge-fake-tool-response": {
       "latest": "1.0.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2131,6 +2264,7 @@
     },
     "harness/nudge-give-up": {
       "latest": "1.0.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2143,6 +2277,7 @@
     },
     "harness/nudge-sandbox-hallucination": {
       "latest": "1.0.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2155,6 +2290,7 @@
     },
     "harness/nudge-sandbox-hallucination-qualifier": {
       "latest": "1.0.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2167,6 +2303,7 @@
     },
     "harness/nudge-unresolved-failure": {
       "latest": "1.0.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2179,6 +2316,7 @@
     },
     "harness/output": {
       "latest": "1.1.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2198,6 +2336,7 @@
     },
     "harness/refine-system": {
       "latest": "1.0.0",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -2210,6 +2349,7 @@
     },
     "harness/repeat-offense-note": {
       "latest": "1.0.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2222,6 +2362,7 @@
     },
     "harness/safety": {
       "latest": "1.1.0",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -2241,6 +2382,7 @@
     },
     "harness/scope": {
       "latest": "1.1.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2260,6 +2402,7 @@
     },
     "harness/skills-preamble": {
       "latest": "1.0.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2272,6 +2415,7 @@
     },
     "harness/tool-call-early-praise": {
       "latest": "1.0.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2284,6 +2428,7 @@
     },
     "harness/tool-call-recovery-praise": {
       "latest": "1.0.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2296,6 +2441,7 @@
     },
     "harness/tool-call-sandbox-recovery-praise": {
       "latest": "1.0.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2308,6 +2454,7 @@
     },
     "harness/tools": {
       "latest": "1.1.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2327,6 +2474,7 @@
     },
     "harness/tools-reminder": {
       "latest": "1.0.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2339,6 +2487,7 @@
     },
     "harness/use-kdeps-tools": {
       "latest": "1.1.0",
+      "category": "harness",
       "versions": [
         {
           "version": "1.0.0",
@@ -2358,6 +2507,7 @@
     },
     "k8s/manifests": {
       "latest": "1.0.0",
+      "category": "deploy",
       "versions": [
         {
           "version": "1.0.0",
@@ -2369,6 +2519,7 @@
     },
     "models/cloud": {
       "latest": "1.0.0",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2380,6 +2531,7 @@
     },
     "models/gguf": {
       "latest": "1.0.8",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2439,6 +2591,7 @@
     },
     "models/llamafile": {
       "latest": "1.0.8",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2499,6 +2652,7 @@
     "presets/balanced": {
       "latest": "1.0.1",
       "description": "The shipped, out-of-the-box defaults for every token-economy event. Applying this after switching to \"frugal\" or \"thorough\" resets them all in one step, without needing to hand-edit or delete override files.",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -2550,6 +2704,7 @@
     "presets/frugal": {
       "latest": "1.0.1",
       "description": "Minimizes token usage: compacts and folds history sooner, injects far less memory context, truncates tool output harder, and caps tool-call budgets tighter. Best for cost-sensitive sessions or a small-context- window local model.",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -2601,6 +2756,7 @@
     "presets/thorough": {
       "latest": "1.0.1",
       "description": "Maximizes context retention: compacts and folds much less often, injects far more memory context, keeps more of every tool result, and allows larger tool-call budgets. Best for long research/investigation sessions where losing history hurts quality more than the extra tokens cost.",
+      "category": "context",
       "versions": [
         {
           "version": "1.0.0",
@@ -2652,6 +2808,7 @@
     "providers/cloudflare": {
       "latest": "1.0.0",
       "description": "Cloudflare",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2664,6 +2821,7 @@
     "providers/deepseek": {
       "latest": "1.0.0",
       "description": "DeepSeek",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2676,6 +2834,7 @@
     "providers/ernie": {
       "latest": "1.0.0",
       "description": "Ernie",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2688,6 +2847,7 @@
     "providers/groq": {
       "latest": "1.0.0",
       "description": "Groq",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2700,6 +2860,7 @@
     "providers/huggingface": {
       "latest": "1.0.0",
       "description": "HuggingFace",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2712,6 +2873,7 @@
     "providers/maritaca": {
       "latest": "1.0.0",
       "description": "Maritaca",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2724,6 +2886,7 @@
     "providers/mistral": {
       "latest": "1.0.0",
       "description": "Mistral",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2736,6 +2899,7 @@
     "providers/openai": {
       "latest": "1.0.0",
       "description": "OpenAI",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2748,6 +2912,7 @@
     "providers/openrouter": {
       "latest": "1.0.0",
       "description": "OpenRouter",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2760,6 +2925,7 @@
     "providers/perplexity": {
       "latest": "1.0.0",
       "description": "Perplexity",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2772,6 +2938,7 @@
     "providers/together": {
       "latest": "1.0.0",
       "description": "Together",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2784,6 +2951,7 @@
     "providers/xai": {
       "latest": "1.0.0",
       "description": "xAI",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2796,6 +2964,7 @@
     "recipes/gguf": {
       "latest": "1.0.0",
       "description": "Alias for llama-server — GGUF weights via llama.cpp OpenAI-compatible /v1",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2808,6 +2977,7 @@
     "recipes/llama-server": {
       "latest": "1.0.0",
       "description": "llama.cpp llama-server serving GGUF weights over OpenAI-compatible /v1",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2820,6 +2990,7 @@
     "recipes/llamacpp": {
       "latest": "1.0.0",
       "description": "Official llama.cpp server image (OpenAI-compatible /v1) for GGUF",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2832,6 +3003,7 @@
     "recipes/llamafile": {
       "latest": "1.0.0",
       "description": "Self-contained .llamafile binary serving OpenAI-compatible /v1",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2844,6 +3016,7 @@
     "recipes/localai": {
       "latest": "1.0.0",
       "description": "LocalAI drop-in OpenAI-compatible API (CPU/GPU images)",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2856,6 +3029,7 @@
     "recipes/ollama": {
       "latest": "1.0.0",
       "description": "Ollama inference server with OpenAI-compatible /v1 surface",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2868,6 +3042,7 @@
     "recipes/openai-compat": {
       "latest": "1.0.0",
       "description": "Thin recipe for any image that already serves OpenAI-compatible /v1 on port 8000",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2880,6 +3055,7 @@
     "recipes/sglang": {
       "latest": "1.0.0",
       "description": "SGLang OpenAI-compatible serving runtime (GPU)",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2892,6 +3068,7 @@
     "recipes/tgi": {
       "latest": "1.0.0",
       "description": "Hugging Face TGI with OpenAI-compatible /v1 (GPU-oriented)",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2904,6 +3081,7 @@
     "recipes/vllm": {
       "latest": "1.0.0",
       "description": "High-throughput OpenAI-compatible server (vLLM) for GPU inference",
+      "category": "model",
       "versions": [
         {
           "version": "1.0.0",
@@ -2915,6 +3093,7 @@
     },
     "schemas/v1": {
       "latest": "1.0.6",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -2962,6 +3141,7 @@
     },
     "templates/agency": {
       "latest": "1.0.0",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -2973,6 +3153,7 @@
     },
     "templates/api-service": {
       "latest": "1.0.0",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -2984,6 +3165,7 @@
     },
     "templates/knowledge": {
       "latest": "2.2.0",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -3013,6 +3195,7 @@
     },
     "templates/resources": {
       "latest": "1.0.1",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -3030,6 +3213,7 @@
     },
     "templates/sql-agent": {
       "latest": "1.0.1",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -3047,6 +3231,7 @@
     },
     "templates/whatsapp-bot": {
       "latest": "1.0.0",
+      "category": "workflow",
       "versions": [
         {
           "version": "1.0.0",
@@ -3058,6 +3243,7 @@
     },
     "themes/black": {
       "latest": "1.0.0",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -3069,6 +3255,7 @@
     },
     "themes/emacs": {
       "latest": "1.0.0",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -3080,6 +3267,7 @@
     },
     "themes/linux": {
       "latest": "1.0.0",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -3091,6 +3279,7 @@
     },
     "themes/normal": {
       "latest": "1.0.0",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -3102,6 +3291,7 @@
     },
     "themes/vim": {
       "latest": "1.0.0",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -3114,6 +3304,7 @@
     "tools/approval_grant": {
       "latest": "1.0.0",
       "description": "Grant a pending approval token. Use when the user has explicitly approved the requested exception.",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -3127,6 +3318,7 @@
     "tools/approval_list": {
       "latest": "1.0.0",
       "description": "List all approval tokens, their statuses, and scopes.",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -3140,6 +3332,7 @@
     "tools/approval_request": {
       "latest": "1.0.0",
       "description": "Request a one-time permission exception from the user. Use when a tool call is blocked by permission mode and you need user approval. Returns a token ID.",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -3153,6 +3346,7 @@
     "tools/approval_revoke": {
       "latest": "1.0.0",
       "description": "Revoke a previously granted approval token.",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -3166,6 +3360,7 @@
     "tools/bash_exec": {
       "latest": "1.1.0",
       "description": "Execute a bash shell command and return its output. Use for running scripts, checking system state (git status, ls, etc.), or performing file operations. Press Ctrl+C to interrupt (partial output returned to LLM); press Ctrl+Z to background (use bash_job_wait to retrieve output).",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3186,6 +3381,7 @@
     "tools/bash_job_list": {
       "latest": "1.0.0",
       "description": "List background bash jobs started with bash_exec and backgrounded via Ctrl+Z. Shows job ID, status (running/done/failed), command, and elapsed time.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3199,6 +3395,7 @@
     "tools/bash_job_wait": {
       "latest": "1.0.0",
       "description": "Wait for a background bash job (from bash_exec backgrounded via Ctrl+Z) to complete and return its full output. Use the job_id from the bash_exec backgrounded result.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3212,6 +3409,7 @@
     "tools/calculator": {
       "latest": "1.0.0",
       "description": "Evaluate a mathematical expression and return the result. Accepts any valid numeric expression (e.g. '2 + 2', '3.14 * 10**2', 'sqrt(16)'). Powered by Starlark math evaluation.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3225,6 +3423,7 @@
     "tools/code_definition": {
       "latest": "1.0.0",
       "description": "Find the definition of a symbol using semantic analysis (LSP). Returns file and line. Requires: symbol, path.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3238,6 +3437,7 @@
     "tools/code_diagnostics": {
       "latest": "1.0.0",
       "description": "Get compiler/linter diagnostics for a file. Returns errors, warnings, hints. Requires: path.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3251,6 +3451,7 @@
     "tools/code_graph_all": {
       "latest": "1.0.0",
       "description": "Graph everything in the index: the full reference graph plus every root file (files nothing else references). Requires an index built with code_index_folder first.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3264,6 +3465,7 @@
     "tools/code_graph_file": {
       "latest": "1.0.0",
       "description": "Graph a single indexed file: its reference tree plus every other indexed file that shares a topic with it. Requires an index built with code_index_folder first. Requires: path.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3277,6 +3479,7 @@
     "tools/code_graph_topic": {
       "latest": "1.0.0",
       "description": "Graph every indexed file tagged with a topic, plus the full reference graph. Requires an index built with code_index_folder first. Requires: topic.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3290,6 +3493,7 @@
     "tools/code_hover": {
       "latest": "1.0.0",
       "description": "Get documentation and type info for a symbol. Returns doc comments and type signatures. Requires: symbol, path.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3303,6 +3507,7 @@
     "tools/code_index_folder": {
       "latest": "1.0.0",
       "description": "Index the current working directory into a persistent graph database, tracking markdown/wikilink references between files and topics/tags declared in YAML frontmatter. Always indexes the CWD -- cannot be pointed at another directory. Run this once before code_graph_file, code_graph_topic, or code_graph_all.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3316,6 +3521,7 @@
     "tools/code_references": {
       "latest": "1.0.0",
       "description": "Find all references to a symbol across the codebase. Returns every file and line. Requires: symbol, path.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3329,6 +3535,7 @@
     "tools/code_search": {
       "latest": "1.0.0",
       "description": "Search for a symbol or pattern across the codebase. Use this first to locate symbols before using code_definition or code_references. Requires: query, path.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3342,6 +3549,7 @@
     "tools/code_symbols": {
       "latest": "1.0.0",
       "description": "List all symbols (functions, types, classes) in a file. Returns structured symbol info with nesting. Requires: path.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3355,6 +3563,7 @@
     "tools/cohere_rerank": {
       "latest": "1.1.0",
       "description": "Rerank a list of documents by relevance to a query using Cohere's reranking API. Returns documents sorted by relevance score. Requires COHERE_API_KEY.",
+      "category": "rag",
       "versions": [
         {
           "version": "1.0.0",
@@ -3374,6 +3583,7 @@
     "tools/cron_create": {
       "latest": "1.0.0",
       "description": "Create a new scheduled cron job. The job will fire at the given cron expression and create a task each time it fires. Returns the cron ID.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3387,6 +3597,7 @@
     "tools/cron_delete": {
       "latest": "1.0.0",
       "description": "Delete a cron job. Marked as deleted in the registry.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3400,6 +3611,7 @@
     "tools/cron_list": {
       "latest": "1.0.0",
       "description": "List all cron jobs in the registry. Shows expression, status, and last/next run times.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3413,6 +3625,7 @@
     "tools/cron_pause": {
       "latest": "1.0.0",
       "description": "Pause a cron job. No new tasks will be created until resumed.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3426,6 +3639,7 @@
     "tools/cron_resume": {
       "latest": "1.0.0",
       "description": "Resume a paused cron job.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3439,6 +3653,7 @@
     "tools/edit_file": {
       "latest": "1.1.0",
       "description": "Edit a file. Pass command:",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3459,6 +3674,7 @@
     "tools/embedding_search": {
       "latest": "1.0.0",
       "description": "Search for documents semantically similar to a query in the local embedding database. Returns ranked results with similarity scores. Requires: query (natural language search query), collection (name of the document collection). Optional: limit (max results, default 5).",
+      "category": "rag",
       "versions": [
         {
           "version": "1.0.0",
@@ -3472,6 +3688,7 @@
     "tools/embedding_vectorize": {
       "latest": "1.0.0",
       "description": "Convert text into vector embeddings using an embedding model. Returns the embedding vectors. Use for indexing documents into the local embedding database or computing semantic similarity. Requires: texts (list of strings to embed). Optional: model, backend.",
+      "category": "rag",
       "versions": [
         {
           "version": "1.0.0",
@@ -3485,6 +3702,7 @@
     "tools/exa_search": {
       "latest": "1.1.0",
       "description": "Search the web using Exa (formerly Metaphor) neural search. Finds highly relevant URLs and content using AI-powered link prediction. Best for research, finding authoritative sources, and content discovery. Requires EXA_API_KEY.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3504,6 +3722,7 @@
     "tools/goal_task_complete": {
       "latest": "1.0.0",
       "description": "Mark the ACTIVE task finished and advance to the next one. Call this as soon as the active task's objective is met. Pass the active task's id and a one-line summary of what was achieved.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -3517,6 +3736,7 @@
     "tools/goal_task_fail": {
       "latest": "1.0.0",
       "description": "Give up on the ACTIVE task and advance to the next one. Use this instead of retrying when the task cannot be completed, so the goal keeps moving. Pass the active task's id and the reason.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -3530,6 +3750,7 @@
     "tools/google_cache_create": {
       "latest": "1.0.0",
       "description": "Create a Google AI server-side cached content entry from a text system prompt. Returns the cache name (e.g. 'cachedContents/xyz123') for use in chat: googleCachedContent. Only available when GOOGLE_API_KEY is set.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3543,6 +3764,7 @@
     "tools/google_cache_delete": {
       "latest": "1.0.0",
       "description": "Delete a Google AI cached content entry by name. Only available when GOOGLE_API_KEY is set.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3556,6 +3778,7 @@
     "tools/google_cache_list": {
       "latest": "1.0.0",
       "description": "List all Google AI cached content entries. Returns a JSON array of cache names. Only available when GOOGLE_API_KEY is set.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3569,6 +3792,7 @@
     "tools/http_request": {
       "latest": "1.0.0",
       "description": "Make an HTTP request to a URL. Returns response status, headers, and body. Use for calling APIs, fetching web content, or interacting with external services. Requires: url. Optional: method (default GET), headers, data (JSON body), timeout.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3582,6 +3806,7 @@
     "tools/identity_get": {
       "latest": "1.0.0",
       "description": "Return this agent's configured identity: name, email, and mailing address. Use this to answer questions about who you are, or to sign outputs (commits, emails) as this agent. Never returns credentials.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -3595,6 +3820,7 @@
     "tools/instruct": {
       "latest": "1.0.0",
       "description": "Return the full text of one harness section or one instruct briefing. Use it when the system prompt shows a one-line summary and you need that section's full instructions. topic is a harness section name (memory, tools, narration, autonomy, safety, errors, scope, accuracy, honesty, code, output, internals, use-kdeps-tools, edit-workflow, or any other harness section) or an instruct topic (overview, modes, tools, available, memory, goals, feedback, files). A name that is both a section and a topic returns the harness section. Prefix instruct: (instruct:tools, instruct:memory) to force the briefing.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -3608,6 +3834,7 @@
     "tools/jina_rerank": {
       "latest": "1.1.0",
       "description": "Rerank a list of documents by relevance to a query using Jina AI's reranking API. Requires JINA_API_KEY.",
+      "category": "rag",
       "versions": [
         {
           "version": "1.0.0",
@@ -3627,6 +3854,7 @@
     "tools/judge_verdict": {
       "latest": "1.0.0",
       "description": "Settle your review of the candidate output. Must be called exactly once, when your review is complete.",
+      "category": "evals",
       "versions": [
         {
           "version": "1.0.0",
@@ -3640,6 +3868,7 @@
     "tools/knowledge_card_get": {
       "latest": "1.1.0",
       "description": "Read a project card from the knowledge vault: type, status, next step, updated date, and the places on disk it covers (repo, folder, workflow). Cards are the only home of status. Without a name, returns the working directory's project card (created on first use).",
+      "category": "memory",
       "versions": [
         {
           "version": "1.0.0",
@@ -3660,6 +3889,7 @@
     "tools/knowledge_card_update": {
       "latest": "1.2.0",
       "description": "Set a card's status and/or next step and stamp its updated date. This is the only place status and the next step are written: never put them in a note. Without a name, updates the working directory's project card (created on first use). Status archived moves the project folder to archive/. add_search_folder links a folder outside the project (docs, a shared library) so recall and search_local cover it too, and indexes it.",
+      "category": "memory",
       "versions": [
         {
           "version": "1.0.0",
@@ -3687,6 +3917,7 @@
     "tools/knowledge_note_save": {
       "latest": "2.0.0",
       "description": "Save a new note in the knowledge vault: one idea per note, with frontmatter (type, status, created, summary, tags, links). Refuses a title that already has a note - one home per fact, so edit that note instead. Use for a decision, a gotcha, a concept or a tool worth remembering beyond this session; it goes in the project's folder unless scope says otherwise. Status and next steps go to the card instead.",
+      "category": "memory",
       "versions": [
         {
           "version": "1.0.0",
@@ -3707,6 +3938,7 @@
     "tools/knowledge_recall": {
       "latest": "1.0.0",
       "description": "Find the notes in the knowledge vault related to a query, by walking the vault's link graph from the words of the query (no model involved). Returns note paths with their one-line summaries, best first, within a small token budget. Each turn already carries a recall for the user's request; call this to look up something else (a project, a decision, an error). Then read only the notes you need with read_file.",
+      "category": "memory",
       "versions": [
         {
           "version": "1.0.0",
@@ -3720,6 +3952,7 @@
     "tools/list_files": {
       "latest": "1.1.0",
       "description": "List files and directories in a given directory path. Returns names and types (file/dir). Use to discover project structure before reading or editing files. Omit path to list the current working directory.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3740,6 +3973,7 @@
     "tools/load_document": {
       "latest": "1.0.0",
       "description": "Load a document file and return its content as text. Supports PDF (go-pdf, pdftotext, pdfcpu), DOCX/EPUB/RTF/ODT (pandoc), HTML (goquery, lynx), CSV, text, directory, notion, markdown (textutil). Use for reading documents into the conversation for analysis or RAG pipelines. Returns document content with optional splitting into chunks. Requires: source (absolute file path). Optional: type (pdf, csv, html, text — auto-detected from extension), chunkSize (split into chunks of N characters).",
+      "category": "rag",
       "versions": [
         {
           "version": "1.0.0",
@@ -3753,6 +3987,7 @@
     "tools/load_skill": {
       "latest": "1.0.0",
       "description": "Load the full instructions for a named skill. Call this when the user's task matches one of the skills listed in \u003cavailable_skills\u003e. Returns the skill's complete instructions to follow.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -3766,6 +4001,7 @@
     "tools/md5_file": {
       "latest": "1.0.0",
       "description": "Compute the MD5 checksum of a file. Call once before and once after a change to prove whether the file's contents actually changed -- pair both hashes as evidence for task_complete rather than asserting the change happened.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3779,6 +4015,7 @@
     "tools/memory_delete": {
       "latest": "1.0.0",
       "description": "Delete a memory entry by key. Use to remove outdated or incorrect facts from persistent memory.",
+      "category": "memory",
       "versions": [
         {
           "version": "1.0.0",
@@ -3792,6 +4029,7 @@
     "tools/memory_query": {
       "latest": "1.0.0",
       "description": "Run a relational query over agent state. Relations: `memory` (persistent memory entries: key, value, namespace, type, references, createdAt, updatedAt), `tool_calls` (recent tool call history: name, args, result, timestamp), `tasks` (active goal's task list: id, desc, status, rounds, note). Query language is expr-lang: filter(relation, predicate) selects rows (e.g. filter(memory, .type == \"error\")), map(relation, expr) projects fields, join(left, right, leftField, rightField) equi-joins two relations into rows with left_/right_ prefixed fields, union(a, b) combines two relations with set semantics.",
+      "category": "memory",
       "versions": [
         {
           "version": "1.0.0",
@@ -3805,6 +4043,7 @@
     "tools/memory_save": {
       "latest": "1.1.0",
       "description": "Save a fact to persistent memory. The memory is injected into every LLM call automatically. Use for project conventions, user preferences, key decisions, or any information that should persist across sessions. Keys should be short and descriptive.",
+      "category": "memory",
       "versions": [
         {
           "version": "1.0.0",
@@ -3825,6 +4064,7 @@
     "tools/memory_search": {
       "latest": "1.0.0",
       "description": "Search persistent memory for entries matching a query. Returns up to 20 matching key-value pairs (each value capped), best match first: a key hit outranks a value-only hit, more query words outrank fewer, and a newer update breaks a tie. Use to recall previously saved facts, preferences, or decisions. There is no memory_list tool; the memory graph is already in the system prompt.",
+      "category": "memory",
       "versions": [
         {
           "version": "1.0.0",
@@ -3838,6 +4078,7 @@
     "tools/ocr_image": {
       "latest": "1.1.0",
       "description": "Extract text from an image via tesseract OCR. Runs entirely locally -- no API key required. Supports png, jpg/jpeg, tiff, bmp, gif. Requires: file (absolute path to the image). Optional: language (tesseract -l value, e.g. 'eng' or 'eng+fra'; default 'eng'). Does not support PDF -- use load_document with type pdf for text-layer PDFs.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3857,6 +4098,7 @@
     "tools/perplexity_search": {
       "latest": "1.0.0",
       "description": "Search the web using Perplexity AI. Provides cited, up-to-date answers from the internet. Requires PERPLEXITY_API_KEY. Input is a plain search query or question.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3870,6 +4112,7 @@
     "tools/read_file": {
       "latest": "1.1.0",
       "description": "Read a file from the local filesystem. Returns the contents with a 1-based line number on every line (`  42\\tcode$`) - use those numbers for edit_file insert/view. Tabs render as ^I, other control characters as ^X, and a $ marks the true end of each line, so indentation, trailing whitespace, and stray control characters are visible instead of hidden. IMPORTANT: ^I, ^X, and the trailing $ are a display convention this tool adds - the real file does NOT contain those literal characters. When quoting text back into edit_file's old_str, write the real tab/control character (or match a whole line via view_range/anchor instead), never the literal caret sequence - copying \"^I\" as text will not match a real tab byte. Plain text, source code, configuration files, and documentation are read directly; PDF, DOCX, EPUB, RTF, and ODT documents have their text extracted automatically. Use load_document instead for CSV/HTML structured parsing or RAG chunking. Pass match_id (from a search_local result) instead of file_path/offset to jump straight to that hit.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3890,6 +4133,7 @@
     "tools/retrieve_context": {
       "latest": "1.1.0",
       "description": "Retrieve semantically relevant text chunks from the configured RAG index. Use for finding code, documentation, or notes related to a query before implementing or answering. Requires KDEPS_RAG_BASE_URL pointing to a compatible RAG service.",
+      "category": "rag",
       "versions": [
         {
           "version": "1.0.0",
@@ -3909,6 +4153,7 @@
     "tools/search_local": {
       "latest": "1.2.0",
       "description": "Search for text patterns in local files using ripgrep. Returns matching files with a snippet, and (when the query is found) a match_id/line/revision - pass match_id to read_file to jump straight to that hit. Use for finding usages, patterns, or strings across the codebase. Requires: query (search term). path is the directory to search; leave it out to search every folder of the working project (its own and the search folders its card lists). Optional: glob (file pattern), limit (max results, default 3).",
+      "category": "rag",
       "versions": [
         {
           "version": "1.0.0",
@@ -3936,6 +4181,7 @@
     "tools/serpapi_search": {
       "latest": "1.0.0",
       "description": "Search Google via SerpAPI. Use for current events, news, and queries requiring fresh web results. Requires SERPAPI_API_KEY. Input is a plain search query string.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3949,6 +4195,7 @@
     "tools/session_handshake": {
       "latest": "1.0.0",
       "description": "This tool is real, registered, and available to you right now -- call it when a \u003csession-integrity-check\u003e directive asks for it, with the exact code it gives you. It's an internal integrity check, so there's no reason to call it unprompted, but if a directive just asked for it, that call is expected and safe.",
+      "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
@@ -3962,6 +4209,7 @@
     "tools/sql_describe_table": {
       "latest": "1.0.0",
       "description": "Return the schema (column names and types) for a table in a SQLite database. Use before writing queries to know the exact column names.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3975,6 +4223,7 @@
     "tools/sql_list_tables": {
       "latest": "1.0.0",
       "description": "List all tables in a SQLite database. Use this to discover available data before querying. Returns a newline-separated list of table names.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -3988,6 +4237,7 @@
     "tools/sql_query": {
       "latest": "1.0.0",
       "description": "Execute a SQL query against a SQLite database and return the results as formatted text. Use SELECT statements to retrieve data. Non-SELECT statements are rejected for safety.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -4001,6 +4251,7 @@
     "tools/tail_file": {
       "latest": "1.1.0",
       "description": "Read the last N lines of a file (default 20) -- for checking the end of a log or output file without knowing its total length upfront. Use as evidence that a command's output or a log ends the way a task claims it does.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -4021,6 +4272,7 @@
     "tools/task_append_output": {
       "latest": "1.0.0",
       "description": "Append text to a task's output log. Use for recording intermediate results.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -4034,6 +4286,7 @@
     "tools/task_assign_team": {
       "latest": "1.0.0",
       "description": "Assign a task to a team for multi-agent coordination.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -4047,6 +4300,7 @@
     "tools/task_complete": {
       "latest": "1.0.0",
       "description": "Mark a task as completed. Call this when a task's work is done.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -4060,6 +4314,7 @@
     "tools/task_create": {
       "latest": "1.0.0",
       "description": "Create a new task in the global task registry. Returns the task ID. Use for tracking discrete work items that may span multiple LLM turns.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -4073,6 +4328,7 @@
     "tools/task_get": {
       "latest": "1.0.0",
       "description": "Get a task's full details by ID. Returns status, timestamps, output, and assigned team.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -4086,6 +4342,7 @@
     "tools/task_list": {
       "latest": "1.0.0",
       "description": "List all tasks in the registry, newest first. Use to see what work is pending or completed.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -4099,6 +4356,7 @@
     "tools/task_stop": {
       "latest": "1.0.0",
       "description": "Stop a running or created task. Sets its status to stopped. Returns success or not-found.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -4112,6 +4370,7 @@
     "tools/team_add_task": {
       "latest": "1.0.0",
       "description": "Assign an existing task to a team.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -4125,6 +4384,7 @@
     "tools/team_create": {
       "latest": "1.0.0",
       "description": "Create a new team for grouping related tasks. Returns the team ID.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -4138,6 +4398,7 @@
     "tools/team_delete": {
       "latest": "1.0.0",
       "description": "Delete (mark as deleted) a team.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -4151,6 +4412,7 @@
     "tools/team_get": {
       "latest": "1.0.0",
       "description": "Get a team's details by ID. Returns task IDs, status, and name.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -4164,6 +4426,7 @@
     "tools/team_list": {
       "latest": "1.0.0",
       "description": "List all teams in the registry.",
+      "category": "agent",
       "versions": [
         {
           "version": "1.0.0",
@@ -4177,6 +4440,7 @@
     "tools/transcribe_audio": {
       "latest": "1.1.0",
       "description": "Transcribe an audio or video file to text through a Whisper API: openai (default), groq, or local (a self-hosted OpenAI-compatible Whisper server). Supports mp3, mp4, mpeg, mpga, m4a, wav, webm. Returns the transcribed text. For offline transcription with no API key use transcribe_audio_offline.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -4196,6 +4460,7 @@
     "tools/transcribe_audio_offline": {
       "latest": "1.0.0",
       "description": "Transcribe an audio file to text offline with whisper.cpp (whisper-cli): no API key, no network. Supports flac, mp3, ogg, wav. Uses the GGML model at modelPath, or ggml-base.en.bin in the kdeps models dir (the transcribe component downloads it on first use). Returns the transcribed text.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -4209,6 +4474,7 @@
     "tools/voyageai_rerank": {
       "latest": "1.1.0",
       "description": "Rerank a list of documents by relevance to a query using VoyageAI's reranking API. Requires VOYAGEAI_API_KEY.",
+      "category": "rag",
       "versions": [
         {
           "version": "1.0.0",
@@ -4228,6 +4494,7 @@
     "tools/web_scraper": {
       "latest": "1.1.0",
       "description": "Fetch and extract readable text content from any web URL. Returns page title, headers, body content, and links. Use when you need to read a specific web page, article, or documentation URL.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -4248,6 +4515,7 @@
     "tools/web_search": {
       "latest": "1.1.0",
       "description": "Search the web using DuckDuckGo. Free, no API key required. Use for current events, facts, research, or anything needing an internet lookup. Input is a plain search query string.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -4268,6 +4536,7 @@
     "tools/wikipedia": {
       "latest": "1.0.0",
       "description": "Look up information on Wikipedia. Use for general knowledge questions about people, places, companies, historical events, concepts, or any topic needing an encyclopedic answer. Input is a search query.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -4281,6 +4550,7 @@
     "tools/wolfram_alpha": {
       "latest": "1.1.0",
       "description": "Query Wolfram Alpha for factual computations, math, science, unit conversions, and data lookups. Returns a concise plain-text answer. Requires WOLFRAM_APP_ID.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -4300,6 +4570,7 @@
     "tools/write_file": {
       "latest": "1.1.0",
       "description": "Write or overwrite a text file on the local filesystem. Creates a new file if it does not exist; overwrites existing files entirely. Use for creating or updating configuration files, source code, scripts, or any text-based file. Requires an absolute path.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -4320,6 +4591,7 @@
     "tools/zapier_list_actions": {
       "latest": "1.1.0",
       "description": "List all available Zapier NLA actions configured in your Zapier account. Returns action IDs, names, and descriptions. Use this to discover what actions you can run with zapier_run_action. Requires ZAPIER_NLA_API_KEY.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
@@ -4339,6 +4611,7 @@
     "tools/zapier_run_action": {
       "latest": "1.1.0",
       "description": "Execute a Zapier NLA action by action ID with natural language instructions. First use zapier_list_actions to find available action IDs. Requires ZAPIER_NLA_API_KEY.",
+      "category": "tools",
       "versions": [
         {
           "version": "1.0.0",
