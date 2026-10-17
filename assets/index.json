@@ -3066,7 +3066,7 @@
       ]
     },
     "tools/bash_exec": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "description": "Execute a bash shell command and return its output. Use for running scripts, checking system state (git status, ls, etc.), or performing file operations. Press Ctrl+C to interrupt (partial output returned to LLM); press Ctrl+Z to background (use bash_job_wait to retrieve output).",
       "versions": [
         {
@@ -3075,6 +3075,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 159,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "ea7a84f2c450846ff6ad6b8e56a0bd3c9658f89bb30eec1401c3b0fbb7ee98ac",
+          "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
+          "tokens": 159,
+          "date": "2026-10-17T07:26:30.673619792Z"
         }
       ]
     },
@@ -3332,7 +3339,7 @@
       ]
     },
     "tools/edit_file": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "description": "Edit a file. Pass command:",
       "versions": [
         {
@@ -3341,6 +3348,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 1353,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "f38a74820a64ab2c75703cbba646c8726bcb2340dd540793b9355ab6f2549c90",
+          "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
+          "tokens": 1353,
+          "date": "2026-10-17T07:26:30.673619792Z"
         }
       ]
     },
@@ -3593,7 +3607,7 @@
       ]
     },
     "tools/list_files": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "description": "List files and directories in a given directory path. Returns names and types (file/dir). Use to discover project structure before reading or editing files. Omit path to list the current working directory.",
       "versions": [
         {
@@ -3602,6 +3616,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 86,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "5f148837c87fbf914b0a364718a478ec92ca55bd7a75fe256059a864705fa09d",
+          "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
+          "tokens": 86,
+          "date": "2026-10-17T07:26:30.673619792Z"
         }
       ]
     },
@@ -3671,7 +3692,7 @@
       ]
     },
     "tools/memory_save": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "description": "Save a fact to persistent memory. The memory is injected into every LLM call automatically. Use for project conventions, user preferences, key decisions, or any information that should persist across sessions. Keys should be short and descriptive.",
       "versions": [
         {
@@ -3680,6 +3701,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 116,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "deed9a5a3715cce41fd0b7d161707d4ecfaae1c663813365b71915148d9d9964",
+          "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
+          "tokens": 116,
+          "date": "2026-10-17T07:26:30.673619792Z"
         }
       ]
     },
@@ -3729,7 +3757,7 @@
       ]
     },
     "tools/read_file": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "description": "Read a file from the local filesystem. Returns the contents with a 1-based line number on every line (`  42\\tcode$`) - use those numbers for edit_file insert/view. Tabs render as ^I, other control characters as ^X, and a $ marks the true end of each line, so indentation, trailing whitespace, and stray control characters are visible instead of hidden. IMPORTANT: ^I, ^X, and the trailing $ are a display convention this tool adds - the real file does NOT contain those literal characters. When quoting text back into edit_file's old_str, write the real tab/control character (or match a whole line via view_range/anchor instead), never the literal caret sequence - copying \"^I\" as text will not match a real tab byte. Plain text, source code, configuration files, and documentation are read directly; PDF, DOCX, EPUB, RTF, and ODT documents have their text extracted automatically. Use load_document instead for CSV/HTML structured parsing or RAG chunking. Pass match_id (from a search_local result) instead of file_path/offset to jump straight to that hit.",
       "versions": [
         {
@@ -3738,6 +3766,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 631,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "f9e2e34a2e2b002d1c9e58618d275bf68a055fcd1aaea0ec242aa0f23ba20b3e",
+          "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
+          "tokens": 631,
+          "date": "2026-10-17T07:26:30.673619792Z"
         }
       ]
     },
@@ -3761,7 +3796,7 @@
       ]
     },
     "tools/search_local": {
-      "latest": "1.1.0",
+      "latest": "1.2.0",
       "description": "Search for text patterns in local files using ripgrep. Returns matching files with a snippet, and (when the query is found) a match_id/line/revision - pass match_id to read_file to jump straight to that hit. Use for finding usages, patterns, or strings across the codebase. Requires: query (search term). path is the directory to search; leave it out to search every folder of the working project (its own and the search folders its card lists). Optional: glob (file pattern), limit (max results, default 3).",
       "versions": [
         {
@@ -3777,6 +3812,13 @@
           "commit": "89430f9d7c3a0a9daf3de7919abcab1f8b20f2e1",
           "tokens": 225,
           "date": "2026-10-16T19:56:21.208887141Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "6d20cf79a554197493e875a940f67fabf9a76b081879b9fad80cd4cba39c623e",
+          "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
+          "tokens": 225,
+          "date": "2026-10-17T07:26:30.673619792Z"
         }
       ]
     },
@@ -3846,7 +3888,7 @@
       ]
     },
     "tools/tail_file": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "description": "Read the last N lines of a file (default 20) -- for checking the end of a log or output file without knowing its total length upfront. Use as evidence that a command's output or a log ends the way a task claims it does.",
       "versions": [
         {
@@ -3855,6 +3897,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 127,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "1f39a3028a21feac6dcca13be845288bc92af5bfb4b97f3696ebd5e1b5614e35",
+          "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
+          "tokens": 127,
+          "date": "2026-10-17T07:26:30.673619792Z"
         }
       ]
     },
@@ -4066,7 +4115,7 @@
       ]
     },
     "tools/web_scraper": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "description": "Fetch and extract readable text content from any web URL. Returns page title, headers, body content, and links. Use when you need to read a specific web page, article, or documentation URL.",
       "versions": [
         {
@@ -4075,11 +4124,18 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 130,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "1f9e0ecebbe71631718df154af4ca583c8ef319369a2b6c640335b967cf629f0",
+          "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
+          "tokens": 130,
+          "date": "2026-10-17T07:26:30.673619792Z"
         }
       ]
     },
     "tools/web_search": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "description": "Search the web using DuckDuckGo. Free, no API key required. Use for current events, facts, research, or anything needing an internet lookup. Input is a plain search query string.",
       "versions": [
         {
@@ -4088,6 +4144,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 106,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "6b64e5b814cf412e12eae5ddcfbf27af886fa93700ecba5f14e2b928a805672f",
+          "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
+          "tokens": 106,
+          "date": "2026-10-17T07:26:30.673619792Z"
         }
       ]
     },
@@ -4124,7 +4187,7 @@
       ]
     },
     "tools/write_file": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "description": "Write or overwrite a text file on the local filesystem. Creates a new file if it does not exist; overwrites existing files entirely. Use for creating or updating configuration files, source code, scripts, or any text-based file. Requires an absolute path.",
       "versions": [
         {
@@ -4133,6 +4196,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 153,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "6e6d8e7e44beb37dbef804f32e04ff0489ef80ae01cebf70b839988172939ced",
+          "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
+          "tokens": 153,
+          "date": "2026-10-17T07:26:30.673619792Z"
         }
       ]
     },
