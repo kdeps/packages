@@ -4169,28 +4169,27 @@
       "mode": "agent",
       "flow": [
         {
-          "label": "kdeps (agent loop)"
+          "label": "an event's trigger is met"
         },
         {
-          "label": "agent.ApplyKonfig"
-        },
-        {
-          "label": "agent.ActionByName uses actions",
+          "label": "its action runs: compact, truncate, block, cap, force an answer or fail a task",
           "here": true
+        },
+        {
+          "label": "the agent loop continues"
         }
       ],
       "usedBy": [
         "kdeps (agent loop)",
         "/efficiency",
-        "/harness",
         "/konfig",
-        "/update",
-        "kdeps install",
         "kdeps konfig export",
-        "kdeps konfig import",
-        "kdeps list",
-        "kdeps uninstall",
-        "kdeps update"
+        "kdeps konfig import"
+      ],
+      "code": [
+        "kdeps (agent loop)",
+        "agent.ApplyKonfig",
+        "agent.ActionByName"
       ]
     },
     "commands": {
@@ -4198,20 +4197,24 @@
       "mode": "agent",
       "flow": [
         {
-          "label": "kdeps (agent loop)"
+          "label": "you type /name in kdeps"
         },
         {
-          "label": "agent.(*REPL).Run"
-        },
-        {
-          "label": "agent.declaredCommand uses commands",
+          "label": "the command runs: built in, or its declared steps",
           "here": true
+        },
+        {
+          "label": "prompts go to the model; the output is shown"
         }
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/editor",
         "/help"
+      ],
+      "code": [
+        "kdeps (agent loop)",
+        "agent.(*REPL).Run",
+        "agent.declaredCommand"
       ]
     },
     "components": {
@@ -4219,38 +4222,30 @@
       "mode": "both",
       "flow": [
         {
-          "label": "kdeps (agent loop)"
+          "label": "a resource names a component (or the model calls it as a tool)"
         },
         {
-          "label": "yaml.(*Parser).ParseWorkflow"
-        },
-        {
-          "label": "yaml.(*Parser).loadAssetComponents uses components",
+          "label": "the component's own resources run",
           "here": true
+        },
+        {
+          "label": "its output goes back to the caller"
         }
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/clear",
-        "/compact",
-        "/context",
-        "/editor",
-        "/fold",
-        "/goal",
-        "/instruct",
-        "/knowledge",
-        "/model",
         "/settings",
-        "kdeps run",
         "kdeps validate",
-        "kdeps bundle build",
+        "kdeps run",
         "kdeps bundle package",
-        "kdeps bundle prepackage",
         "kdeps env",
-        "kdeps exec",
-        "kdeps export iso",
         "kdeps export k8s",
-        "kdeps knowledge build"
+        "kdeps bundle build"
+      ],
+      "code": [
+        "kdeps (agent loop)",
+        "yaml.(*Parser).ParseWorkflow",
+        "yaml.(*Parser).loadAssetComponents"
       ]
     },
     "defaults": {
@@ -4258,33 +4253,28 @@
       "mode": "both",
       "flow": [
         {
-          "label": "kdeps (agent loop)"
+          "label": "a resource without a timeout (or another default) runs"
         },
         {
-          "label": "agent.(*REPL).Run"
-        },
-        {
-          "label": "executor.(*Engine).Execute"
-        },
-        {
-          "label": "config.GetDefaults uses defaults",
+          "label": "the executor defaults fill it in",
           "here": true
+        },
+        {
+          "label": "the executor runs the resource"
         }
       ],
       "usedBy": [
         "kdeps (agent loop)",
         "/clear",
         "/compact",
-        "/context",
-        "/editor",
-        "/fold",
         "/goal",
-        "/instruct",
-        "/knowledge",
-        "/model",
-        "kdeps run",
-        "kdeps exec",
-        "kdeps knowledge build"
+        "kdeps run"
+      ],
+      "code": [
+        "kdeps (agent loop)",
+        "agent.(*REPL).Run",
+        "executor.(*Engine).Execute",
+        "config.GetDefaults"
       ]
     },
     "docker": {
@@ -4292,105 +4282,101 @@
       "mode": "cli",
       "flow": [
         {
-          "label": "kdeps bundle build"
+          "label": "kdeps bundle build or kdeps export"
         },
         {
-          "label": "docker.(*Builder).GenerateDockerfile"
-        },
-        {
-          "label": "docker.dockerTemplate uses docker",
+          "label": "the Dockerfile is rendered from the template",
           "here": true
+        },
+        {
+          "label": "docker builds the image"
+        },
+        {
+          "label": "the workflow runs in it"
         }
       ],
       "usedBy": [
         "kdeps bundle build",
         "kdeps export iso"
+      ],
+      "code": [
+        "kdeps bundle build",
+        "docker.(*Builder).GenerateDockerfile",
+        "docker.dockerTemplate"
       ]
     },
     "events": {
       "purpose": "Thresholds the agent loop watches - tokens, rounds, bytes, repeated calls - and the action each runs when crossed.",
-      "mode": "both",
+      "mode": "agent",
       "flow": [
         {
-          "label": "kdeps (agent loop)"
+          "label": "the agent loop runs a turn"
         },
         {
-          "label": "agent.New"
+          "label": "kdeps measures tokens, rounds and calls"
         },
         {
-          "label": "agent.EventByName uses events",
+          "label": "an event's trigger is met",
           "here": true
+        },
+        {
+          "label": "its action runs"
+        },
+        {
+          "label": "the turn continues"
         }
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/clear",
-        "/compact",
-        "/context",
-        "/editor",
         "/efficiency",
-        "/fold",
-        "/goal",
         "/harness",
-        "/instruct",
-        "/knowledge",
-        "/konfig",
-        "/model",
+        "/context",
+        "/fold",
         "/prompt",
-        "/update",
-        "kdeps run",
-        "kdeps exec",
-        "kdeps install",
-        "kdeps knowledge build",
-        "kdeps konfig export",
-        "kdeps konfig import",
-        "kdeps list",
-        "kdeps uninstall",
-        "kdeps update"
+        "/konfig",
+        "/update"
+      ],
+      "code": [
+        "kdeps (agent loop)",
+        "agent.New",
+        "agent.EventByName"
       ]
     },
     "harness": {
       "purpose": "The text kdeps sends the model in agent mode: the sections of the system prompt, and the prompts behind compaction, goals, judges, prompt refinement and nudges.",
-      "mode": "both",
+      "mode": "agent",
       "flow": [
         {
-          "label": "kdeps (agent loop)"
+          "label": "you type a prompt"
         },
         {
-          "label": "agent.New"
+          "label": "the agent loop builds the request"
         },
         {
-          "label": "agent.harnessText uses harness",
+          "label": "the harness sections become the system prompt",
           "here": true
+        },
+        {
+          "label": "the model answers"
+        },
+        {
+          "label": "the loop runs tools or replies"
         }
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/clear",
-        "/compact",
-        "/context",
-        "/editor",
-        "/efficiency",
-        "/fold",
-        "/goal",
         "/harness",
-        "/instruct",
+        "/clear",
         "/knowledge",
+        "/efficiency",
         "/konfig",
-        "/model",
         "/reload",
-        "/settings",
-        "/theme",
-        "/update",
-        "kdeps run",
-        "kdeps exec",
-        "kdeps install",
-        "kdeps knowledge build",
-        "kdeps konfig export",
-        "kdeps konfig import",
-        "kdeps list",
-        "kdeps uninstall",
-        "kdeps update"
+        "/settings"
+      ],
+      "code": [
+        "kdeps (agent loop)",
+        "agent.New",
+        "agent.harnessText"
       ]
     },
     "k8s": {
@@ -4401,15 +4387,23 @@
           "label": "kdeps export k8s"
         },
         {
-          "label": "k8s.(*Generator).GenerateManifests"
+          "label": "the manifests are rendered from the templates",
+          "here": true
         },
         {
-          "label": "k8s.(*Generator).renderManifest uses k8s",
-          "here": true
+          "label": "you apply them with kubectl"
+        },
+        {
+          "label": "the workflow runs in the cluster"
         }
       ],
       "usedBy": [
         "kdeps export k8s"
+      ],
+      "code": [
+        "kdeps export k8s",
+        "k8s.(*Generator).GenerateManifests",
+        "k8s.(*Generator).renderManifest"
       ]
     },
     "models": {
@@ -4417,44 +4411,30 @@
       "mode": "both",
       "flow": [
         {
-          "label": "kdeps (agent loop)"
+          "label": "a chat resource or /model names a model"
         },
         {
-          "label": "llm.ReloadCloudModels"
-        },
-        {
-          "label": "llm.readModelRegistry uses models",
+          "label": "the registry resolves it: download, local server or provider",
           "here": true
+        },
+        {
+          "label": "the model is called"
         }
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/clear",
-        "/compact",
-        "/context",
-        "/editor",
-        "/fold",
-        "/goal",
-        "/instruct",
-        "/knowledge",
-        "/model",
-        "/theme",
         "/update",
+        "/context",
+        "/model",
         "kdeps run",
-        "kdeps bundle build",
-        "kdeps bundle prepackage",
-        "kdeps chat",
-        "kdeps exec",
-        "kdeps export iso",
-        "kdeps install",
-        "kdeps knowledge build",
-        "kdeps list",
         "kdeps llamafile list",
-        "kdeps llm",
         "kdeps llm models",
-        "kdeps llm wizard",
-        "kdeps uninstall",
-        "kdeps update"
+        "kdeps install"
+      ],
+      "code": [
+        "kdeps (agent loop)",
+        "llm.ReloadCloudModels",
+        "llm.readModelRegistry"
       ]
     },
     "presets": {
@@ -4462,14 +4442,14 @@
       "mode": "agent",
       "flow": [
         {
-          "label": "kdeps (agent loop)"
+          "label": "/harness preset or /efficiency preset"
         },
         {
-          "label": "agent.ApplyKonfig"
-        },
-        {
-          "label": "agent.mergeUserPresets uses presets",
+          "label": "the preset rewrites events and harness sections",
           "here": true
+        },
+        {
+          "label": "every later turn uses them"
         }
       ],
       "usedBy": [
@@ -4478,12 +4458,13 @@
         "/harness",
         "/konfig",
         "/update",
-        "kdeps install",
         "kdeps konfig export",
-        "kdeps konfig import",
-        "kdeps list",
-        "kdeps uninstall",
-        "kdeps update"
+        "kdeps konfig import"
+      ],
+      "code": [
+        "kdeps (agent loop)",
+        "agent.(*REPL).Run",
+        "agent.PresetByName"
       ]
     },
     "providers": {
@@ -4491,45 +4472,33 @@
       "mode": "both",
       "flow": [
         {
-          "label": "kdeps (agent loop)"
+          "label": "a chat call names a backend"
         },
         {
-          "label": "llm.AutoRouterPick"
-        },
-        {
-          "label": "config.CloudLLMProviders"
-        },
-        {
-          "label": "config.assetProviders uses providers",
+          "label": "the provider gives the URL, chat path and key",
           "here": true
+        },
+        {
+          "label": "kdeps sends the request"
+        },
+        {
+          "label": "the reply comes back"
         }
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/clear",
-        "/compact",
-        "/context",
-        "/editor",
-        "/fold",
-        "/goal",
-        "/instruct",
-        "/knowledge",
-        "/model",
-        "/search",
-        "/settings",
         "kdeps run",
         "kdeps validate",
-        "kdeps bundle build",
-        "kdeps bundle package",
-        "kdeps bundle prepackage",
-        "kdeps chat",
         "kdeps doctor",
         "kdeps edit",
         "kdeps env",
-        "kdeps exec",
-        "kdeps export iso",
-        "kdeps export k8s",
-        "kdeps knowledge build"
+        "kdeps exec"
+      ],
+      "code": [
+        "kdeps (agent loop)",
+        "llm.AutoRouterPick",
+        "config.CloudLLMProviders",
+        "config.assetProviders"
       ]
     },
     "recipes": {
@@ -4537,28 +4506,33 @@
       "mode": "cli",
       "flow": [
         {
-          "label": "kdeps llm"
+          "label": "kdeps llm build or kdeps llm run"
         },
         {
-          "label": "tui.RunLLMWizard"
-        },
-        {
-          "label": "catalog.LoadDefault"
-        },
-        {
-          "label": "catalog.Load uses recipes",
+          "label": "the recipe is rendered into an image",
           "here": true
+        },
+        {
+          "label": "the LLM server starts"
+        },
+        {
+          "label": "workflows call it"
         }
       ],
       "usedBy": [
+        "kdeps llm list",
         "kdeps llm",
         "kdeps llm build",
         "kdeps llm export iso",
         "kdeps llm export k8s",
-        "kdeps llm list",
         "kdeps llm run",
         "kdeps llm show",
         "kdeps llm wizard"
+      ],
+      "code": [
+        "kdeps llm list",
+        "catalog.LoadDefault",
+        "catalog.Load"
       ]
     },
     "schemas": {
@@ -4566,38 +4540,30 @@
       "mode": "both",
       "flow": [
         {
-          "label": "kdeps (agent loop)"
+          "label": "kdeps validate, run or build reads the YAML"
         },
         {
-          "label": "validator.NewSchemaValidator"
-        },
-        {
-          "label": "validator.schemaFS uses schemas",
+          "label": "the schema checks it",
           "here": true
+        },
+        {
+          "label": "the workflow is accepted, or each error is named"
         }
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/clear",
-        "/compact",
-        "/context",
-        "/editor",
-        "/fold",
-        "/goal",
-        "/instruct",
-        "/knowledge",
-        "/model",
         "/settings",
-        "kdeps run",
         "kdeps validate",
-        "kdeps bundle build",
+        "kdeps run",
         "kdeps bundle package",
-        "kdeps bundle prepackage",
         "kdeps env",
-        "kdeps exec",
-        "kdeps export iso",
         "kdeps export k8s",
-        "kdeps knowledge build"
+        "kdeps bundle build"
+      ],
+      "code": [
+        "kdeps (agent loop)",
+        "validator.NewSchemaValidator",
+        "validator.schemaFS"
       ]
     },
     "templates": {
@@ -4605,20 +4571,24 @@
       "mode": "both",
       "flow": [
         {
-          "label": "kdeps (agent loop)"
+          "label": "kdeps new, or the knowledge vault's first use"
         },
         {
-          "label": "knowledge.Init uses templates",
+          "label": "the template is rendered",
           "here": true
+        },
+        {
+          "label": "the project or vault files are written"
         }
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/editor",
-        "/instruct",
-        "/knowledge",
         "kdeps new",
         "kdeps knowledge build"
+      ],
+      "code": [
+        "kdeps new",
+        "templates.(*Generator).GenerateProject"
       ]
     },
     "themes": {
@@ -4626,24 +4596,27 @@
       "mode": "agent",
       "flow": [
         {
-          "label": "kdeps (agent loop)"
+          "label": "kdeps starts, or /theme"
         },
         {
-          "label": "agent.SetTheme uses themes",
+          "label": "the theme colors the terminal",
           "here": true
+        },
+        {
+          "label": "every reply and prompt"
         }
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/konfig",
         "/theme",
+        "/konfig",
         "/update",
-        "kdeps install",
         "kdeps konfig export",
-        "kdeps konfig import",
-        "kdeps list",
-        "kdeps uninstall",
-        "kdeps update"
+        "kdeps konfig import"
+      ],
+      "code": [
+        "kdeps (agent loop)",
+        "agent.SetTheme"
       ]
     },
     "tools": {
@@ -4651,22 +4624,31 @@
       "mode": "agent",
       "flow": [
         {
-          "label": "kdeps (agent loop)"
+          "label": "the agent loop builds the request"
         },
         {
-          "label": "agent.RegisterBuiltinTools"
-        },
-        {
-          "label": "agent.registerDeclaredTools uses tools",
+          "label": "the tool definitions are sent to the model",
           "here": true
+        },
+        {
+          "label": "the model calls a tool"
+        },
+        {
+          "label": "kdeps runs it"
+        },
+        {
+          "label": "the result goes back to the model"
         }
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/editor",
-        "/instruct",
         "/reload",
         "/settings"
+      ],
+      "code": [
+        "kdeps (agent loop)",
+        "agent.RegisterBuiltinTools",
+        "agent.definedAs"
       ]
     }
   }
