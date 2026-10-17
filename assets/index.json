@@ -1717,7 +1717,7 @@
       ]
     },
     "harness/accuracy": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": [
         {
           "version": "1.0.0",
@@ -1725,11 +1725,18 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 88,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "c4103a1d89db613444c9491472ea4d33c6c72c40c7121adb762c24f0cd5b4fbe",
+          "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
+          "tokens": 88,
+          "date": "2026-10-17T19:14:40.431501918Z"
         }
       ]
     },
     "harness/autonomy": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": [
         {
           "version": "1.0.0",
@@ -1737,6 +1744,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 156,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "b6ff3d5befb2e8f8af81d863d79dfad140984ed90981784421d659e998a43820",
+          "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
+          "tokens": 156,
+          "date": "2026-10-17T19:14:40.431501918Z"
         }
       ]
     },
@@ -1753,7 +1767,7 @@
       ]
     },
     "harness/code": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": [
         {
           "version": "1.0.0",
@@ -1761,6 +1775,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 77,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "c91c6a6c2567058cbb91e65cf0f5e2af56e6888720ff003e2af2ee8e4caa54b4",
+          "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
+          "tokens": 77,
+          "date": "2026-10-17T19:14:40.431501918Z"
         }
       ]
     },
@@ -1815,7 +1836,7 @@
       ]
     },
     "harness/edit-workflow": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": [
         {
           "version": "1.0.0",
@@ -1823,11 +1844,18 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 254,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "f54249bbfafc27b257f92677122730e86c11d960b5cb21ebe27b66c04ca8ab31",
+          "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
+          "tokens": 254,
+          "date": "2026-10-17T19:14:40.431501918Z"
         }
       ]
     },
     "harness/errors": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": [
         {
           "version": "1.0.0",
@@ -1835,6 +1863,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 182,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "946fcaf3fb950a6d49bde8b6a043706033235ae8d9d60c50058c5628a0f02e96",
+          "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
+          "tokens": 182,
+          "date": "2026-10-17T19:14:40.431501918Z"
         }
       ]
     },
@@ -1923,7 +1958,7 @@
       ]
     },
     "harness/honesty": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": [
         {
           "version": "1.0.0",
@@ -1931,11 +1966,18 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 57,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "ee951092fa02ba9984193e50d455d0bd0abce75ab9c97afab5904b58fcc4d477",
+          "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
+          "tokens": 57,
+          "date": "2026-10-17T19:14:40.431501918Z"
         }
       ]
     },
     "harness/internals": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": [
         {
           "version": "1.0.0",
@@ -1943,6 +1985,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 411,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "0f3506b987853b944265275623ee62b5e341b5e8f5ac64f806202c8615a948cd",
+          "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
+          "tokens": 411,
+          "date": "2026-10-17T19:14:40.431501918Z"
         }
       ]
     },
@@ -2007,7 +2056,7 @@
       ]
     },
     "harness/memory": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": [
         {
           "version": "1.0.0",
@@ -2015,11 +2064,18 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 222,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "312fa3199f7243ffb8a723734a19ea31925b244e1eaa0a0289f48ca0bc985dcf",
+          "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
+          "tokens": 222,
+          "date": "2026-10-17T19:14:40.431501918Z"
         }
       ]
     },
     "harness/narration": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": [
         {
           "version": "1.0.0",
@@ -2027,6 +2083,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 82,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "3b7ad16805b5bcb2dfbc08340f9e3345dc6f0610912bfe50fa9890a9884fb1af",
+          "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
+          "tokens": 82,
+          "date": "2026-10-17T19:14:40.431501918Z"
         }
       ]
     },
@@ -2115,7 +2178,7 @@
       ]
     },
     "harness/output": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": [
         {
           "version": "1.0.0",
@@ -2123,6 +2186,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 454,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "555c382d7a4820ca58a9014e792a837a4cd5ba047a7782fcccb60df059352f09",
+          "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
+          "tokens": 454,
+          "date": "2026-10-17T19:14:40.431501918Z"
         }
       ]
     },
@@ -2151,7 +2221,7 @@
       ]
     },
     "harness/safety": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": [
         {
           "version": "1.0.0",
@@ -2159,11 +2229,18 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 166,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "68e0b8af0c80cf6bed496728e9eb6361677c3fb61a3b401138509db4ee18224e",
+          "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
+          "tokens": 166,
+          "date": "2026-10-17T19:14:40.431501918Z"
         }
       ]
     },
     "harness/scope": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": [
         {
           "version": "1.0.0",
@@ -2171,6 +2248,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 142,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "84530168c345b615b0561d3ee4074824003f678cbba087ef2f7371007282e0e8",
+          "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
+          "tokens": 142,
+          "date": "2026-10-17T19:14:40.431501918Z"
         }
       ]
     },
@@ -2223,7 +2307,7 @@
       ]
     },
     "harness/tools": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": [
         {
           "version": "1.0.0",
@@ -2231,6 +2315,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 260,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "fd14ce06dc2c23dcdf0faa394a18f58a1bc210f0ce44795cc31ea6474caf4e1c",
+          "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
+          "tokens": 260,
+          "date": "2026-10-17T19:14:40.431501918Z"
         }
       ]
     },
@@ -2247,7 +2338,7 @@
       ]
     },
     "harness/use-kdeps-tools": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": [
         {
           "version": "1.0.0",
@@ -2255,6 +2346,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 656,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "f6427a2f8d0bde9d6ab5b4835589c09a0e5360154638981a46a537dc90b3542d",
+          "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
+          "tokens": 656,
+          "date": "2026-10-17T19:14:40.431501918Z"
         }
       ]
     },
@@ -3491,6 +3589,19 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 58,
           "date": "2026-10-10T03:09:18.488367863Z"
+        }
+      ]
+    },
+    "tools/instruct": {
+      "latest": "1.0.0",
+      "description": "Return the full text of one harness section or one instruct briefing. Use it when the system prompt shows a one-line summary and you need that section's full instructions. topic is a harness section name (memory, tools, narration, autonomy, safety, errors, scope, accuracy, honesty, code, output, internals, use-kdeps-tools, edit-workflow, or any other harness section) or an instruct topic (overview, modes, tools, available, memory, goals, feedback, files). A name that is both a section and a topic returns the harness section. Prefix instruct: (instruct:tools, instruct:memory) to force the briefing.",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "7415f2680130a9598da2d829af506a262925ad67dea0f3a91b5269b8d4013402",
+          "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
+          "tokens": 263,
+          "date": "2026-10-17T19:14:40.431501918Z"
         }
       ]
     },
