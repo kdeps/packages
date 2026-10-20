@@ -734,6 +734,74 @@
         }
       ]
     },
+    "components/approval_grant": {
+      "latest": "1.0.0",
+      "description": "Grant a pending approval token through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "a9a9742bb1dda9a67baf5d11b1962ea9498a8ac0818888d7eb020ccd30cefdf2",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
+          "tokens": 45,
+          "date": "2026-10-20T21:38:23.060857062Z"
+        }
+      ]
+    },
+    "components/approval_list": {
+      "latest": "1.0.0",
+      "description": "List approval tokens through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "ff25b940d61159fa33bfb2150982b1037d6a8560e13238a82cf6d2479c60e89d",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
+          "tokens": 15,
+          "date": "2026-10-20T21:38:23.060857062Z"
+        }
+      ]
+    },
+    "components/approval_request": {
+      "latest": "1.0.0",
+      "description": "Request an approval token through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "1b7c89e92893d6666f7f4ac075ecbc71598f5122e9df8e9d51adafeb7db419ca",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
+          "tokens": 72,
+          "date": "2026-10-20T21:38:23.060857062Z"
+        }
+      ]
+    },
+    "components/approval_revoke": {
+      "latest": "1.0.0",
+      "description": "Revoke an approval token through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "30e3d92cb144fb5282d9e7ecc4289be39d89536d75801fd3c5f9769c083a5263",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
+          "tokens": 37,
+          "date": "2026-10-20T21:38:23.060857062Z"
+        }
+      ]
+    },
     "components/bash_exec": {
       "latest": "1.0.0",
       "description": "Run a shell command through the kdeps API",
@@ -989,6 +1057,91 @@
         }
       ]
     },
+    "components/cron_create": {
+      "latest": "1.0.0",
+      "description": "Create a cron job through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "53e6687c8e1ea6cd039406b601ec8dd9d21ca074be199f87bec67751fb80157e",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
+          "tokens": 132,
+          "date": "2026-10-20T21:38:23.060857062Z"
+        }
+      ]
+    },
+    "components/cron_delete": {
+      "latest": "1.0.0",
+      "description": "Delete a cron job through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "7711fa74fa75a0703b2e0f184cfdbb4b2c9635257ba95149401f49ac3e45f878",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
+          "tokens": 34,
+          "date": "2026-10-20T21:38:23.060857062Z"
+        }
+      ]
+    },
+    "components/cron_list": {
+      "latest": "1.0.0",
+      "description": "List cron jobs through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "ca224763298a1aa3965af3d1ac05767b90e67b983daadb9bcded73c4d1cca631",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
+          "tokens": 13,
+          "date": "2026-10-20T21:38:23.060857062Z"
+        }
+      ]
+    },
+    "components/cron_pause": {
+      "latest": "1.0.0",
+      "description": "Pause a cron job through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "3f76dbbdffae23bb202b6d69f86705834167ab37fb70a79c5b4c1ef6ee4acd1d",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
+          "tokens": 33,
+          "date": "2026-10-20T21:38:23.060857062Z"
+        }
+      ]
+    },
+    "components/cron_resume": {
+      "latest": "1.0.0",
+      "description": "Resume a paused cron job through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "564744fae5c274200b0a503507475f26228569ab1062883c3b226512c234fc3e",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
+          "tokens": 35,
+          "date": "2026-10-20T21:38:23.060857062Z"
+        }
+      ]
+    },
     "components/edit_file": {
       "latest": "1.0.0",
       "description": "Edit a file through the kdeps API and return the changed snippet",
@@ -1162,6 +1315,23 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 79,
           "date": "2026-10-20T21:09:12.569210671Z"
+        }
+      ]
+    },
+    "components/instruct": {
+      "latest": "1.0.0",
+      "description": "Read one harness section or briefing through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "a203a28424689ea07069b92ddf5ab5bea78a891a090d5c0803aa70c5964de939",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
+          "tokens": 63,
+          "date": "2026-10-20T21:38:23.060857062Z"
         }
       ]
     },
