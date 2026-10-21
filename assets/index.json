@@ -2097,7 +2097,7 @@
       ]
     },
     "components/http_request": {
-      "latest": "1.1.1",
+      "latest": "1.2.0",
       "description": "Make an HTTP request through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2131,6 +2131,17 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 201,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "30728e9903c62e6e2b17651b227bd59ce54ee58c5359a3c85e98882a1124b94b",
+          "requires": {
+            "schemas/v1": "",
+            "tools/http_request": ""
+          },
+          "commit": "eeacd82342b175d0d55e6bdb62dfcf85d75b3ca8",
+          "tokens": 438,
+          "date": "2026-10-21T19:11:40.811367087Z"
         }
       ]
     },
@@ -5969,7 +5980,7 @@
       ]
     },
     "templates/resources": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "workflow",
       "versions": [
         {
@@ -5989,6 +6000,12 @@
           "sha256": "1e815a4b75085767ec1342a5fc374ae0e6a24a8170a9d9833ad3bba716839c2e",
           "commit": "77cbc7e778ef629bfe4563d70b41f3e7f6c443d4",
           "date": "2026-10-21T16:38:43.868192177Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "e2d972006aa32e9f44e4b25e7b449642514631a7bb2882badde8ddfa101995e6",
+          "commit": "eeacd82342b175d0d55e6bdb62dfcf85d75b3ca8",
+          "date": "2026-10-21T19:11:40.811367087Z"
         }
       ]
     },
@@ -6011,7 +6028,7 @@
       ]
     },
     "templates/whatsapp-bot": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "workflow",
       "versions": [
         {
@@ -6019,6 +6036,12 @@
           "sha256": "624d2fde28b1de54f888be7983b84d77fd7362a896a64f46dcc97925bfb22811",
           "commit": "12911401f4349f7d4ac4d58fb37d3abb78a31e6b",
           "date": "2026-10-14T21:25:09.203964682Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "cb6e89e518164194d7a866e5d567182300d1e6d2c9d34224c1c7ffb2d30f6e9d",
+          "commit": "eeacd82342b175d0d55e6bdb62dfcf85d75b3ca8",
+          "date": "2026-10-21T19:11:40.811367087Z"
         }
       ]
     },
@@ -6655,8 +6678,8 @@
       ]
     },
     "tools/http_request": {
-      "latest": "1.1.0",
-      "description": "Make an HTTP request to a URL. Returns response status, headers, and body. Use for calling APIs, fetching web content, or interacting with external services. Requires: url. Optional: method (default GET), headers, data (JSON body), timeout, failOnError, saveTo.",
+      "latest": "1.2.0",
+      "description": "Make an HTTP request to a URL. Returns response status, headers, and body. Use for calling APIs, fetching web content, or interacting with external services. Requires: url. Optional: method (default GET), headers, data (JSON body), files (multipart uploads), timeout, failOnError, saveTo, retry, cache, connectionName, accountName, followRedirects, tls.",
       "category": "tools",
       "versions": [
         {
@@ -6672,6 +6695,13 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 249,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "5317fa5ead72896a912d21d951a948a3cfbafe836c77dd0b782faf93eaf8fc70",
+          "commit": "eeacd82342b175d0d55e6bdb62dfcf85d75b3ca8",
+          "tokens": 489,
+          "date": "2026-10-21T19:11:40.811367087Z"
         }
       ]
     },

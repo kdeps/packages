@@ -1,0 +1,87 @@
+version: 1.2.0
+requires:
+    schemas/v1: ""
+    tools/http_request: ""
+files:
+    component.yaml: |
+        apiVersion: kdeps.io/v1
+        kind: Component
+        metadata:
+          name: http_request
+          description: Make an HTTP request through the kdeps API
+          version: "1.2.0"
+        interface:
+          inputs:
+            - name: url
+              type: string
+              required: true
+              description: URL to request
+            - name: method
+              type: string
+              description: HTTP method (default GET)
+            - name: timeout
+              type: string
+              description: Request timeout, for example 30s
+            - name: headers
+              type: object
+              description: HTTP headers as key-value pairs
+            - name: data
+              type: object
+              description: Request body as JSON (for POST, PUT, PATCH)
+            - name: files
+              type: object
+              description: Multipart form file fields; each value is a file path, data entries become text fields
+            - name: failOnError
+              type: boolean
+              default: false
+              description: Treat a non-2xx response as an error instead of returning it
+            - name: saveTo
+              type: string
+              description: Absolute path to stream a 2xx response body into; returns savedTo and bytes
+            - name: retry
+              type: object
+              description: Retry block with maxAttempts, backoff, maxBackoff and retryOn status codes
+            - name: cache
+              type: object
+              description: Cache block with ttl and key; presence enables response caching
+            - name: connectionName
+              type: string
+              description: Named connection in ~/.kdeps/config.yaml supplying auth and proxy
+            - name: accountName
+              type: string
+              description: Named account under the agent identity; resolved as Basic Auth
+            - name: followRedirects
+              type: boolean
+              description: Follow redirects; leave unset to follow, false to stop at the first 3xx
+            - name: tls
+              type: object
+              description: TLS block with insecureSkipVerify, certFile, keyFile and caFile
+          # The handler returns the executor's structured result (statusCode, headers,
+          # body, url, method), the same shape the native resource produced.
+          output: "{{ fromJSON(output('call').body) }}"
+        resources:
+          - actionId: call
+            name: HTTP request
+            httpClient:
+              method: POST
+              # In-process host. The HTTP executor calls the handler without dialing.
+              url: http://kdeps.api/apis/tools.kdeps.io/v1/tools/http_request/call
+              headers:
+                Content-Type: application/json
+              failOnError: true
+              timeout: 600s  # hard stop for the call; the request's own timeout fires first
+              data:
+                url: "{{ get('http_request.url') }}"
+                method: "{{ get('http_request.method') }}"
+                timeout: "{{ get('http_request.timeout') }}"
+                headers: "{{ get('http_request.headers') }}"
+                data: "{{ get('http_request.data') }}"
+                files: "{{ get('http_request.files') }}"
+                failOnError: "{{ get('http_request.failOnError') }}"
+                saveTo: "{{ get('http_request.saveTo') }}"
+                retry: "{{ get('http_request.retry') }}"
+                cache: "{{ get('http_request.cache') }}"
+                connectionName: "{{ get('http_request.connectionName') }}"
+                accountName: "{{ get('http_request.accountName') }}"
+                followRedirects: "{{ get('http_request.followRedirects') }}"
+                tls: "{{ get('http_request.tls') }}"
