@@ -1894,6 +1894,24 @@
         }
       ]
     },
+    "components/exec": {
+      "latest": "1.0.0",
+      "description": "Run a shell command through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "f686d2361c789d10ac4f94383aa7c0ab6127c09f880e9f7b37eb45e3a81d7170",
+          "requires": {
+            "schemas/v1": "",
+            "tools/exec": ""
+          },
+          "commit": "77cbc7e778ef629bfe4563d70b41f3e7f6c443d4",
+          "tokens": 181,
+          "date": "2026-10-21T16:38:43.868192177Z"
+        }
+      ]
+    },
     "components/file": {
       "latest": "1.0.2",
       "description": "Structured filesystem operations (read, write, patch, list, delete, exists, mkdir, copy, move, append)",
@@ -2473,6 +2491,24 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 37,
           "date": "2026-10-21T11:44:36.787763914Z"
+        }
+      ]
+    },
+    "components/python": {
+      "latest": "1.0.0",
+      "description": "Run a Python script through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "df1c58b5fcc3f372c4c6a499f0ac9e1ca31eb7f7d44ebd252201d8e2fa81b986",
+          "requires": {
+            "schemas/v1": "",
+            "tools/python": ""
+          },
+          "commit": "77cbc7e778ef629bfe4563d70b41f3e7f6c443d4",
+          "tokens": 276,
+          "date": "2026-10-21T16:38:43.868192177Z"
         }
       ]
     },
@@ -5915,7 +5951,7 @@
       ]
     },
     "templates/resources": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "workflow",
       "versions": [
         {
@@ -5929,6 +5965,12 @@
           "sha256": "31c7427a2128385e907f3b6117ddc566aabb634108ef374219ab8983c00aba72",
           "commit": "b9ae9a26efea318866f7dcd77065cfbbeb8ea6be",
           "date": "2026-10-15T00:24:30.02418423Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "1e815a4b75085767ec1342a5fc374ae0e6a24a8170a9d9833ad3bba716839c2e",
+          "commit": "77cbc7e778ef629bfe4563d70b41f3e7f6c443d4",
+          "date": "2026-10-21T16:38:43.868192177Z"
         }
       ]
     },
@@ -6468,6 +6510,20 @@
         }
       ]
     },
+    "tools/exec": {
+      "latest": "1.0.0",
+      "description": "Run a shell command and return its structured result: success, exitCode, stdout, stderr, command, result and timedOut. Use through the exec component for pipeline steps that shell out. The command runs with sh -c (cmd /C on Windows) unless args are given. Optional: args, env, workingDir, timeout.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "50edb102552e5269799eac942dc21f51b32afefb3af386398878030fa913b856",
+          "commit": "77cbc7e778ef629bfe4563d70b41f3e7f6c443d4",
+          "tokens": 240,
+          "date": "2026-10-21T16:38:43.868192177Z"
+        }
+      ]
+    },
     "tools/file_ops": {
       "latest": "1.0.0",
       "description": "Run one structured filesystem operation and return its JSON result. Operations: read, write, patch, list, delete, exists, mkdir, copy, move, append. Requires: operation, and path (or source for copy and move). Optional: content, patch, encoding (text or base64), pattern, recursive, backup, dryRun, mode, appendNewline.",
@@ -6904,6 +6960,20 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 111,
           "date": "2026-10-10T03:09:18.488367863Z"
+        }
+      ]
+    },
+    "tools/python": {
+      "latest": "1.0.0",
+      "description": "Run a Python script and return its result: stdout parsed as JSON when possible, otherwise the raw text. Use through the python component for pipeline steps written in Python. Give either script (inline source) or scriptFile (a .py file). Optional: args, env, timeout, venvName, pythonVersion, packages.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "00f69bd8f2b03d10d1a58e0c985e5965b0c67e5352590791b78f1a55d5db3826",
+          "commit": "77cbc7e778ef629bfe4563d70b41f3e7f6c443d4",
+          "tokens": 316,
+          "date": "2026-10-21T16:38:43.868192177Z"
         }
       ]
     },
