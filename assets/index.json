@@ -3485,6 +3485,24 @@
         }
       ]
     },
+    "components/vector_store": {
+      "latest": "1.0.0",
+      "description": "Run one vector store operation through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "68437eb492b6e1cbee8851fd0bef7d83128f966a35bd005c5da0572dbada5cbd",
+          "requires": {
+            "schemas/v1": "",
+            "tools/vector_store": ""
+          },
+          "commit": "285e2cf1e37f668615ef6b671d98ab84d5a84b76",
+          "tokens": 415,
+          "date": "2026-10-21T21:58:13.740916926Z"
+        }
+      ]
+    },
     "components/voyageai_rerank": {
       "latest": "1.0.1",
       "description": "Rerank documents by relevance to a query through the kdeps API",
@@ -7566,6 +7584,20 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 111,
           "date": "2026-10-21T03:07:21.578392701Z"
+        }
+      ]
+    },
+    "tools/vector_store": {
+      "latest": "1.0.0",
+      "description": "Run one vector store operation against an external vector database: add_documents to upsert documents, or similarity_search to query them. Call it through the vector_store component. Requires: collection, operation, embedModel (except bedrock). Optional: provider, url, apiKey, documents, query, topK, embedBackend, embedBaseURL.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "cb4595b8a242751b5e2942ba3a0208868c8e086712db02ad1580dd3ba5bc7f65",
+          "commit": "285e2cf1e37f668615ef6b671d98ab84d5a84b76",
+          "tokens": 430,
+          "date": "2026-10-21T21:58:13.740916926Z"
         }
       ]
     },
