@@ -1,0 +1,57 @@
+version: 1.1.0
+requires:
+    schemas/v1: ""
+files:
+    component.yaml: |
+        apiVersion: kdeps.io/v1
+        kind: Component
+        metadata:
+          name: http_request
+          description: Make an HTTP request through the kdeps API
+          version: "1.1.0"
+        interface:
+          inputs:
+            - name: url
+              type: string
+              required: true
+              description: URL to request
+            - name: method
+              type: string
+              description: HTTP method (default GET)
+            - name: timeout
+              type: string
+              description: Request timeout, for example 30s
+            - name: headers
+              type: object
+              description: HTTP headers as key-value pairs
+            - name: data
+              type: object
+              description: Request body as JSON (for POST, PUT, PATCH)
+            - name: failOnError
+              type: boolean
+              default: false
+              description: Treat a non-2xx response as an error instead of returning it
+            - name: saveTo
+              type: string
+              description: Absolute path to stream a 2xx response body into; returns savedTo and bytes
+          # body is the handler text. The HTTP envelope stays inside the call.
+          output: "{{ output('call').body }}"
+        resources:
+          - actionId: call
+            name: HTTP request
+            httpClient:
+              method: POST
+              # In-process host. The HTTP executor calls the handler without dialing.
+              url: http://kdeps.api/apis/tools.kdeps.io/v1/tools/http_request/call
+              headers:
+                Content-Type: application/json
+              failOnError: true
+              timeout: 30s
+              data:
+                url: "{{ get('http_request.url') }}"
+                method: "{{ get('http_request.method') }}"
+                timeout: "{{ get('http_request.timeout') }}"
+                headers: "{{ get('http_request.headers') }}"
+                data: "{{ get('http_request.data') }}"
+                failOnError: "{{ get('http_request.failOnError') }}"
+                saveTo: "{{ get('http_request.saveTo') }}"

@@ -1,0 +1,39 @@
+version: 1.1.0
+requires:
+    schemas/v1: ""
+files:
+    component.yaml: |
+        apiVersion: kdeps.io/v1
+        kind: Component
+        metadata:
+          name: embedding_vectorize
+          description: Convert text into embeddings through the kdeps API
+          version: "1.1.0"
+        interface:
+          inputs:
+            - name: texts
+              type: array
+              description: Strings to embed. An empty list is refused
+            - name: backend
+              type: string
+              description: 'Embedding backend: openai, ollama, google'
+            - name: model
+              type: string
+              description: 'Embedding model, for example text-embedding-3-small'
+          # body is the handler text. The HTTP envelope stays inside the call.
+          output: "{{ output('call').body }}"
+        resources:
+          - actionId: call
+            name: Vectorize text
+            httpClient:
+              method: POST
+              # In-process host. The HTTP executor calls the handler without dialing.
+              url: http://kdeps.api/apis/tools.kdeps.io/v1/tools/embedding_vectorize/call
+              headers:
+                Content-Type: application/json
+              failOnError: true
+              timeout: 30s
+              data:
+                texts: "{{ get('embedding_vectorize.texts') }}"
+                backend: "{{ get('embedding_vectorize.backend') }}"
+                model: "{{ get('embedding_vectorize.model') }}"
