@@ -1237,7 +1237,7 @@
       ]
     },
     "components/code_definition": {
-      "latest": "1.0.1",
+      "latest": "1.1.0",
       "description": "Find a symbol definition through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1261,11 +1261,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 56,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "a8cc86031534b7f59e54e2a64ae30ae53d4622efa293e00569a1047d121938f8",
+          "requires": {
+            "schemas/v1": "",
+            "tools/code_definition": ""
+          },
+          "commit": "644d6dcc2b36e368eb561db9a2f0b4635df9e75a",
+          "tokens": 226,
+          "date": "2026-10-21T20:50:36.149439125Z"
         }
       ]
     },
     "components/code_diagnostics": {
-      "latest": "1.0.1",
+      "latest": "1.1.0",
       "description": "Get file diagnostics through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1289,6 +1300,17 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 34,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "16657d352818daebd97faf8e2e6c57188a28764788bb029fc10d8223951e41d2",
+          "requires": {
+            "schemas/v1": "",
+            "tools/code_diagnostics": ""
+          },
+          "commit": "644d6dcc2b36e368eb561db9a2f0b4635df9e75a",
+          "tokens": 104,
+          "date": "2026-10-21T20:50:36.149439125Z"
         }
       ]
     },
@@ -1407,7 +1429,7 @@
       ]
     },
     "components/code_hover": {
-      "latest": "1.0.1",
+      "latest": "1.1.0",
       "description": "Get symbol documentation through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1431,6 +1453,17 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 55,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "cad2557b9bf5e85dd8c6b8e05d48dddb60429588e01cf4b51ff08315e112b384",
+          "requires": {
+            "schemas/v1": "",
+            "tools/code_hover": ""
+          },
+          "commit": "644d6dcc2b36e368eb561db9a2f0b4635df9e75a",
+          "tokens": 91,
+          "date": "2026-10-21T20:50:36.149439125Z"
         }
       ]
     },
@@ -1473,7 +1506,7 @@
       ]
     },
     "components/code_references": {
-      "latest": "1.0.1",
+      "latest": "1.1.0",
       "description": "Find symbol references through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1497,11 +1530,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 57,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "a411f2e485402595dffe152e1faabc40f27c8c16f3616718753b97f18f25994e",
+          "requires": {
+            "schemas/v1": "",
+            "tools/code_references": ""
+          },
+          "commit": "644d6dcc2b36e368eb561db9a2f0b4635df9e75a",
+          "tokens": 226,
+          "date": "2026-10-21T20:50:36.149439125Z"
         }
       ]
     },
     "components/code_search": {
-      "latest": "1.0.1",
+      "latest": "1.1.0",
       "description": "Search for a symbol through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1525,12 +1569,23 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 59,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "c269e57469b3dac3582d58e19b783e4eb668c859259b0b3d8b332b9f4b5c3406",
+          "requires": {
+            "schemas/v1": "",
+            "tools/code_search": ""
+          },
+          "commit": "644d6dcc2b36e368eb561db9a2f0b4635df9e75a",
+          "tokens": 228,
+          "date": "2026-10-21T20:50:36.149439125Z"
         }
       ]
     },
     "components/code_symbols": {
-      "latest": "1.0.1",
-      "description": "List symbols in a file through the kdeps API",
+      "latest": "1.1.0",
+      "description": "List a file's symbols through the kdeps API",
       "category": "workflow",
       "versions": [
         {
@@ -1553,6 +1608,17 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 33,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "61a255d34bf58efeca2ce9fb43d6b5cc9c66ac6e602a57f7662970709ecb2cca",
+          "requires": {
+            "schemas/v1": "",
+            "tools/code_symbols": ""
+          },
+          "commit": "644d6dcc2b36e368eb561db9a2f0b4635df9e75a",
+          "tokens": 202,
+          "date": "2026-10-21T20:50:36.149439125Z"
         }
       ]
     },
@@ -6250,8 +6316,8 @@
       ]
     },
     "tools/code_definition": {
-      "latest": "1.0.0",
-      "description": "Find the definition of a symbol using semantic analysis (LSP). Returns file and line. Requires: symbol, path.",
+      "latest": "1.1.0",
+      "description": "Find the definition of a symbol using semantic analysis (LSP). Returns file and line. Requires: symbol, path. Optional: pattern, language, languageId, context, limit.",
       "category": "tools",
       "versions": [
         {
@@ -6260,12 +6326,19 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 85,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "2b27481930dd452a36d28972df58258d62db3056982bd89d6c4712aedcd263ed",
+          "commit": "644d6dcc2b36e368eb561db9a2f0b4635df9e75a",
+          "tokens": 252,
+          "date": "2026-10-21T20:50:36.149439125Z"
         }
       ]
     },
     "tools/code_diagnostics": {
-      "latest": "1.0.0",
-      "description": "Get compiler/linter diagnostics for a file. Returns errors, warnings, hints. Requires: path.",
+      "latest": "1.1.0",
+      "description": "Get compiler/linter diagnostics for a file. Returns errors, warnings, hints. Requires: path. Optional: pattern, languageId.",
       "category": "tools",
       "versions": [
         {
@@ -6274,6 +6347,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 51,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "f514deb2723bd90f3f3fb966fcde5f4ab6addb9323af7a789442d0748d0e826b",
+          "commit": "644d6dcc2b36e368eb561db9a2f0b4635df9e75a",
+          "tokens": 134,
+          "date": "2026-10-21T20:50:36.149439125Z"
         }
       ]
     },
@@ -6320,8 +6400,8 @@
       ]
     },
     "tools/code_hover": {
-      "latest": "1.0.0",
-      "description": "Get documentation and type info for a symbol. Returns doc comments and type signatures. Requires: symbol, path.",
+      "latest": "1.1.0",
+      "description": "Get documentation and type info for a symbol. Returns doc comments and type signatures. Requires: symbol, path. Optional: languageId.",
       "category": "tools",
       "versions": [
         {
@@ -6330,6 +6410,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 82,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "277237f3f7242883aadb7b9a4dc533fea7f701ae7789eafe47be9c5943b59d45",
+          "commit": "644d6dcc2b36e368eb561db9a2f0b4635df9e75a",
+          "tokens": 133,
+          "date": "2026-10-21T20:50:36.149439125Z"
         }
       ]
     },
@@ -6348,8 +6435,8 @@
       ]
     },
     "tools/code_references": {
-      "latest": "1.0.0",
-      "description": "Find all references to a symbol across the codebase. Returns every file and line. Requires: symbol, path.",
+      "latest": "1.1.0",
+      "description": "Find all references to a symbol across the codebase. Returns every file and line. Requires: symbol, path. Optional: pattern, language, languageId, context, limit.",
       "category": "tools",
       "versions": [
         {
@@ -6358,12 +6445,19 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 82,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "bd005c4fbd08b6110fc6affa53491b6180478c5b86710fbed66965dc3cca678c",
+          "commit": "644d6dcc2b36e368eb561db9a2f0b4635df9e75a",
+          "tokens": 249,
+          "date": "2026-10-21T20:50:36.149439125Z"
         }
       ]
     },
     "tools/code_search": {
-      "latest": "1.0.0",
-      "description": "Search for a symbol or pattern across the codebase. Use this first to locate symbols before using code_definition or code_references. Requires: query, path.",
+      "latest": "1.1.0",
+      "description": "Search for a symbol or pattern across the codebase. Use this first to locate symbols before using code_definition or code_references. Requires: query, path. Optional: pattern, language, languageId, context, limit.",
       "category": "tools",
       "versions": [
         {
@@ -6372,12 +6466,19 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 92,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "efe0296e9de6bba69ebe29a045856ee1e391bc1d7f7c0ed7caa99a6425163ef1",
+          "commit": "644d6dcc2b36e368eb561db9a2f0b4635df9e75a",
+          "tokens": 258,
+          "date": "2026-10-21T20:50:36.149439125Z"
         }
       ]
     },
     "tools/code_symbols": {
-      "latest": "1.0.0",
-      "description": "List all symbols (functions, types, classes) in a file. Returns structured symbol info with nesting. Requires: path.",
+      "latest": "1.1.0",
+      "description": "List all symbols (functions, types, classes) in a file. Returns structured symbol info with nesting. Requires: path. Optional: pattern, language, languageId, context, limit.",
       "category": "tools",
       "versions": [
         {
@@ -6386,6 +6487,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 60,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "58275374a03f048f589949558e5b16395383086379c647d8f32e399c14d7b1e8",
+          "commit": "644d6dcc2b36e368eb561db9a2f0b4635df9e75a",
+          "tokens": 226,
+          "date": "2026-10-21T20:50:36.149439125Z"
         }
       ]
     },
