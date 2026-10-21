@@ -854,7 +854,7 @@
       ]
     },
     "components/browser": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "description": "Drive a real browser with Playwright - navigate, click, fill, type, upload, select, check, hover, scroll, press, clear, evaluate, screenshot, wait",
       "category": "workflow",
       "versions": [
@@ -867,6 +867,16 @@
           "commit": "e22e11458886f7619d75eddae502a12233041582",
           "tokens": 364,
           "date": "2026-10-14T23:17:24.832802864Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "701a6611f8b5747ed3a778704a5fb95a0203992592db13f6023322af6e86cd00",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.4"
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 364,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
@@ -1057,6 +1067,23 @@
         }
       ]
     },
+    "components/cohere_rerank": {
+      "latest": "1.0.0",
+      "description": "Rerank documents by relevance to a query through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "bf5078d482392d74d8b6e9dafad6c10df2ed2502996af228b32602ce70596b79",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 130,
+          "date": "2026-10-21T03:07:21.578392701Z"
+        }
+      ]
+    },
     "components/cron_create": {
       "latest": "1.0.0",
       "description": "Create a cron job through the kdeps API",
@@ -1160,7 +1187,7 @@
       ]
     },
     "components/email": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "description": "Send email over SMTP and read, search, modify, list or delete IMAP mailboxes",
       "category": "workflow",
       "versions": [
@@ -1173,6 +1200,16 @@
           "commit": "539fb6f9bbc8beb6bf1a1599deb2fdf19803d30b",
           "tokens": 620,
           "date": "2026-10-14T09:23:26.045413814Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "d33bd275bcf64bd39b54731f65ee7d1cef709ec59ec9899cbf18bbb04a34f141",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.4"
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 622,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
@@ -1210,8 +1247,25 @@
         }
       ]
     },
-    "components/file": {
+    "components/exa_search": {
       "latest": "1.0.0",
+      "description": "Search the web with Exa neural search through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "b6e59067dec6e9364f6afbf063ae58b2f516e518c179df28112b0050650c6104",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 47,
+          "date": "2026-10-21T03:07:21.578392701Z"
+        }
+      ]
+    },
+    "components/file": {
+      "latest": "1.0.1",
       "description": "Structured filesystem operations (read, write, patch, list, delete, exists, mkdir, copy, move, append)",
       "category": "workflow",
       "versions": [
@@ -1224,11 +1278,21 @@
           "commit": "dba6fe8ec16bdc0ded769ea1d24bfaa1799f73db",
           "tokens": 414,
           "date": "2026-10-14T06:13:43.698608646Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "28bfdd1c59a18434e17f9fa91c9ab5010ff479dad5204696a952134e185a6867",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 414,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
     "components/git": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Structured git operations (status, diff, log, show, branch, remote, add, commit, checkout, init, clone, push, pull)",
       "category": "workflow",
       "versions": [
@@ -1247,6 +1311,16 @@
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "tokens": 340,
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "5bed08b3d4eb150548cc7255d858d62e7a826a1900f4e339a23c1b70f4376794",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 340,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
@@ -1332,6 +1406,23 @@
           "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
           "tokens": 63,
           "date": "2026-10-20T21:38:23.060857062Z"
+        }
+      ]
+    },
+    "components/jina_rerank": {
+      "latest": "1.0.0",
+      "description": "Rerank documents by relevance to a query through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "286837452326c491325e5b59ffaabfff76b4ae3b24efa4ca2074eb8e7c18d9ee",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 129,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
@@ -1455,8 +1546,8 @@
       ]
     },
     "components/ocr": {
-      "latest": "1.0.2",
-      "description": "Extract text from an image with the tesseract CLI",
+      "latest": "1.0.3",
+      "description": "Extract text from an image with the tesseract CLI through the kdeps API",
       "category": "workflow",
       "versions": [
         {
@@ -1480,6 +1571,33 @@
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "tokens": 152,
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "b84d343a5ab63048ac4c864f8ec766466de5e3746462e1c35cd5e296896303f4",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.1"
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 158,
+          "date": "2026-10-21T03:07:21.578392701Z"
+        }
+      ]
+    },
+    "components/ocr_image": {
+      "latest": "1.0.1",
+      "description": "Extract text from an image with tesseract through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.1",
+          "sha256": "97333ff4d9e0493c19d96031a144832c0f5e5a84557ab3d1f6d0ea43a05c42b0",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 159,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
@@ -1517,8 +1635,25 @@
         }
       ]
     },
+    "components/retrieve_context": {
+      "latest": "1.0.0",
+      "description": "Retrieve relevant chunks from the RAG index through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "1c36df6bcbbbd0513c2b513cc44fd4a85f9e5a068d1336c582765baa3e2f613c",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 76,
+          "date": "2026-10-21T03:07:21.578392701Z"
+        }
+      ]
+    },
     "components/scraper": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Fetch a web page and return its text, optionally only the elements matching a CSS selector",
       "category": "workflow",
       "versions": [
@@ -1537,11 +1672,21 @@
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "tokens": 115,
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "e5c388a9f84e906231ad1f0e525979b1d553d579bfe467e87ec37d9bc4ffc30e",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.2"
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 115,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
     "components/searchWeb": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Search the web - DuckDuckGo by default, Brave, Bing or Tavily with an API key - and return title/url/snippet results",
       "category": "workflow",
       "versions": [
@@ -1560,6 +1705,16 @@
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "tokens": 187,
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "7840d576aa93f72a61386848bd9a9694c03cd4bcdf05c6b7ce9c0a6b1a422fa0",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.3"
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 187,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
@@ -1598,7 +1753,7 @@
       ]
     },
     "components/sql": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Run SQL against PostgreSQL, MySQL/MariaDB, SQLite, SQL Server or Oracle - one query, or several in a transaction",
       "category": "workflow",
       "versions": [
@@ -1611,6 +1766,16 @@
           "commit": "b9ae9a26efea318866f7dcd77065cfbbeb8ea6be",
           "tokens": 331,
           "date": "2026-10-15T00:24:30.02418423Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "2b8d297d4dc3be533282e73696054dbca0154d6914029a8f028bd802a5af32d1",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.4"
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 331,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
@@ -1887,7 +2052,7 @@
       ]
     },
     "components/transcribe": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Transcribe audio or video to text with a Whisper API or offline with whisper.cpp",
       "category": "workflow",
       "versions": [
@@ -1906,11 +2071,55 @@
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "tokens": 362,
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "10496d2ccd03f3f971b408ec6375f87e8d576ffb73a6af3edf37a6d6e5787c28",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 362,
+          "date": "2026-10-21T03:07:21.578392701Z"
+        }
+      ]
+    },
+    "components/transcribe_audio": {
+      "latest": "1.0.0",
+      "description": "Transcribe audio or video through a Whisper API with the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "1954b8f5909499aa1c088fc1e30bb5458a6893fb7419d279b7880b117a065e3e",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 161,
+          "date": "2026-10-21T03:07:21.578392701Z"
+        }
+      ]
+    },
+    "components/transcribe_audio_offline": {
+      "latest": "1.0.0",
+      "description": "Transcribe audio offline with whisper.cpp through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "f7cdc7e55efbb249eb02c23f12e0b28caf5d456bb36ee79ad9413f0208a3e18d",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 114,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
     "components/twiml": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Build a TwiML voice response (say, play, pause, gather, dial, record, hangup, reject, redirect) for a phone webhook",
       "category": "workflow",
       "versions": [
@@ -1923,6 +2132,33 @@
           "commit": "d4c1598f924e8b074ac779c61f7af9f2ae1f0552",
           "tokens": 83,
           "date": "2026-10-14T22:32:08.758713765Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "ed78b63f440e13711e567bbbba2300abbbc40c94eb2c1efcdb2307d1a77c671d",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.4"
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 83,
+          "date": "2026-10-21T03:07:21.578392701Z"
+        }
+      ]
+    },
+    "components/voyageai_rerank": {
+      "latest": "1.0.0",
+      "description": "Rerank documents by relevance to a query through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "4e81a1a5eaf53a81d2e85a6f6d3efe57d9a127a5c7a75c0d69349d9ed78e6444",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 125,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
@@ -1977,6 +2213,23 @@
         }
       ]
     },
+    "components/wolfram_alpha": {
+      "latest": "1.0.0",
+      "description": "Query Wolfram Alpha for a computed answer through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "0a998ab9df485cddcf24c65c678196bb5f97772798982455771288add28f8c47",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 56,
+          "date": "2026-10-21T03:07:21.578392701Z"
+        }
+      ]
+    },
     "components/write_file": {
       "latest": "1.0.0",
       "description": "Write or overwrite a text file through the kdeps API",
@@ -1991,6 +2244,40 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 58,
           "date": "2026-10-20T21:09:12.569210671Z"
+        }
+      ]
+    },
+    "components/zapier_list_actions": {
+      "latest": "1.0.0",
+      "description": "List the available Zapier NLA actions through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "bada91a69dc15bfeffe2be8f0a25e2098cc3808275fce6d4cc99d2ae2145dd40",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 21,
+          "date": "2026-10-21T03:07:21.578392701Z"
+        }
+      ]
+    },
+    "components/zapier_run_action": {
+      "latest": "1.0.0",
+      "description": "Run a Zapier NLA action through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "47fecae13328860f0821414291ddc926a733f72e5bed077256a03146c9dc92cf",
+          "requires": {
+            "schemas/v1": ""
+          },
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 83,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
@@ -4535,6 +4822,20 @@
         }
       ]
     },
+    "tools/browser_ops": {
+      "latest": "1.0.0",
+      "description": "Drive a real browser with Playwright: open a page and run ordered steps - navigate, click, fill, type, upload, select, check, uncheck, hover, scroll, press, clear, evaluate, screenshot, wait - then return the page URL, title and each step's result. Optional: engine (chromium, firefox or webkit), headless, sessionId (keep cookies and the last page between calls), viewport, timeout, waitFor, userAgent, stealthMode.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "245ba2d0bbc274542a3774d053ee34037ad0237ce1784eed23e03bca8556404c",
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 403,
+          "date": "2026-10-21T03:07:21.578392701Z"
+        }
+      ]
+    },
     "tools/calculator": {
       "latest": "1.0.0",
       "description": "Evaluate a mathematical expression and return the result. Accepts any valid numeric expression (e.g. '2 + 2', '3.14 * 10**2', 'sqrt(16)'). Powered by Starlark math evaluation.",
@@ -4800,6 +5101,20 @@
         }
       ]
     },
+    "tools/email_ops": {
+      "latest": "1.0.0",
+      "description": "Send email over SMTP and read, search, modify, list or delete IMAP mailboxes. SMTP and IMAP settings come from named connections in config.yaml smtp_connections and imap_connections. Actions: send, read, search, modify, list, delete.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "ace319760c237f4fdf8f34fb57066be02c04f78eff3f7eeb4d8faf3233e7e7a3",
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 506,
+          "date": "2026-10-21T03:07:21.578392701Z"
+        }
+      ]
+    },
     "tools/embedding_search": {
       "latest": "1.0.0",
       "description": "Search for documents semantically similar to a query in the local embedding database. Returns ranked results with similarity scores. Requires: query (natural language search query), collection (name of the document collection). Optional: limit (max results, default 5).",
@@ -4845,6 +5160,34 @@
           "commit": "eb2225e3bb536184501ac840c1ed3be966bad6fe",
           "tokens": 89,
           "date": "2026-10-13T10:21:23.350067888Z"
+        }
+      ]
+    },
+    "tools/file_ops": {
+      "latest": "1.0.0",
+      "description": "Run one structured filesystem operation and return its JSON result. Operations: read, write, patch, list, delete, exists, mkdir, copy, move, append. Requires: operation, and path (or source for copy and move). Optional: content, patch, encoding (text or base64), pattern, recursive, backup, dryRun, mode, appendNewline.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "fa2fd37f2ef44553d31774617f3a33b363e54d4d2a0f07f2229a14d1e891ad45",
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 382,
+          "date": "2026-10-21T03:07:21.578392701Z"
+        }
+      ]
+    },
+    "tools/git_ops": {
+      "latest": "1.0.0",
+      "description": "Run one structured git operation and return its JSON result. Operations: status, diff, log, show, branch, remote, add, commit, checkout, init, clone, push, pull. Requires: operation, and url for clone. Optional: workingDir, paths, message, branch, remote, args, maxCount, dryRun.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "bec6fbea00c64d8fc38a178963322b12287ce4b2f2e0fdc6b03143d758a604ea",
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 322,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
@@ -4919,8 +5262,8 @@
       ]
     },
     "tools/http_request": {
-      "latest": "1.0.0",
-      "description": "Make an HTTP request to a URL. Returns response status, headers, and body. Use for calling APIs, fetching web content, or interacting with external services. Requires: url. Optional: method (default GET), headers, data (JSON body), timeout.",
+      "latest": "1.1.0",
+      "description": "Make an HTTP request to a URL. Returns response status, headers, and body. Use for calling APIs, fetching web content, or interacting with external services. Requires: url. Optional: method (default GET), headers, data (JSON body), timeout, failOnError, saveTo.",
       "category": "tools",
       "versions": [
         {
@@ -4929,6 +5272,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 171,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "db1dabdb4a3ccb8ba311cf8fef7f3b4f0448108986827fb93b2415f02ee3b3e1",
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 249,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
@@ -5212,8 +5562,8 @@
       ]
     },
     "tools/ocr_image": {
-      "latest": "1.1.0",
-      "description": "Extract text from an image via tesseract OCR. Runs entirely locally -- no API key required. Supports png, jpg/jpeg, tiff, bmp, gif. Requires: file (absolute path to the image). Optional: language (tesseract -l value, e.g. 'eng' or 'eng+fra'; default 'eng'). Does not support PDF -- use load_document with type pdf for text-layer PDFs.",
+      "latest": "1.2.0",
+      "description": "Extract text from an image via tesseract OCR. Runs entirely locally -- no API key required. Supports png, jpg/jpeg, tiff, bmp, gif. Requires: file (absolute path to the image). Optional: language (tesseract -l value, e.g. 'eng' or 'eng+fra'; default 'eng'), psm (page segmentation mode, default 3), oem (engine mode, default 3). Does not support PDF -- use load_document with type pdf for text-layer PDFs.",
       "category": "tools",
       "versions": [
         {
@@ -5228,6 +5578,13 @@
           "commit": "31a05955a51d4f65ae54f50cce06ecbf4b4592ec",
           "tokens": 145,
           "date": "2026-10-13T11:19:53.906876865Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "6b31380b974dbf4bfe9f930ace71e8eec240bba42d4a511b124d8c9dc300a452",
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 220,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
@@ -5367,6 +5724,20 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 72,
           "date": "2026-10-10T03:09:18.488367863Z"
+        }
+      ]
+    },
+    "tools/sql_ops": {
+      "latest": "1.0.0",
+      "description": "Run SQL against a named connection in config.yaml sql_connections and return the rows or a change summary. Databases: PostgreSQL, MySQL/MariaDB, SQLite, SQL Server, Oracle. One statement (query + params), or several in one transaction (transaction + queries). Requires: connectionName.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "9a3f721e04dfe90b019a2e85b701a2e33384b129635d76472eeac937ef23d046",
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 287,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
@@ -5574,7 +5945,7 @@
       ]
     },
     "tools/transcribe_audio": {
-      "latest": "1.1.0",
+      "latest": "1.2.0",
       "description": "Transcribe an audio or video file to text through a Whisper API: openai (default), groq, or local (a self-hosted OpenAI-compatible Whisper server). Supports mp3, mp4, mpeg, mpga, m4a, wav, webm. Returns the transcribed text. For offline transcription with no API key use transcribe_audio_offline.",
       "category": "tools",
       "versions": [
@@ -5590,6 +5961,13 @@
           "commit": "6f6f575531c95478a4c8c5c65fd553e2946a7992",
           "tokens": 205,
           "date": "2026-10-13T15:41:59.558069751Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "2a34b1e1e3a411a64ecaab5aebda3b1022d1a31c262517353263f4aa3273788f",
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 296,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
@@ -5604,6 +5982,20 @@
           "commit": "6f6f575531c95478a4c8c5c65fd553e2946a7992",
           "tokens": 159,
           "date": "2026-10-13T15:41:59.558069751Z"
+        }
+      ]
+    },
+    "tools/twiml": {
+      "latest": "1.0.0",
+      "description": "Build a TwiML voice response (say, play, pause, gather, dial, record, hangup, reject, redirect) from an ordered list of verbs. Returns {\"twiml\": \"\u003cResponse\u003e...\u003c/Response\u003e\"}. Requires: verbs (an ordered list, one key per verb).",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "33a348c9d3e04dd763caf9c406dbb01ef497098e6a24b730fe8d40afcb047516",
+          "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
+          "tokens": 111,
+          "date": "2026-10-21T03:07:21.578392701Z"
         }
       ]
     },
@@ -6244,8 +6636,13 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
+        "/update",
         "/reload",
-        "/settings"
+        "/settings",
+        "kdeps install",
+        "kdeps list",
+        "kdeps uninstall",
+        "kdeps update"
       ],
       "code": [
         "kdeps (agent loop)",
