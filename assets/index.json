@@ -1790,6 +1790,24 @@
         }
       ]
     },
+    "components/embedding": {
+      "latest": "1.0.0",
+      "description": "Run one embedding operation through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "7bf1416e83df583a457610670dcb69c1e931daf10f9cce1b0220ee5047058d77",
+          "requires": {
+            "schemas/v1": "",
+            "tools/embedding": ""
+          },
+          "commit": "960080c9b487e689cff1675403bb0af7fc630cc5",
+          "tokens": 368,
+          "date": "2026-10-21T17:24:18.21455353Z"
+        }
+      ]
+    },
     "components/embedding_search": {
       "latest": "1.1.1",
       "description": "Search the local embedding database through the kdeps API",
@@ -6459,6 +6477,20 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 506,
           "date": "2026-10-21T03:07:21.578392701Z"
+        }
+      ]
+    },
+    "tools/embedding": {
+      "latest": "1.0.0",
+      "description": "Run one embedding operation: index, search, upsert or delete in the local SQLite embedding database, vectorize or embed_query through an embedding backend, or rerank documents with Cohere. Call it through the embedding component. Requires: operation. Optional: text, collection, dbPath, limit, inputs, model, backend, baseURL, rerankQuery, rerankDocuments, rerankTopN.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "5a1a6c1a6bf1725e522cedf21ec55ef59010e9bcb7ca46c0d619e132c7d0433f",
+          "commit": "960080c9b487e689cff1675403bb0af7fc630cc5",
+          "tokens": 408,
+          "date": "2026-10-21T17:24:18.21455353Z"
         }
       ]
     },
