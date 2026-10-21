@@ -3789,7 +3789,7 @@
       ]
     },
     "harness/nudge-self-limit": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "harness",
       "versions": [
         {
@@ -3798,6 +3798,13 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 133,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "de5e3d7e9d61b5b316b5f1dca007e13a0420d2aaf39299bf93086b454ec64f35",
+          "commit": "675624d36c55f9cb2592a6678482097bebba53d0",
+          "tokens": 161,
+          "date": "2026-10-21T11:26:32.967328564Z"
         }
       ]
     },
