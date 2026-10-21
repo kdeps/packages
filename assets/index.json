@@ -2631,7 +2631,7 @@
       ]
     },
     "components/search_local": {
-      "latest": "1.1.1",
+      "latest": "1.2.0",
       "description": "Search local files through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2665,6 +2665,17 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 119,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "7a51b8081ef7324a0e73125fbebeeb78a42302a2d7c542909ce28ed685227553",
+          "requires": {
+            "schemas/v1": "",
+            "tools/search_local": ""
+          },
+          "commit": "f62c860abb87362928ec0d11e07bed1e4e3cf3ef",
+          "tokens": 277,
+          "date": "2026-10-21T13:31:50.345627234Z"
         }
       ]
     },
@@ -6938,8 +6949,8 @@
       ]
     },
     "tools/search_local": {
-      "latest": "1.2.0",
-      "description": "Search for text patterns in local files using ripgrep. Returns matching files with a snippet, and (when the query is found) a match_id/line/revision - pass match_id to read_file to jump straight to that hit. Use for finding usages, patterns, or strings across the codebase. Requires: query (search term). path is the directory to search; leave it out to search every folder of the working project (its own and the search folders its card lists). Optional: glob (file pattern), limit (max results, default 3).",
+      "latest": "1.3.0",
+      "description": "Search for text patterns in local files using ripgrep. Returns matching files with a snippet, and (when the query is found) a match_id/line/revision - pass match_id to read_file to jump straight to that hit. Use for finding usages, patterns, or strings across the codebase. Requires: query (search term). path is the directory to search; leave it out to search every folder of the working project (its own and the search folders its card lists). Optional: glob (file pattern), limit (max results, default 3), index (rank results with the folder index); index also accepts fuzzy, maxDistance, indexDBPath and graphBoost.",
       "category": "rag",
       "versions": [
         {
@@ -6962,6 +6973,13 @@
           "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
           "tokens": 225,
           "date": "2026-10-17T07:26:30.673619792Z"
+        },
+        {
+          "version": "1.3.0",
+          "sha256": "0c229fe27684908c335f08b7fdc1e0b34f70f21b85b4de9c3da7edea095f82da",
+          "commit": "f62c860abb87362928ec0d11e07bed1e4e3cf3ef",
+          "tokens": 391,
+          "date": "2026-10-21T13:31:50.345627234Z"
         }
       ]
     },
