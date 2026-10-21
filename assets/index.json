@@ -2230,7 +2230,7 @@
       ]
     },
     "components/load_document": {
-      "latest": "1.1.1",
+      "latest": "1.2.0",
       "description": "Load a document through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2264,6 +2264,17 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 103,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "bb609d21a23509e30e4da6a6c57c85edbc740615dc3f83f9783eae3b4d8df725",
+          "requires": {
+            "schemas/v1": "",
+            "tools/load_document": ""
+          },
+          "commit": "4e6839ea1bfb1c03b2c7b0902fc6ec82856ea579",
+          "tokens": 233,
+          "date": "2026-10-21T20:01:58.947831826Z"
         }
       ]
     },
@@ -6873,8 +6884,8 @@
       ]
     },
     "tools/load_document": {
-      "latest": "1.0.0",
-      "description": "Load a document file and return its content as text. Supports PDF (go-pdf, pdftotext, pdfcpu), DOCX/EPUB/RTF/ODT (pandoc), HTML (goquery, lynx), CSV, text, directory, notion, markdown (textutil). Use for reading documents into the conversation for analysis or RAG pipelines. Returns document content with optional splitting into chunks. Requires: source (absolute file path). Optional: type (pdf, csv, html, text — auto-detected from extension), chunkSize (split into chunks of N characters).",
+      "latest": "1.1.0",
+      "description": "Load a document file and return its content as text. Supports PDF (go-pdf, pdftotext, pdfcpu), DOCX/EPUB/RTF/ODT (pandoc), HTML (goquery, lynx), CSV, text, directory, notion, markdown (textutil). Use for reading documents into the conversation for analysis or RAG pipelines. Returns document content with optional splitting into chunks. Requires: source (absolute file path). Optional: type (pdf, csv, html, text - auto-detected from extension), columns (CSV column filter), password (encrypted PDF), chunkSize (split into chunks of N characters), chunkOverlap, chunkSplitter (recursive, token, markdown).",
       "category": "rag",
       "versions": [
         {
@@ -6883,6 +6894,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 269,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "e738c86f46987bb1c995efa4362e5652dffcedc25342de32a6d32ef5e5f9dace",
+          "commit": "4e6839ea1bfb1c03b2c7b0902fc6ec82856ea579",
+          "tokens": 410,
+          "date": "2026-10-21T20:01:58.947831826Z"
         }
       ]
     },
