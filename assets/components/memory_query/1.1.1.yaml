@@ -1,0 +1,37 @@
+version: 1.1.1
+requires:
+    schemas/v1: ""
+    tools/memory_query: ""
+files:
+    component.yaml: |
+        apiVersion: kdeps.io/v1
+        kind: Component
+        metadata:
+          name: memory_query
+          description: Run a relational memory query through the kdeps API
+          version: "1.1.1"
+        interface:
+          inputs:
+            - name: query
+              type: string
+              required: true
+              description: expr-lang query over memory, tool_calls, and tasks
+            - name: limit
+              type: integer
+              default: 50
+              description: Max rows returned when the result is a relation (hard cap 500)
+          # body is the JSON result, or the handler error. The HTTP envelope stays inside the call.
+          output: "{{ output('call').body }}"
+        resources:
+          - actionId: call
+            name: Query memory
+            httpClient:
+              method: POST
+              url: http://kdeps.api/apis/tools.kdeps.io/v1/tools/memory_query/call
+              headers:
+                Content-Type: application/json
+              failOnError: true
+              timeout: 30s
+              data:
+                query: "{{ get('memory_query.query') }}"
+                limit: "{{ get('memory_query.limit') }}"

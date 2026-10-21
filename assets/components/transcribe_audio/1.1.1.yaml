@@ -1,0 +1,65 @@
+version: 1.1.1
+requires:
+    schemas/v1: ""
+    tools/transcribe_audio: ""
+files:
+    component.yaml: |
+        apiVersion: kdeps.io/v1
+        kind: Component
+        metadata:
+          name: transcribe_audio
+          description: Transcribe audio or video through a Whisper API with the kdeps API
+          version: "1.1.1"
+        interface:
+          inputs:
+            - name: file
+              type: string
+              required: true
+              description: Absolute path to the audio/video file (mp3, mp4, mpeg, mpga, m4a, wav, webm)
+            - name: backend
+              type: string
+              default: openai
+              description: 'Provider: openai, groq, or local (a self-hosted OpenAI-compatible Whisper server)'
+            - name: model
+              type: string
+              default: whisper-1
+              description: Transcription model (groq uses whisper-large-v3)
+            - name: language
+              type: string
+              default: ""
+              description: ISO-639-1 code, e.g. en; empty = auto-detect
+            - name: baseURL
+              type: string
+              description: Overrides the backend API base URL (the .../v1 part)
+            - name: prompt
+              type: string
+              description: Spelling hints for names and terms
+            - name: responseFormat
+              type: string
+              default: text
+              description: text, json, verbose_json, srt or vtt
+            - name: temperature
+              type: string
+              description: Sampling temperature 0-1
+          # body is the transcribed text. The HTTP envelope stays inside the call.
+          output: "{{ output('call').body }}"
+        resources:
+          - actionId: call
+            name: Transcribe
+            httpClient:
+              method: POST
+              # In-process host. The HTTP executor calls the handler without dialing.
+              url: http://kdeps.api/apis/tools.kdeps.io/v1/tools/transcribe_audio/call
+              headers:
+                Content-Type: application/json
+              failOnError: true
+              timeout: 300s
+              data:
+                file: "{{ get('transcribe_audio.file') }}"
+                backend: "{{ get('transcribe_audio.backend') }}"
+                model: "{{ get('transcribe_audio.model') }}"
+                language: "{{ get('transcribe_audio.language') }}"
+                baseURL: "{{ get('transcribe_audio.baseURL') }}"
+                prompt: "{{ get('transcribe_audio.prompt') }}"
+                responseFormat: "{{ get('transcribe_audio.responseFormat') }}"
+                temperature: "{{ get('transcribe_audio.temperature') }}"

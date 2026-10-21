@@ -131,7 +131,7 @@
       ]
     },
     "commands/auto-improve": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Run the fixed task list in this kdeps repo, then fix product bugs from the instrument log",
       "category": "agent",
       "versions": [
@@ -140,11 +140,17 @@
           "sha256": "17df59d8ccc145105a260473bfcaaa58fae9a9cdaa657d55115759ae76a730eb",
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "34744c8eab2e635599dd1da954e5d008e55df172b49f1b462bdc0db9fbd64312",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/autocontext": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show or toggle auto-detecting command/file mentions in chat input",
       "category": "agent",
       "versions": [
@@ -153,11 +159,17 @@
           "sha256": "df2bc89bc670521eb2182470a495cad391dec9bfe6d654b80f2c6ff29032f765",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "4e80fd8e87c29f6b022db38982c6c7ca873a0a7b98fb0fa82993ab72d2ffe251",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/clear": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Clear the conversation history",
       "category": "agent",
       "versions": [
@@ -166,11 +178,17 @@
           "sha256": "955c6c673e064e0a20df49c336aeb3a0f7d61327e38e5b8b06de165564c61cb9",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "17f59748d15146693a505123462acf79eb399ff982d70a7750b52df0dad720a2",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/compact": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Compact conversation history (keep recent turns)",
       "category": "agent",
       "versions": [
@@ -179,11 +197,17 @@
           "sha256": "cddc2d060fd6cf6b5822408c5ef9c234b415534ec12c7e149e36e0ca69604570",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "e32513ec62adf0fb5b19a65c560da7591a777e60690a1c51542ed2f09ad17ed2",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/context": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show current context window size",
       "category": "agent",
       "versions": [
@@ -192,11 +216,17 @@
           "sha256": "281e1b45cb5db2a5b54b2fd8ed037d57ecf54f1bd2348924df8b135edd386795",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "8921e5bee747b24f51dbf724a7df6b5c4e8109d6716e6700f3fbe3b6e6b2de3b",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/copy": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Copy the last assistant response to the system clipboard",
       "category": "agent",
       "versions": [
@@ -205,11 +235,17 @@
           "sha256": "5ff09a64019bc1a60dcaf1b806becebea19c125541d09e94c236a6bc2a4679b9",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "bd69a1455cc5968ff76281f4981e7e8cf6069688aec627c92ac8eac70701512e",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/editor": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Open $EDITOR to compose a long prompt",
       "category": "agent",
       "versions": [
@@ -218,11 +254,17 @@
           "sha256": "e34874ffc3ccf1ad55bc1716537886b7adadee9b891f7f295f8dc5e9a6e596a9",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "b2c2cb2bcee80a0f8839f8e0b81663bafc8bf06144d95ea0076a1c9e312af793",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/efficiency": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show or tune efficiency enforcement (soft stops on read-only loops; persists)",
       "category": "agent",
       "versions": [
@@ -231,11 +273,17 @@
           "sha256": "a74f3120cbc6c76483d37ce2ac0fdb9ee8a51e797fa4da97a07542126c1b0128",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "4626408593c8cbc8d80a04808560918bda1c98ba90ffeb0379d1df62c8fbc1c8",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/exit": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Exit kdeps (also Ctrl+D)",
       "category": "agent",
       "versions": [
@@ -244,6 +292,12 @@
           "sha256": "98db6ed20342d18b9c6d126d30815debabac776af6969b7f8088094b261569ba",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "7dcaee3f9f39e3ad25d97fe8fa099128059461a53ba4b4d0cb88d035c6e9b14e",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
@@ -261,7 +315,7 @@
       ]
     },
     "commands/fold": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Lighter, more frequent checkpoint-only summarize+archive (default: auto on, 2000 tokens, 5 items)",
       "category": "agent",
       "versions": [
@@ -270,6 +324,12 @@
           "sha256": "8fffd4952dcd42db026303ff9cd1ef81581202b602f93358ec9c60553745931a",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "5aa593025175baa5ef4ba08a369d2580fe0aa7e2c3bd7a777734b6f19c31f8b8",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
@@ -297,7 +357,7 @@
       ]
     },
     "commands/goal": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show the active goal's task list and progress",
       "category": "agent",
       "versions": [
@@ -306,11 +366,17 @@
           "sha256": "b145516f736998346ec6982a3433516e2ede452a15ef6224962494d975f70924",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "32a7668cc01ae27aee8c59aeb767f5668cc12a9de9b60ed3d4d2492fb5fbdea3",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/handshake": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show or toggle the mandatory session-integrity tool-call check (off by default)",
       "category": "agent",
       "versions": [
@@ -319,11 +385,17 @@
           "sha256": "72c4a2a8067e893f60fa3eabdebca293120d8e311e805b8e15b42b9271db60fe",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "932a4a6cd232de3d8c1cf4da5c469aa9aaf5b89f6a050d7cd19642686716b0c3",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/harness": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "List harness sections (system-prompt text) with their enabled/disabled state",
       "category": "agent",
       "versions": [
@@ -332,11 +404,17 @@
           "sha256": "50f8b735f018b3b18b608fae9ab0052a82337a34f86bed85127580c4b2fd977d",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "a0c9b91427ea14d1c1c68a131217b90d76b7bac8dca405f1562999c08fc2191a",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/help": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show this help message",
       "category": "agent",
       "versions": [
@@ -345,11 +423,17 @@
           "sha256": "9976d7235f662629cb25727f28a73accd3f58a36d33483870231677808652f51",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "109da8658ce372d807bf2f11b4f0bf817b4a26380fa6101910d65129786ff55e",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/history": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show recent conversation turns",
       "category": "agent",
       "versions": [
@@ -358,11 +442,17 @@
           "sha256": "a14172c99c8ab2559725bbc158315708f0da99cebf64296bea25322a769bf8c2",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "a38f557ad3d877500e4543c1539a771503c82668a0a2c1ffdb272d0584ba0fff",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/instruct": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Brief the model on kdeps (tools, calling, memory, modes); primes the next prompt",
       "category": "agent",
       "versions": [
@@ -371,11 +461,17 @@
           "sha256": "f8c741bdb556054630c93879ced73a949373869cd0fd5f061ad24e949a643550",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "7b907ab24e9612ada6e50eb204d2d3a747ede1fc621d852410fa44fa1da72ba6",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/instruct-now": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Same briefing, sent as a turn now - the model reads and acknowledges it on the spot",
       "category": "agent",
       "versions": [
@@ -384,11 +480,17 @@
           "sha256": "821d0cbf03e5b74b898fe059b619fb18ca565bbe7f831bc96f5ceff85e4519ae",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "be759644be1fab1dff8719e7e58c1a33143af8ad53db94038c405cc15049f861",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/judges": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Show the configured judge panel (reviews each turn's final output)",
       "category": "agent",
       "versions": [
@@ -403,11 +505,17 @@
           "sha256": "2115fb682d13fd9a055d98a27ffddd297c569c8923f2fa32e7183895ff1e23b6",
           "commit": "96a6b82c433a8c582bc9ce9c2c1ac5e01359089e",
           "date": "2026-10-17T21:32:39.977848455Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "1761ee8e1fa03afb9ca6492efe3ecd3ad8cd3a75edc02f3a1fac7d34f11720d8",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/kartographer": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show a live map of the internal data-flow pipelines",
       "category": "agent",
       "versions": [
@@ -416,11 +524,17 @@
           "sha256": "8d30fcb1f30a4984028ffdba664a406db64b95fb3ed6475fec1b4c00b0bd2910",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "126bac4be970da2661da10f7bc1ff6052ea485ad6aaf016673eb9dd1f85a9a26",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/knowledge": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show whether the knowledge vault is on, and where it is",
       "category": "agent",
       "versions": [
@@ -429,11 +543,17 @@
           "sha256": "4bc4f182a1b6797f9687f9dddcd213f0381c901545da60cd3dc4ec14fe6312ab",
           "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
           "date": "2026-10-15T17:26:07.241510474Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "fd3dfd5341528c8b83fb4a440224cf8f19fd672b5ea6904f493f481f885b06fa",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/konfig": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Export tuning, harness, themes, and skills to a self-contained YAML file (default ./konfig.yaml)",
       "category": "agent",
       "versions": [
@@ -442,11 +562,17 @@
           "sha256": "2143ca3597901fe1b4109208fdb9c72d6dc959b37a841a6c56ffe0bdb38d0fc0",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "4a6d3ab7be1d6c8087058dcf87ba7ad90329f5912d68ef65aeb862c7e3e32f15",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/login": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Sign in again (m365 backend): switch accounts or recover a revoked session",
       "category": "agent",
       "versions": [
@@ -455,11 +581,17 @@
           "sha256": "55073a66bd429074266f8bf55ca8fec99faa634fc9f06c623750493fcd95e5fa",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "b02c5d96ed3865513ecb679279899d2182723141f8343be80217b2293e049d46",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/memory": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show memory store overview (entry count, most recent entries)",
       "category": "agent",
       "versions": [
@@ -468,11 +600,17 @@
           "sha256": "46ecd0b6d5c4fa73a57fb835c752d18642f238e4d51b848068486f0bad83ff25",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "083c86a216c989324db08abe2926f4e6361bce5a04020a061c9044501a6d5772",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/model": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show or set the LLM model",
       "category": "model",
       "versions": [
@@ -481,11 +619,17 @@
           "sha256": "5bc972eda62a6e899bcc5e0c02f044c8f922942e051c66311274af4e24e727e5",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "f1c9c47700782a3f43714df329793aebab303714cefe61b720c3945347274ca6",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/permission": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show or set the tool permission mode for this session",
       "category": "agent",
       "versions": [
@@ -494,11 +638,17 @@
           "sha256": "00ca4b09ac1232df5d6c64709843a85caba4021860c6693a9a4dc4785cff3a9a",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "dceb861fa11187b87dbc102876dcd186397ff82afdccd1ef5a2c3ece7f825d13",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/prompt": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show the exact messages+tools sent to the LLM on the last call, with token estimates",
       "category": "agent",
       "versions": [
@@ -507,11 +657,17 @@
           "sha256": "a054e40cb2db0e03ef5e2d3f5f9e5c151614aeb252f2b54c9c6d6b0c02be770e",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "424cdbc1b3f7fdf590bce1874b09fdbca8061253134d483f88e3445a8c906ac0",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/prompts": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "List loaded prompt templates",
       "category": "agent",
       "versions": [
@@ -520,11 +676,17 @@
           "sha256": "75ac71f91c24911eb911f06d91095f98239232fffbdd3ef6d0170fd481efa99d",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "7bbf23029ea8b32f5a6cf4cc11950c2fe79fe8c63e5b5d2a6490dd4b13f5fcc9",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/recall": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show the knowledge vault notes recalled for the last turn, and why",
       "category": "agent",
       "versions": [
@@ -533,11 +695,17 @@
           "sha256": "fc0c2ff2c98fe0b5dd1574e47c3a287036c34fc9399c5cea1e1e35bfb9280429",
           "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
           "date": "2026-10-15T17:26:07.241510474Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "a0643c2a67f738d47d1a59dcc322d0e9248e04d5e09fba41078b41fe4b463e1d",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/refine": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show or toggle pre-turn prompt refinement (on by default)",
       "category": "agent",
       "versions": [
@@ -546,11 +714,17 @@
           "sha256": "d8913fa564aaa0e37b03dc3bdb46823f1b4324ad6fea1ada46194ef4f5d2df33",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "6dbf69a046134bebe1e21fda7073859b9959f40acf636c9e71556333bf172d7e",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/reload": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Reload skills, prompt templates, and instructions from disk",
       "category": "agent",
       "versions": [
@@ -559,6 +733,12 @@
           "sha256": "313a715936529d5d9e58717f0f2b670b82859547511782762225c8d44be00931",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "5dd3be427484b45df1245b3fb0b388a34ee53b98c33b72e33066fdd107e8cffa",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
@@ -576,7 +756,7 @@
       ]
     },
     "commands/search": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Search the indexed directory and feed the results to the model",
       "category": "agent",
       "versions": [
@@ -591,11 +771,17 @@
           "sha256": "1fbb415e9c6021ce5c896571ea5467f03e7f167e5b202dcc030d8ba0a6de44b1",
           "commit": "89430f9d7c3a0a9daf3de7919abcab1f8b20f2e1",
           "date": "2026-10-16T19:56:21.208887141Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "b49246a93c21cad10ef116bed6fe50820d935167066b0beb9cc83c29b3dba100",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/session": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Manage saved sessions",
       "category": "agent",
       "versions": [
@@ -604,11 +790,17 @@
           "sha256": "34e5be901990a9b55f2abb81631eb01ecdd6f83c9d9da7804e8d955c1b2871ec",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "c97ed458a9bf085651b4372c1b9d88c5ba02030f1f258611139c0b456f63b223",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/settings": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Open the tool/skill selector and save selections",
       "category": "agent",
       "versions": [
@@ -617,11 +809,17 @@
           "sha256": "090af8915dd20c642a57f4ccff71ea878ffd8940b5a9a42577594cf043c6f168",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "ddc9342167244e6cfa53df0339002a1037e3d8668670f496816d663fc3dc163d",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/skills": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "List loaded skills",
       "category": "agent",
       "versions": [
@@ -630,11 +828,17 @@
           "sha256": "9c85087a6632c59ddb28f79e8982e1981c421e787d7bd252e6d8a5cfd0e0b1b9",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "e77b969467bf252b8d53c7ccbd936f778f1fe225ecba9d3637226a112cc56fb9",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/theme": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show or set the REPL's look (normal, black, linux, vim, emacs, or custom); list shows built-in vs custom",
       "category": "agent",
       "versions": [
@@ -643,11 +847,17 @@
           "sha256": "560eefa1ee7006549c4cef0def0b8c6d514bc18e933c43c523a38bec00ea4d1a",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "a1f9c0772b0661941ff1d887de58a43196c795d56ac16b50285354ca52151d66",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/thinking": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show or set extended reasoning/thinking mode",
       "category": "agent",
       "versions": [
@@ -656,6 +866,12 @@
           "sha256": "84002861c2f7204f1c16fc4e17dac5d675195472a1da0cc2f307537368ac1d2e",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "3869f5788e3568d759d779e8d113c6eaeb5d2dfeae4e25afed9dab5cb8301ad3",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
@@ -683,7 +899,7 @@
       ]
     },
     "commands/tools": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show or toggle the lean/full tool set for this session",
       "category": "agent",
       "versions": [
@@ -692,11 +908,17 @@
           "sha256": "96c2ef56f97e373b568f78040a17c2d3b5d85061b5d1d2315db1bf2a5bbedfb0",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "a6a17eb0bb35df1a8a0375f0af0f413f2decc6b138fa716a3512ce9a374426fc",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/turo": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Show or set the turo prompt reducer (turo backend only)",
       "category": "agent",
       "versions": [
@@ -705,11 +927,17 @@
           "sha256": "7524cc638def40cb11eaddc9280d0afca5f6976ea91eba7d4d5ff98c82ffec5b",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "7ae30ed2f8f016f9572208c46f5569e6dd8046ac143049d86613d80d356881a1",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/update": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Update harness, tools, themes, models, templates (no args: all)",
       "category": "agent",
       "versions": [
@@ -718,11 +946,17 @@
           "sha256": "3b83cef8f336a08b4bab1a56259a582358c8bed9a0c71acd8227247986a2c204",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "40e5953e51ac2ee30d7ca22d3bfed67c247189fb6419ce40d3f3fe5efb8b9a5a",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "commands/upgrade": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Check for and install the latest stable kdeps release",
       "category": "agent",
       "versions": [
@@ -731,11 +965,17 @@
           "sha256": "30c9585365e13e5fedfc91afb6cc56daf3f27e568fd6f6db1a08867def81cd23",
           "commit": "a58a51ee63ecbdcd6be7a8fce5fa3db09157e626",
           "date": "2026-10-12T06:29:38.5892806Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "913fdded9f25105f1c51a8dcbbf0a069bf010b394e5f6d2664186aea9477da68",
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/approval_grant": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Grant a pending approval token through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -748,11 +988,22 @@
           "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
           "tokens": 45,
           "date": "2026-10-20T21:38:23.060857062Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "b32ce4874b20c377e15069c8e429e615a82392b8c723dd01f32ba7d5735c3640",
+          "requires": {
+            "schemas/v1": "",
+            "tools/approval_grant": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 45,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/approval_list": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "List approval tokens through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -765,11 +1016,22 @@
           "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
           "tokens": 15,
           "date": "2026-10-20T21:38:23.060857062Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "ac183a8d5aa855414b9aec0f828884dddb715eda277c2476024e193caa87046a",
+          "requires": {
+            "schemas/v1": "",
+            "tools/approval_list": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 15,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/approval_request": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Request an approval token through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -782,11 +1044,22 @@
           "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
           "tokens": 72,
           "date": "2026-10-20T21:38:23.060857062Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "050f0fad5edf578ee0d30984e90a9f7ebc667234798d7ed9bcefbf2fe582ef3e",
+          "requires": {
+            "schemas/v1": "",
+            "tools/approval_request": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 72,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/approval_revoke": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Revoke an approval token through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -799,11 +1072,22 @@
           "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
           "tokens": 37,
           "date": "2026-10-20T21:38:23.060857062Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "b2d4d8e129604177e47a02712a9049ebcdeb6321cf32b647042cd17db5aae8de",
+          "requires": {
+            "schemas/v1": "",
+            "tools/approval_revoke": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 37,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/bash_exec": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Run a shell command through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -816,11 +1100,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 34,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "7111c5665445ed3f557847590f1fadec7302157709c34502bd856048a5fff01a",
+          "requires": {
+            "schemas/v1": "",
+            "tools/bash_exec": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 34,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/bash_job_list": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "List background shell jobs through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -833,11 +1128,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 17,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "142acaee8ff0bcf3c2456f94585e6c193d903eafade75b9769cdc2ba342862ed",
+          "requires": {
+            "schemas/v1": "",
+            "tools/bash_job_list": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 17,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/bash_job_wait": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Wait for a background shell job through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -850,11 +1156,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 46,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "b7616d6f69d61fcd1bdab9488b650287bd71bdb9ac50f4debb6760e6b51849f2",
+          "requires": {
+            "schemas/v1": "",
+            "tools/bash_job_wait": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 46,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/browser": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Drive a real browser with Playwright - navigate, click, fill, type, upload, select, check, hover, scroll, press, clear, evaluate, screenshot, wait",
       "category": "workflow",
       "versions": [
@@ -877,11 +1194,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 364,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "371c24211a0bc9c6f4ee7340f9dc098af969125fd5cb3e969707b228852ca75c",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.4",
+            "tools/browser_ops": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 364,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/calculator": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Evaluate a math expression through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -894,11 +1222,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 39,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "051df207a3e8ad21e47e72d69ccd6e5688264d7f98cb117beedff4b5718f3707",
+          "requires": {
+            "schemas/v1": "",
+            "tools/calculator": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 39,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/code_definition": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Find a symbol definition through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -911,11 +1250,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 56,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "d52daea88ac88a3096b45775ea596d8ae2949c635881628c1c623c95faa82aad",
+          "requires": {
+            "schemas/v1": "",
+            "tools/code_definition": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 56,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/code_diagnostics": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Get file diagnostics through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -928,11 +1278,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 34,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "5ec6ab1e744f9fbb96e7a65ed864e3ea154760b9b25a994abf222e63c51a4d6c",
+          "requires": {
+            "schemas/v1": "",
+            "tools/code_diagnostics": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 34,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/code_graph_all": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Graph the whole index through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -955,11 +1316,22 @@
           "commit": "5ca2ba4caed511c66c8b4c4f0baaa16ac930a0a4",
           "tokens": 93,
           "date": "2026-10-21T07:19:22.697915391Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "1d7ba9c750f5ef32dfdc94d48b586bb31cb3ac670f8b6d71710942cde8355866",
+          "requires": {
+            "schemas/v1": "",
+            "tools/code_graph_all": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 93,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/code_graph_file": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Graph one indexed file through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -982,11 +1354,22 @@
           "commit": "5ca2ba4caed511c66c8b4c4f0baaa16ac930a0a4",
           "tokens": 76,
           "date": "2026-10-21T07:19:22.697915391Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "e0b495faef891138d6f3bc308f63bf3e9e12aea999016975c6ead29f00c540c2",
+          "requires": {
+            "schemas/v1": "",
+            "tools/code_graph_file": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 76,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/code_graph_topic": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Graph indexed files for a topic through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1009,11 +1392,22 @@
           "commit": "5ca2ba4caed511c66c8b4c4f0baaa16ac930a0a4",
           "tokens": 119,
           "date": "2026-10-21T07:19:22.697915391Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "d934ab2e611111b5f32240f6cb0d4bf8a07ad61e384a8ad339a1521359647b24",
+          "requires": {
+            "schemas/v1": "",
+            "tools/code_graph_topic": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 119,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/code_hover": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Get symbol documentation through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1026,11 +1420,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 55,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "4fa1b6717c8ac22a776d4e77fbf9396dab156b3724a3c0814a03697cb8bad6cd",
+          "requires": {
+            "schemas/v1": "",
+            "tools/code_hover": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 55,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/code_index_folder": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Index the working directory through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1053,11 +1458,22 @@
           "commit": "5ca2ba4caed511c66c8b4c4f0baaa16ac930a0a4",
           "tokens": 86,
           "date": "2026-10-21T07:19:22.697915391Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "fb9cd174fcceaad3c5bc0f2b648399d343fdf2b1f1d0ca036a5fa3c693379f87",
+          "requires": {
+            "schemas/v1": "",
+            "tools/code_index_folder": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 86,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/code_references": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Find symbol references through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1070,11 +1486,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 57,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "077510b0095ff72ada25c76d6629e181a254de86737b88258cb4f676bf2a4cd9",
+          "requires": {
+            "schemas/v1": "",
+            "tools/code_references": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 57,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/code_search": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Search for a symbol through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1087,11 +1514,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 59,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "c9e9f2ab327c0642849bfef05013c314c4e17f7a8e304da700541030e2b172cb",
+          "requires": {
+            "schemas/v1": "",
+            "tools/code_search": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 59,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/code_symbols": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "List symbols in a file through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1104,11 +1542,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 33,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "3909b0b42317f8406730e15e3f557597685bcd1cef5499a970b67b4064633252",
+          "requires": {
+            "schemas/v1": "",
+            "tools/code_symbols": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 33,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/cohere_rerank": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Rerank documents by relevance to a query through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1121,11 +1570,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 130,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "53add28b31f8a00ebad9949fc3ea6eed739759407aaa04b5a5522017b3a99ee6",
+          "requires": {
+            "schemas/v1": "",
+            "tools/cohere_rerank": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 130,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/cron_create": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Create a cron job through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1138,11 +1598,22 @@
           "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
           "tokens": 132,
           "date": "2026-10-20T21:38:23.060857062Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "211c74f05ffec6931b713bec916c21d81897688cde9eb22040b5831ffdc1bb33",
+          "requires": {
+            "schemas/v1": "",
+            "tools/cron_create": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 132,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/cron_delete": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Delete a cron job through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1155,11 +1626,22 @@
           "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
           "tokens": 34,
           "date": "2026-10-20T21:38:23.060857062Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "fe2763722f0b4258f1dd11debc517bfdeca88b2819af8761eeb4f928519ee37f",
+          "requires": {
+            "schemas/v1": "",
+            "tools/cron_delete": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 34,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/cron_list": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "List cron jobs through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1172,11 +1654,22 @@
           "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
           "tokens": 13,
           "date": "2026-10-20T21:38:23.060857062Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "485cf38f05c8c193ef26dc0772cd07d31229ad02cdd37a8641bfada9991595b2",
+          "requires": {
+            "schemas/v1": "",
+            "tools/cron_list": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 13,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/cron_pause": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Pause a cron job through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1189,11 +1682,22 @@
           "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
           "tokens": 33,
           "date": "2026-10-20T21:38:23.060857062Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "fc37d059a90ee049121c4a9d94b8530b3dc6f2911e603f38bbf94a4bf2a7b672",
+          "requires": {
+            "schemas/v1": "",
+            "tools/cron_pause": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 33,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/cron_resume": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Resume a paused cron job through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1206,11 +1710,22 @@
           "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
           "tokens": 35,
           "date": "2026-10-20T21:38:23.060857062Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "632092108d743d75c1b3da657b8dfc6fafee06284a877ec6276a0ee03130b0f9",
+          "requires": {
+            "schemas/v1": "",
+            "tools/cron_resume": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 35,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/edit_file": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Edit a file through the kdeps API and return the changed snippet",
       "category": "workflow",
       "versions": [
@@ -1223,11 +1738,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 560,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "75f585756d59576a61ba4f3a7a562d37f2009c1a2482866db637884224203949",
+          "requires": {
+            "schemas/v1": "",
+            "tools/edit_file": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 560,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/email": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Send email over SMTP and read, search, modify, list or delete IMAP mailboxes",
       "category": "workflow",
       "versions": [
@@ -1250,11 +1776,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 622,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "2c5bce9a6ab35e37a988c7c922ce924a04a2ea4f745536fbe617668da9cc377d",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.4",
+            "tools/email_ops": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 622,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/embedding_search": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Search the local embedding database through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1277,11 +1814,22 @@
           "commit": "5ca2ba4caed511c66c8b4c4f0baaa16ac930a0a4",
           "tokens": 91,
           "date": "2026-10-21T07:19:22.697915391Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "a69051f8e6c45f395d1af2e8d644bd5ad6ff7185bcd6f40d45f720bf6a2212e6",
+          "requires": {
+            "schemas/v1": "",
+            "tools/embedding_search": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 91,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/embedding_vectorize": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Convert text into embeddings through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1304,11 +1852,22 @@
           "commit": "5ca2ba4caed511c66c8b4c4f0baaa16ac930a0a4",
           "tokens": 100,
           "date": "2026-10-21T07:19:22.697915391Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "617b8f3dd4892c501671a81ae8763991c7a153105afc11aee4119f35be532964",
+          "requires": {
+            "schemas/v1": "",
+            "tools/embedding_vectorize": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 100,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/exa_search": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Search the web with Exa neural search through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1321,11 +1880,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 47,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "112cfe1f724f6c97bdc2dc976c7d2ba2e0ad7079f934cffd2d6cc9c88947e023",
+          "requires": {
+            "schemas/v1": "",
+            "tools/exa_search": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 47,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/file": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Structured filesystem operations (read, write, patch, list, delete, exists, mkdir, copy, move, append)",
       "category": "workflow",
       "versions": [
@@ -1348,11 +1918,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 414,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "88c1bd31a6c8c70c062e87acf73e555f325aa03c29864337720875975a10ef9c",
+          "requires": {
+            "schemas/v1": "",
+            "tools/file_ops": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 414,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/git": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "description": "Structured git operations (status, diff, log, show, branch, remote, add, commit, checkout, init, clone, push, pull)",
       "category": "workflow",
       "versions": [
@@ -1381,11 +1962,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 340,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "2375b556d27a33f7f94bffd42188a163c238cb0319d2102b9fb7be42629a6a0a",
+          "requires": {
+            "schemas/v1": "",
+            "tools/git_ops": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 340,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/google_cache_create": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Create a Google AI cached content entry through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1398,11 +1990,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 89,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "a695bd039963b7782c159f03a86d3a0386cef80172ae8ced278b0e4aa2e60a3d",
+          "requires": {
+            "schemas/v1": "",
+            "tools/google_cache_create": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 89,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/google_cache_delete": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Delete a Google AI cached content entry through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1415,11 +2018,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 49,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "d52649b5bea466948418eb4fd0e29d0c1c0d858ff061cf88100bbd42433f5ecd",
+          "requires": {
+            "schemas/v1": "",
+            "tools/google_cache_delete": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 49,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/google_cache_list": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "List Google AI cached content entries through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1432,11 +2046,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 21,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "8451d55aae21dccbc646bd984f59695085d6d932870792cf36b75d7731c9153a",
+          "requires": {
+            "schemas/v1": "",
+            "tools/google_cache_list": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 21,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/http_request": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Make an HTTP request through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1459,11 +2084,22 @@
           "commit": "5ca2ba4caed511c66c8b4c4f0baaa16ac930a0a4",
           "tokens": 201,
           "date": "2026-10-21T07:19:22.697915391Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "bec3ade0261752f40322fb2915a23d3091af8511e6500453da2ce0b738dd206a",
+          "requires": {
+            "schemas/v1": "",
+            "tools/http_request": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 201,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/instruct": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Read one harness section or briefing through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1476,11 +2112,22 @@
           "commit": "c6e8bd7c65959ea001f3d7bad21f24c9d5e3d3d5",
           "tokens": 63,
           "date": "2026-10-20T21:38:23.060857062Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "94d9ad773a218ded45c29ec2f03b9b26734cafce575132d668abf18c4888e0ec",
+          "requires": {
+            "schemas/v1": "",
+            "tools/instruct": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 63,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/jina_rerank": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Rerank documents by relevance to a query through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1493,11 +2140,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 129,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "9a3c30507a1f5fd489aaa87d24323d66cf63d6b5d7f96dce51aaeca457db8d15",
+          "requires": {
+            "schemas/v1": "",
+            "tools/jina_rerank": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 129,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/list_files": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "List a directory through the kdeps API and return names and types",
       "category": "workflow",
       "versions": [
@@ -1510,11 +2168,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 48,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "ed9ab062e5544e317ea96931a0224ed573d6639708dba732a6bcc591983219f9",
+          "requires": {
+            "schemas/v1": "",
+            "tools/list_files": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 48,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/load_document": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Load a document through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1537,11 +2206,22 @@
           "commit": "5ca2ba4caed511c66c8b4c4f0baaa16ac930a0a4",
           "tokens": 103,
           "date": "2026-10-21T07:19:22.697915391Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "aa76f431550a40e94fb2857b87200d67683abd4562107c09eec08fec0ca1e58b",
+          "requires": {
+            "schemas/v1": "",
+            "tools/load_document": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 103,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/md5_file": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Hash a file through the kdeps API and return the path and MD5",
       "category": "workflow",
       "versions": [
@@ -1554,11 +2234,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 41,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "0b66ceba605910b7f816e9383956de8505fb06a0707ac02332ed8c9af225cded",
+          "requires": {
+            "schemas/v1": "",
+            "tools/md5_file": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 41,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/memory_delete": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Delete a memory entry through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1571,11 +2262,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 36,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "c2575e0641cd3d6c73ba7ab8bf10c85587dc647f26539ea18c22c75471000eb6",
+          "requires": {
+            "schemas/v1": "",
+            "tools/memory_delete": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 36,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/memory_query": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Run a relational memory query through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1598,11 +2300,22 @@
           "commit": "5ca2ba4caed511c66c8b4c4f0baaa16ac930a0a4",
           "tokens": 80,
           "date": "2026-10-21T07:19:22.697915391Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "1d779a69f7ce3b35f2327559f17000a04006dd5d4edadbef36189300e3a26fbf",
+          "requires": {
+            "schemas/v1": "",
+            "tools/memory_query": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 80,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/memory_save": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Save a fact through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1615,11 +2328,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 51,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "3cb2019068d7e24f7de8a91c20cb5676c83728eea9d24d19db7fb8b53e81c86d",
+          "requires": {
+            "schemas/v1": "",
+            "tools/memory_save": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 51,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/memory_search": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Search persistent memory through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1632,11 +2356,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 40,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "adefe5d3909271b81a0fe79c396d8d4cd7dd52d30ac73b165431407331a97f0a",
+          "requires": {
+            "schemas/v1": "",
+            "tools/memory_search": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 40,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/ocr": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "description": "Extract text from an image with the tesseract CLI through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1671,11 +2406,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 158,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "f8cc397fd6d0bb3617d82ce7c55d75e6c3ebbf44034843c91e3bb4e1b229dda5",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.1",
+            "tools/ocr_image": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 158,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/ocr_image": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Extract text from an image with tesseract through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1688,11 +2434,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 159,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "0d76019f16ab1bdc34d1b0af2c8f157c9e5e3c21769134f92858e89cab6b2474",
+          "requires": {
+            "schemas/v1": "",
+            "tools/ocr_image": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 159,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/perplexity_search": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Search the web with Perplexity through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1705,11 +2462,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 37,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "861cb2a98148ed0598305d3bed13a0866bc6202f8511333876d852ab64b8f364",
+          "requires": {
+            "schemas/v1": "",
+            "tools/perplexity_search": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 37,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/read_file": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Read a file through the kdeps API and return its text",
       "category": "workflow",
       "versions": [
@@ -1732,11 +2500,22 @@
           "commit": "5ca2ba4caed511c66c8b4c4f0baaa16ac930a0a4",
           "tokens": 210,
           "date": "2026-10-21T07:19:22.697915391Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "8dfca4989f4b26289feca00a86dcf41549cbe0dab9ed625f59ea2b900e3d2997",
+          "requires": {
+            "schemas/v1": "",
+            "tools/read_file": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 210,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/retrieve_context": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Retrieve relevant chunks from the RAG index through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1749,11 +2528,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 76,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "f15b7fea9b35fe4fd358739ba8506a0da510ec5894c57361f9f57dd29c5931b9",
+          "requires": {
+            "schemas/v1": "",
+            "tools/retrieve_context": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 76,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/scraper": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "description": "Fetch a web page and return its text, optionally only the elements matching a CSS selector",
       "category": "workflow",
       "versions": [
@@ -1782,11 +2572,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 115,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "2b277576c6e51e25f736c7eb04b5af4bdfb6ebe5aa535c7ba40a5a0a55476656",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.2",
+            "tools/http_request": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 115,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/searchWeb": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "description": "Search the web - DuckDuckGo by default, Brave, Bing or Tavily with an API key - and return title/url/snippet results",
       "category": "workflow",
       "versions": [
@@ -1815,11 +2616,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 187,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "754a8908551e6b72cfb9466318f7ea3cddabeef38e076c7f7811dae318c79567",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.3",
+            "tools/http_request": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 187,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/search_local": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Search local files through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1842,11 +2654,22 @@
           "commit": "5ca2ba4caed511c66c8b4c4f0baaa16ac930a0a4",
           "tokens": 119,
           "date": "2026-10-21T07:19:22.697915391Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "da9c650e7b872d980576ddc05a0d9dab55618c8d835194b4e4ac7e944e9e0390",
+          "requires": {
+            "schemas/v1": "",
+            "tools/search_local": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 119,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/serpapi_search": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Search Google through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1859,11 +2682,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 32,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "b3244957ef38d7f4d6de70d24c7077e3f7b6d305053a9cded909b17b1b51f22e",
+          "requires": {
+            "schemas/v1": "",
+            "tools/serpapi_search": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 32,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/sql": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Run SQL against PostgreSQL, MySQL/MariaDB, SQLite, SQL Server or Oracle - one query, or several in a transaction",
       "category": "workflow",
       "versions": [
@@ -1886,11 +2720,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 331,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "16870282eb3010465be6f5b9d3fa649e55ef0c421f216859a99a5467611774af",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.4",
+            "tools/sql_ops": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 331,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/sql_describe_table": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Describe one SQLite table through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1903,11 +2748,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 65,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "0bbfefd40e9bd61c16d4fa42c2919a400dc4463d18a3516eb35c21c4d578ae05",
+          "requires": {
+            "schemas/v1": "",
+            "tools/sql_describe_table": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 65,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/sql_list_tables": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "List SQLite tables through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1920,11 +2776,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 45,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "c8b0851c86d0ad16618d4ee6a0a42ff912793b9d0813e00590313575267e138b",
+          "requires": {
+            "schemas/v1": "",
+            "tools/sql_list_tables": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 45,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/sql_query": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Run a read-only SQL query through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1937,11 +2804,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 66,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "e28988e8c56d69e1177a9782807f8b1f774ebd89ffcf32a29c1002c3078723cf",
+          "requires": {
+            "schemas/v1": "",
+            "tools/sql_query": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 66,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/tail_file": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Read the last lines of a file through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1954,11 +2832,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 67,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "b4f15bcc75b88ba8c5f73916cafd021488f90e469bd1c4495b45e646e7472432",
+          "requires": {
+            "schemas/v1": "",
+            "tools/tail_file": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 67,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/task_append_output": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Append task output through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1971,11 +2860,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 60,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "9445feefab7c99d4430f369a50dd7985abcea28361c5407f877fa29b3f58230b",
+          "requires": {
+            "schemas/v1": "",
+            "tools/task_append_output": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 60,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/task_assign_team": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Assign a task to a team through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1988,11 +2888,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 60,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "6afabaa06cb0428e2a1b99edad56101a80fcae21f2bb8ea5a7f05e1fd45e388a",
+          "requires": {
+            "schemas/v1": "",
+            "tools/task_assign_team": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 60,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/task_complete": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Complete a task through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2005,11 +2916,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 34,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "fc6776d20cee814f83969ceb8c2bd3c09d2ea86d045d940049b7c2e50dd4ba1d",
+          "requires": {
+            "schemas/v1": "",
+            "tools/task_complete": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 34,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/task_create": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Create a task through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2022,11 +2944,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 58,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "213f0d75f3bd8510a64d40f6072eaf65799d891a6deabfb4cf44133bde53f8db",
+          "requires": {
+            "schemas/v1": "",
+            "tools/task_create": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 58,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/task_get": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Read a task through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2039,11 +2972,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 34,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "79d66114ec5cf4e7c726532e8ccb841374b247f72ab63d8808a9e56c44de7f31",
+          "requires": {
+            "schemas/v1": "",
+            "tools/task_get": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 34,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/task_list": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "List tasks through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2056,11 +3000,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 12,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "a21b5b65e223f1020a79f3c45eb2bfb01ef2cb318c92fd2be7e67f2be590ff42",
+          "requires": {
+            "schemas/v1": "",
+            "tools/task_list": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 12,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/task_stop": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Stop a task through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2073,11 +3028,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 31,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "65d648e8afb8f21c103f39bf7f741eca60fc87f79a1b30baa99b802d75e6618c",
+          "requires": {
+            "schemas/v1": "",
+            "tools/task_stop": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 31,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/team_add_task": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Add a task to a team through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2090,11 +3056,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 57,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "4921936075efe559eba2fbdec1d3ff2142a5484bc7e952ea84c158dbb304816b",
+          "requires": {
+            "schemas/v1": "",
+            "tools/team_add_task": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 57,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/team_create": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Create a team through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2107,11 +3084,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 30,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "92398a632f5edaebc0739fe9e59952cf10e34d6ebb095d9330836b8b8b3d4898",
+          "requires": {
+            "schemas/v1": "",
+            "tools/team_create": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 30,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/team_delete": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Delete a team through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2124,11 +3112,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 33,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "5af2f68237894aba569c3818be1e7263634919ae79ad26805737533f41648bc5",
+          "requires": {
+            "schemas/v1": "",
+            "tools/team_delete": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 33,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/team_get": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Read a team through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2141,11 +3140,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 34,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "0f5302f07d400900b75eeeebaf1fe6312a4676ace4bd065cd7a97aabe93c1630",
+          "requires": {
+            "schemas/v1": "",
+            "tools/team_get": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 34,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/team_list": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "List teams through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2158,11 +3168,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 12,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "4f91716b71ab5a2b530a28763797f835669d8126580b40950596159fbb2124d5",
+          "requires": {
+            "schemas/v1": "",
+            "tools/team_list": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 12,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/transcribe": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "description": "Transcribe audio or video to text with a Whisper API or offline with whisper.cpp",
       "category": "workflow",
       "versions": [
@@ -2191,11 +3212,24 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 362,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "2a280ed0947cc41494733f681a6c53578c78e818b6c0b0d42731f4982b18a235",
+          "requires": {
+            "schemas/v1": "",
+            "tools/http_request": "",
+            "tools/transcribe_audio": "",
+            "tools/transcribe_audio_offline": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 362,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/transcribe_audio": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Transcribe audio or video through a Whisper API with the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2218,11 +3252,22 @@
           "commit": "5ca2ba4caed511c66c8b4c4f0baaa16ac930a0a4",
           "tokens": 269,
           "date": "2026-10-21T07:19:22.697915391Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "c07e8629f0867ca2c38bb2d7ca63c12e8d83235e46e28c92a0850ccd9c72bef2",
+          "requires": {
+            "schemas/v1": "",
+            "tools/transcribe_audio": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 269,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/transcribe_audio_offline": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Transcribe audio offline with whisper.cpp through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2235,11 +3280,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 114,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "f9fd6c0e58327cdaac93a179416bdda102961a00a7932d5865068653959a240c",
+          "requires": {
+            "schemas/v1": "",
+            "tools/transcribe_audio_offline": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 114,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/twiml": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Build a TwiML voice response (say, play, pause, gather, dial, record, hangup, reject, redirect) for a phone webhook",
       "category": "workflow",
       "versions": [
@@ -2262,11 +3318,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 83,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "9ae48337a30a24478de7eba114ab34877bc5b7a46db3e37b19dad3dbf2a24bbc",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.4",
+            "tools/twiml": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 83,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/voyageai_rerank": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Rerank documents by relevance to a query through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2279,11 +3346,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 125,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "f9558b08cc696a89b106b1e08252286beb1183a857ea67bc7573fee28963380a",
+          "requires": {
+            "schemas/v1": "",
+            "tools/voyageai_rerank": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 125,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/web_scraper": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Fetch a page through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2296,11 +3374,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 29,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "f68a640138491b6bb6c583b3332d545ac90e35363a25e59efe384b91a9f7fdbc",
+          "requires": {
+            "schemas/v1": "",
+            "tools/web_scraper": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 29,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/web_search": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Search the web through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2313,11 +3402,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 31,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "07dc8edb5c38a873079e399e07c37d8c0710c6edbf76df537ccd4f75c86fbe97",
+          "requires": {
+            "schemas/v1": "",
+            "tools/web_search": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 31,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/wikipedia": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Look up a Wikipedia topic through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2330,11 +3430,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 34,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "8fd96bc40821fb07ed8d8f2c328ae9d992bc1d92b7c0fddd9988d661d3a8207b",
+          "requires": {
+            "schemas/v1": "",
+            "tools/wikipedia": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 34,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/wolfram_alpha": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Query Wolfram Alpha for a computed answer through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2347,11 +3458,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 56,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "e071d6a087488ee4c5f1638f7519ec2c8ddd00c91c9e7de6d1dbb9b04ac545d6",
+          "requires": {
+            "schemas/v1": "",
+            "tools/wolfram_alpha": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 56,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/write_file": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Write or overwrite a text file through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2364,11 +3486,22 @@
           "commit": "714797d1d308857546229645cde3a008a6292610",
           "tokens": 58,
           "date": "2026-10-20T21:09:12.569210671Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "fc21f30cc2f8fa530811bd043587d605797e90c31d88405ba868fd346e2b63e4",
+          "requires": {
+            "schemas/v1": "",
+            "tools/write_file": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 58,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/zapier_list_actions": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "List the available Zapier NLA actions through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2381,11 +3514,22 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 21,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "345ad1d2071843ffa5d9abbb672511b17462368a3933ad80cba753f70bc7275b",
+          "requires": {
+            "schemas/v1": "",
+            "tools/zapier_list_actions": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 21,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
     "components/zapier_run_action": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Run a Zapier NLA action through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2398,6 +3542,17 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 83,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "275957ae9f8d0c06b4049a5ff62f3ecac628ca50c18601fd27ec12403b9dd1d3",
+          "requires": {
+            "schemas/v1": "",
+            "tools/zapier_run_action": ""
+          },
+          "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
+          "tokens": 83,
+          "date": "2026-10-21T11:44:36.787763914Z"
         }
       ]
     },
@@ -6342,7 +7497,8 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/help"
+        "/help",
+        "/update"
       ],
       "code": [
         "kdeps (agent loop)",

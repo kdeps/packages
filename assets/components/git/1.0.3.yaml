@@ -1,0 +1,78 @@
+version: 1.0.3
+requires:
+    schemas/v1: ""
+    tools/git_ops: ""
+files:
+    component.yaml: |
+        apiVersion: kdeps.io/v1
+        kind: Component
+        metadata:
+          name: git
+          description: Structured git operations (status, diff, log, show, branch, remote, add, commit, checkout, init, clone, push, pull)
+          version: "1.1.1"
+        interface:
+          inputs:
+            - name: operation
+              type: string
+              required: true
+              description: status, diff, log, show, branch, remote, add, commit, checkout, init, clone, push or pull
+            - name: workingDir
+              type: string
+              default: ""
+              description: Repository directory (clone - the target directory); default the current directory
+            - name: paths
+              type: string
+              default: ""
+              description: Space-separated paths for add, checkout, diff, log (add defaults to .)
+            - name: message
+              type: string
+              default: ""
+              description: Commit message (commit)
+            - name: branch
+              type: string
+              default: ""
+              description: Branch for checkout, push, pull
+            - name: url
+              type: string
+              default: ""
+              description: Repository URL (clone)
+            - name: remote
+              type: string
+              default: origin
+              description: Remote for push and pull
+            - name: args
+              type: string
+              default: ""
+              description: Extra space-separated git arguments (show)
+            - name: maxCount
+              type: integer
+              default: 10
+              description: Commits to list (log)
+            - name: dryRun
+              type: boolean
+              default: false
+              description: Report what a write operation would do without doing it
+          output: "{{ fromJSON(output('gitOperation').body) }}"
+        resources:
+          # One call to the kdeps API's git_ops tool: the component holds no git code
+          # of its own.
+          - actionId: gitOperation
+            name: Git
+            httpClient:
+              method: POST
+              url: http://kdeps.api/apis/tools.kdeps.io/v1/tools/git_ops/call
+              headers:
+                Content-Type: application/json
+              timeout: 300s
+              failOnError: true
+              data:
+                operation: "{{ get('git.operation') }}"
+                workingDir: "{{ get('git.workingDir') }}"
+                paths: "{{ get('git.paths') }}"
+                message: "{{ get('git.message') }}"
+                branch: "{{ get('git.branch') }}"
+                url: "{{ get('git.url') }}"
+                remote: "{{ get('git.remote') }}"
+                args: "{{ get('git.args') }}"
+                maxCount: "{{ get('git.maxCount') }}"
+                dryRun: "{{ get('git.dryRun') }}"

@@ -1,0 +1,31 @@
+version: 1.0.1
+requires:
+    schemas/v1: ""
+    tools/web_scraper: ""
+files:
+    component.yaml: |
+        apiVersion: kdeps.io/v1
+        kind: Component
+        metadata:
+          name: web_scraper
+          description: Fetch a page through the kdeps API
+          version: "1.0.1"
+        interface:
+          inputs:
+            - name: url
+              type: string
+              required: true
+              description: Page URL
+          output: "{{ output('call').body }}"
+        resources:
+          - actionId: call
+            name: Fetch
+            httpClient:
+              method: POST
+              url: http://kdeps.api/apis/tools.kdeps.io/v1/tools/web_scraper/call
+              headers:
+                Content-Type: application/json
+              failOnError: true
+              timeout: 60s
+              data:
+                url: "{{ get('web_scraper.url') }}"

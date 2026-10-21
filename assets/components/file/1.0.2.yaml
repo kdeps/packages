@@ -1,0 +1,88 @@
+version: 1.0.2
+requires:
+    schemas/v1: ""
+    tools/file_ops: ""
+files:
+    component.yaml: |
+        apiVersion: kdeps.io/v1
+        kind: Component
+        metadata:
+          name: file
+          description: Structured filesystem operations (read, write, patch, list, delete, exists, mkdir, copy, move, append)
+          version: "1.1.1"
+        interface:
+          inputs:
+            - name: operation
+              type: string
+              required: true
+              description: read, write, patch, list, delete, exists, mkdir, copy, move or append
+            - name: path
+              type: string
+              default: ""
+              description: Target file or directory (the destination for copy and move); relative paths resolve against the working directory
+            - name: source
+              type: string
+              default: ""
+              description: Source path for copy and move
+            - name: content
+              type: string
+              default: ""
+              description: Text to write or append
+            - name: patch
+              type: string
+              default: ""
+              description: Unified diff applied by patch
+            - name: encoding
+              type: string
+              default: text
+              description: read output encoding, text or base64
+            - name: pattern
+              type: string
+              default: ""
+              description: Glob on entry names for list (e.g. *.go)
+            - name: recursive
+              type: boolean
+              default: false
+              description: list walks subdirectories
+            - name: backup
+              type: boolean
+              default: false
+              description: write and patch copy the existing file to <path>.bak first
+            - name: dryRun
+              type: boolean
+              default: false
+              description: Report what a changing operation would do without doing it
+            - name: mode
+              type: string
+              default: ""
+              description: Octal permissions for write (default 0644) and mkdir (default 0755)
+            - name: appendNewline
+              type: boolean
+              default: false
+              description: write and append end the content with a newline
+          output: "{{ fromJSON(output('fileOperation').body) }}"
+        resources:
+          # One call to the kdeps API's file_ops tool: the component holds no
+          # filesystem code of its own.
+          - actionId: fileOperation
+            name: File
+            httpClient:
+              method: POST
+              url: http://kdeps.api/apis/tools.kdeps.io/v1/tools/file_ops/call
+              headers:
+                Content-Type: application/json
+              timeout: 120s
+              failOnError: true
+              data:
+                operation: "{{ get('file.operation') }}"
+                path: "{{ get('file.path') }}"
+                source: "{{ get('file.source') }}"
+                content: "{{ get('file.content') }}"
+                patch: "{{ get('file.patch') }}"
+                encoding: "{{ get('file.encoding') }}"
+                pattern: "{{ get('file.pattern') }}"
+                recursive: "{{ get('file.recursive') }}"
+                backup: "{{ get('file.backup') }}"
+                dryRun: "{{ get('file.dryRun') }}"
+                mode: "{{ get('file.mode') }}"
+                appendNewline: "{{ get('file.appendNewline') }}"
