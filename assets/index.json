@@ -4878,6 +4878,19 @@
         }
       ]
     },
+    "harness/handshake-grounding": {
+      "latest": "1.0.0",
+      "category": "harness",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "119f66ceab6d532138e13ff1d307a0a642334b2377737ab91d5e407ad273c72f",
+          "commit": "5e38aa4c10f25bbb16cd1c22434cddbcab501a5a",
+          "tokens": 39,
+          "date": "2026-10-22T19:55:58.286296073Z"
+        }
+      ]
+    },
     "harness/honesty": {
       "latest": "1.1.0",
       "category": "harness",
