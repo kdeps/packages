@@ -4912,7 +4912,7 @@
       ]
     },
     "harness/internals": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "category": "context",
       "versions": [
         {
@@ -4928,6 +4928,13 @@
           "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
           "tokens": 411,
           "date": "2026-10-17T19:14:40.431501918Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "425f654d22a3b6d5dff62cbb4e7bdf86df2965daaab43790e526dd02f09f4d5e",
+          "commit": "383c1d11552106fd1b7aeb6877a9ed0fc20740ef",
+          "tokens": 400,
+          "date": "2026-10-22T21:15:14.764194827Z"
         }
       ]
     },
@@ -6119,7 +6126,7 @@
       ]
     },
     "templates/resources": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "workflow",
       "versions": [
         {
@@ -6145,6 +6152,12 @@
           "sha256": "e2d972006aa32e9f44e4b25e7b449642514631a7bb2882badde8ddfa101995e6",
           "commit": "eeacd82342b175d0d55e6bdb62dfcf85d75b3ca8",
           "date": "2026-10-21T19:11:40.811367087Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "fbd8824580617e9a8d53bc382143bbd20e082cd7ba665c36e881229b824de1cc",
+          "commit": "383c1d11552106fd1b7aeb6877a9ed0fc20740ef",
+          "date": "2026-10-22T21:15:14.764194827Z"
         }
       ]
     },
