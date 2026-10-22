@@ -7915,7 +7915,6 @@
         "kdeps (agent loop)",
         "/clear",
         "/compact",
-        "/goal",
         "kdeps run"
       ],
       "code": [
