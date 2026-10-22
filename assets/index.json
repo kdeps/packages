@@ -5711,6 +5711,19 @@
         }
       ]
     },
+    "providers/cohere": {
+      "latest": "1.0.0",
+      "description": "Cohere",
+      "category": "model",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "85938167e88240bbc33ec6a5ec71d009fff83f77143c03f873280ca854b17e2a",
+          "commit": "a87cb36fc00bfd2d8a77bce77b05b0cf8e35c30c",
+          "date": "2026-10-22T19:54:38.121601998Z"
+        }
+      ]
+    },
     "providers/deepseek": {
       "latest": "1.0.0",
       "description": "DeepSeek",
