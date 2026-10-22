@@ -5985,7 +5985,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "1.0.6",
+      "latest": "1.0.7",
       "category": "workflow",
       "versions": [
         {
@@ -6029,6 +6029,12 @@
           "sha256": "f38421b1a7b78cdc2304af2f88e33381a4c28bbc2585d16459b3f82e5fd56107",
           "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
           "date": "2026-10-15T17:26:07.241510474Z"
+        },
+        {
+          "version": "1.0.7",
+          "sha256": "e37339006019aa9b95889f1bcb57cd1623562c8200926e025667929172d455cc",
+          "commit": "a796f5a4e7757c4241a21b31019835b42c5b1d03",
+          "date": "2026-10-22T11:09:30.544951034Z"
         }
       ]
     },
@@ -7022,8 +7028,8 @@
       ]
     },
     "tools/load_document": {
-      "latest": "1.1.0",
-      "description": "Load a document file and return its content as text. Supports PDF (go-pdf, pdftotext, pdfcpu), DOCX/EPUB/RTF/ODT (pandoc), HTML (goquery, lynx), CSV, text, directory, notion, markdown (textutil). Use for reading documents into the conversation for analysis or RAG pipelines. Returns document content with optional splitting into chunks. Requires: source (absolute file path). Optional: type (pdf, csv, html, text - auto-detected from extension), columns (CSV column filter), password (encrypted PDF), chunkSize (split into chunks of N characters), chunkOverlap, chunkSplitter (recursive, token, markdown).",
+      "latest": "1.1.1",
+      "description": "Load a document file and return its content as text. Supports PDF (langchaingo pdf loader), DOCX/EPUB/RTF/ODT (pandoc), HTML (goquery, lynx), CSV, text, directory, notion, markdown (textutil). Use for reading documents into the conversation for analysis or RAG pipelines. Returns document content with optional splitting into chunks. Requires: source (absolute file path). Optional: type (pdf, csv, html, text - auto-detected from extension), columns (CSV column filter), password (encrypted PDF), chunkSize (split into chunks of N characters), chunkOverlap, chunkSplitter (recursive, token, markdown).",
       "category": "rag",
       "versions": [
         {
@@ -7039,6 +7045,13 @@
           "commit": "4e6839ea1bfb1c03b2c7b0902fc6ec82856ea579",
           "tokens": 410,
           "date": "2026-10-21T20:01:58.947831826Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "4cc00e97c0510691a1a800786731c0ce945600c5a4ddd12ba5386dab8a9bacd5",
+          "commit": "a796f5a4e7757c4241a21b31019835b42c5b1d03",
+          "tokens": 395,
+          "date": "2026-10-22T11:09:30.544951034Z"
         }
       ]
     },
