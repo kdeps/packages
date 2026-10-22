@@ -1,6 +1,0 @@
-name: kdeps-pdf-example
-version: 1.0.0
-type: component
-description: "Generate PDF documents from HTML or plain text content."
-license: Apache-2.0
-tags: [pdf, document, export, html]
