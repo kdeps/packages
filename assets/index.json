@@ -7977,8 +7977,8 @@
       ]
     },
     "tools/transcribe_audio_offline": {
-      "latest": "1.0.0",
-      "description": "Transcribe an audio file to text offline with whisper.cpp (whisper-cli): no API key, no network. Supports flac, mp3, ogg, wav. Uses the GGML model at modelPath, or ggml-base.en.bin in the kdeps models dir (the transcribe component downloads it on first use). Returns the transcribed text.",
+      "latest": "1.0.1",
+      "description": "Transcribe an audio file to text offline with whisper.cpp (whisper-cli): no API key, no network. Supports flac, mp3, ogg, wav. Uses the GGML model at modelPath, or ggml-base.en.bin in the kdeps models dir. The model is not downloaded: place the GGML file there first. Returns the transcribed text.",
       "category": "tools",
       "versions": [
         {
@@ -7987,6 +7987,13 @@
           "commit": "6f6f575531c95478a4c8c5c65fd553e2946a7992",
           "tokens": 159,
           "date": "2026-10-13T15:41:59.558069751Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "cd8c927c19252feedc74c24f9a1ea969254b593d2b15b62ebc293c34491ea0f5",
+          "commit": "cb5e15212fe0fd81d03e8d7da7765cd14b7ee554",
+          "tokens": 161,
+          "date": "2026-10-23T01:48:55.728279454Z"
         }
       ]
     },
