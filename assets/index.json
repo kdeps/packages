@@ -8647,7 +8647,7 @@
     },
     "tools": {
       "purpose": "What the model is told about each built-in tool: its description, usage notes and parameters. kdeps runs the tool itself.",
-      "mode": "agent",
+      "mode": "both",
       "flow": [
         {
           "label": "the agent loop builds the request"
@@ -8671,10 +8671,10 @@
         "/update",
         "/reload",
         "/settings",
+        "kdeps run",
         "kdeps install",
         "kdeps list",
-        "kdeps uninstall",
-        "kdeps update"
+        "kdeps uninstall"
       ],
       "code": [
         "kdeps (agent loop)",
