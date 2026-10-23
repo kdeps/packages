@@ -1791,7 +1791,7 @@
       ]
     },
     "components/edit_file": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Edit a file through the kdeps API and return the changed snippet",
       "category": "workflow",
       "versions": [
@@ -1815,6 +1815,17 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 560,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "af96ae822950b18d13ba6bdbee8a9c015556d5dcf3689b52e5049bcf9aeb23c6",
+          "requires": {
+            "schemas/v1": "",
+            "tools/edit_file": ""
+          },
+          "commit": "3e4e4b22caf5a469136d920917793871503d3f15",
+          "tokens": 158,
+          "date": "2026-10-23T07:56:04.615906617Z"
         }
       ]
     },
@@ -7026,8 +7037,8 @@
       ]
     },
     "tools/edit_file": {
-      "latest": "1.1.0",
-      "description": "Edit a file. Pass command:",
+      "latest": "2.0.0",
+      "description": "Edit one line of an existing file. Give file_path, the line to change (line, 1-based) or words that are on it (match), and either:",
       "category": "tools",
       "versions": [
         {
@@ -7043,6 +7054,13 @@
           "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
           "tokens": 1353,
           "date": "2026-10-17T07:26:30.673619792Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "bd9bea06eca6a69d50ce7a6ef380fd95f9d9a5490566e19ded66d5559abe0aa6",
+          "commit": "3e4e4b22caf5a469136d920917793871503d3f15",
+          "tokens": 315,
+          "date": "2026-10-23T07:56:04.615906617Z"
         }
       ]
     },

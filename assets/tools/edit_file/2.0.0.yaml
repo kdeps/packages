@@ -1,0 +1,84 @@
+version: 2.0.0
+category: code
+aliases: [edit, str_replace_editor, str_replace_based_edit_tool, replace_in_file, edit_text_file]  # other names a model may call it by
+description: |-
+  Edit one line of an existing file. Give file_path, the line to change (line, 1-based) or words that are on it (match), and either:
+  - text: the replacement. With match, only those words are replaced on the line; without match, the whole line is replaced. text may span several lines.
+  - append: text inserted after the line (after the end of the file when neither line nor match is given).
+  Use read_file first to get line numbers. To create a file or rewrite a whole file, use write_file.
+constraints: give exactly one of text or append; the file must exist; with both line and match, the line must contain match
+outputFormat: the edited line number and the line(s) as they now read
+seeAlso: read_file, write_file
+parameters:
+  file_path:
+    type: string
+    description: Absolute path of the file to edit
+    required: true
+  line:
+    type: integer
+    description: 1-based line to edit (or to append after)
+  match:
+    type: string
+    description: Words on the line to edit. Without line, the first line containing them is used. With text, only these words are replaced.
+  text:
+    type: string
+    description: Replacement for the line, or for match on the line
+  append:
+    type: string
+    description: Text inserted after the line, or after the end of the file when neither line nor match is given
+python:
+  paths: [file_path]  # checked against the workspace boundary
+  script: |
+    import json, sys
+
+    a = json.loads(sys.argv[1])
+    path = a["file_path"]
+    # A component posts every input; an empty one counts as not given.
+    line = int(str(a.get("line") or 0) or 0)
+    match = a.get("match") or ""
+    text = a.get("text") or None
+    append = a.get("append") or None
+    if (text is None) == (append is None):
+        sys.exit("edit_file: give exactly one of text or append")
+
+    with open(path, encoding="utf-8", newline="") as f:
+        content = f.read()
+    lines = content.split("\n")
+    if lines and lines[-1] == "":
+        lines.pop()
+        trailing_newline = True
+    else:
+        trailing_newline = False
+
+    target = None
+    if line:
+        if line < 1 or line > len(lines):
+            sys.exit("edit_file: line %d is outside 1-%d" % (line, len(lines)))
+        target = line - 1
+        if match and match not in lines[target]:
+            sys.exit("edit_file: line %d does not contain %r" % (line, match))
+    elif match:
+        target = next((i for i, l in enumerate(lines) if match in l), None)
+        if target is None:
+            sys.exit("edit_file: no line contains %r" % match)
+
+    if append is not None:
+        at = len(lines) if target is None else target + 1
+        added = append.split("\n")
+        lines[at:at] = added
+        shown = (at + 1, at + len(added))
+    else:
+        if target is None:
+            sys.exit("edit_file: replacing needs line or match")
+        new = lines[target].replace(match, text, 1) if match else text
+        new_lines = new.split("\n")
+        lines[target:target + 1] = new_lines
+        shown = (target + 1, target + len(new_lines))
+
+    out = "\n".join(lines) + ("\n" if trailing_newline else "")
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        f.write(out)
+    first, last = shown
+    print("edited %s at line %d:" % (path, first))
+    for n in range(first, last + 1):
+        print("%6d\t%s" % (n, lines[n - 1]))
