@@ -8330,6 +8330,7 @@
         "kdeps (agent loop)",
         "/clear",
         "/compact",
+        "/editor",
         "kdeps run"
       ],
       "code": [
