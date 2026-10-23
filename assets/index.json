@@ -3770,7 +3770,7 @@
       ]
     },
     "events/auto-compact": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "context",
       "versions": [
         {
@@ -3793,11 +3793,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "9d1b9f2826b28f8d5d1df0a8cf43d983c985b11b79015a93771342a1970c1cbd",
+          "requires": {
+            "actions/compact": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/bash-call-budget": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "guardrails",
       "versions": [
         {
@@ -3820,11 +3829,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "9312f47fbbd795e0af60b8f292835f85cd81544a60f25b5785cd0fd0192cca85",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/code-call-budget": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "guardrails",
       "versions": [
         {
@@ -3847,11 +3865,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "22273c171271dc9fd7896672cbf4c07fdab5de84591fb53d109a6d210bb769f7",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/convergence-block": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "guardrails",
       "versions": [
         {
@@ -3874,6 +3901,15 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "474c8ca8283825293df8f614841112ab6bbf615fd71932bb4662f78b192c3e32",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
@@ -4109,7 +4145,7 @@
       ]
     },
     "events/file-call-budget": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "guardrails",
       "versions": [
         {
@@ -4132,11 +4168,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "46b7fa82bf09a763b4a29c7727ee151ed4f6c201c4f55bfdffa7963878f20e3a",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/file-read-limit": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "guardrails",
       "versions": [
         {
@@ -4159,11 +4204,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "ec1450e9bbc662dce5d7c9da718ee3ff06813a778a46dd86ff195cc550b29bf6",
+          "requires": {
+            "actions/reject": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/fold": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "context",
       "versions": [
         {
@@ -4186,11 +4240,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "cf0848bc3089e188eb771fbb22221d6eee4c54877b032c92a2a6237d1745e4cb",
+          "requires": {
+            "actions/compact": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/force-answer-digest": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "context",
       "versions": [
         {
@@ -4213,11 +4276,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "e213a306ae6a71e69cef6348dceb00b95848a410076e6b2ec202d650301bb7b7",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/handshake-timeout": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "guardrails",
       "versions": [
         {
@@ -4240,11 +4312,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "c9a3fc8245bd40727adb210e4aa12d602efbf657e273f2c34a73b72aa26e38d0",
+          "requires": {
+            "actions/fail_handshake": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/history-window-trim": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "context",
       "versions": [
         {
@@ -4267,11 +4348,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "1578888cd873a8df8d2c709083649ddc2f819646f38d4ac15baf9e5c130a596f",
+          "requires": {
+            "actions/drop_oldest": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/identical-tool-calls": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "guardrails",
       "versions": [
         {
@@ -4294,11 +4384,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "2c639e36a71b7d906a67b1a6463c9eec0233b7af701c890ce9d200a58456360a",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/judge-iterations": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "evals",
       "versions": [
         {
@@ -4321,11 +4420,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "b63f2dbacc9e4e050438e7bcec2c230294cce52354600351b1d32a273b6cc76a",
+          "requires": {
+            "actions/accept_last": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/judge-max-rounds": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "evals",
       "versions": [
         {
@@ -4348,11 +4456,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "77f92af8fba1121b09aede91648ba92ff031356414c3decd04f78aef4a633552",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/memory-chain-max": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "memory",
       "versions": [
         {
@@ -4375,11 +4492,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "33260d5f8237e473237aa415256468212ca0e0eaa7a6ea1e68aa55a63313060f",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/memory-focus-max": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "memory",
       "versions": [
         {
@@ -4402,11 +4528,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "07617a59f52c644a98c157a5328f721d2249d7cae98fe9da6b7c4c6fe2e766f3",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/memory-keys-limit": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "memory",
       "versions": [
         {
@@ -4429,11 +4564,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "dcbfd167a439eb3e2a90273149f7862faa6cd278776b28e4414d6fa533f98658",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/memory-prompt-limit": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "context",
       "versions": [
         {
@@ -4456,11 +4600,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "a108ae2f62f9bf424c7cafa7b7934d7fb03feffc84f268cc0e8751e2641f8939",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/rel-memory-limit": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "memory",
       "versions": [
         {
@@ -4483,6 +4636,15 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "3cec13a93fb22c7d45b32c46e1dd16c0e0829a65aeb2cf6356674ab62fbc5671",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
@@ -4514,7 +4676,7 @@
       ]
     },
     "events/tool-error-truncate": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "context",
       "versions": [
         {
@@ -4537,11 +4699,20 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "181e8a9ea5c7bb8d9873738e55f744f6fb67c02563bd8618ce1cc54223dd2e53",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
     "events/tool-result-truncate": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "context",
       "versions": [
         {
@@ -4564,6 +4735,15 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "394f28777cfb5af71bfc33f59bb52bbe46d935399d61a6a88f20cbd5e8ea1d95",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
@@ -4595,7 +4775,7 @@
       ]
     },
     "events/web-call-budget": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "guardrails",
       "versions": [
         {
@@ -4618,6 +4798,15 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "79359555d537ed18a6fbf306773e2032c0027cd0dab449d0a302784494a2cf53",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
@@ -6914,8 +7103,8 @@
       ]
     },
     "tools/instruct": {
-      "latest": "1.0.0",
-      "description": "Return the full text of one harness section or one instruct briefing. Use it when the system prompt shows a one-line summary and you need that section's full instructions. topic is a harness section name (memory, tools, narration, autonomy, safety, errors, scope, accuracy, honesty, code, output, internals, use-kdeps-tools, edit-workflow, or any other harness section) or an instruct topic (overview, modes, tools, available, memory, goals, feedback, files). A name that is both a section and a topic returns the harness section. Prefix instruct: (instruct:tools, instruct:memory) to force the briefing.",
+      "latest": "1.0.1",
+      "description": "Return the full text of one harness section or one instruct briefing. Use it when the system prompt shows a one-line summary and you need that section's full instructions. topic is a harness section name (memory, tools, narration, autonomy, safety, errors, scope, accuracy, honesty, code, output, internals, use-kdeps-tools, edit-workflow, or any other harness section) or an instruct topic (overview, modes, tools, available, memory, feedback, files). A name that is both a section and a topic returns the harness section. Prefix instruct: (instruct:tools, instruct:memory) to force the briefing.",
       "category": "agent",
       "versions": [
         {
@@ -6924,6 +7113,13 @@
           "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
           "tokens": 263,
           "date": "2026-10-17T19:14:40.431501918Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "47e2a1fb925504abf4be470b965c5bad21baf6e67ceb570554f6a335b0a0869c",
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "tokens": 261,
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
@@ -7109,8 +7305,8 @@
       ]
     },
     "tools/md5_file": {
-      "latest": "1.0.0",
-      "description": "Compute the MD5 checksum of a file. Call once before and once after a change to prove whether the file's contents actually changed -- pair both hashes as evidence for task_complete rather than asserting the change happened.",
+      "latest": "1.0.1",
+      "description": "Compute the MD5 checksum of a file. Call once before and once after a change to prove whether the file's contents actually changed -- pair both hashes as evidence rather than asserting the change happened.",
       "category": "tools",
       "versions": [
         {
@@ -7119,6 +7315,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 107,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "785a26996d06f7ee7d70fd2fd21d2fb92e89cbfd8ac501af2361c849614ff113",
+          "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
+          "tokens": 102,
+          "date": "2026-10-23T00:43:33.519248404Z"
         }
       ]
     },
@@ -7832,7 +8035,7 @@
           "label": "an event's trigger is met"
         },
         {
-          "label": "its action runs: compact, truncate, block, cap, force an answer or fail a task",
+          "label": "its action runs: compact, truncate, block, cap or force an answer",
           "here": true
         },
         {
