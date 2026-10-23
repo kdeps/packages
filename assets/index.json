@@ -6357,7 +6357,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "1.0.8",
+      "latest": "1.0.9",
       "category": "workflow",
       "versions": [
         {
@@ -6413,6 +6413,12 @@
           "sha256": "fb4f916c06aa316680901381d7f471328abfd287633727b3b0f6db1321767e1d",
           "commit": "65f839c9f83155b368f3fdd1d560e4099428ee81",
           "date": "2026-10-23T04:56:54.9534457Z"
+        },
+        {
+          "version": "1.0.9",
+          "sha256": "39491ccb9b659b4a2ac7282f8430e39b08d48c232d11bf1274e51bbd5a8d76dc",
+          "commit": "5bd31c655eb5464074f0429cd85920057f883af7",
+          "date": "2026-10-23T06:57:31.387590662Z"
         }
       ]
     },
@@ -8267,7 +8273,7 @@
         "kdeps bundle package",
         "kdeps env",
         "kdeps export k8s",
-        "kdeps bundle build"
+        "kdeps test"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -8518,7 +8524,8 @@
         "kdeps doctor",
         "kdeps edit",
         "kdeps env",
-        "kdeps exec"
+        "kdeps exec",
+        "kdeps test"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -8584,7 +8591,7 @@
         "kdeps bundle package",
         "kdeps env",
         "kdeps export k8s",
-        "kdeps bundle build"
+        "kdeps test"
       ],
       "code": [
         "kdeps (agent loop)",
