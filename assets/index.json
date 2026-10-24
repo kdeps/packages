@@ -298,7 +298,7 @@
       ]
     },
     "commands/efficiency": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Show or tune efficiency enforcement (soft stops on read-only loops; persists)",
       "category": "agent",
       "versions": [
@@ -313,6 +313,15 @@
           "sha256": "4626408593c8cbc8d80a04808560918bda1c98ba90ffeb0379d1df62c8fbc1c8",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "2e88ef6b2712439a7fa73eae5ecb85708498f43b4165800635c1f56c027bd027",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "090975eb686e3419f7b087d37f6762be3f3d0f7b",
+          "date": "2026-10-24T21:30:04.130675965Z"
         }
       ]
     },
@@ -444,7 +453,7 @@
       ]
     },
     "commands/harness": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "List harness sections (system-prompt text) with their enabled/disabled state",
       "category": "agent",
       "versions": [
@@ -459,6 +468,15 @@
           "sha256": "a0c9b91427ea14d1c1c68a131217b90d76b7bac8dca405f1562999c08fc2191a",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "ec15ab383511939c6bab9d8d29294b1ba7520ae8f5a4085d1f54d7ad8a4f09d7",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "090975eb686e3419f7b087d37f6762be3f3d0f7b",
+          "date": "2026-10-24T21:30:04.130675965Z"
         }
       ]
     },
@@ -548,7 +566,7 @@
       ]
     },
     "commands/judges": {
-      "latest": "1.1.1",
+      "latest": "2.0.0",
       "description": "Show the configured judge panel (reviews each turn's final output)",
       "category": "agent",
       "versions": [
@@ -569,6 +587,15 @@
           "sha256": "1761ee8e1fa03afb9ca6492efe3ecd3ad8cd3a75edc02f3a1fac7d34f11720d8",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "f60a2181d31c6504b6f362530194314b6cc594f2069e859698f7f48c4244a894",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "090975eb686e3419f7b087d37f6762be3f3d0f7b",
+          "date": "2026-10-24T21:30:04.130675965Z"
         }
       ]
     },
@@ -8577,8 +8604,8 @@
       ]
     },
     "tools/session_ops": {
-      "latest": "1.7.0",
-      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, identity_get, session_handshake) with args and returns its answer.",
+      "latest": "1.10.0",
+      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); judges is the judge panel ({judges: [{name, criteria, graders}], auto, last}); judge_add (name, criteria), judge_remove (name), judge_grade (name, kind, pattern) and judges_clear change it; harness_sections, harness_events, presets and harness_reminders list the harness sections, events, presets and reminders, and harness_set, event_set, preset_apply and reminder_set change them (name, enabled: on|off); efficiency is enforcement's state ({value, verbose, prompt, limits}), efficiency_limit sets one limit (setting, value: a count or off) and efficiency_reset restores the defaults; tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, identity_get, session_handshake) with args and returns its answer.",
       "category": "tools",
       "versions": [
         {
@@ -8636,6 +8663,13 @@
           "commit": "c4eaf710c78150d11e958053c46d0099d8a43425",
           "tokens": 1198,
           "date": "2026-10-24T21:09:15.571897889Z"
+        },
+        {
+          "version": "1.10.0",
+          "sha256": "70e328f2aa2a40bbb22c3ed0d66e6a0c50d004f0f982e39fb6a3b96a031f5230",
+          "commit": "090975eb686e3419f7b087d37f6762be3f3d0f7b",
+          "tokens": 1515,
+          "date": "2026-10-24T21:30:04.130675965Z"
         }
       ]
     },
@@ -9184,7 +9218,7 @@
   "sets": {
     "actions": {
       "purpose": "The vocabulary of what an event can do when it fires: compact, truncate, block, cap, force an answer, fail a task.",
-      "mode": "agent",
+      "mode": "both",
       "flow": [
         {
           "label": "an event's trigger is met"
@@ -9199,8 +9233,8 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/efficiency",
         "/konfig",
+        "kdeps run",
         "kdeps konfig export",
         "kdeps konfig import"
       ],
@@ -9351,13 +9385,13 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/efficiency",
-        "/harness",
         "/context",
         "/prompt",
         "/konfig",
         "/update",
-        "kdeps run"
+        "kdeps run",
+        "kdeps konfig export",
+        "kdeps konfig import"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -9388,13 +9422,13 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/harness",
         "/knowledge",
-        "/efficiency",
         "/konfig",
         "/settings",
         "kdeps run",
-        "kdeps konfig export"
+        "kdeps konfig export",
+        "kdeps knowledge build",
+        "kdeps konfig import"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -9462,7 +9496,7 @@
     },
     "presets": {
       "purpose": "Named bundles of event and harness overrides, such as frugal (fewest tokens) or thorough (most context).",
-      "mode": "agent",
+      "mode": "both",
       "flow": [
         {
           "label": "/harness preset or /efficiency preset"
@@ -9477,17 +9511,16 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/efficiency",
-        "/harness",
         "/konfig",
         "/update",
+        "kdeps run",
         "kdeps konfig export",
         "kdeps konfig import"
       ],
       "code": [
         "kdeps (agent loop)",
-        "agent.(*REPL).Run",
-        "agent.PresetByName"
+        "agent.ApplyKonfig",
+        "agent.mergeUserPresets"
       ]
     },
     "providers": {
