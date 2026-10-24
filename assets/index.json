@@ -175,7 +175,7 @@
       ]
     },
     "commands/clear": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Clear the conversation history",
       "category": "agent",
       "versions": [
@@ -190,11 +190,20 @@
           "sha256": "17f59748d15146693a505123462acf79eb399ff982d70a7750b52df0dad720a2",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "ab10c9cb098b330c07ffb4f5354e70e156509608c0436fff2bca4b6eac25917d",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "9936b62c1a2bdcd8c704bf2e2f97589b10c3718b",
+          "date": "2026-10-24T09:49:06.013029788Z"
         }
       ]
     },
     "commands/compact": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Compact conversation history (keep recent turns)",
       "category": "agent",
       "versions": [
@@ -209,6 +218,15 @@
           "sha256": "e32513ec62adf0fb5b19a65c560da7591a777e60690a1c51542ed2f09ad17ed2",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "1f55cb8f59a4fd47e73107d705de80eed6569c9fe17a7e636f73e4e28aa77d4e",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "9936b62c1a2bdcd8c704bf2e2f97589b10c3718b",
+          "date": "2026-10-24T09:49:06.013029788Z"
         }
       ]
     },
@@ -445,7 +463,7 @@
       ]
     },
     "commands/history": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Show recent conversation turns",
       "category": "agent",
       "versions": [
@@ -460,6 +478,15 @@
           "sha256": "a38f557ad3d877500e4543c1539a771503c82668a0a2c1ffdb272d0584ba0fff",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "9675531b90569b705a3514b1d63c87754d8cfcb1e24b145b1257729c5490226e",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "9936b62c1a2bdcd8c704bf2e2f97589b10c3718b",
+          "date": "2026-10-24T09:49:06.013029788Z"
         }
       ]
     },
@@ -8077,6 +8104,20 @@
         }
       ]
     },
+    "tools/session_ops": {
+      "latest": "1.0.0",
+      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}).",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "f9290c610068799d56e7a8ed648fec02bcd2c9a513d61ecdc3ace9f3847c6cf0",
+          "commit": "9936b62c1a2bdcd8c704bf2e2f97589b10c3718b",
+          "tokens": 143,
+          "date": "2026-10-24T09:49:06.013029788Z"
+        }
+      ]
+    },
     "tools/sql_describe_table": {
       "latest": "2.0.0",
       "description": "Return the schema (column names and types) for a table in a SQLite database. Use before writing queries to know the exact column names.",
@@ -8700,7 +8741,7 @@
     },
     "defaults": {
       "purpose": "The values a resource gets when it sets none: chat, HTTP, python and exec timeouts, context length, embedding store.",
-      "mode": "both",
+      "mode": "agent",
       "flow": [
         {
           "label": "a resource without a timeout (or another default) runs"
@@ -8715,10 +8756,13 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/clear",
-        "/compact",
+        "/auto-improve",
+        "/context",
         "/editor",
-        "kdeps run"
+        "/fold",
+        "/instruct",
+        "/knowledge",
+        "/model"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -8794,7 +8838,7 @@
     },
     "harness": {
       "purpose": "The text kdeps sends the model in agent mode: the sections of the system prompt, and the prompts behind compaction, goals, judges, prompt refinement and nudges.",
-      "mode": "agent",
+      "mode": "both",
       "flow": [
         {
           "label": "you type a prompt"
@@ -8816,12 +8860,12 @@
       "usedBy": [
         "kdeps (agent loop)",
         "/harness",
-        "/clear",
         "/knowledge",
         "/efficiency",
         "/konfig",
         "/reload",
-        "/settings"
+        "/settings",
+        "kdeps run"
       ],
       "code": [
         "kdeps (agent loop)",
