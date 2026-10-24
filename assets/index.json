@@ -8043,8 +8043,8 @@
       ]
     },
     "tools/read_file": {
-      "latest": "1.1.0",
-      "description": "Read a file from the local filesystem. Returns the contents with a 1-based line number on every line (`  42\\tcode$`) - use those numbers for edit_file insert/view. Tabs render as ^I, other control characters as ^X, and a $ marks the true end of each line, so indentation, trailing whitespace, and stray control characters are visible instead of hidden. IMPORTANT: ^I, ^X, and the trailing $ are a display convention this tool adds - the real file does NOT contain those literal characters. When quoting text back into edit_file's old_str, write the real tab/control character (or match a whole line via view_range/anchor instead), never the literal caret sequence - copying \"^I\" as text will not match a real tab byte. Plain text, source code, configuration files, and documentation are read directly; PDF, DOCX, EPUB, RTF, and ODT documents have their text extracted automatically. Use load_document instead for CSV/HTML structured parsing or RAG chunking. Pass match_id (from a search_local result) instead of file_path/offset to jump straight to that hit.",
+      "latest": "2.0.0",
+      "description": "Read a file from the local filesystem. Returns the contents with a 1-based line number on every line (`  42\\tcode$`) - use those numbers for edit_file insert/view. Tabs render as ^I, other control characters as ^X, and a $ marks the true end of each line, so indentation, trailing whitespace, and stray control characters are visible instead of hidden. IMPORTANT: ^I, ^X, and the trailing $ are a display convention this tool adds - the real file does NOT contain those literal characters. When quoting text back into edit_file's old_str, write the real tab/control character (or match a whole line via view_range/anchor instead), never the literal caret sequence - copying \"^I\" as text will not match a real tab byte. Plain text, source code, configuration files, and documentation are read directly. For PDF, DOCX, EPUB, RTF, and ODT documents, CSV/HTML structured parsing, or RAG chunking, use load_document. Pass match_id (from a search_local result) instead of file_path/offset to jump straight to that hit.",
       "category": "tools",
       "versions": [
         {
@@ -8060,6 +8060,13 @@
           "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
           "tokens": 631,
           "date": "2026-10-17T07:26:30.673619792Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "0a049b0fc8f880876451d13378e24d3ac809c6936b181ded15ebdcc19793aa89",
+          "commit": "a95d505bd8f75dd07b9a43634ef9126200a63ff8",
+          "tokens": 592,
+          "date": "2026-10-24T15:06:57.219678409Z"
         }
       ]
     },
@@ -8648,8 +8655,8 @@
       ]
     },
     "tools/write_file": {
-      "latest": "1.1.0",
-      "description": "Write or overwrite a text file on the local filesystem. Creates a new file if it does not exist; overwrites existing files entirely. Use for creating or updating configuration files, source code, scripts, or any text-based file. Requires an absolute path.",
+      "latest": "2.0.0",
+      "description": "Write or overwrite a text file on the local filesystem. Creates a new file if it does not exist; overwrites existing files entirely. Use for creating or updating configuration files, source code, scripts, or any text-based file. Takes an absolute path.",
       "category": "tools",
       "versions": [
         {
@@ -8665,6 +8672,13 @@
           "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
           "tokens": 153,
           "date": "2026-10-17T07:26:30.673619792Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "7d0d8ada05a6c5c495e785f704314f360bbe93f8913aa73dfd711b9b018de27c",
+          "commit": "a95d505bd8f75dd07b9a43634ef9126200a63ff8",
+          "tokens": 168,
+          "date": "2026-10-24T15:06:57.219678409Z"
         }
       ]
     },
