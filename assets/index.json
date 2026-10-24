@@ -8147,8 +8147,8 @@
       ]
     },
     "tools/session_ops": {
-      "latest": "1.1.0",
-      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}).",
+      "latest": "1.2.0",
+      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}).",
       "category": "tools",
       "versions": [
         {
@@ -8164,6 +8164,13 @@
           "commit": "044fd20d72cb989f5768417ef720394f7c9e7cd5",
           "tokens": 159,
           "date": "2026-10-24T12:16:34.568490937Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "03923b12d701609a48b5897f00772285d7f9e1cbe21ad71e599377c52c26f159",
+          "commit": "91f01a6d5ebadc6997ac4dd3860c211d7f45b5bc",
+          "tokens": 269,
+          "date": "2026-10-24T12:51:14.701693661Z"
         }
       ]
     },
@@ -8733,7 +8740,7 @@
     },
     "commands": {
       "purpose": "Slash commands: the help and completion of the built-in ones, and declared commands that run other commands and prompts.",
-      "mode": "agent",
+      "mode": "both",
       "flow": [
         {
           "label": "you type /name in kdeps"
@@ -8749,7 +8756,8 @@
       "usedBy": [
         "kdeps (agent loop)",
         "/help",
-        "/update"
+        "/update",
+        "kdeps run"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -9137,7 +9145,7 @@
     },
     "themes": {
       "purpose": "Colors, prompt and syntax highlighting of the agent loop's terminal.",
-      "mode": "agent",
+      "mode": "both",
       "flow": [
         {
           "label": "kdeps starts, or /theme"
@@ -9154,11 +9162,11 @@
         "kdeps (agent loop)",
         "/konfig",
         "/update",
+        "kdeps run",
         "kdeps konfig export",
         "kdeps konfig import",
         "kdeps install",
-        "kdeps list",
-        "kdeps uninstall"
+        "kdeps list"
       ],
       "code": [
         "kdeps (agent loop)",
