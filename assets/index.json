@@ -649,7 +649,7 @@
       ]
     },
     "commands/memory": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Show memory store overview (entry count, most recent entries)",
       "category": "agent",
       "versions": [
@@ -664,6 +664,15 @@
           "sha256": "083c86a216c989324db08abe2926f4e6361bce5a04020a061c9044501a6d5772",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "c84c24d2ec40019d802e3ddf6faf96d7426c47271a26356a9bffa2fb4fa2c80f",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "c4eaf710c78150d11e958053c46d0099d8a43425",
+          "date": "2026-10-24T21:09:15.571897889Z"
         }
       ]
     },
@@ -742,7 +751,7 @@
       ]
     },
     "commands/prompts": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "List loaded prompt templates",
       "category": "agent",
       "versions": [
@@ -757,6 +766,15 @@
           "sha256": "7bbf23029ea8b32f5a6cf4cc11950c2fe79fe8c63e5b5d2a6490dd4b13f5fcc9",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "ae9c184c1dc38750064dad05dc7f61ec230a58575457bcd9cb9230321e0c7fde",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "c4eaf710c78150d11e958053c46d0099d8a43425",
+          "date": "2026-10-24T21:09:15.571897889Z"
         }
       ]
     },
@@ -805,7 +823,7 @@
       ]
     },
     "commands/reload": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Reload skills, prompt templates, and instructions from disk",
       "category": "agent",
       "versions": [
@@ -820,6 +838,15 @@
           "sha256": "5dd3be427484b45df1245b3fb0b388a34ee53b98c33b72e33066fdd107e8cffa",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "8b023a9a3049b2338af79a1d4ed2a3033dd50dedfc1f6fbdc31c58dc71ebb115",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "c4eaf710c78150d11e958053c46d0099d8a43425",
+          "date": "2026-10-24T21:09:15.571897889Z"
         }
       ]
     },
@@ -909,7 +936,7 @@
       ]
     },
     "commands/skills": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "List loaded skills",
       "category": "agent",
       "versions": [
@@ -924,6 +951,15 @@
           "sha256": "e77b969467bf252b8d53c7ccbd936f778f1fe225ecba9d3637226a112cc56fb9",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "75952ff072eb06c51eb49139199d6b270a79471d95417464e920402ca2f152e6",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "c4eaf710c78150d11e958053c46d0099d8a43425",
+          "date": "2026-10-24T21:09:15.571897889Z"
         }
       ]
     },
@@ -8541,8 +8577,8 @@
       ]
     },
     "tools/session_ops": {
-      "latest": "1.6.0",
-      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, identity_get, session_handshake) with args and returns its answer.",
+      "latest": "1.7.0",
+      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, identity_get, session_handshake) with args and returns its answer.",
       "category": "tools",
       "versions": [
         {
@@ -8593,6 +8629,13 @@
           "commit": "e3208d02a54ff34dded64a05c99b757783873ff6",
           "tokens": 996,
           "date": "2026-10-24T18:49:22.240821995Z"
+        },
+        {
+          "version": "1.7.0",
+          "sha256": "ef2c893c9cbc630175db8dbd7b7227674123dd3b51fc7a4070385be44b550757",
+          "commit": "c4eaf710c78150d11e958053c46d0099d8a43425",
+          "tokens": 1198,
+          "date": "2026-10-24T21:09:15.571897889Z"
         }
       ]
     },
@@ -9349,9 +9392,9 @@
         "/knowledge",
         "/efficiency",
         "/konfig",
-        "/reload",
         "/settings",
-        "kdeps run"
+        "kdeps run",
+        "kdeps konfig export"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -9626,12 +9669,12 @@
       "usedBy": [
         "kdeps (agent loop)",
         "/update",
-        "/reload",
         "/settings",
         "kdeps run",
         "kdeps install",
         "kdeps list",
-        "kdeps uninstall"
+        "kdeps uninstall",
+        "kdeps update"
       ],
       "code": [
         "kdeps (agent loop)",
