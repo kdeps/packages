@@ -1209,7 +1209,7 @@
       ]
     },
     "components/calculator": {
-      "latest": "1.0.1",
+      "latest": "1.1.0",
       "description": "Evaluate a math expression through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1233,6 +1233,17 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 39,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "5739d726663cad66b2c872c83e2c1e55c6e3627d3202463828feff0051768e0b",
+          "requires": {
+            "schemas/v1": "",
+            "tools/calculator": ""
+          },
+          "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
+          "tokens": 47,
+          "date": "2026-10-24T03:30:15.343259609Z"
         }
       ]
     },
@@ -2090,7 +2101,7 @@
       ]
     },
     "components/google_cache_create": {
-      "latest": "1.0.1",
+      "latest": "1.1.0",
       "description": "Create a Google AI cached content entry through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -2114,6 +2125,17 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 89,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "3b3423f3c79e7d839a26bbb6190b0cf5eae38f8c3fa9880d65cfbe63ed6363d8",
+          "requires": {
+            "schemas/v1": "",
+            "tools/google_cache_create": ""
+          },
+          "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
+          "tokens": 97,
+          "date": "2026-10-24T03:30:15.343259609Z"
         }
       ]
     },
@@ -6937,8 +6959,8 @@
       ]
     },
     "tools/calculator": {
-      "latest": "1.0.0",
-      "description": "Evaluate a mathematical expression and return the result. Accepts any valid numeric expression (e.g. '2 + 2', '3.14 * 10**2', 'sqrt(16)'). Powered by Starlark math evaluation.",
+      "latest": "2.0.0",
+      "description": "Evaluate a mathematical expression and return the result. Accepts numbers, + - * / // % **, parentheses and the math module's functions and constants (e.g. '2 + 2', '3.14 * 10**2', 'sqrt(16)', 'log(8, 2)', 'pi').",
       "category": "tools",
       "versions": [
         {
@@ -6947,6 +6969,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 74,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "c66a82f4baeefb742af101aa7beb967f6d3e1439f82a12b5eaaf5c08c4ba156c",
+          "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
+          "tokens": 111,
+          "date": "2026-10-24T03:30:15.343259609Z"
         }
       ]
     },
@@ -7362,7 +7391,7 @@
       ]
     },
     "tools/git_ops": {
-      "latest": "1.0.0",
+      "latest": "2.0.0",
       "description": "Run one structured git operation and return its JSON result. Operations: status, diff, log, show, branch, remote, add, commit, checkout, init, clone, push, pull. Requires: operation, and url for clone. Optional: workingDir, paths, message, branch, remote, args, maxCount, dryRun.",
       "category": "tools",
       "versions": [
@@ -7372,6 +7401,13 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 322,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "a456ddb9d95dcdc26de72496c3efa10e54d6ee6c186904dcb6aab2b0cb1ff85e",
+          "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
+          "tokens": 322,
+          "date": "2026-10-24T03:30:15.343259609Z"
         }
       ]
     },
@@ -7404,7 +7440,7 @@
       ]
     },
     "tools/google_cache_create": {
-      "latest": "1.0.0",
+      "latest": "2.0.0",
       "description": "Create a Google AI server-side cached content entry from a text system prompt. Returns the cache name (e.g. 'cachedContents/xyz123') for use in chat: googleCachedContent. Only available when GOOGLE_API_KEY is set.",
       "category": "tools",
       "versions": [
@@ -7414,11 +7450,18 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 149,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "4a936a803e1fa1a3ebe463334ca524ec5e3a54486af4ffefdbbb565bfccf9f32",
+          "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
+          "tokens": 158,
+          "date": "2026-10-24T03:30:15.343259609Z"
         }
       ]
     },
     "tools/google_cache_delete": {
-      "latest": "1.0.0",
+      "latest": "2.0.0",
       "description": "Delete a Google AI cached content entry by name. Only available when GOOGLE_API_KEY is set.",
       "category": "tools",
       "versions": [
@@ -7428,11 +7471,18 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 66,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "1f3250207ecafccf6eb10f6c75cb449e6b36463caccb543c2314901def275c60",
+          "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
+          "tokens": 66,
+          "date": "2026-10-24T03:30:15.343259609Z"
         }
       ]
     },
     "tools/google_cache_list": {
-      "latest": "1.0.0",
+      "latest": "2.0.0",
       "description": "List all Google AI cached content entries. Returns a JSON array of cache names. Only available when GOOGLE_API_KEY is set.",
       "category": "tools",
       "versions": [
@@ -7442,6 +7492,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 37,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "0d6e6e9327147f275dee64ce6578e396df9aa08d59efcefc01716c1bfc929dc3",
+          "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
+          "tokens": 37,
+          "date": "2026-10-24T03:30:15.343259609Z"
         }
       ]
     },
@@ -7627,7 +7684,7 @@
       ]
     },
     "tools/list_files": {
-      "latest": "1.1.0",
+      "latest": "2.0.0",
       "description": "List files and directories in a given directory path. Returns names and types (file/dir). Use to discover project structure before reading or editing files. Omit path to list the current working directory.",
       "category": "tools",
       "versions": [
@@ -7644,6 +7701,13 @@
           "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
           "tokens": 86,
           "date": "2026-10-17T07:26:30.673619792Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "bfc2d5a0af15361448e3e0c1fb4097337ce3eefac0eddd9feb7589c153971a78",
+          "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
+          "tokens": 96,
+          "date": "2026-10-24T03:30:15.343259609Z"
         }
       ]
     },
@@ -7690,7 +7754,7 @@
       ]
     },
     "tools/md5_file": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Compute the MD5 checksum of a file. Call once before and once after a change to prove whether the file's contents actually changed -- pair both hashes as evidence rather than asserting the change happened.",
       "category": "tools",
       "versions": [
@@ -7707,6 +7771,13 @@
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "tokens": 102,
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "392dc1de5dd16276b35146d1893334ac3e3782e08380026db15be41e9267b8ca",
+          "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
+          "tokens": 110,
+          "date": "2026-10-24T03:30:15.343259609Z"
         }
       ]
     },
@@ -7996,7 +8067,7 @@
       ]
     },
     "tools/tail_file": {
-      "latest": "1.1.0",
+      "latest": "2.0.0",
       "description": "Read the last N lines of a file (default 20) -- for checking the end of a log or output file without knowing its total length upfront. Use as evidence that a command's output or a log ends the way a task claims it does.",
       "category": "tools",
       "versions": [
@@ -8013,6 +8084,13 @@
           "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
           "tokens": 127,
           "date": "2026-10-17T07:26:30.673619792Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "e4b7fe7016e65f7bf90eca4f0de087abd0287ee7588f3a6bc8a2c25118f8db5d",
+          "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
+          "tokens": 145,
+          "date": "2026-10-24T03:30:15.343259609Z"
         }
       ]
     },
@@ -8281,7 +8359,7 @@
       ]
     },
     "tools/web_scraper": {
-      "latest": "1.1.0",
+      "latest": "2.0.0",
       "description": "Fetch and extract readable text content from any web URL. Returns page title, headers, body content, and links. Use when you need to read a specific web page, article, or documentation URL.",
       "category": "tools",
       "versions": [
@@ -8298,11 +8376,18 @@
           "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
           "tokens": 130,
           "date": "2026-10-17T07:26:30.673619792Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "2d251dcf6ed097da36f467739a8656f3b39e32ed24c3884c2a095f71a8fa08f8",
+          "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
+          "tokens": 144,
+          "date": "2026-10-24T03:30:15.343259609Z"
         }
       ]
     },
     "tools/web_search": {
-      "latest": "1.1.0",
+      "latest": "2.0.0",
       "description": "Search the web using DuckDuckGo. Free, no API key required. Use for current events, facts, research, or anything needing an internet lookup. Input is a plain search query string.",
       "category": "tools",
       "versions": [
@@ -8319,11 +8404,18 @@
           "commit": "2d3938926ba2a6bb419e276717ee2375d5420c2c",
           "tokens": 106,
           "date": "2026-10-17T07:26:30.673619792Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "7373d3c0106dd877c3d4d659d2d74528bd01085713a848955ce55dba0d230e0a",
+          "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
+          "tokens": 109,
+          "date": "2026-10-24T03:30:15.343259609Z"
         }
       ]
     },
     "tools/wikipedia": {
-      "latest": "1.0.0",
+      "latest": "2.0.0",
       "description": "Look up information on Wikipedia. Use for general knowledge questions about people, places, companies, historical events, concepts, or any topic needing an encyclopedic answer. Input is a search query.",
       "category": "tools",
       "versions": [
@@ -8333,6 +8425,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 110,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "b2dab22bafba59a05b071e1ddd4d10f2fe448a578f994b640ac1fd0698fa1802",
+          "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
+          "tokens": 118,
+          "date": "2026-10-24T03:30:15.343259609Z"
         }
       ]
     },
