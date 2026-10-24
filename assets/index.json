@@ -4948,6 +4948,96 @@
         }
       ]
     },
+    "events/thinking-budget-auto": {
+      "latest": "1.0.0",
+      "category": "model",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "16796dec72bf840c04d819cefea08455ea1799bdccfbf93783028e051fe06010",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "bcf5cb93b6569209300ba72ee5f71eccf741f76d",
+          "date": "2026-10-24T19:49:52.127658631Z"
+        }
+      ]
+    },
+    "events/thinking-budget-high": {
+      "latest": "1.0.0",
+      "category": "model",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "6fbd99c79f5dbe890619300721690e066e7efeb92bc694a2f8a3c4aed03ceef5",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "bcf5cb93b6569209300ba72ee5f71eccf741f76d",
+          "date": "2026-10-24T19:49:52.127658631Z"
+        }
+      ]
+    },
+    "events/thinking-budget-low": {
+      "latest": "1.0.0",
+      "category": "model",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "d5b19fcfcc299abbe40ead2073d40308441b341835d97ddc6b1dc9763d84ae9e",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "bcf5cb93b6569209300ba72ee5f71eccf741f76d",
+          "date": "2026-10-24T19:49:52.127658631Z"
+        }
+      ]
+    },
+    "events/thinking-budget-medium": {
+      "latest": "1.0.0",
+      "category": "model",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "48a7c5dde3b0ce170e07a05fcf6a827e955daeb84e9cc09475d7e3f95eeceacd",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "bcf5cb93b6569209300ba72ee5f71eccf741f76d",
+          "date": "2026-10-24T19:49:52.127658631Z"
+        }
+      ]
+    },
+    "events/thinking-budget-minimal": {
+      "latest": "1.0.0",
+      "category": "model",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "f76e3b49757ffddf5b555d14f0d3a03583bd2ba30924cdde5f2f94fd9554f6d6",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "bcf5cb93b6569209300ba72ee5f71eccf741f76d",
+          "date": "2026-10-24T19:49:52.127658631Z"
+        }
+      ]
+    },
+    "events/thinking-budget-xhigh": {
+      "latest": "1.0.0",
+      "category": "model",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "73a267bc88500bb82e18464f49d3ecdfc6e5d51885468fb82988f9a3ef2192bc",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "bcf5cb93b6569209300ba72ee5f71eccf741f76d",
+          "date": "2026-10-24T19:49:52.127658631Z"
+        }
+      ]
+    },
     "events/tool-error-truncate": {
       "latest": "1.0.3",
       "category": "context",
