@@ -7377,7 +7377,7 @@
       ]
     },
     "tools/file_ops": {
-      "latest": "1.0.0",
+      "latest": "2.0.0",
       "description": "Run one structured filesystem operation and return its JSON result. Operations: read, write, patch, list, delete, exists, mkdir, copy, move, append. Requires: operation, and path (or source for copy and move). Optional: content, patch, encoding (text or base64), pattern, recursive, backup, dryRun, mode, appendNewline.",
       "category": "tools",
       "versions": [
@@ -7387,6 +7387,13 @@
           "commit": "9111d0d06551ec6dd083d34e49df298f15bcee1f",
           "tokens": 382,
           "date": "2026-10-21T03:07:21.578392701Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "aa2ee3de9435118c9a46559f0950fe9f8fcd99591c84feec01b29f4e6719d8a8",
+          "commit": "99376ff2da9c31bc7d2a302ff3bdabe7269305a5",
+          "tokens": 382,
+          "date": "2026-10-24T04:09:46.565061934Z"
         }
       ]
     },
@@ -8011,7 +8018,7 @@
       ]
     },
     "tools/sql_describe_table": {
-      "latest": "1.0.0",
+      "latest": "2.0.0",
       "description": "Return the schema (column names and types) for a table in a SQLite database. Use before writing queries to know the exact column names.",
       "category": "tools",
       "versions": [
@@ -8021,11 +8028,18 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 95,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "4501c5f8dd20c834fb5774806efe20fe26baec9f4d04e5e7de7e1c30fd2b95f5",
+          "commit": "99376ff2da9c31bc7d2a302ff3bdabe7269305a5",
+          "tokens": 108,
+          "date": "2026-10-24T04:09:46.565061934Z"
         }
       ]
     },
     "tools/sql_list_tables": {
-      "latest": "1.0.0",
+      "latest": "2.0.0",
       "description": "List all tables in a SQLite database. Use this to discover available data before querying. Returns a newline-separated list of table names.",
       "category": "tools",
       "versions": [
@@ -8035,6 +8049,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 72,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "14475bd2c56b035f75ef8985939b5768df25014adafd0cbd8f444ea9ecf76033",
+          "commit": "99376ff2da9c31bc7d2a302ff3bdabe7269305a5",
+          "tokens": 72,
+          "date": "2026-10-24T04:09:46.565061934Z"
         }
       ]
     },
@@ -8053,7 +8074,7 @@
       ]
     },
     "tools/sql_query": {
-      "latest": "1.0.0",
+      "latest": "2.0.0",
       "description": "Execute a SQL query against a SQLite database and return the results as formatted text. Use SELECT statements to retrieve data. Non-SELECT statements are rejected for safety.",
       "category": "tools",
       "versions": [
@@ -8063,6 +8084,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 104,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "a00daab6e5e0097fdeac776732f7127411e4b94adcbddf84fdac7ff632cdd1f5",
+          "commit": "99376ff2da9c31bc7d2a302ff3bdabe7269305a5",
+          "tokens": 118,
+          "date": "2026-10-24T04:09:46.565061934Z"
         }
       ]
     },
