@@ -851,8 +851,8 @@
       ]
     },
     "commands/session": {
-      "latest": "1.0.1",
-      "description": "Manage saved sessions",
+      "latest": "2.0.0",
+      "description": "List this folder's saved sessions",
       "category": "agent",
       "versions": [
         {
@@ -866,6 +866,15 @@
           "sha256": "c97ed458a9bf085651b4372c1b9d88c5ba02030f1f258611139c0b456f63b223",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "c5cbd50332716576e6069f10473988b92c17c57288fbab356d1b37e422895dcf",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "adea22d46b624aaa4a26b5bd32fc613beef6f5b2",
+          "date": "2026-10-24T17:36:48.591736152Z"
         }
       ]
     },
@@ -8367,8 +8376,8 @@
       ]
     },
     "tools/session_ops": {
-      "latest": "1.4.0",
-      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, identity_get, session_handshake) with args and returns its answer.",
+      "latest": "1.5.0",
+      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, identity_get, session_handshake) with args and returns its answer.",
       "category": "tools",
       "versions": [
         {
@@ -8405,6 +8414,13 @@
           "commit": "85646265421aaac02e47fc49e2f6b4ca1ac7c430",
           "tokens": 422,
           "date": "2026-10-24T17:26:02.388567085Z"
+        },
+        {
+          "version": "1.5.0",
+          "sha256": "b400d6d303789c10661b8eaca0d2f19356523d764a8cf6a114be2e5f1c340474",
+          "commit": "adea22d46b624aaa4a26b5bd32fc613beef6f5b2",
+          "tokens": 615,
+          "date": "2026-10-24T17:36:48.591736152Z"
         }
       ]
     },
