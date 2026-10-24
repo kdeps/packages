@@ -231,7 +231,7 @@
       ]
     },
     "commands/context": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Show current context window size",
       "category": "agent",
       "versions": [
@@ -246,6 +246,15 @@
           "sha256": "8921e5bee747b24f51dbf724a7df6b5c4e8109d6716e6700f3fbe3b6e6b2de3b",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "019da0341a88369a435e0fbc154af3ccca29b54dacae8c3439850797df6047ef",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "ddd9c26cc8c06a47224b805a6346df52d1a23f65",
+          "date": "2026-10-24T23:29:13.092261924Z"
         }
       ]
     },
@@ -481,7 +490,7 @@
       ]
     },
     "commands/help": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Show this help message",
       "category": "agent",
       "versions": [
@@ -496,6 +505,15 @@
           "sha256": "109da8658ce372d807bf2f11b4f0bf817b4a26380fa6101910d65129786ff55e",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "7b93ee3a82990a3f3a6ab17efe4bc209b467f7d5f095a664426347d79093a49f",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "ddd9c26cc8c06a47224b805a6346df52d1a23f65",
+          "date": "2026-10-24T23:29:13.092261924Z"
         }
       ]
     },
@@ -600,7 +618,7 @@
       ]
     },
     "commands/kartographer": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Show a live map of the internal data-flow pipelines",
       "category": "agent",
       "versions": [
@@ -615,6 +633,15 @@
           "sha256": "126bac4be970da2661da10f7bc1ff6052ea485ad6aaf016673eb9dd1f85a9a26",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "91443a4d5f9cc278508bb923528b83754803939a8b10f2f20ccacddcdf15187c",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "ddd9c26cc8c06a47224b805a6346df52d1a23f65",
+          "date": "2026-10-24T23:29:13.092261924Z"
         }
       ]
     },
@@ -647,7 +674,7 @@
       ]
     },
     "commands/konfig": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Export tuning, harness, themes, and skills to a self-contained YAML file (default ./konfig.yaml)",
       "category": "agent",
       "versions": [
@@ -662,6 +689,15 @@
           "sha256": "4a6d3ab7be1d6c8087058dcf87ba7ad90329f5912d68ef65aeb862c7e3e32f15",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "96057da8f114043fafe4354174e2eb67900fb06cafa5a22928d753473942b3ff",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "ddd9c26cc8c06a47224b805a6346df52d1a23f65",
+          "date": "2026-10-24T23:29:13.092261924Z"
         }
       ]
     },
@@ -768,7 +804,7 @@
       ]
     },
     "commands/prompt": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Show the exact messages+tools sent to the LLM on the last call, with token estimates",
       "category": "agent",
       "versions": [
@@ -783,6 +819,15 @@
           "sha256": "424cdbc1b3f7fdf590bce1874b09fdbca8061253134d483f88e3445a8c906ac0",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "22ef4d65381f0afa4e29597e26bd45c3e69cf1bcbd575a14c713ba63bf802542",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "ddd9c26cc8c06a47224b805a6346df52d1a23f65",
+          "date": "2026-10-24T23:29:13.092261924Z"
         }
       ]
     },
@@ -909,7 +954,7 @@
       ]
     },
     "commands/search": {
-      "latest": "1.1.1",
+      "latest": "2.0.0",
       "description": "Search the indexed directory and feed the results to the model",
       "category": "agent",
       "versions": [
@@ -930,6 +975,16 @@
           "sha256": "b49246a93c21cad10ef116bed6fe50820d935167066b0beb9cc83c29b3dba100",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "47de957768c83fb8bc1ba87ad418e5ea9dd628788f20eae31ece6a171649eb85",
+          "requires": {
+            "tools/search_local": "",
+            "tools/session_ops": ""
+          },
+          "commit": "ddd9c26cc8c06a47224b805a6346df52d1a23f65",
+          "date": "2026-10-24T23:29:13.092261924Z"
         }
       ]
     },
@@ -8622,8 +8677,8 @@
       ]
     },
     "tools/session_ops": {
-      "latest": "1.11.0",
-      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); judges is the judge panel ({judges: [{name, criteria, graders}], auto, last}); judge_add (name, criteria), judge_remove (name), judge_grade (name, kind, pattern) and judges_clear change it; harness_sections, harness_events, presets and harness_reminders list the harness sections, events, presets and reminders, and harness_set, event_set, preset_apply and reminder_set change them (name, enabled: on|off); efficiency is enforcement's state ({value, verbose, prompt, limits}), efficiency_limit sets one limit (setting, value: a count or off) and efficiency_reset restores the defaults; recall recalls knowledge vault notes for query, or returns the last turn's recall ({seeds, hits, tokens}); knowledge is the vault's state ({value, vault, graph}) and knowledge_extract reads the changed notes with the local model ({output}); tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, identity_get, session_handshake) with args and returns its answer.",
+      "latest": "1.13.0",
+      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); judges is the judge panel ({judges: [{name, criteria, graders}], auto, last}); judge_add (name, criteria), judge_remove (name), judge_grade (name, kind, pattern) and judges_clear change it; harness_sections, harness_events, presets and harness_reminders list the harness sections, events, presets and reminders, and harness_set, event_set, preset_apply and reminder_set change them (name, enabled: on|off); efficiency is enforcement's state ({value, verbose, prompt, limits}), efficiency_limit sets one limit (setting, value: a count or off) and efficiency_reset restores the defaults; recall recalls knowledge vault notes for query, or returns the last turn's recall ({seeds, hits, tokens}); knowledge is the vault's state ({value, vault, graph}) and knowledge_extract reads the changed notes with the local model ({output}); last_request is the last request sent to the LLM with token estimates (raw: true for JSON); search_index, search_folders and search_folder (action: add|remove, folder) manage the folders the project searches; commands_help lists every installed command's usages; konfig_export and konfig_import write and apply a konfig file (path); pipelines is /kartographer's live state; tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, identity_get, session_handshake) with args and returns its answer.",
       "category": "tools",
       "versions": [
         {
@@ -8695,6 +8750,13 @@
           "commit": "9a01cfccbd097acf9e4278d8124a0b0dd4a98561",
           "tokens": 1595,
           "date": "2026-10-24T22:54:13.938700562Z"
+        },
+        {
+          "version": "1.13.0",
+          "sha256": "29bcf4a81476ad209ebc66e569da9418430cd53159829a328cc82ae0e840eeac",
+          "commit": "ddd9c26cc8c06a47224b805a6346df52d1a23f65",
+          "tokens": 1792,
+          "date": "2026-10-24T23:29:13.092261924Z"
         }
       ]
     },
@@ -9258,7 +9320,6 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/konfig",
         "kdeps run",
         "kdeps konfig export",
         "kdeps konfig import"
@@ -9286,7 +9347,6 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/help",
         "/update",
         "kdeps run"
       ],
@@ -9345,7 +9405,6 @@
       "usedBy": [
         "kdeps (agent loop)",
         "/auto-improve",
-        "/context",
         "/editor",
         "/instruct",
         "kdeps run",
@@ -9410,9 +9469,6 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/context",
-        "/prompt",
-        "/konfig",
         "/update",
         "kdeps run",
         "kdeps konfig export",
@@ -9447,7 +9503,6 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/konfig",
         "/settings",
         "kdeps run",
         "kdeps konfig export",
@@ -9505,12 +9560,12 @@
       "usedBy": [
         "kdeps (agent loop)",
         "/update",
-        "/context",
         "kdeps run",
         "kdeps llamafile list",
         "kdeps llm models",
         "kdeps install",
-        "kdeps list"
+        "kdeps list",
+        "kdeps uninstall"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -9535,7 +9590,6 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/konfig",
         "/update",
         "kdeps run",
         "kdeps konfig export",
@@ -9690,13 +9744,13 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/konfig",
         "/update",
         "kdeps run",
         "kdeps konfig export",
         "kdeps konfig import",
         "kdeps install",
-        "kdeps list"
+        "kdeps list",
+        "kdeps uninstall"
       ],
       "code": [
         "kdeps (agent loop)",
