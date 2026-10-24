@@ -4631,6 +4631,21 @@
         }
       ]
     },
+    "events/memory-capture-limit": {
+      "latest": "1.0.0",
+      "category": "memory",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "e977bc8763bfbaaa1c7e1a3ef00be6e44e1717ec4167bc4c72f237e43240009b",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "2fe211da581125bc1350208257fd5de212399d67",
+          "date": "2026-10-24T15:46:26.184513156Z"
+        }
+      ]
+    },
     "events/memory-chain-max": {
       "latest": "1.0.3",
       "category": "memory",
@@ -4772,6 +4787,36 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        }
+      ]
+    },
+    "events/memory-search-limit": {
+      "latest": "1.0.0",
+      "category": "memory",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "b91dbd1af4a35f2f87f6fd51f59258792567b2f3618b4596ae9bfff6cc14f7d5",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "2fe211da581125bc1350208257fd5de212399d67",
+          "date": "2026-10-24T15:46:26.184513156Z"
+        }
+      ]
+    },
+    "events/memory-value-limit": {
+      "latest": "1.0.0",
+      "category": "memory",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "abfa2c5bbe57708212a4675e6cc9fc2c157e2612aaabad320a45ce6a58065a15",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "2fe211da581125bc1350208257fd5de212399d67",
+          "date": "2026-10-24T15:46:26.184513156Z"
         }
       ]
     },
@@ -5948,7 +5993,7 @@
       ]
     },
     "presets/balanced": {
-      "latest": "1.1.0",
+      "latest": "1.2.0",
       "description": "The shipped, out-of-the-box defaults for every token-economy event. Applying this after switching to \"frugal\" or \"thorough\" resets them all in one step, without needing to hand-edit or delete override files.",
       "category": "context",
       "versions": [
@@ -6096,11 +6141,64 @@
           },
           "commit": "62af3e9192810c3cbda7022e91eb59e6f3e76be9",
           "date": "2026-10-23T20:52:35.969098504Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "30bff431905201f015c1c92cd8e710a9ea029678650c2da68a0daaa5cc8ca9ae",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "components/bash_exec": "",
+            "components/edit_file": "",
+            "components/exec": "",
+            "components/list_files": "",
+            "components/memory_query": "",
+            "components/memory_search": "",
+            "components/read_file": "",
+            "components/search_local": "",
+            "components/web_scraper": "",
+            "components/web_search": "",
+            "components/write_file": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/efficiency": "",
+            "events/efficiency-actions": "",
+            "events/efficiency-bash": "",
+            "events/efficiency-code": "",
+            "events/efficiency-failures": "",
+            "events/efficiency-file": "",
+            "events/efficiency-reads": "",
+            "events/efficiency-stops": "",
+            "events/efficiency-tighten": "",
+            "events/efficiency-verbose": "",
+            "events/efficiency-web": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-trim": "",
+            "events/memory-capture-limit": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/memory-search-limit": "",
+            "events/memory-value-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "2fe211da581125bc1350208257fd5de212399d67",
+          "date": "2026-10-24T15:46:26.184513156Z"
         }
       ]
     },
     "presets/frugal": {
-      "latest": "1.1.0",
+      "latest": "1.2.0",
       "description": "Minimizes token usage: compacts and folds history sooner, injects far less memory context, truncates tool output harder, and caps tool-call budgets tighter. Best for cost-sensitive sessions or a small-context- window local model.",
       "category": "context",
       "versions": [
@@ -6248,11 +6346,64 @@
           },
           "commit": "62af3e9192810c3cbda7022e91eb59e6f3e76be9",
           "date": "2026-10-23T20:52:35.969098504Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "b356d30b4787214f2a2738f7222e7118dd54ab6802b8dcdfe1c03bb0a00126c9",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "components/bash_exec": "",
+            "components/edit_file": "",
+            "components/exec": "",
+            "components/list_files": "",
+            "components/memory_query": "",
+            "components/memory_search": "",
+            "components/read_file": "",
+            "components/search_local": "",
+            "components/web_scraper": "",
+            "components/web_search": "",
+            "components/write_file": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/efficiency": "",
+            "events/efficiency-actions": "",
+            "events/efficiency-bash": "",
+            "events/efficiency-code": "",
+            "events/efficiency-failures": "",
+            "events/efficiency-file": "",
+            "events/efficiency-reads": "",
+            "events/efficiency-stops": "",
+            "events/efficiency-tighten": "",
+            "events/efficiency-verbose": "",
+            "events/efficiency-web": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-trim": "",
+            "events/memory-capture-limit": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/memory-search-limit": "",
+            "events/memory-value-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "2fe211da581125bc1350208257fd5de212399d67",
+          "date": "2026-10-24T15:46:26.184513156Z"
         }
       ]
     },
     "presets/thorough": {
-      "latest": "1.1.0",
+      "latest": "1.2.0",
       "description": "Maximizes context retention: compacts and folds much less often, injects far more memory context, keeps more of every tool result, and allows larger tool-call budgets. Best for long research/investigation sessions where losing history hurts quality more than the extra tokens cost.",
       "category": "context",
       "versions": [
@@ -6400,6 +6551,59 @@
           },
           "commit": "62af3e9192810c3cbda7022e91eb59e6f3e76be9",
           "date": "2026-10-23T20:52:35.969098504Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "381d23f29e6ff0f867a494d81a201506fddef504a6a547d0dd5a2d88bdd1e58a",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "components/bash_exec": "",
+            "components/edit_file": "",
+            "components/exec": "",
+            "components/list_files": "",
+            "components/memory_query": "",
+            "components/memory_search": "",
+            "components/read_file": "",
+            "components/search_local": "",
+            "components/web_scraper": "",
+            "components/web_search": "",
+            "components/write_file": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/efficiency": "",
+            "events/efficiency-actions": "",
+            "events/efficiency-bash": "",
+            "events/efficiency-code": "",
+            "events/efficiency-failures": "",
+            "events/efficiency-file": "",
+            "events/efficiency-reads": "",
+            "events/efficiency-stops": "",
+            "events/efficiency-tighten": "",
+            "events/efficiency-verbose": "",
+            "events/efficiency-web": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-trim": "",
+            "events/memory-capture-limit": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/memory-search-limit": "",
+            "events/memory-value-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "2fe211da581125bc1350208257fd5de212399d67",
+          "date": "2026-10-24T15:46:26.184513156Z"
         }
       ]
     },
