@@ -150,7 +150,7 @@
       ]
     },
     "commands/autocontext": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Show or toggle auto-detecting command/file mentions in chat input",
       "category": "agent",
       "versions": [
@@ -165,6 +165,12 @@
           "sha256": "4e80fd8e87c29f6b022db38982c6c7ca873a0a7b98fb0fa82993ab72d2ffe251",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "796313abccbe77bc738fe382140ba64bd0932124c96d5af7e52aee0ee57d729f",
+          "commit": "30abe0b7d871f7f9210f83a33d1577c84f0ff9db",
+          "date": "2026-10-24T04:55:24.124144205Z"
         }
       ]
     },
@@ -376,7 +382,7 @@
       ]
     },
     "commands/handshake": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Show or toggle the mandatory session-integrity tool-call check (off by default)",
       "category": "agent",
       "versions": [
@@ -391,6 +397,12 @@
           "sha256": "932a4a6cd232de3d8c1cf4da5c469aa9aaf5b89f6a050d7cd19642686716b0c3",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "62d21890d38cec9b5d9420918e2bbafb5cbe2fc08670e380fcb17e8719ba403b",
+          "commit": "30abe0b7d871f7f9210f83a33d1577c84f0ff9db",
+          "date": "2026-10-24T04:55:24.124144205Z"
         }
       ]
     },
@@ -629,7 +641,7 @@
       ]
     },
     "commands/permission": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Show or set the tool permission mode for this session",
       "category": "agent",
       "versions": [
@@ -644,6 +656,12 @@
           "sha256": "dceb861fa11187b87dbc102876dcd186397ff82afdccd1ef5a2c3ece7f825d13",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "e5ac062ff832c8ae3a93641af390c70b94a4ce34436393f3b1727ded51d02819",
+          "commit": "30abe0b7d871f7f9210f83a33d1577c84f0ff9db",
+          "date": "2026-10-24T04:55:24.124144205Z"
         }
       ]
     },
@@ -705,7 +723,7 @@
       ]
     },
     "commands/refine": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Show or toggle pre-turn prompt refinement (on by default)",
       "category": "agent",
       "versions": [
@@ -720,6 +738,12 @@
           "sha256": "6dbf69a046134bebe1e21fda7073859b9959f40acf636c9e71556333bf172d7e",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "f9e738e13e45e45c26836ff93e20c006daa0a9fbc546bb9d245519bf2c1589a9",
+          "commit": "30abe0b7d871f7f9210f83a33d1577c84f0ff9db",
+          "date": "2026-10-24T04:55:24.124144205Z"
         }
       ]
     },
@@ -899,7 +923,7 @@
       ]
     },
     "commands/tools": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Show or toggle the lean/full tool set for this session",
       "category": "agent",
       "versions": [
@@ -914,6 +938,12 @@
           "sha256": "a6a17eb0bb35df1a8a0375f0af0f413f2decc6b138fa716a3512ce9a374426fc",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "b25882d0769e60ba9d2e3648ff3d191250805dc00dc6995dfecc8b0babe8050c",
+          "commit": "30abe0b7d871f7f9210f83a33d1577c84f0ff9db",
+          "date": "2026-10-24T04:55:24.124144205Z"
         }
       ]
     },
