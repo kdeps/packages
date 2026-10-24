@@ -250,7 +250,7 @@
       ]
     },
     "commands/copy": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Copy the last assistant response to the system clipboard",
       "category": "agent",
       "versions": [
@@ -265,6 +265,16 @@
           "sha256": "bd69a1455cc5968ff76281f4981e7e8cf6069688aec627c92ac8eac70701512e",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "97a896ef437491605ddde9b4c0e0eac8ac17364486cf13f3133a98de67efefa3",
+          "requires": {
+            "tools/clipboard_copy": "",
+            "tools/session_ops": ""
+          },
+          "commit": "044fd20d72cb989f5768417ef720394f7c9e7cd5",
+          "date": "2026-10-24T12:16:34.568490937Z"
         }
       ]
     },
@@ -1319,6 +1329,24 @@
           "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
           "tokens": 47,
           "date": "2026-10-24T03:30:15.343259609Z"
+        }
+      ]
+    },
+    "components/clipboard_copy": {
+      "latest": "1.0.0",
+      "description": "Copy text to the system clipboard through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "748d6a966cf2b8b1248004640d14366de4bf91583b826ba72cd3582ce2808bae",
+          "requires": {
+            "schemas/v1": "",
+            "tools/clipboard_copy": ""
+          },
+          "commit": "044fd20d72cb989f5768417ef720394f7c9e7cd5",
+          "tokens": 37,
+          "date": "2026-10-24T12:16:34.568490937Z"
         }
       ]
     },
@@ -7066,6 +7094,20 @@
         }
       ]
     },
+    "tools/clipboard_copy": {
+      "latest": "1.0.0",
+      "description": "Copy text to the user's system clipboard (pbcopy on macOS, xclip or xsel on Linux, clip on Windows). Use when the user asks to copy something. Returns {copied, tool}; copied is false when text is empty.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "1d774f56d3548318fe610b7628a8f25effc3df11b6ee1fc241857fed64e51e45",
+          "commit": "044fd20d72cb989f5768417ef720394f7c9e7cd5",
+          "tokens": 71,
+          "date": "2026-10-24T12:16:34.568490937Z"
+        }
+      ]
+    },
     "tools/code_definition": {
       "latest": "1.1.0",
       "description": "Find the definition of a symbol using semantic analysis (LSP). Returns file and line. Requires: symbol, path. Optional: pattern, language, languageId, context, limit.",
@@ -8105,8 +8147,8 @@
       ]
     },
     "tools/session_ops": {
-      "latest": "1.0.0",
-      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}).",
+      "latest": "1.1.0",
+      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}).",
       "category": "tools",
       "versions": [
         {
@@ -8115,6 +8157,13 @@
           "commit": "9936b62c1a2bdcd8c704bf2e2f97589b10c3718b",
           "tokens": 143,
           "date": "2026-10-24T09:49:06.013029788Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "5f1d60069a83521b81d58c7a128bb086c5ca4bd5a812c7ef836895fee5f4c408",
+          "commit": "044fd20d72cb989f5768417ef720394f7c9e7cd5",
+          "tokens": 159,
+          "date": "2026-10-24T12:16:34.568490937Z"
         }
       ]
     },
