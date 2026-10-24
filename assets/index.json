@@ -668,8 +668,8 @@
       ]
     },
     "commands/model": {
-      "latest": "1.0.1",
-      "description": "Show or set the LLM model",
+      "latest": "2.0.0",
+      "description": "Show or set the LLM model (no name opens the picker)",
       "category": "model",
       "versions": [
         {
@@ -683,6 +683,17 @@
           "sha256": "f1c9c47700782a3f43714df329793aebab303714cefe61b720c3945347274ca6",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "abf12115f965384bebe0a3ae2c0568c06a60680f879f270d63638192cacf74cd",
+          "requires": {
+            "tools/hf_repo_files": "",
+            "tools/hf_search": "",
+            "tools/session_ops": ""
+          },
+          "commit": "e3208d02a54ff34dded64a05c99b757783873ff6",
+          "date": "2026-10-24T18:49:22.240821995Z"
         }
       ]
     },
@@ -2313,6 +2324,42 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 21,
           "date": "2026-10-21T11:44:36.787763914Z"
+        }
+      ]
+    },
+    "components/hf_repo_files": {
+      "latest": "1.0.0",
+      "description": "List a HuggingFace repo's GGUF files through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "8b266f7468603cc3ae6048dbed6b14104ac697ede683d5cc77a58b66b6f47269",
+          "requires": {
+            "schemas/v1": "",
+            "tools/hf_repo_files": ""
+          },
+          "commit": "e3208d02a54ff34dded64a05c99b757783873ff6",
+          "tokens": 43,
+          "date": "2026-10-24T18:49:22.240821995Z"
+        }
+      ]
+    },
+    "components/hf_search": {
+      "latest": "1.0.0",
+      "description": "Search HuggingFace for GGUF repos through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "7830edd383cc6e60b05941d202c8fdeaa0da580cc62ca204e49da6138352e52c",
+          "requires": {
+            "schemas/v1": "",
+            "tools/hf_search": ""
+          },
+          "commit": "e3208d02a54ff34dded64a05c99b757783873ff6",
+          "tokens": 65,
+          "date": "2026-10-24T18:49:22.240821995Z"
         }
       ]
     },
@@ -7860,6 +7907,34 @@
         }
       ]
     },
+    "tools/hf_repo_files": {
+      "latest": "1.0.0",
+      "description": "List the GGUF files in one HuggingFace repo with their sizes, to pick one for /model hff download.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "de5b151e25c206fb7596d966210cd39652c76db54f24cd55c4fdebf78f9f83ae",
+          "commit": "e3208d02a54ff34dded64a05c99b757783873ff6",
+          "tokens": 68,
+          "date": "2026-10-24T18:49:22.240821995Z"
+        }
+      ]
+    },
+    "tools/hf_search": {
+      "latest": "1.0.0",
+      "description": "Search HuggingFace for GGUF model repos (most downloaded first) and list each repo's GGUF files with their sizes. Use to find a local model to download with /model hff download.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "23997c1519571a3812bbab17501232ea25389910566abf2b6b7c15f54dca3d86",
+          "commit": "e3208d02a54ff34dded64a05c99b757783873ff6",
+          "tokens": 124,
+          "date": "2026-10-24T18:49:22.240821995Z"
+        }
+      ]
+    },
     "tools/http_request": {
       "latest": "1.2.0",
       "description": "Make an HTTP request to a URL. Returns response status, headers, and body. Use for calling APIs, fetching web content, or interacting with external services. Requires: url. Optional: method (default GET), headers, data (JSON body), files (multipart uploads), timeout, failOnError, saveTo, retry, cache, connectionName, accountName, followRedirects, tls.",
@@ -8376,8 +8451,8 @@
       ]
     },
     "tools/session_ops": {
-      "latest": "1.5.0",
-      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, identity_get, session_handshake) with args and returns its answer.",
+      "latest": "1.6.0",
+      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, identity_get, session_handshake) with args and returns its answer.",
       "category": "tools",
       "versions": [
         {
@@ -8421,6 +8496,13 @@
           "commit": "adea22d46b624aaa4a26b5bd32fc613beef6f5b2",
           "tokens": 615,
           "date": "2026-10-24T17:36:48.591736152Z"
+        },
+        {
+          "version": "1.6.0",
+          "sha256": "c78ed7236cfb2a57b5992f657834a7264da3f12327a34b70999ed7d42722bb16",
+          "commit": "e3208d02a54ff34dded64a05c99b757783873ff6",
+          "tokens": 996,
+          "date": "2026-10-24T18:49:22.240821995Z"
         }
       ]
     },
@@ -9075,8 +9157,8 @@
         "/editor",
         "/instruct",
         "/knowledge",
-        "/model",
-        "kdeps run"
+        "kdeps run",
+        "kdeps exec"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -9233,11 +9315,11 @@
         "kdeps (agent loop)",
         "/update",
         "/context",
-        "/model",
         "kdeps run",
         "kdeps llamafile list",
         "kdeps llm models",
-        "kdeps install"
+        "kdeps install",
+        "kdeps list"
       ],
       "code": [
         "kdeps (agent loop)",
