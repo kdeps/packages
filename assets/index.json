@@ -862,7 +862,7 @@
       ]
     },
     "commands/theme": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Show or set the REPL's look (normal, black, linux, vim, emacs, or custom); list shows built-in vs custom",
       "category": "agent",
       "versions": [
@@ -877,11 +877,17 @@
           "sha256": "a1f9c0772b0661941ff1d887de58a43196c795d56ac16b50285354ca52151d66",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "b9ba93e461b6f155a2a80e2360ae9ad06bfe8a6be40b8ce6cfa2d587a42b01d8",
+          "commit": "8b7f34f843107cdd243280e32b828fbb00f8f48c",
+          "date": "2026-10-24T06:44:46.083527295Z"
         }
       ]
     },
     "commands/thinking": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Show or set extended reasoning/thinking mode",
       "category": "agent",
       "versions": [
@@ -896,6 +902,12 @@
           "sha256": "3869f5788e3568d759d779e8d113c6eaeb5d2dfeae4e25afed9dab5cb8301ad3",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "673dc03a390d43ea334265e472b568adad13de322528d9077b9a4a2d4bc8fe95",
+          "commit": "8b7f34f843107cdd243280e32b828fbb00f8f48c",
+          "date": "2026-10-24T06:44:46.083527295Z"
         }
       ]
     },
@@ -948,7 +960,7 @@
       ]
     },
     "commands/turo": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "description": "Show or set the turo prompt reducer (turo backend only)",
       "category": "agent",
       "versions": [
@@ -963,6 +975,12 @@
           "sha256": "7ae30ed2f8f016f9572208c46f5569e6dd8046ac143049d86613d80d356881a1",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "f493eeba6ed6652c0166a8309b8e8e77d364769a41ffe6f72c3cae7c25267a5e",
+          "commit": "8b7f34f843107cdd243280e32b828fbb00f8f48c",
+          "date": "2026-10-24T06:44:46.083527295Z"
         }
       ]
     },
@@ -9029,11 +9047,13 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/theme",
         "/konfig",
         "/update",
         "kdeps konfig export",
-        "kdeps konfig import"
+        "kdeps konfig import",
+        "kdeps install",
+        "kdeps list",
+        "kdeps uninstall"
       ],
       "code": [
         "kdeps (agent loop)",
