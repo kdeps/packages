@@ -749,7 +749,7 @@
       ]
     },
     "commands/model": {
-      "latest": "2.0.0",
+      "latest": "2.1.0",
       "description": "Show or set the LLM model (no name opens the picker)",
       "category": "model",
       "versions": [
@@ -775,6 +775,17 @@
           },
           "commit": "e3208d02a54ff34dded64a05c99b757783873ff6",
           "date": "2026-10-24T18:49:22.240821995Z"
+        },
+        {
+          "version": "2.1.0",
+          "sha256": "968e1f8714f0a831a863a47b54d3f2e10b4d87ed1fc3f197eb3dd5e560cafa2d",
+          "requires": {
+            "tools/hf_repo_files": "",
+            "tools/hf_search": "",
+            "tools/session_ops": ""
+          },
+          "commit": "0d9df46d9d8ef3317f1c12929ca94fd645b1a7ef",
+          "date": "2026-10-25T16:32:19.514629455Z"
         }
       ]
     },
@@ -5081,6 +5092,21 @@
         }
       ]
     },
+    "events/model-record-limit": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "94016201459a903bc9abfb73018e873858c62949a71d120995b4f9f4fd04afa3",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "0d9df46d9d8ef3317f1c12929ca94fd645b1a7ef",
+          "date": "2026-10-25T16:32:19.514629455Z"
+        }
+      ]
+    },
     "events/rel-memory-limit": {
       "latest": "1.0.3",
       "category": "memory",
@@ -5780,6 +5806,19 @@
         }
       ]
     },
+    "harness/model-refusal-record": {
+      "latest": "1.0.0",
+      "category": "harness",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "ec7804367e2b2748ca7ffe8c031f2b2270174f80c562328ba6355462222dec74",
+          "commit": "0d9df46d9d8ef3317f1c12929ca94fd645b1a7ef",
+          "tokens": 175,
+          "date": "2026-10-25T16:32:19.514629455Z"
+        }
+      ]
+    },
     "harness/narration": {
       "latest": "1.1.0",
       "category": "harness",
@@ -5908,6 +5947,19 @@
           "commit": "675624d36c55f9cb2592a6678482097bebba53d0",
           "tokens": 161,
           "date": "2026-10-21T11:26:32.967328564Z"
+        }
+      ]
+    },
+    "harness/nudge-unbacked-claim": {
+      "latest": "1.0.0",
+      "category": "harness",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "8962f13f8040627f9283f2f39737dfe7f33d7b3f3e761c99276aa2f863a0e3f5",
+          "commit": "0d9df46d9d8ef3317f1c12929ca94fd645b1a7ef",
+          "tokens": 93,
+          "date": "2026-10-25T16:32:19.514629455Z"
         }
       ]
     },
@@ -8767,8 +8819,8 @@
       ]
     },
     "tools/session_ops": {
-      "latest": "1.13.0",
-      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); judges is the judge panel ({judges: [{name, criteria, graders}], auto, last}); judge_add (name, criteria), judge_remove (name), judge_grade (name, kind, pattern) and judges_clear change it; harness_sections, harness_events, presets and harness_reminders list the harness sections, events, presets and reminders, and harness_set, event_set, preset_apply and reminder_set change them (name, enabled: on|off); efficiency is enforcement's state ({value, verbose, prompt, limits}), efficiency_limit sets one limit (setting, value: a count or off) and efficiency_reset restores the defaults; recall recalls knowledge vault notes for query, or returns the last turn's recall ({seeds, hits, tokens}); knowledge is the vault's state ({value, vault, graph}) and knowledge_extract reads the changed notes with the local model ({output}); last_request is the last request sent to the LLM with token estimates (raw: true for JSON); search_index, search_folders and search_folder (action: add|remove, folder) manage the folders the project searches; commands_help lists every installed command's usages; konfig_export and konfig_import write and apply a konfig file (path); pipelines is /kartographer's live state; tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, identity_get, session_handshake) with args and returns its answer.",
+      "latest": "1.14.0",
+      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); model_record is the current model's record of caught refusals ({model, count, refusals: [{kind, text, at}]}) and model_record_clear deletes it ({model, cleared}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); judges is the judge panel ({judges: [{name, criteria, graders}], auto, last}); judge_add (name, criteria), judge_remove (name), judge_grade (name, kind, pattern) and judges_clear change it; harness_sections, harness_events, presets and harness_reminders list the harness sections, events, presets and reminders, and harness_set, event_set, preset_apply and reminder_set change them (name, enabled: on|off); efficiency is enforcement's state ({value, verbose, prompt, limits}), efficiency_limit sets one limit (setting, value: a count or off) and efficiency_reset restores the defaults; recall recalls knowledge vault notes for query, or returns the last turn's recall ({seeds, hits, tokens}); knowledge is the vault's state ({value, vault, graph}) and knowledge_extract reads the changed notes with the local model ({output}); last_request is the last request sent to the LLM with token estimates (raw: true for JSON); search_index, search_folders and search_folder (action: add|remove, folder) manage the folders the project searches; commands_help lists every installed command's usages; konfig_export and konfig_import write and apply a konfig file (path); pipelines is /kartographer's live state; tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, identity_get, session_handshake) with args and returns its answer.",
       "category": "tools",
       "versions": [
         {
@@ -8847,6 +8899,13 @@
           "commit": "ddd9c26cc8c06a47224b805a6346df52d1a23f65",
           "tokens": 1792,
           "date": "2026-10-24T23:29:13.092261924Z"
+        },
+        {
+          "version": "1.14.0",
+          "sha256": "1682221fe52300ffc282ff605bae3bc10b8aac0351d5436adca03df8c01fca0e",
+          "commit": "0d9df46d9d8ef3317f1c12929ca94fd645b1a7ef",
+          "tokens": 1841,
+          "date": "2026-10-25T16:32:19.514629455Z"
         }
       ]
     },
