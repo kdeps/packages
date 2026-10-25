@@ -4955,6 +4955,21 @@
         }
       ]
     },
+    "events/memory-low-signal-limit": {
+      "latest": "1.0.0",
+      "category": "memory",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "c6c5b563aebedef801faf55e4135b12d4a3a96bd2f661ff90c4f493ea541eb45",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "ff0cbb83dc6dec982e353e7c2b7f5a96865cb36b",
+          "date": "2026-10-25T13:52:20.437111992Z"
+        }
+      ]
+    },
     "events/memory-prompt-limit": {
       "latest": "1.0.3",
       "category": "context",
@@ -5003,6 +5018,51 @@
           },
           "commit": "2fe211da581125bc1350208257fd5de212399d67",
           "date": "2026-10-24T15:46:26.184513156Z"
+        }
+      ]
+    },
+    "events/memory-status-limit": {
+      "latest": "1.0.0",
+      "category": "memory",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "6e132a187005b5f358b8ad6e1762bb5080c941de525018208978b9652588b1d3",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "ff0cbb83dc6dec982e353e7c2b7f5a96865cb36b",
+          "date": "2026-10-25T13:52:20.437111992Z"
+        }
+      ]
+    },
+    "events/memory-thinking-limit": {
+      "latest": "1.0.0",
+      "category": "memory",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "f27050a8da3ee45680f71afe08be293fd56f9a1d43f44398ac451462eb77dc6d",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "ff0cbb83dc6dec982e353e7c2b7f5a96865cb36b",
+          "date": "2026-10-25T13:52:20.437111992Z"
+        }
+      ]
+    },
+    "events/memory-tool-results-limit": {
+      "latest": "1.0.0",
+      "category": "memory",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "2c1b6bc09eef9e9f38f5f6604dde3b5713449a270680bc4c13e35abff21c4962",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "ff0cbb83dc6dec982e353e7c2b7f5a96865cb36b",
+          "date": "2026-10-25T13:52:20.437111992Z"
         }
       ]
     },
@@ -6068,7 +6128,7 @@
       ]
     },
     "memory/rules": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "category": "memory",
       "versions": [
         {
@@ -6076,6 +6136,12 @@
           "sha256": "5fffc41a1a8a7b02060cc8516dea07418a665dd0f56d73041ae485a3bb10316a",
           "commit": "ece54bc4be0eeef98f2f5c414d6e1f8d85bf3f43",
           "date": "2026-10-25T05:24:12.496708339Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "96d96c95617899781e1f5e3d909690504636ec0e932f0cb10026bb37d8a514dd",
+          "commit": "ff0cbb83dc6dec982e353e7c2b7f5a96865cb36b",
+          "date": "2026-10-25T13:52:20.437111992Z"
         }
       ]
     },
