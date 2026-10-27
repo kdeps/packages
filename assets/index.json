@@ -646,7 +646,7 @@
       ]
     },
     "commands/knowledge": {
-      "latest": "2.0.0",
+      "latest": "2.0.1",
       "description": "Show whether the knowledge vault is on, and where it is",
       "category": "agent",
       "versions": [
@@ -670,6 +670,15 @@
           },
           "commit": "9a01cfccbd097acf9e4278d8124a0b0dd4a98561",
           "date": "2026-10-24T22:54:13.938700562Z"
+        },
+        {
+          "version": "2.0.1",
+          "sha256": "c65ff4442a278209d8b868757899a080c753efa5de5d4276f9ccb70ac3aa8be1",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "8c3de56f31f8197e405b2fd1f1473d0e3c5aeb12",
+          "date": "2026-10-27T20:27:52.283932281Z"
         }
       ]
     },
@@ -871,7 +880,7 @@
       ]
     },
     "commands/recall": {
-      "latest": "2.0.0",
+      "latest": "2.0.1",
       "description": "Show the knowledge vault notes recalled for the last turn, and why",
       "category": "agent",
       "versions": [
@@ -895,12 +904,21 @@
           },
           "commit": "9a01cfccbd097acf9e4278d8124a0b0dd4a98561",
           "date": "2026-10-24T22:54:13.938700562Z"
+        },
+        {
+          "version": "2.0.1",
+          "sha256": "d10c64f62f6556d14692d08fb96804ffe1949df787793f09109604a670bb2dd2",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "8c3de56f31f8197e405b2fd1f1473d0e3c5aeb12",
+          "date": "2026-10-27T20:27:52.283932281Z"
         }
       ]
     },
     "commands/refine": {
-      "latest": "2.0.0",
-      "description": "Show or toggle pre-turn prompt refinement (on by default)",
+      "latest": "2.0.1",
+      "description": "Show or toggle pre-turn prompt refinement (off by default)",
       "category": "agent",
       "versions": [
         {
@@ -920,6 +938,12 @@
           "sha256": "f9e738e13e45e45c26836ff93e20c006daa0a9fbc546bb9d245519bf2c1589a9",
           "commit": "30abe0b7d871f7f9210f83a33d1577c84f0ff9db",
           "date": "2026-10-24T04:55:24.124144205Z"
+        },
+        {
+          "version": "2.0.1",
+          "sha256": "793e5bc6cc96ebdc29b48f8c30909e5057abceb9d9f1e145da964e895feb327e",
+          "commit": "8c3de56f31f8197e405b2fd1f1473d0e3c5aeb12",
+          "date": "2026-10-27T20:27:52.283932281Z"
         }
       ]
     },
@@ -5143,6 +5167,21 @@
         }
       ]
     },
+    "events/side-call-max-tokens": {
+      "latest": "1.0.0",
+      "category": "context",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "483ee67949b8dd085ce37b182f4e3f3c33cfd9787bd838158b1d139608da4795",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "8c3de56f31f8197e405b2fd1f1473d0e3c5aeb12",
+          "date": "2026-10-27T20:27:52.283932281Z"
+        }
+      ]
+    },
     "events/task-round-budget": {
       "latest": "1.0.2",
       "category": "guardrails",
@@ -5748,7 +5787,7 @@
       ]
     },
     "harness/judge-system": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "evals",
       "versions": [
         {
@@ -5757,6 +5796,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 106,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "e12746153916215fb2586b80456a4f04f089b5fbeeb27f9d3e941de4783a1dea",
+          "commit": "8c3de56f31f8197e405b2fd1f1473d0e3c5aeb12",
+          "tokens": 135,
+          "date": "2026-10-27T20:27:52.283932281Z"
         }
       ]
     },
@@ -7454,7 +7500,7 @@
       ]
     },
     "templates/knowledge": {
-      "latest": "2.2.0",
+      "latest": "2.2.1",
       "category": "workflow",
       "versions": [
         {
@@ -7480,6 +7526,12 @@
           "sha256": "caab32a77d71c33657fdde0368a1bac06453b625a18129f787ae07ef888617e4",
           "commit": "e0139b6dd5b7715a8d98801b8b579c56268dd473",
           "date": "2026-10-16T02:49:26.846697413Z"
+        },
+        {
+          "version": "2.2.1",
+          "sha256": "eee07c1bb6ff164d254f3a9c2d9df3fa272dffc2d821d82a9e1c8a187fd4fd3c",
+          "commit": "8c3de56f31f8197e405b2fd1f1473d0e3c5aeb12",
+          "date": "2026-10-27T20:27:52.283932281Z"
         }
       ]
     },
