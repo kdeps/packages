@@ -131,8 +131,8 @@
       ]
     },
     "commands/auto-improve": {
-      "latest": "1.0.3",
-      "description": "Run the fixed task list in this kdeps repo, jump across OpenRouter free models, fix product bugs from the instrument log, and file one GitHub issue. A daily workflow shuffles free-model ids and opens a pull request when the tree changes",
+      "latest": "1.0.4",
+      "description": "Run the fixed task list in this kdeps repo, jump across OpenRouter free models, fix product bugs from the instrument log, and file one GitHub issue",
       "category": "agent",
       "versions": [
         {
@@ -158,6 +158,12 @@
           "sha256": "7c9f53f6c037c028325b0d9ce6e6e1b05e14e4958d2bb675761bad50292858af",
           "commit": "bd7f6317a822b554ce3abfdab6a6b6b739116028",
           "date": "2026-10-28T15:29:10.885520222Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "afe8b308b3baab6849268e2b9a9801b295314c6a62ecd7bbd1535811f17d3628",
+          "commit": "cacbbf8bf5353888bd34c34382a5eba534b27685",
+          "date": "2026-10-28T16:37:21.555206896Z"
         }
       ]
     },
