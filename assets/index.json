@@ -6495,6 +6495,18 @@
         }
       ]
     },
+    "models/openrouter": {
+      "latest": "1.0.0",
+      "category": "model",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "d317c3125d045eb81216a6aae095590e563b33a1f8a5c0cfce711e6ef19b0f11",
+          "commit": "8191cb1d17f18a5c115f17e035cbcf4f9f5de232",
+          "date": "2026-10-28T06:44:27.548962378Z"
+        }
+      ]
+    },
     "presets/balanced": {
       "latest": "1.2.0",
       "description": "The shipped, out-of-the-box defaults for every token-economy event. Applying this after switching to \"frugal\" or \"thorough\" resets them all in one step, without needing to hand-edit or delete override files.",
@@ -9802,7 +9814,7 @@
       ]
     },
     "models": {
-      "purpose": "The model catalogs: downloadable llamafile and GGUF models, and the cloud models of each provider with their limits.",
+      "purpose": "The model catalogs: downloadable llamafile and GGUF models, the cloud models of each provider with their limits, and the harvested OpenRouter free models.",
       "mode": "both",
       "flow": [
         {
