@@ -6256,7 +6256,7 @@
       ]
     },
     "models/gguf": {
-      "latest": "1.0.18",
+      "latest": "1.0.19",
       "category": "model",
       "versions": [
         {
@@ -6372,11 +6372,17 @@
           "sha256": "65f3010b652c1d61738c8ab2f83075b184a6676e71f4db1ab9956c5ee8c03c27",
           "commit": "af64e5690b49011e646a06e6947725aec0f95dc9",
           "date": "2026-10-27T07:44:23.709158733Z"
+        },
+        {
+          "version": "1.0.19",
+          "sha256": "16dae6b43db05ea1d3523144a37e714aed73191538133bcbf7094dc2a818c54a",
+          "commit": "a892db13b736a78e0bea63b4366944949448f1ca",
+          "date": "2026-10-28T08:25:20.60330963Z"
         }
       ]
     },
     "models/llamafile": {
-      "latest": "1.0.18",
+      "latest": "1.0.19",
       "category": "model",
       "versions": [
         {
@@ -6492,6 +6498,12 @@
           "sha256": "21a688cb0502087a8d21276a4646470389c69195d967ad638b11e3f91917a2ae",
           "commit": "af64e5690b49011e646a06e6947725aec0f95dc9",
           "date": "2026-10-27T07:44:23.709158733Z"
+        },
+        {
+          "version": "1.0.19",
+          "sha256": "482fc1f3fc5230d7617e56c2557562d4b44aabdf922dbeaf7d3657890fcf1da6",
+          "commit": "a892db13b736a78e0bea63b4366944949448f1ca",
+          "date": "2026-10-28T08:25:20.60330963Z"
         }
       ]
     },
