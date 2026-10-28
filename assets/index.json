@@ -5137,6 +5137,21 @@
         }
       ]
     },
+    "events/openrouter-free-per-minute": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "25931614fb8152176ecc8ac827a9637dc2e589601a503bb5dfa0143dccfe0c3c",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "1bc8d9617b0cfb95f62194a9a9e5ce5e5a809d0c",
+          "date": "2026-10-28T10:44:36.084939022Z"
+        }
+      ]
+    },
     "events/rel-memory-limit": {
       "latest": "1.0.3",
       "category": "memory",
