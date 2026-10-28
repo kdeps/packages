@@ -131,8 +131,8 @@
       ]
     },
     "commands/auto-improve": {
-      "latest": "1.0.1",
-      "description": "Run the fixed task list in this kdeps repo, then fix product bugs from the instrument log",
+      "latest": "1.0.2",
+      "description": "Run the fixed task list in this kdeps repo, then fix product bugs from the instrument log. A daily workflow runs this with an OpenRouter free model and opens a pull request",
       "category": "agent",
       "versions": [
         {
@@ -146,6 +146,12 @@
           "sha256": "34744c8eab2e635599dd1da954e5d008e55df172b49f1b462bdc0db9fbd64312",
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "cf4665555b6e71f9103e655a1e93e9e9d90d3488b37a54cf5c259868704a3b5f",
+          "commit": "20c10ad400b9c6a5b887b3c667415cc498274adb",
+          "date": "2026-10-28T09:52:59.632767048Z"
         }
       ]
     },
