@@ -6606,6 +6606,18 @@
         }
       ]
     },
+    "policy/permission": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "727da1b733afeeab42c801d0f2ea08ab97f1ed466bde9748136abab96b893e33",
+          "commit": "05a69bcc681fdf7c107369502aba2eb113e3db03",
+          "date": "2026-10-29T13:25:34.884891661Z"
+        }
+      ]
+    },
     "presets/balanced": {
       "latest": "1.2.0",
       "description": "The shipped, out-of-the-box defaults for every token-economy event. Applying this after switching to \"frugal\" or \"thorough\" resets them all in one step, without needing to hand-edit or delete override files.",
@@ -9941,6 +9953,38 @@
         "kdeps (agent loop)",
         "llm.ReloadCloudModels",
         "llm.readModelRegistry"
+      ]
+    },
+    "policy": {
+      "purpose": "The one tool policy: each built-in tool names a tier (T0 read, T1 write), each tier names the permission mode it needs, and default sets whether an unlisted tool is allowed or denied.",
+      "mode": "agent",
+      "flow": [
+        {
+          "label": "a tool call is about to run"
+        },
+        {
+          "label": "the agent loop reads the permission policy"
+        },
+        {
+          "label": "its tool tier names a mode, or the default applies",
+          "here": true
+        },
+        {
+          "label": "the call runs or is refused"
+        }
+      ],
+      "usedBy": [
+        "kdeps (agent loop)",
+        "/auto-improve",
+        "/editor",
+        "/instruct"
+      ],
+      "code": [
+        "kdeps (agent loop)",
+        "agent.(*REPL).Run",
+        "desktop.(*Service).openLoop",
+        "agent.(*Loop).RunStreaming",
+        "agent.loadPermissionPolicy"
       ]
     },
     "presets": {
