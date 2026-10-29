@@ -5164,6 +5164,18 @@
         }
       ]
     },
+    "events/openrouter-noise": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "fbb9a7440de628c455f0adf60e7335594d6ec7d03700a2cdd7cc62859a59bf7e",
+          "commit": "11c7828359bad373eb330cbc0f93539277ff1df4",
+          "date": "2026-10-29T20:39:18.691260032Z"
+        }
+      ]
+    },
     "events/openrouter-provider-limit": {
       "latest": "1.0.0",
       "category": "guardrails",
@@ -6607,7 +6619,7 @@
       ]
     },
     "policy/permission": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "category": "guardrails",
       "versions": [
         {
@@ -6615,6 +6627,12 @@
           "sha256": "727da1b733afeeab42c801d0f2ea08ab97f1ed466bde9748136abab96b893e33",
           "commit": "05a69bcc681fdf7c107369502aba2eb113e3db03",
           "date": "2026-10-29T13:25:34.884891661Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "3439628a63476d2be4d1ce741136ce86bc476631c7389a6f358e669d97af5cbe",
+          "commit": "11c7828359bad373eb330cbc0f93539277ff1df4",
+          "date": "2026-10-29T20:39:18.691260032Z"
         }
       ]
     },
@@ -9957,7 +9975,7 @@
     },
     "policy": {
       "purpose": "The one tool policy: each built-in tool names a tier (T0 read, T1 write), each tier names the permission mode it needs, and default sets whether an unlisted tool is allowed or denied.",
-      "mode": "agent",
+      "mode": "both",
       "flow": [
         {
           "label": "a tool call is about to run"
@@ -9977,13 +9995,16 @@
         "kdeps (agent loop)",
         "/auto-improve",
         "/editor",
-        "/instruct"
+        "/instruct",
+        "kdeps run",
+        "kdeps exec",
+        "kdeps knowledge build"
       ],
       "code": [
         "kdeps (agent loop)",
         "agent.(*REPL).Run",
-        "desktop.(*Service).openLoop",
-        "agent.(*Loop).RunStreaming",
+        "executor.(*Engine).Execute",
+        "agent.stageGate",
         "agent.loadPermissionPolicy"
       ]
     },
