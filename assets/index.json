@@ -4240,6 +4240,21 @@
         }
       ]
     },
+    "events/bug-capture-max-errors": {
+      "latest": "1.0.0",
+      "category": "evals",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "a0a8afa0d815b321761467348df56ef9828b27f47090c8f78162e8fd26afb308",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "b82809e7ee473256ad86d7abe02f3b97f5349367",
+          "date": "2026-11-01T14:22:38.285520859Z"
+        }
+      ]
+    },
     "events/code-call-budget": {
       "latest": "1.1.0",
       "category": "guardrails",
