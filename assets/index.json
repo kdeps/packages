@@ -4420,6 +4420,21 @@
         }
       ]
     },
+    "events/efficiency-drops": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "6877f06d73d936c7b438ebdf93569c1a182b8819d98df4e5338b89fc7441443a",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "b7b0917ee474c5f93287696c62379c79a42065a6",
+          "date": "2026-11-01T14:27:58.233095905Z"
+        }
+      ]
+    },
     "events/efficiency-failures": {
       "latest": "1.0.1",
       "category": "guardrails",
