@@ -5602,6 +5602,36 @@
         }
       ]
     },
+    "events/trivial-prompt-max": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "394fb2e6cd82cb6224b9e2dd6e29d69eb8430ed6b4f4e6256cd7891f3b161fd8",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "ae723582676b06c18d39559f84cd16c4674b806f",
+          "date": "2026-11-01T17:12:59.279088879Z"
+        }
+      ]
+    },
+    "events/trivial-prompt-short": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "880d53e77604b1b7f951f0aa9e3ced69486f2dac51cbb77bf993150894526630",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "ae723582676b06c18d39559f84cd16c4674b806f",
+          "date": "2026-11-01T17:12:59.279088879Z"
+        }
+      ]
+    },
     "events/tui-activity-lines": {
       "latest": "1.0.0",
       "category": "context",
