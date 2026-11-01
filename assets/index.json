@@ -4582,6 +4582,51 @@
         }
       ]
     },
+    "events/failure-context-bytes": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "f02841e73af1fec072334ce4587e6e9746668455eb33651b14e66502454540ee",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "521f64c4e5d1d6cb9735ff4ba332e2801de6c358",
+          "date": "2026-11-01T14:41:13.567861053Z"
+        }
+      ]
+    },
+    "events/failure-dir-entries": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "bf90462a62d29ab18f4a7ba48231c288d7ded16ffcc6463467cc9a22bbc955f6",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "521f64c4e5d1d6cb9735ff4ba332e2801de6c358",
+          "date": "2026-11-01T14:41:13.567861053Z"
+        }
+      ]
+    },
+    "events/failure-error-bytes": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "d45f75661b8393919f79f2f7fb64a74149119bcb975bb75ca2db9d52132bca6f",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "521f64c4e5d1d6cb9735ff4ba332e2801de6c358",
+          "date": "2026-11-01T14:41:13.567861053Z"
+        }
+      ]
+    },
     "events/file-call-budget": {
       "latest": "1.1.0",
       "category": "guardrails",
