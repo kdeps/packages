@@ -4960,6 +4960,21 @@
         }
       ]
     },
+    "events/knowledge-recall-files": {
+      "latest": "1.0.0",
+      "category": "rag",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "c9baa265c0aff860f57a6551fa92e9e605d7f3655c51525b319cabaa19926a33",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "689029f78ecdff5fab4f94da4ce969a495a888b3",
+          "date": "2026-11-01T16:06:30.499475309Z"
+        }
+      ]
+    },
     "events/memory-capture-limit": {
       "latest": "1.0.0",
       "category": "memory",
