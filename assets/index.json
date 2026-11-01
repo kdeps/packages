@@ -5287,6 +5287,66 @@
         }
       ]
     },
+    "events/provider-body-limit-dashscope": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "65c9e9a37c38f66c2f32bac520ef25b261fe9657c3b62e02eb12b84cb28cbeb2",
+          "requires": {
+            "actions/reject": ""
+          },
+          "commit": "75996d7d33819a134fbc6cb2690145a6b5c6b475",
+          "date": "2026-11-01T15:51:37.619229208Z"
+        }
+      ]
+    },
+    "events/provider-body-limit-openai": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "c58450edf1b992795f0786e1bf4813a7921845fabf9705af9939e3f84a2eeb5e",
+          "requires": {
+            "actions/reject": ""
+          },
+          "commit": "75996d7d33819a134fbc6cb2690145a6b5c6b475",
+          "date": "2026-11-01T15:51:37.619229208Z"
+        }
+      ]
+    },
+    "events/provider-body-limit-xai": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "f60f3b05f987eaca4919d50883ac8551128a985adaba4bf01f7cce5469f4d3a4",
+          "requires": {
+            "actions/reject": ""
+          },
+          "commit": "75996d7d33819a134fbc6cb2690145a6b5c6b475",
+          "date": "2026-11-01T15:51:37.619229208Z"
+        }
+      ]
+    },
+    "events/provider-small-threshold": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "5c23630816edc86d4dee734051644cb629949d87f237e9a87d76cec21295d4bd",
+          "requires": {
+            "actions/reject": ""
+          },
+          "commit": "75996d7d33819a134fbc6cb2690145a6b5c6b475",
+          "date": "2026-11-01T15:51:37.619229208Z"
+        }
+      ]
+    },
     "events/rel-memory-limit": {
       "latest": "1.0.3",
       "category": "memory",
