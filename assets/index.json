@@ -4960,6 +4960,51 @@
         }
       ]
     },
+    "events/knowledge-extract-per-session": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "f6df953784679d7e09abd02d783a404fc79c9d58ce11df0201586fe67cd4fae6",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "9fbeac51a015fcc23f332defb8ca467c4fffad2e",
+          "date": "2026-11-01T19:46:38.428023036Z"
+        }
+      ]
+    },
+    "events/knowledge-extract-seconds": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "13a184cdb8c7bd968c5b4bb36dca47d7f58ec631e72266b39fbd014e3b705aac",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "9fbeac51a015fcc23f332defb8ca467c4fffad2e",
+          "date": "2026-11-01T19:46:38.428023036Z"
+        }
+      ]
+    },
+    "events/knowledge-extract-tokens": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "dd68668450c6294ca7d38cad866f65322eeefc395e1a49bf2709f41210f1453a",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "9fbeac51a015fcc23f332defb8ca467c4fffad2e",
+          "date": "2026-11-01T19:46:38.428023036Z"
+        }
+      ]
+    },
     "events/knowledge-recall-files": {
       "latest": "1.0.0",
       "category": "rag",
