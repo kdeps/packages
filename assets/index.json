@@ -5452,6 +5452,21 @@
         }
       ]
     },
+    "events/tui-activity-lines": {
+      "latest": "1.0.0",
+      "category": "context",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "f8930582e098a2d6a35d7d9fd36cc691efcf82d6ef5093a82954fd42b4dff8eb",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "8be333c775e546821afe9034e243e901a276d4a7",
+          "date": "2026-11-01T13:58:16.160760361Z"
+        }
+      ]
+    },
     "events/unproductive-rounds": {
       "latest": "1.0.2",
       "category": "guardrails",
