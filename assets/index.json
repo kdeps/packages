@@ -575,6 +575,25 @@
         }
       ]
     },
+    "commands/ingest": {
+      "latest": "1.0.0",
+      "description": "Read the text of an image (OCR) and save it as a knowledge note titled \u003ctitle\u003e",
+      "category": "agent",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "6d326c210a6754c7f551495f7d3d70527d3bdd3c7ad5bd0d57ec698fe347055a",
+          "requires": {
+            "tools/knowledge_note_save": "",
+            "tools/load_document": "",
+            "tools/ocr_image": "",
+            "tools/transcribe_audio": ""
+          },
+          "commit": "a8140b377b0234df662c141140f3d9519b7ae5a1",
+          "date": "2026-11-02T18:19:01.158155307Z"
+        }
+      ]
+    },
     "commands/instruct": {
       "latest": "1.0.1",
       "description": "Brief the model on kdeps (tools, calling, memory, modes); primes the next prompt",
