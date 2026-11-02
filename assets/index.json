@@ -130,6 +130,18 @@
         }
       ]
     },
+    "codegraph/rules": {
+      "latest": "1.0.0",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "ce8a7120fc0febd6e1d3068dbe66cc908f10269a47e91bf5774360f9080cbbe4",
+          "commit": "daa97e0eb9edef461b4576d6a93274ceb737940e",
+          "date": "2026-11-02T12:39:42.203205441Z"
+        }
+      ]
+    },
     "commands/auto-improve": {
       "latest": "1.0.4",
       "description": "Run the fixed task list in this kdeps repo, jump across OpenRouter free models, fix product bugs from the instrument log, and file one GitHub issue",
@@ -6591,6 +6603,18 @@
         }
       ]
     },
+    "knowledge/recall": {
+      "latest": "1.0.0",
+      "category": "rag",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "4a3140609f8b9b38c46a21a4d26c397ab0630ef660d54ab2ef82e437a65b5b36",
+          "commit": "daa97e0eb9edef461b4576d6a93274ceb737940e",
+          "date": "2026-11-02T12:39:42.203205441Z"
+        }
+      ]
+    },
     "memory/rules": {
       "latest": "1.1.0",
       "category": "memory",
@@ -10035,6 +10059,29 @@
         "agent.ActionByName"
       ]
     },
+    "codegraph": {
+      "purpose": "The code graph's business rules: ranking weights, stopwords, result limits and path bounds.",
+      "mode": "cli",
+      "flow": [
+        {
+          "label": "the code graph is built or queried"
+        },
+        {
+          "label": "its rules are read from the codegraph set at start",
+          "here": true
+        },
+        {
+          "label": "ranking weights, stopwords and limits apply to each query"
+        }
+      ],
+      "usedBy": [
+        "kdeps start-up"
+      ],
+      "code": [
+        "kdeps start-up",
+        "codegraph.Configure"
+      ]
+    },
     "commands": {
       "purpose": "Slash commands: the help and completion of the built-in ones, and declared commands that run other commands and prompts.",
       "mode": "both",
@@ -10245,6 +10292,35 @@
         "kdeps export k8s",
         "k8s.(*Generator).GenerateManifests",
         "k8s.(*Generator).renderManifest"
+      ]
+    },
+    "knowledge": {
+      "purpose": "The knowledge graph's recall policy: the word lengths and stopwords a query is matched on.",
+      "mode": "cli",
+      "flow": [
+        {
+          "label": "a knowledge-graph recall query arrives"
+        },
+        {
+          "label": "its words are split and stemmed"
+        },
+        {
+          "label": "the recall rules set the word lengths and stopwords",
+          "here": true
+        },
+        {
+          "label": "matching nodes are scored"
+        },
+        {
+          "label": "the best notes fill the budget"
+        }
+      ],
+      "usedBy": [
+        "kdeps start-up"
+      ],
+      "code": [
+        "kdeps start-up",
+        "knowledge.loadRecallRules"
       ]
     },
     "memory": {
