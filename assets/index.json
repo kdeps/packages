@@ -4795,6 +4795,36 @@
         }
       ]
     },
+    "events/handshake-evidence-attempts": {
+      "latest": "1.0.0",
+      "category": "harness",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "89a18cef4aefb9e89aaab1695c0002242a239e54bbbef3d5cc3846ab64d5acd5",
+          "requires": {
+            "actions/fail_handshake": ""
+          },
+          "commit": "40567fe7a48ba7df02046f010f2340af6075609f",
+          "date": "2026-11-02T12:28:43.145286864Z"
+        }
+      ]
+    },
+    "events/handshake-history": {
+      "latest": "1.0.0",
+      "category": "harness",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "763bbe58a7c5a274b7043d461619525d1bda61f0720e220c9a40485c1b178c74",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "40567fe7a48ba7df02046f010f2340af6075609f",
+          "date": "2026-11-02T12:28:43.145286864Z"
+        }
+      ]
+    },
     "events/handshake-timeout": {
       "latest": "1.0.3",
       "category": "guardrails",
