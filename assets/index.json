@@ -4300,6 +4300,21 @@
         }
       ]
     },
+    "events/context-segment-cap": {
+      "latest": "1.0.0",
+      "category": "context",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "d0b0e7cd0847fc3d29cde5b315df418ee0746e6abc196e34dc39c5e21dfa3dc4",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "76f557ec84c438d266e238d2667ad1063f060515",
+          "date": "2026-11-02T12:07:21.528122733Z"
+        }
+      ]
+    },
     "events/convergence-block": {
       "latest": "1.0.3",
       "category": "guardrails",
