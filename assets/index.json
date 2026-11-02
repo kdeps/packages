@@ -6587,7 +6587,7 @@
       ]
     },
     "harness/use-kdeps-tools": {
-      "latest": "1.1.0",
+      "latest": "1.2.0",
       "category": "harness",
       "versions": [
         {
@@ -6603,6 +6603,13 @@
           "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
           "tokens": 656,
           "date": "2026-10-17T19:14:40.431501918Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "08e8754613a4a5d20244a9b84a862e73ef137d4eef6998154d45746b47251633",
+          "commit": "09e5d099986ad51548476cf7bf21dfd052280473",
+          "tokens": 706,
+          "date": "2026-11-02T14:37:30.538154154Z"
         }
       ]
     },
