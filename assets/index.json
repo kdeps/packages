@@ -5404,6 +5404,21 @@
         }
       ]
     },
+    "events/prompt-history-limit": {
+      "latest": "1.0.0",
+      "category": "context",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "2b9a327f38a7f8fb5f0d69534da0a16e5b62a7bb0bc4f3a3afb59aa1307d2d60",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "50dc46adedfe81956ace6ddaed670721acb6043b",
+          "date": "2026-11-02T12:54:23.728403878Z"
+        }
+      ]
+    },
     "events/provider-body-limit-dashscope": {
       "latest": "1.0.0",
       "category": "guardrails",
