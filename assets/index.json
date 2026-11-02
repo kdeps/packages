@@ -6625,6 +6625,18 @@
         }
       ]
     },
+    "knowledge/policy": {
+      "latest": "1.0.0",
+      "category": "rag",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "cee7a0fd8fdb3962e1e9bd41adb7d6e53239ead16f95a1b07bd414c6e9d425d7",
+          "commit": "948807de8361f48a1fc6fc68c96f6836797b3f00",
+          "date": "2026-11-02T16:23:24.78042466Z"
+        }
+      ]
+    },
     "knowledge/recall": {
       "latest": "1.0.0",
       "category": "rag",
