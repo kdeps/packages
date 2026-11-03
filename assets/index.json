@@ -131,7 +131,7 @@
       ]
     },
     "codegraph/rules": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "category": "tools",
       "versions": [
         {
@@ -139,6 +139,24 @@
           "sha256": "ce8a7120fc0febd6e1d3068dbe66cc908f10269a47e91bf5774360f9080cbbe4",
           "commit": "daa97e0eb9edef461b4576d6a93274ceb737940e",
           "date": "2026-11-02T12:39:42.203205441Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "000fa469fee535be4d87c5ae52edcd38e4dd8080d62578481ddf0118f973aa76",
+          "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
+          "date": "2026-11-03T02:51:07.438900463Z"
+        }
+      ]
+    },
+    "codegraph/tools": {
+      "latest": "1.0.0",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "dbfdcbc28189b4edbd0e8cdaa36ecbee57b2dcf9b8631567ff747ff0b20e67da",
+          "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
+          "date": "2026-11-03T02:51:07.438900463Z"
         }
       ]
     },
@@ -5096,6 +5114,51 @@
         }
       ]
     },
+    "events/live-note-items": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "8c06de6aefa4235230c86bd3e2a4bf0d5e98eb24a910299bd836902f08d6155e",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
+          "date": "2026-11-03T02:51:07.438900463Z"
+        }
+      ]
+    },
+    "events/live-note-line-chars": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "cb4f99278ec86f43f6836f4e9c317de01063e6a17954525d1a0bd24e7d6bcea3",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
+          "date": "2026-11-03T02:51:07.438900463Z"
+        }
+      ]
+    },
+    "events/live-note-prompts": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "c058f5d3fd39f83faffd2993d53b61df87a0e0a0b8f1f6f891f546881a30388b",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
+          "date": "2026-11-03T02:51:07.438900463Z"
+        }
+      ]
+    },
     "events/memory-capture-limit": {
       "latest": "1.0.0",
       "category": "memory",
@@ -6644,8 +6707,44 @@
         }
       ]
     },
-    "knowledge/policy": {
+    "knowledge/check": {
       "latest": "1.0.0",
+      "category": "rag",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "1d040ba4502edae14719e73da23b9e9265655f8772b6a28479bcd0bc52741e4a",
+          "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
+          "date": "2026-11-03T02:51:07.438900463Z"
+        }
+      ]
+    },
+    "knowledge/extract": {
+      "latest": "1.0.0",
+      "category": "rag",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "faba02f0c3d8375c31042d111bbf6e33ad262389fd2823f21bbe7de6ceddd609",
+          "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
+          "date": "2026-11-03T02:51:07.438900463Z"
+        }
+      ]
+    },
+    "knowledge/notes": {
+      "latest": "1.0.0",
+      "category": "rag",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "68269b82100a3d56eb312ddce239bdbe9b97ed59398182559108cd69c66c5a2e",
+          "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
+          "date": "2026-11-03T02:51:07.438900463Z"
+        }
+      ]
+    },
+    "knowledge/policy": {
+      "latest": "1.2.0",
       "category": "rag",
       "versions": [
         {
@@ -6653,11 +6752,29 @@
           "sha256": "cee7a0fd8fdb3962e1e9bd41adb7d6e53239ead16f95a1b07bd414c6e9d425d7",
           "commit": "948807de8361f48a1fc6fc68c96f6836797b3f00",
           "date": "2026-11-02T16:23:24.78042466Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "ca430214ae077415a0b3d3509cb2ed266f6050c6d4b61272d398f05b76011444",
+          "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
+          "date": "2026-11-03T02:51:07.438900463Z"
+        }
+      ]
+    },
+    "knowledge/prompts": {
+      "latest": "1.1.0",
+      "category": "rag",
+      "versions": [
+        {
+          "version": "1.1.0",
+          "sha256": "66e084d947446910ef179df85b5fe00e80df6c6d5ec1e833871b3506d3237a0a",
+          "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
+          "date": "2026-11-03T02:51:07.438900463Z"
         }
       ]
     },
     "knowledge/recall": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "category": "rag",
       "versions": [
         {
@@ -6665,6 +6782,36 @@
           "sha256": "4a3140609f8b9b38c46a21a4d26c397ab0630ef660d54ab2ef82e437a65b5b36",
           "commit": "daa97e0eb9edef461b4576d6a93274ceb737940e",
           "date": "2026-11-02T12:39:42.203205441Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "09c189e08f7c30b0a35f5339270d561132cd51b0d7aa6a655784969509267dc5",
+          "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
+          "date": "2026-11-03T02:51:07.438900463Z"
+        }
+      ]
+    },
+    "knowledge/search": {
+      "latest": "1.2.0",
+      "category": "rag",
+      "versions": [
+        {
+          "version": "1.2.0",
+          "sha256": "797d8b79913c9a7f316a63fd78b888d81be8f45677463711f931eea268051a46",
+          "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
+          "date": "2026-11-03T02:51:07.438900463Z"
+        }
+      ]
+    },
+    "knowledge/vault": {
+      "latest": "1.0.0",
+      "category": "rag",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "8623cc095d671c05bf9eeb9116f56dfde326a98acde79c9c24b0ce404ae0495c",
+          "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
+          "date": "2026-11-03T02:51:07.438900463Z"
         }
       ]
     },
@@ -10114,7 +10261,7 @@
     },
     "codegraph": {
       "purpose": "The code graph's business rules: ranking weights, stopwords, result limits and path bounds.",
-      "mode": "cli",
+      "mode": "agent",
       "flow": [
         {
           "label": "the code graph is built or queried"
@@ -10128,11 +10275,13 @@
         }
       ],
       "usedBy": [
-        "kdeps start-up"
+        "kdeps (agent loop)"
       ],
       "code": [
-        "kdeps start-up",
-        "codegraph.Configure"
+        "kdeps (agent loop)",
+        "agent.RegisterBuiltinTools",
+        "codegraph.Register",
+        "codegraph.exposedNames"
       ]
     },
     "commands": {
@@ -10349,7 +10498,7 @@
     },
     "knowledge": {
       "purpose": "The knowledge graph's recall policy: the word lengths and stopwords a query is matched on.",
-      "mode": "cli",
+      "mode": "both",
       "flow": [
         {
           "label": "a knowledge-graph recall query arrives"
@@ -10369,11 +10518,19 @@
         }
       ],
       "usedBy": [
-        "kdeps start-up"
+        "kdeps (agent loop)",
+        "kdeps run",
+        "kdeps knowledge folders remove",
+        "kdeps knowledge build",
+        "kdeps knowledge folders",
+        "kdeps knowledge folders add",
+        "kdeps knowledge folders index"
       ],
       "code": [
-        "kdeps start-up",
-        "knowledge.loadRecallRules"
+        "kdeps (agent loop)",
+        "agent.(*REPL).Run",
+        "knowledge.(*Topic).Add",
+        "knowledge.recallRules"
       ]
     },
     "memory": {
