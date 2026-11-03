@@ -1,0 +1,36 @@
+# Default values for kdeps executors.
+# Used when neither resource YAML nor config.yaml resource_defaults provides a value.
+# Values in config.yaml always override these.
+version: 1.4.0
+chat:
+  timeout: "60s"
+  context_length: 4096  # also the agent's context window for a model it knows nothing about
+  cloud_context: 131072  # the agent's context window for a cloud model the catalog gives none for
+  # A local model with no known window gets the tokens of the first row whose
+  # parameter count (billions, read from its name) it reaches.
+  context_by_params:
+    - {min_billions: 30, tokens: 131072}
+    - {min_billions: 13, tokens: 65536}
+    - {min_billions: 7, tokens: 32768}
+    - {min_billions: 3, tokens: 16384}
+    - {min_billions: 1, tokens: 8192}
+  streaming: false
+http:
+  timeout: "30s"
+  follow_redirects: true
+python:
+  timeout: "60s"
+exec:
+  timeout: "30s"
+embedding:
+  db_path: kdeps-embedding.db
+  collection: default
+  limit: 10
+vector_store:
+  top_k: 5  # similarity_search results when a resource sets no topK (the vector_store component sets 5 itself)
+  chroma_url: http://localhost:8000  # the chroma provider's endpoint when a resource sets no url
+  redis_url: redis://localhost:6379  # the redis provider's endpoint when a resource sets no url
+  mongodb_database: kdeps  # the mongodb provider's database when a resource sets none (apiKey)
+session_store:
+  mongodb_database: kdeps  # the mongodb session store's database when none is configured
+  mongodb_collection: sessions  # its collection when none is configured
