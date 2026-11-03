@@ -6948,7 +6948,7 @@
       ]
     },
     "memory/rules": {
-      "latest": "1.5.0",
+      "latest": "1.6.0",
       "category": "memory",
       "versions": [
         {
@@ -6986,6 +6986,12 @@
           "sha256": "a61e24413ac44feec0fa0f73f6268417d9d1ba8231011a3a84652e6c4ef3e767",
           "commit": "ca2fe96ff29663eedaa6be7333b0e15ed0f34f53",
           "date": "2026-11-03T06:36:48.630800738Z"
+        },
+        {
+          "version": "1.6.0",
+          "sha256": "4a90936ae8ad868c63642d176cff8caae5e25d4bfc219e90a1990011823db24e",
+          "commit": "4d6edaa2b1b76722ffaf389156b0f2aca68529c3",
+          "date": "2026-11-03T08:45:16.633216315Z"
         }
       ]
     },
