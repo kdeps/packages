@@ -6870,7 +6870,7 @@
       ]
     },
     "knowledge/prompts": {
-      "latest": "1.2.0",
+      "latest": "1.3.0",
       "category": "rag",
       "versions": [
         {
@@ -6884,6 +6884,12 @@
           "sha256": "2bfbe28d025bd3d90e66c0d19ca97af731e6d27c7319b2298f8f905a65c10149",
           "commit": "f8793469f7b48662700b4223dcf3e67bf0bb1544",
           "date": "2026-11-03T07:13:59.240734156Z"
+        },
+        {
+          "version": "1.3.0",
+          "sha256": "d68e06aa7b474c054e2d4955ea76828082903dfb63d193365580ab578f87a7df",
+          "commit": "b77ba82aa8791d86e123070184c13b3e9e3b6577",
+          "date": "2026-11-03T07:35:45.754774224Z"
         }
       ]
     },
