@@ -5210,6 +5210,21 @@
         }
       ]
     },
+    "events/memory-derived-key-chars": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "2893695247643f58261d5d95f6b9690613151d7a443a3faad63996cb3b55af17",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "7527b8c5afc3bdb338e97e44a62dcc2310b323cc",
+          "date": "2026-11-03T05:42:56.516966011Z"
+        }
+      ]
+    },
     "events/memory-focus-max": {
       "latest": "1.0.3",
       "category": "memory",
@@ -5243,6 +5258,51 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        }
+      ]
+    },
+    "events/memory-focus-min-word": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "c3417600e5fbd04d1388d597efb307afd1c1c3205e77e807f82aba52efbe5fa7",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "7527b8c5afc3bdb338e97e44a62dcc2310b323cc",
+          "date": "2026-11-03T05:42:56.516966011Z"
+        }
+      ]
+    },
+    "events/memory-format-tokens": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "4e866a69e51e426369e884d96d91da7f440067ab1e40aa25588bbcd23098de88",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "7527b8c5afc3bdb338e97e44a62dcc2310b323cc",
+          "date": "2026-11-03T05:42:56.516966011Z"
+        }
+      ]
+    },
+    "events/memory-key-chars": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "6bf24355473de297d8d87850f07540e9f95631c666e279760e139c1479ac7e30",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "7527b8c5afc3bdb338e97e44a62dcc2310b323cc",
+          "date": "2026-11-03T05:42:56.516966011Z"
         }
       ]
     },
@@ -5363,6 +5423,21 @@
         }
       ]
     },
+    "events/memory-summary-chars": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "ccc9ec5fed783747cdcc9331d40f9a5b45b15e5ec7db51c450290c75adbd78b5",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "7527b8c5afc3bdb338e97e44a62dcc2310b323cc",
+          "date": "2026-11-03T05:42:56.516966011Z"
+        }
+      ]
+    },
     "events/memory-thinking-limit": {
       "latest": "1.0.0",
       "category": "memory",
@@ -5375,6 +5450,21 @@
           },
           "commit": "ff0cbb83dc6dec982e353e7c2b7f5a96865cb36b",
           "date": "2026-10-25T13:52:20.437111992Z"
+        }
+      ]
+    },
+    "events/memory-tool-line-chars": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "c303addaed45836297ad0a0faf9cded8705de2477012e2155cd83f4ea1239530",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "7527b8c5afc3bdb338e97e44a62dcc2310b323cc",
+          "date": "2026-11-03T05:42:56.516966011Z"
         }
       ]
     },
@@ -6822,7 +6912,7 @@
       ]
     },
     "memory/rules": {
-      "latest": "1.2.0",
+      "latest": "1.3.0",
       "category": "memory",
       "versions": [
         {
@@ -6842,6 +6932,12 @@
           "sha256": "7030763b13339be4e74d086969d25f20ec1e434bf9c6361ba2a1a00ae7c16157",
           "commit": "eba829c45e48cf25aa60b417a1f9dfd79a115500",
           "date": "2026-11-03T04:03:42.631324835Z"
+        },
+        {
+          "version": "1.3.0",
+          "sha256": "f78d012f2e380c81c778017a5d7a58b8570b750900b9dd867a703cdf7896b8f8",
+          "commit": "7527b8c5afc3bdb338e97e44a62dcc2310b323cc",
+          "date": "2026-11-03T05:42:56.516966011Z"
         }
       ]
     },
