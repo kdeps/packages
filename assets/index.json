@@ -9137,7 +9137,7 @@
       ]
     },
     "tools/embedding_search": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "description": "Search for documents semantically similar to a query in the local embedding database. Returns ranked results with similarity scores. Requires: query (natural language search query), collection (name of the document collection). Optional: limit (max results, default 5).",
       "category": "rag",
       "versions": [
@@ -9147,6 +9147,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 142,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "f1aefac46c5993ba6e1bcb12311ab3ed13005e94c5b24bd2b593e97f51777fc0",
+          "commit": "53592584e119221185e17f7533b24d9e1c136111",
+          "tokens": 143,
+          "date": "2026-11-03T12:32:29.438782042Z"
         }
       ]
     },
@@ -9833,7 +9840,7 @@
       ]
     },
     "tools/search_local": {
-      "latest": "1.3.0",
+      "latest": "1.4.0",
       "description": "Search for text patterns in local files using ripgrep. Returns matching files with a snippet, and (when the query is found) a match_id/line/revision - pass match_id to read_file to jump straight to that hit. Use for finding usages, patterns, or strings across the codebase. Requires: query (search term). path is the directory to search; leave it out to search every folder of the working project (its own and the search folders its card lists). Optional: glob (file pattern), limit (max results, default 3), index (rank results with the folder index); index also accepts fuzzy, maxDistance, indexDBPath and graphBoost.",
       "category": "rag",
       "versions": [
@@ -9864,6 +9871,13 @@
           "commit": "f62c860abb87362928ec0d11e07bed1e4e3cf3ef",
           "tokens": 391,
           "date": "2026-10-21T13:31:50.345627234Z"
+        },
+        {
+          "version": "1.4.0",
+          "sha256": "90d0cef8f876c63a6f23f460225d44afc72041236d801abad9045fe517d08a8a",
+          "commit": "53592584e119221185e17f7533b24d9e1c136111",
+          "tokens": 391,
+          "date": "2026-11-03T12:32:29.438782042Z"
         }
       ]
     },
@@ -10322,7 +10336,7 @@
       ]
     },
     "tools/vector_store": {
-      "latest": "1.0.1",
+      "latest": "1.1.0",
       "description": "Run one vector store operation against an external vector database: add_documents to upsert documents, or similarity_search to query them. Call it through the vector_store component. Requires: collection, operation, embedModel (except bedrock). Optional: provider, url, apiKey, documents, query, topK, embedBackend, embedBaseURL.",
       "category": "tools",
       "versions": [
@@ -10339,6 +10353,13 @@
           "commit": "3ab4e12fdbdeaca6cde58aea5c3959710955c91b",
           "tokens": 434,
           "date": "2026-11-03T10:24:31.38080418Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "c0809138b47c23b2f66efae7aa4a87307d43e323292f0f11531e002df1128f66",
+          "commit": "53592584e119221185e17f7533b24d9e1c136111",
+          "tokens": 430,
+          "date": "2026-11-03T12:32:29.438782042Z"
         }
       ]
     },
