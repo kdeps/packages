@@ -10362,8 +10362,7 @@
         "/editor",
         "/instruct",
         "kdeps run",
-        "kdeps exec",
-        "kdeps knowledge build"
+        "kdeps exec"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -10622,8 +10621,7 @@
         "/editor",
         "/instruct",
         "kdeps run",
-        "kdeps exec",
-        "kdeps knowledge build"
+        "kdeps exec"
       ],
       "code": [
         "kdeps (agent loop)",
