@@ -3218,7 +3218,7 @@
       ]
     },
     "components/search_local": {
-      "latest": "1.2.0",
+      "latest": "1.3.0",
       "description": "Search local files through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -3263,6 +3263,17 @@
           "commit": "f62c860abb87362928ec0d11e07bed1e4e3cf3ef",
           "tokens": 277,
           "date": "2026-10-21T13:31:50.345627234Z"
+        },
+        {
+          "version": "1.3.0",
+          "sha256": "713b091eccfbf96d3a43db691de4c833d21a86baa345a900219b50dbb45793cb",
+          "requires": {
+            "schemas/v1": "",
+            "tools/search_local": ""
+          },
+          "commit": "e006219ee7026de09f6d3af83afaa3045cd2376f",
+          "tokens": 277,
+          "date": "2026-11-03T10:28:03.295013224Z"
         }
       ]
     },
