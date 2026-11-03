@@ -5616,6 +5616,21 @@
         }
       ]
     },
+    "events/preamble-token-limit": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "d18f1f0bc026026aa61fa043bd065138019e6a549c837345d9cf1cdd5956d7dc",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "426b24591298489ead50b7010d0b9f9cc639413b",
+          "date": "2026-11-03T11:09:09.332675634Z"
+        }
+      ]
+    },
     "events/prompt-history-limit": {
       "latest": "1.0.0",
       "category": "context",
@@ -5856,6 +5871,21 @@
           },
           "commit": "bcf5cb93b6569209300ba72ee5f71eccf741f76d",
           "date": "2026-10-24T19:49:52.127658631Z"
+        }
+      ]
+    },
+    "events/tool-allocation-increment": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "47698c9b047b946ee83865beb655275b2244f4bc5534977e129e74e6aa23d6fe",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "426b24591298489ead50b7010d0b9f9cc639413b",
+          "date": "2026-11-03T11:09:09.332675634Z"
         }
       ]
     },
