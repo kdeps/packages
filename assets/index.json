@@ -149,7 +149,7 @@
       ]
     },
     "codegraph/tools": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "category": "tools",
       "versions": [
         {
@@ -157,6 +157,12 @@
           "sha256": "dbfdcbc28189b4edbd0e8cdaa36ecbee57b2dcf9b8631567ff747ff0b20e67da",
           "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
           "date": "2026-11-03T02:51:07.438900463Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "d1994fbf1f19e0b2fbc80e6553e4c0960436d0919777e62c340d5ab399bb5200",
+          "commit": "896efe1d8603d378ec26cf26f743592b493a125f",
+          "date": "2026-11-03T09:25:26.777841009Z"
         }
       ]
     },
