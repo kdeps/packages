@@ -4195,7 +4195,7 @@
       ]
     },
     "defaults/executors": {
-      "latest": "1.1.0",
+      "latest": "1.2.0",
       "category": "workflow",
       "versions": [
         {
@@ -4227,6 +4227,12 @@
           "sha256": "d4296accc8678d50b4f6c0ddd71fa4e541dde1d0f77a2feff9e6c84bd72cfb4f",
           "commit": "6757e4ebda0955c997975f39c273ddbac064ff03",
           "date": "2026-11-03T10:45:22.922408662Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "f76b225fdeccaee6cdf02f2adbf8eda35815df0fa41ba7a32eafc56e9384f0a5",
+          "commit": "47bc26008a10cf06306ca162f092213dba3907aa",
+          "date": "2026-11-03T11:00:21.640231079Z"
         }
       ]
     },
