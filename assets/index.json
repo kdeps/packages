@@ -6732,7 +6732,7 @@
       ]
     },
     "knowledge/notes": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "category": "rag",
       "versions": [
         {
@@ -6740,6 +6740,12 @@
           "sha256": "68269b82100a3d56eb312ddce239bdbe9b97ed59398182559108cd69c66c5a2e",
           "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
           "date": "2026-11-03T02:51:07.438900463Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "4cf936ad8bb203350b06a022619a2693d192b181a00464ea650342dd82bdb0b7",
+          "commit": "7ab72dbdc0986fc44e0424ca827bdfd353346ab2",
+          "date": "2026-11-03T03:52:24.029818252Z"
         }
       ]
     },
