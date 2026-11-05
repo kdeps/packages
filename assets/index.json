@@ -6803,6 +6803,19 @@
         }
       ]
     },
+    "harness/session-resumed": {
+      "latest": "1.0.0",
+      "category": "harness",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "e153d3851f46e301be2464da40e546e05e997d92f21856c0411b60c37f625856",
+          "commit": "2645c12c0df87ec4fffdbaed83e60fcd393854c5",
+          "tokens": 75,
+          "date": "2026-11-05T13:55:13.746205655Z"
+        }
+      ]
+    },
     "harness/skills-preamble": {
       "latest": "1.0.0",
       "category": "harness",
