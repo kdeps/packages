@@ -7624,7 +7624,7 @@
       ]
     },
     "models/openrouter": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "model",
       "versions": [
         {
@@ -7650,6 +7650,12 @@
           "sha256": "ee13bc125970bcdf9263e0c00e66c339591b1bc68842fef52ef32c0132b78217",
           "commit": "fdbf80d3b2efa6a1894f2d61f97122baea70056c",
           "date": "2026-11-04T14:25:41.641199611Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "7bd9ab9d9d2143000a62c278fad7c379124d9959460597d5f0f785e877577295",
+          "commit": "214e9d5ecde9e6b65c5e1f4db9f6a0cdf907c383",
+          "date": "2026-11-06T14:12:24.253421455Z"
         }
       ]
     },
