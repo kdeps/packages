@@ -4995,8 +4995,23 @@
         }
       ]
     },
+    "events/history-window-old-result": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "fed85ff2b1fc71ea29b93e6c2cd5139fb7725a9057b5fd9245dfb8d0b55e1eb4",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
+          "date": "2026-11-06T07:43:10.390008069Z"
+        }
+      ]
+    },
     "events/history-window-trim": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "context",
       "versions": [
         {
@@ -5028,6 +5043,15 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "8b1d63386224f28c2701122964c87bad98947d6736e174cdd82e77ce7321cc9e",
+          "requires": {
+            "actions/drop_oldest": ""
+          },
+          "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
+          "date": "2026-11-06T07:43:10.390008069Z"
         }
       ]
     },
@@ -5392,7 +5416,7 @@
       ]
     },
     "events/memory-keys-limit": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "memory",
       "versions": [
         {
@@ -5424,6 +5448,15 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "9eb34339cdf84b1f5d7dcc771f7c8e75728a151e6f40c60f66aba2910f4f31ca",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
+          "date": "2026-11-06T07:43:10.390008069Z"
         }
       ]
     },
@@ -5986,7 +6019,7 @@
       ]
     },
     "events/tool-result-truncate": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "context",
       "versions": [
         {
@@ -6018,6 +6051,15 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "de2311a5c8f67d041c59e59445e284d044452a985dc71b3f44131e6da747e3ae",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
+          "date": "2026-11-06T07:43:10.390008069Z"
         }
       ]
     },
@@ -7558,8 +7600,20 @@
         }
       ]
     },
+    "policy/tool-schemas": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "d2e0e80c715fa07cb54675fad60c808ef3fba926bf85da17b4d79db0c43083bf",
+          "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
+          "date": "2026-11-06T07:43:10.390008069Z"
+        }
+      ]
+    },
     "presets/balanced": {
-      "latest": "1.2.0",
+      "latest": "1.2.1",
       "description": "The shipped, out-of-the-box defaults for every token-economy event. Applying this after switching to \"frugal\" or \"thorough\" resets them all in one step, without needing to hand-edit or delete override files.",
       "category": "context",
       "versions": [
@@ -7760,11 +7814,65 @@
           },
           "commit": "2fe211da581125bc1350208257fd5de212399d67",
           "date": "2026-10-24T15:46:26.184513156Z"
+        },
+        {
+          "version": "1.2.1",
+          "sha256": "2503ade3b3a51d5fbefca1879e5effa243a982a4bac01dc0542ce3757739c851",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "components/bash_exec": "",
+            "components/edit_file": "",
+            "components/exec": "",
+            "components/list_files": "",
+            "components/memory_query": "",
+            "components/memory_search": "",
+            "components/read_file": "",
+            "components/search_local": "",
+            "components/web_scraper": "",
+            "components/web_search": "",
+            "components/write_file": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/efficiency": "",
+            "events/efficiency-actions": "",
+            "events/efficiency-bash": "",
+            "events/efficiency-code": "",
+            "events/efficiency-failures": "",
+            "events/efficiency-file": "",
+            "events/efficiency-reads": "",
+            "events/efficiency-stops": "",
+            "events/efficiency-tighten": "",
+            "events/efficiency-verbose": "",
+            "events/efficiency-web": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-old-result": "",
+            "events/history-window-trim": "",
+            "events/memory-capture-limit": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/memory-search-limit": "",
+            "events/memory-value-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
+          "date": "2026-11-06T07:43:10.390008069Z"
         }
       ]
     },
     "presets/frugal": {
-      "latest": "1.2.0",
+      "latest": "1.2.1",
       "description": "Minimizes token usage: compacts and folds history sooner, injects far less memory context, truncates tool output harder, and caps tool-call budgets tighter. Best for cost-sensitive sessions or a small-context- window local model.",
       "category": "context",
       "versions": [
@@ -7965,11 +8073,65 @@
           },
           "commit": "2fe211da581125bc1350208257fd5de212399d67",
           "date": "2026-10-24T15:46:26.184513156Z"
+        },
+        {
+          "version": "1.2.1",
+          "sha256": "ffe004f5564030d469e12c7d49ecfbc72c19f55bb100ba292c51c120cc1daf6c",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "components/bash_exec": "",
+            "components/edit_file": "",
+            "components/exec": "",
+            "components/list_files": "",
+            "components/memory_query": "",
+            "components/memory_search": "",
+            "components/read_file": "",
+            "components/search_local": "",
+            "components/web_scraper": "",
+            "components/web_search": "",
+            "components/write_file": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/efficiency": "",
+            "events/efficiency-actions": "",
+            "events/efficiency-bash": "",
+            "events/efficiency-code": "",
+            "events/efficiency-failures": "",
+            "events/efficiency-file": "",
+            "events/efficiency-reads": "",
+            "events/efficiency-stops": "",
+            "events/efficiency-tighten": "",
+            "events/efficiency-verbose": "",
+            "events/efficiency-web": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-old-result": "",
+            "events/history-window-trim": "",
+            "events/memory-capture-limit": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/memory-search-limit": "",
+            "events/memory-value-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
+          "date": "2026-11-06T07:43:10.390008069Z"
         }
       ]
     },
     "presets/thorough": {
-      "latest": "1.2.0",
+      "latest": "1.2.1",
       "description": "Maximizes context retention: compacts and folds much less often, injects far more memory context, keeps more of every tool result, and allows larger tool-call budgets. Best for long research/investigation sessions where losing history hurts quality more than the extra tokens cost.",
       "category": "context",
       "versions": [
@@ -8170,6 +8332,60 @@
           },
           "commit": "2fe211da581125bc1350208257fd5de212399d67",
           "date": "2026-10-24T15:46:26.184513156Z"
+        },
+        {
+          "version": "1.2.1",
+          "sha256": "609835d89b246e0fee0d41ffddc0451df383a144b6fac648de9d6b0679efb996",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "components/bash_exec": "",
+            "components/edit_file": "",
+            "components/exec": "",
+            "components/list_files": "",
+            "components/memory_query": "",
+            "components/memory_search": "",
+            "components/read_file": "",
+            "components/search_local": "",
+            "components/web_scraper": "",
+            "components/web_search": "",
+            "components/write_file": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/efficiency": "",
+            "events/efficiency-actions": "",
+            "events/efficiency-bash": "",
+            "events/efficiency-code": "",
+            "events/efficiency-failures": "",
+            "events/efficiency-file": "",
+            "events/efficiency-reads": "",
+            "events/efficiency-stops": "",
+            "events/efficiency-tighten": "",
+            "events/efficiency-verbose": "",
+            "events/efficiency-web": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-old-result": "",
+            "events/history-window-trim": "",
+            "events/memory-capture-limit": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/memory-search-limit": "",
+            "events/memory-value-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
+          "date": "2026-11-06T07:43:10.390008069Z"
         }
       ]
     },
@@ -9707,6 +9923,20 @@
         }
       ]
     },
+    "tools/load_tools": {
+      "latest": "1.0.0",
+      "description": "Load the full definitions of tools that are listed here by name only. Call it once with every tool you will need; from the next step on, call those tools as usual.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "44fedc3c568f498cf42c8d17c88b82f4ef54ad6fd0f96131d54e5f70006f0c4d",
+          "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
+          "tokens": 87,
+          "date": "2026-11-06T07:43:10.390008069Z"
+        }
+      ]
+    },
     "tools/md5_file": {
       "latest": "2.0.0",
       "description": "Compute the MD5 checksum of a file. Call once before and once after a change to prove whether the file's contents actually changed -- pair both hashes as evidence rather than asserting the change happened.",
@@ -9993,8 +10223,8 @@
       ]
     },
     "tools/session_ops": {
-      "latest": "1.16.0",
-      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); model_record is the current model's record of caught refusals ({model, count, refusals: [{kind, text, at}]}) and model_record_clear deletes it ({model, cleared}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); judges is the judge panel ({judges: [{name, criteria, graders}], auto, last}); judge_add (name, criteria), judge_remove (name), judge_grade (name, kind, pattern) and judges_clear change it; harness_sections, harness_events, presets and harness_reminders list the harness sections, events, presets and reminders, and harness_set, event_set, preset_apply and reminder_set change them (name, enabled: on|off); efficiency is enforcement's state ({value, verbose, prompt, limits}), efficiency_limit sets one limit (setting, value: a count or off) and efficiency_reset restores the defaults; recall recalls knowledge vault notes for query, or returns the last turn's recall ({seeds, hits, tokens}); knowledge is the vault's state ({value, vault, graph, build}) and knowledge_extract reads the changed notes with the auxiliary channel's model ({output}); last_request is the last request sent to the LLM with token estimates (raw: true for JSON); search_index, search_folders and search_folder (action: add|remove, folder) manage the folders the project searches; commands_help lists every installed command's usages; konfig_export and konfig_import write and apply a konfig file (path); pipelines is /kartographer's live state; tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, identity_get, session_handshake) with args and returns its answer.",
+      "latest": "1.16.1",
+      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); model_record is the current model's record of caught refusals ({model, count, refusals: [{kind, text, at}]}) and model_record_clear deletes it ({model, cleared}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); judges is the judge panel ({judges: [{name, criteria, graders}], auto, last}); judge_add (name, criteria), judge_remove (name), judge_grade (name, kind, pattern) and judges_clear change it; harness_sections, harness_events, presets and harness_reminders list the harness sections, events, presets and reminders, and harness_set, event_set, preset_apply and reminder_set change them (name, enabled: on|off); efficiency is enforcement's state ({value, verbose, prompt, limits}), efficiency_limit sets one limit (setting, value: a count or off) and efficiency_reset restores the defaults; recall recalls knowledge vault notes for query, or returns the last turn's recall ({seeds, hits, tokens}); knowledge is the vault's state ({value, vault, graph, build}) and knowledge_extract reads the changed notes with the auxiliary channel's model ({output}); last_request is the last request sent to the LLM with token estimates (raw: true for JSON); search_index, search_folders and search_folder (action: add|remove, folder) manage the folders the project searches; commands_help lists every installed command's usages; konfig_export and konfig_import write and apply a konfig file (path); pipelines is /kartographer's live state; tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, load_tools, identity_get, session_handshake) with args and returns its answer.",
       "category": "tools",
       "versions": [
         {
@@ -10087,6 +10317,13 @@
           "commit": "52123fc7287c37d29f65717cf2fb80ec5e1d055f",
           "tokens": 1852,
           "date": "2026-11-03T19:57:25.276434298Z"
+        },
+        {
+          "version": "1.16.1",
+          "sha256": "3fdd2effb691cceb4c7d50d8d4cd611fba47e4c3db8920ba3f5712f239bd8a36",
+          "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
+          "tokens": 1858,
+          "date": "2026-11-06T07:43:10.390008069Z"
         }
       ]
     },
@@ -11008,7 +11245,7 @@
       ]
     },
     "policy": {
-      "purpose": "The one tool policy: each built-in tool names a tier (T0 read, T1 write), each tier names the permission mode it needs, and default sets whether an unlisted tool is allowed or denied.",
+      "purpose": "Tool policies. permission.yaml: each built-in tool names a tier (T0 read, T1 write), each tier names the permission mode it needs, and default sets whether an unlisted tool is allowed or denied. tool-schemas.yaml: the core tools whose full definition goes on every request; the model loads the rest with load_tools.",
       "mode": "both",
       "flow": [
         {
@@ -11030,8 +11267,7 @@
         "/auto-improve",
         "/editor",
         "/instruct",
-        "kdeps run",
-        "kdeps exec"
+        "kdeps run"
       ],
       "code": [
         "kdeps (agent loop)",
