@@ -166,6 +166,23 @@
         }
       ]
     },
+    "commands/approve": {
+      "latest": "1.0.0",
+      "description": "List approval tokens; a pending one waits for you to grant it",
+      "category": "agent",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "4c4a8eba450837ad45b9139f822c5a4e9ea9e4af407e46ab8fcdaeb49d7e98cd",
+          "requires": {
+            "tools/approval_grant": "",
+            "tools/approval_list": ""
+          },
+          "commit": "c210649b04c93fa242c3852f729c8c406a83c295",
+          "date": "2026-11-06T15:42:33.415202005Z"
+        }
+      ]
+    },
     "commands/auto-improve": {
       "latest": "1.0.4",
       "description": "Run the fixed task list in this kdeps repo, jump across OpenRouter free models, fix product bugs from the instrument log, and file one GitHub issue",
@@ -6904,6 +6921,19 @@
         }
       ]
     },
+    "harness/skill-folder": {
+      "latest": "1.0.0",
+      "category": "harness",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "f0ea80084b14e4a3c7d673a6ecdaef9d5a7a83004414ffcb3a745c7e272fadc5",
+          "commit": "c210649b04c93fa242c3852f729c8c406a83c295",
+          "tokens": 27,
+          "date": "2026-11-06T15:42:33.415202005Z"
+        }
+      ]
+    },
     "harness/skills-preamble": {
       "latest": "1.0.0",
       "category": "harness",
@@ -7684,7 +7714,7 @@
       ]
     },
     "policy/tool-schemas": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "category": "guardrails",
       "versions": [
         {
@@ -7692,6 +7722,12 @@
           "sha256": "d2e0e80c715fa07cb54675fad60c808ef3fba926bf85da17b4d79db0c43083bf",
           "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
           "date": "2026-11-06T07:43:10.390008069Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "1f93d00cb71d69fea3d8d4d42b44892c296c5d03612e079380e20936866796f3",
+          "commit": "c210649b04c93fa242c3852f729c8c406a83c295",
+          "date": "2026-11-06T15:42:33.415202005Z"
         }
       ]
     },
@@ -9043,8 +9079,8 @@
       ]
     },
     "tools/approval_grant": {
-      "latest": "1.0.0",
-      "description": "Grant a pending approval token. Use when the user has explicitly approved the requested exception.",
+      "latest": "1.1.0",
+      "description": "Grant a pending approval token. Only the user grants one, with /approve \u003ctoken_id\u003e; the agent loop does not offer this tool to the model.",
       "category": "guardrails",
       "versions": [
         {
@@ -9053,6 +9089,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 57,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "87583f9bd2c8f71a8bc187884ff025d11fb88854d589003dabe471b936290361",
+          "commit": "c210649b04c93fa242c3852f729c8c406a83c295",
+          "tokens": 67,
+          "date": "2026-11-06T15:42:33.415202005Z"
         }
       ]
     },
@@ -9071,8 +9114,8 @@
       ]
     },
     "tools/approval_request": {
-      "latest": "1.0.0",
-      "description": "Request a one-time permission exception from the user. Use when a tool call is blocked by permission mode and you need user approval. Returns a token ID.",
+      "latest": "1.1.0",
+      "description": "Request a one-time permission exception from the user. Use when a tool call is blocked by permission mode and you need user approval. Returns a token ID; tell the user to run /approve \u003ctoken_id\u003e, then retry the call once they have. You cannot grant it yourself.",
       "category": "guardrails",
       "versions": [
         {
@@ -9081,6 +9124,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 99,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "5fd8ef392ba4d330155c9ea1c9642332ca1ecdebd959f8f09bb8eaeaba5f14d0",
+          "commit": "c210649b04c93fa242c3852f729c8c406a83c295",
+          "tokens": 126,
+          "date": "2026-11-06T15:42:33.415202005Z"
         }
       ]
     },
@@ -10508,8 +10558,8 @@
       ]
     },
     "tools/subagent": {
-      "latest": "1.0.0",
-      "description": "Hand a task to a subagent, a fresh agent that has not seen this conversation. It reads files and searches with read-only tools, then returns a report. Use it for a second opinion with no shared assumptions, such as reviewing a design or a change. State everything it needs in task; name files by path.",
+      "latest": "1.1.0",
+      "description": "Hand a task to a subagent, a fresh agent that has not seen this conversation. It reads files and searches with read-only tools, then returns a report. Use it for a second opinion with no shared assumptions, such as reviewing a design or a change. State everything it needs in task, and name every file it must read by absolute path: it does not know this skill's or project's folders. Several subagent calls in one reply run in parallel.",
       "category": "tools",
       "versions": [
         {
@@ -10518,6 +10568,13 @@
           "commit": "2f7a6171a0752267b5303ff9c9c57518954bf797",
           "tokens": 191,
           "date": "2026-11-06T14:09:50.197777882Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "ce7c3e83bf51f15d9aad0c98d9bfaee8690a823399586176da924bf9fe1cdbff",
+          "commit": "c210649b04c93fa242c3852f729c8c406a83c295",
+          "tokens": 247,
+          "date": "2026-11-06T15:42:33.415202005Z"
         }
       ]
     },
