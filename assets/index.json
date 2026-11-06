@@ -529,7 +529,7 @@
       ]
     },
     "commands/harness": {
-      "latest": "2.0.0",
+      "latest": "2.1.0",
       "description": "List harness sections (system-prompt text) with their enabled/disabled state",
       "category": "agent",
       "versions": [
@@ -553,6 +553,15 @@
           },
           "commit": "090975eb686e3419f7b087d37f6762be3f3d0f7b",
           "date": "2026-10-24T21:30:04.130675965Z"
+        },
+        {
+          "version": "2.1.0",
+          "sha256": "b71dce2bc68592acfcd1118d6896fb8946a16283b6f24fb01fa4ba87e26aad7b",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "2f7a6171a0752267b5303ff9c9c57518954bf797",
+          "date": "2026-11-06T14:09:50.197777882Z"
         }
       ]
     },
@@ -732,7 +741,7 @@
       ]
     },
     "commands/knowledge": {
-      "latest": "2.0.3",
+      "latest": "2.0.4",
       "description": "Show whether the knowledge vault is on, and where it is",
       "category": "agent",
       "versions": [
@@ -774,6 +783,15 @@
           },
           "commit": "52123fc7287c37d29f65717cf2fb80ec5e1d055f",
           "date": "2026-11-03T19:57:25.276434298Z"
+        },
+        {
+          "version": "2.0.4",
+          "sha256": "1f2e33572a69d5fa5be932d92dd5f76fd9fd197f62a81db963a21fcc6cdd3d1c",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "2f7a6171a0752267b5303ff9c9c57518954bf797",
+          "date": "2026-11-06T14:09:50.197777882Z"
         }
       ]
     },
@@ -1201,6 +1219,19 @@
           },
           "commit": "c4eaf710c78150d11e958053c46d0099d8a43425",
           "date": "2026-10-24T21:09:15.571897889Z"
+        }
+      ]
+    },
+    "commands/subagent": {
+      "latest": "1.3.0",
+      "description": "Show or set the model for subagent calls (knowledge extraction, refine, judges)",
+      "category": "agent",
+      "versions": [
+        {
+          "version": "1.3.0",
+          "sha256": "7fb3da8b77520c3dbb9cfc7c6fbe44242157e040e8fa1ad77b8cf86ffdd56688",
+          "commit": "2f7a6171a0752267b5303ff9c9c57518954bf797",
+          "date": "2026-11-06T14:09:50.197777882Z"
         }
       ]
     },
@@ -5850,6 +5881,21 @@
         }
       ]
     },
+    "events/subagent-max-rounds": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "f27bdb8a58bdd12f7d55f450fcab79667941594dff44eaad22eff12af28e9e36",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "2f7a6171a0752267b5303ff9c9c57518954bf797",
+          "date": "2026-11-06T14:09:50.197777882Z"
+        }
+      ]
+    },
     "events/task-round-budget": {
       "latest": "1.0.2",
       "category": "guardrails",
@@ -6871,6 +6917,19 @@
         }
       ]
     },
+    "harness/subagent-system": {
+      "latest": "1.0.0",
+      "category": "harness",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "2d4c141647eca351f29d3b551afa499cd9a822dde65c47de6acac4e19dfbbbb5",
+          "commit": "2f7a6171a0752267b5303ff9c9c57518954bf797",
+          "tokens": 106,
+          "date": "2026-11-06T14:09:50.197777882Z"
+        }
+      ]
+    },
     "harness/tool-call-early-praise": {
       "latest": "1.0.0",
       "category": "harness",
@@ -7595,7 +7654,7 @@
       ]
     },
     "policy/permission": {
-      "latest": "1.1.0",
+      "latest": "1.2.0",
       "category": "guardrails",
       "versions": [
         {
@@ -7609,6 +7668,12 @@
           "sha256": "3439628a63476d2be4d1ce741136ce86bc476631c7389a6f358e669d97af5cbe",
           "commit": "11c7828359bad373eb330cbc0f93539277ff1df4",
           "date": "2026-10-29T20:39:18.691260032Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "7e76a0a33c73fbf374330ec706dfb3d8420f7745ad56f00af3bb2e615c0d460c",
+          "commit": "2f7a6171a0752267b5303ff9c9c57518954bf797",
+          "date": "2026-11-06T14:09:50.197777882Z"
         }
       ]
     },
@@ -7880,6 +7945,19 @@
           },
           "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
           "date": "2026-11-06T07:43:10.390008069Z"
+        }
+      ]
+    },
+    "presets/design-review": {
+      "latest": "1.0.0",
+      "description": "Four fresh-context reviewers check a design document or plan before it is built. Each reads the files the answer names; any rejection sends the answer back for a revision. Changes no events.",
+      "category": "context",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "156bb71135b4d207d39f75687f0541365df8f728c329a2287850764c65ea2307",
+          "commit": "2f7a6171a0752267b5303ff9c9c57518954bf797",
+          "date": "2026-11-06T14:09:50.197777882Z"
         }
       ]
     },
@@ -10235,8 +10313,8 @@
       ]
     },
     "tools/session_ops": {
-      "latest": "1.16.1",
-      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); model_record is the current model's record of caught refusals ({model, count, refusals: [{kind, text, at}]}) and model_record_clear deletes it ({model, cleared}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); judges is the judge panel ({judges: [{name, criteria, graders}], auto, last}); judge_add (name, criteria), judge_remove (name), judge_grade (name, kind, pattern) and judges_clear change it; harness_sections, harness_events, presets and harness_reminders list the harness sections, events, presets and reminders, and harness_set, event_set, preset_apply and reminder_set change them (name, enabled: on|off); efficiency is enforcement's state ({value, verbose, prompt, limits}), efficiency_limit sets one limit (setting, value: a count or off) and efficiency_reset restores the defaults; recall recalls knowledge vault notes for query, or returns the last turn's recall ({seeds, hits, tokens}); knowledge is the vault's state ({value, vault, graph, build}) and knowledge_extract reads the changed notes with the auxiliary channel's model ({output}); last_request is the last request sent to the LLM with token estimates (raw: true for JSON); search_index, search_folders and search_folder (action: add|remove, folder) manage the folders the project searches; commands_help lists every installed command's usages; konfig_export and konfig_import write and apply a konfig file (path); pipelines is /kartographer's live state; tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, load_tools, identity_get, session_handshake) with args and returns its answer.",
+      "latest": "1.17.0",
+      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); model_record is the current model's record of caught refusals ({model, count, refusals: [{kind, text, at}]}) and model_record_clear deletes it ({model, cleared}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); judges is the judge panel ({judges: [{name, criteria, graders}], auto, last}); judge_add (name, criteria), judge_remove (name), judge_grade (name, kind, pattern) and judges_clear change it; harness_sections, harness_events, presets and harness_reminders list the harness sections, events, presets and reminders, and harness_set, event_set, preset_apply and reminder_set change them (name, enabled: on|off); efficiency is enforcement's state ({value, verbose, prompt, limits}), efficiency_limit sets one limit (setting, value: a count or off) and efficiency_reset restores the defaults; recall recalls knowledge vault notes for query, or returns the last turn's recall ({seeds, hits, tokens}); knowledge is the vault's state ({value, vault, graph, build}) and knowledge_extract reads the changed notes with the subagent channel's model ({output}); last_request is the last request sent to the LLM with token estimates (raw: true for JSON); search_index, search_folders and search_folder (action: add|remove, folder) manage the folders the project searches; commands_help lists every installed command's usages; konfig_export and konfig_import write and apply a konfig file (path); pipelines is /kartographer's live state; tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, load_tools, identity_get, session_handshake, subagent) with args and returns its answer.",
       "category": "tools",
       "versions": [
         {
@@ -10336,6 +10414,13 @@
           "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
           "tokens": 1858,
           "date": "2026-11-06T07:43:10.390008069Z"
+        },
+        {
+          "version": "1.17.0",
+          "sha256": "c290c5016fe2a9adb59970428cf4d00957a085f613f62f5bc10d32da08dc1b35",
+          "commit": "2f7a6171a0752267b5303ff9c9c57518954bf797",
+          "tokens": 1864,
+          "date": "2026-11-06T14:09:50.197777882Z"
         }
       ]
     },
@@ -10413,6 +10498,20 @@
           "commit": "99376ff2da9c31bc7d2a302ff3bdabe7269305a5",
           "tokens": 118,
           "date": "2026-10-24T04:09:46.565061934Z"
+        }
+      ]
+    },
+    "tools/subagent": {
+      "latest": "1.0.0",
+      "description": "Hand a task to a subagent, a fresh agent that has not seen this conversation. It reads files and searches with read-only tools, then returns a report. Use it for a second opinion with no shared assumptions, such as reviewing a design or a change. State everything it needs in task; name files by path.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "ad65e030f05af99746f745c6124ce3f5ed9b64b3a0ee3d1aeecc8db8ad6f638f",
+          "commit": "2f7a6171a0752267b5303ff9c9c57518954bf797",
+          "tokens": 191,
+          "date": "2026-11-06T14:09:50.197777882Z"
         }
       ]
     },
@@ -11290,7 +11389,7 @@
       ]
     },
     "presets": {
-      "purpose": "Named bundles of event and harness overrides, such as frugal (fewest tokens) or thorough (most context).",
+      "purpose": "Named bundles of event and harness overrides, such as frugal (fewest tokens) or thorough (most context), or a judge panel such as design-review.",
       "mode": "both",
       "flow": [
         {
