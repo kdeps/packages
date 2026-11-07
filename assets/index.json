@@ -5757,6 +5757,21 @@
         }
       ]
     },
+    "events/parallel": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "141e8b8908128a646d97b80340ccc3c849a77c3da1737992c1ab4eaafa6d7f5f",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "f594c7cda663e4c11dce76c35d4631e0811acc67",
+          "date": "2026-11-07T06:53:51.306439924Z"
+        }
+      ]
+    },
     "events/preamble-token-limit": {
       "latest": "1.0.0",
       "category": "guardrails",
@@ -11502,7 +11517,7 @@
         "kdeps (agent loop)",
         "agent.(*REPL).Run",
         "executor.(*Engine).Execute",
-        "agent.stageGate",
+        "agent.InstallStagePermission",
         "agent.loadPermissionPolicy"
       ]
     },
