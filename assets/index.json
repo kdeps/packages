@@ -6243,6 +6243,21 @@
         }
       ]
     },
+    "events/workflow-parallel": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "fca7e82d62823d668ae34d80b11e06c5aecec13a0b4a92d25913321e8a994209",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "25e84031d4c73a770c66f56e5688b788a02a7cee",
+          "date": "2026-11-07T04:44:05.07765614Z"
+        }
+      ]
+    },
     "harness/accuracy": {
       "latest": "1.1.0",
       "category": "harness",
