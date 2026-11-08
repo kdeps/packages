@@ -4341,6 +4341,21 @@
         }
       ]
     },
+    "events/agent-max-rounds": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "e27e32f56f54a10734082da63c6d7eec21ac7e632bfd7b87864a7126c14141db",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "a676e987c433c61d98272f2673c7b5abd1a7bbea",
+          "date": "2026-11-08T13:20:27.464445464Z"
+        }
+      ]
+    },
     "events/auto-compact": {
       "latest": "1.0.3",
       "category": "context",
@@ -4434,6 +4449,21 @@
           },
           "commit": "b82809e7ee473256ad86d7abe02f3b97f5349367",
           "date": "2026-11-01T14:22:38.285520859Z"
+        }
+      ]
+    },
+    "events/chat-max-rounds": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "3ba34b66aa1e261ce57651480752b4e564ad43eb2adb5f51d7a9742578f93bb0",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "a676e987c433c61d98272f2673c7b5abd1a7bbea",
+          "date": "2026-11-08T13:20:27.464445464Z"
         }
       ]
     },
