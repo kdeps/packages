@@ -6630,7 +6630,7 @@
       ]
     },
     "harness/judge-system": {
-      "latest": "1.0.1",
+      "latest": "1.1.0",
       "category": "evals",
       "versions": [
         {
@@ -6646,6 +6646,13 @@
           "commit": "8c3de56f31f8197e405b2fd1f1473d0e3c5aeb12",
           "tokens": 135,
           "date": "2026-10-27T20:27:52.283932281Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "e4f3efd2939d4331028cd49f80e6012cbbbbcd113e853c198c3406675652f7bf",
+          "commit": "945823d3e2e1ccba150c59f058fb43ee1a899cda",
+          "tokens": 170,
+          "date": "2026-11-08T06:28:02.616063103Z"
         }
       ]
     },
@@ -8888,7 +8895,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "1.0.9",
+      "latest": "1.0.10",
       "category": "workflow",
       "versions": [
         {
@@ -8950,6 +8957,12 @@
           "sha256": "39491ccb9b659b4a2ac7282f8430e39b08d48c232d11bf1274e51bbd5a8d76dc",
           "commit": "5bd31c655eb5464074f0429cd85920057f883af7",
           "date": "2026-10-23T06:57:31.387590662Z"
+        },
+        {
+          "version": "1.0.10",
+          "sha256": "157979985c9eaa59b118b0f6984fb95aff4cf24bf0dc53bb3ba7d98faaf1c6f6",
+          "commit": "945823d3e2e1ccba150c59f058fb43ee1a899cda",
+          "date": "2026-11-08T06:28:02.616063103Z"
         }
       ]
     },
