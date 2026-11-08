@@ -8895,7 +8895,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "1.0.10",
+      "latest": "1.0.11",
       "category": "workflow",
       "versions": [
         {
@@ -8963,6 +8963,12 @@
           "sha256": "157979985c9eaa59b118b0f6984fb95aff4cf24bf0dc53bb3ba7d98faaf1c6f6",
           "commit": "945823d3e2e1ccba150c59f058fb43ee1a899cda",
           "date": "2026-11-08T06:28:02.616063103Z"
+        },
+        {
+          "version": "1.0.11",
+          "sha256": "33910f5fed5da485fd9dbaaec051186efab97b47bcd42054c69de3e2a565c41c",
+          "commit": "ca242d5dffdca393619d87ff055971532e2150e4",
+          "date": "2026-11-08T12:27:50.911999596Z"
         }
       ]
     },
@@ -11576,8 +11582,14 @@
       ],
       "code": [
         "kdeps (agent loop)",
-        "agent.ApplyKonfig",
-        "agent.mergeUserPresets"
+        "agent.(*REPL).Run",
+        "executor.(*Engine).Execute",
+        "parallel.Run",
+        "executor.(*Engine).runResources",
+        "llm.(*Adapter).Execute",
+        "judge.PresetJudges",
+        "agent.configureJudges",
+        "agent.PresetByName"
       ]
     },
     "providers": {
