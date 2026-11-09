@@ -8937,7 +8937,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "1.0.13",
+      "latest": "1.1.0",
       "category": "workflow",
       "versions": [
         {
@@ -9023,11 +9023,17 @@
           "sha256": "3000a6e69c5c827613e7b616ab4d6641e592165dc3bf5bbc95fead29cc929b8a",
           "commit": "84cfd3fe301075509eb660e166a01efbb7f0c9fb",
           "date": "2026-11-09T14:15:22.427890425Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "a3576c48f9a20ffaaced931d7668b7d01aa8d8b2c77bf87cc5ef676c33b0faa7",
+          "commit": "ccdd77b0bc42d50404e2564fdf40d3d5c26ea408",
+          "date": "2026-11-09T20:56:45.439617851Z"
         }
       ]
     },
     "templates/agency": {
-      "latest": "1.0.0",
+      "latest": "2.0.0",
       "category": "workflow",
       "versions": [
         {
@@ -9035,11 +9041,17 @@
           "sha256": "1fc04f971b0bc1c13b67fbae160b83b5549731a926e3f71e71ac0f21102c3825",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "8b945d0ffef1f84b9bbcd79134b97c604e1cc53280f7e2071ad6a4d1b03690a1",
+          "commit": "ccdd77b0bc42d50404e2564fdf40d3d5c26ea408",
+          "date": "2026-11-09T20:56:45.439617851Z"
         }
       ]
     },
     "templates/api-service": {
-      "latest": "1.0.0",
+      "latest": "2.0.0",
       "category": "workflow",
       "versions": [
         {
@@ -9047,6 +9059,12 @@
           "sha256": "07a6d50376abaa46d073e4eaa1bf4d3a2622424fa91e67df7e65340f0ac1d92b",
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "1983e28fd3d1e056abe67a413d5ece07da3ad3a53955240c1a1a63d12ad92c7d",
+          "commit": "ccdd77b0bc42d50404e2564fdf40d3d5c26ea408",
+          "date": "2026-11-09T20:56:45.439617851Z"
         }
       ]
     },
@@ -9123,7 +9141,7 @@
       ]
     },
     "templates/sql-agent": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "category": "workflow",
       "versions": [
         {
@@ -9137,11 +9155,17 @@
           "sha256": "669fed71390d2b2f9ac6263d2a5beaa6e976de3b3125b91819c975cc3c47d194",
           "commit": "b9ae9a26efea318866f7dcd77065cfbbeb8ea6be",
           "date": "2026-10-15T00:24:30.02418423Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "637dbe8a216dbce70a139d7a61b95d9281e4c7126c03751f23c0834a7ea9bcde",
+          "commit": "ccdd77b0bc42d50404e2564fdf40d3d5c26ea408",
+          "date": "2026-11-09T20:56:45.439617851Z"
         }
       ]
     },
     "templates/whatsapp-bot": {
-      "latest": "1.0.1",
+      "latest": "2.0.0",
       "category": "workflow",
       "versions": [
         {
@@ -9155,6 +9179,12 @@
           "sha256": "cb6e89e518164194d7a866e5d567182300d1e6d2c9d34224c1c7ffb2d30f6e9d",
           "commit": "eeacd82342b175d0d55e6bdb62dfcf85d75b3ca8",
           "date": "2026-10-21T19:11:40.811367087Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "c1843779d72e4cf59aed329f886db5532d0627a4f7940c257f13595b5956e8de",
+          "commit": "ccdd77b0bc42d50404e2564fdf40d3d5c26ea408",
+          "date": "2026-11-09T20:56:45.439617851Z"
         }
       ]
     },
