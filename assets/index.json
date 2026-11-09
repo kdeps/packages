@@ -2793,6 +2793,24 @@
         }
       ]
     },
+    "components/knowledge_recall": {
+      "latest": "1.0.0",
+      "description": "Recall knowledge vault notes for a query through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "ef6b85cef4cd49eec6cde3fb102af881fca7ef1246542e166b51673ff126dc2e",
+          "requires": {
+            "schemas/v1": "",
+            "tools/knowledge_recall": ""
+          },
+          "commit": "fd3e5ddb522294d209810ecd5e31945e8ff67511",
+          "tokens": 55,
+          "date": "2026-11-09T23:15:01.595545937Z"
+        }
+      ]
+    },
     "components/list_files": {
       "latest": "1.0.1",
       "description": "List a directory through the kdeps API and return names and types",
