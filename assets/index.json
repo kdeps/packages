@@ -8125,7 +8125,7 @@
       ]
     },
     "presets/design-review": {
-      "latest": "1.0.0",
+      "latest": "2.0.0",
       "description": "Four fresh-context reviewers check a design document or plan before it is built. Each reads the files the answer names; any rejection sends the answer back for a revision. Changes no events.",
       "category": "context",
       "versions": [
@@ -8134,6 +8134,12 @@
           "sha256": "156bb71135b4d207d39f75687f0541365df8f728c329a2287850764c65ea2307",
           "commit": "2f7a6171a0752267b5303ff9c9c57518954bf797",
           "date": "2026-11-06T14:09:50.197777882Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "9b173b604b83828a5f8c7c7fec4132b4b19a5f1a8b1e2b3f8a1f058d75564d6f",
+          "commit": "2f6eb44e481c37834f8f4791e89945b9f52ccf7a",
+          "date": "2026-11-10T06:37:08.473275778Z"
         }
       ]
     },
@@ -8955,7 +8961,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "1.1.0",
+      "latest": "1.2.0",
       "category": "workflow",
       "versions": [
         {
@@ -9047,6 +9053,12 @@
           "sha256": "a3576c48f9a20ffaaced931d7668b7d01aa8d8b2c77bf87cc5ef676c33b0faa7",
           "commit": "ccdd77b0bc42d50404e2564fdf40d3d5c26ea408",
           "date": "2026-11-09T20:56:45.439617851Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "5d3e75f4ace4b3daf005f3e18f181043d9d99fa762d42ca5c41542fbedb812df",
+          "commit": "2f6eb44e481c37834f8f4791e89945b9f52ccf7a",
+          "date": "2026-11-10T06:37:08.473275778Z"
         }
       ]
     },
@@ -9069,7 +9081,7 @@
       ]
     },
     "templates/api-service": {
-      "latest": "2.0.0",
+      "latest": "3.0.0",
       "category": "workflow",
       "versions": [
         {
@@ -9083,6 +9095,12 @@
           "sha256": "1983e28fd3d1e056abe67a413d5ece07da3ad3a53955240c1a1a63d12ad92c7d",
           "commit": "ccdd77b0bc42d50404e2564fdf40d3d5c26ea408",
           "date": "2026-11-09T20:56:45.439617851Z"
+        },
+        {
+          "version": "3.0.0",
+          "sha256": "671951f88bed6fb292e40aef2654167b4a4e1742b5a16298de83c404d9cc70fc",
+          "commit": "2f6eb44e481c37834f8f4791e89945b9f52ccf7a",
+          "date": "2026-11-10T06:37:08.473275778Z"
         }
       ]
     },
@@ -9159,7 +9177,7 @@
       ]
     },
     "templates/sql-agent": {
-      "latest": "2.0.0",
+      "latest": "3.0.0",
       "category": "workflow",
       "versions": [
         {
@@ -9179,11 +9197,17 @@
           "sha256": "637dbe8a216dbce70a139d7a61b95d9281e4c7126c03751f23c0834a7ea9bcde",
           "commit": "ccdd77b0bc42d50404e2564fdf40d3d5c26ea408",
           "date": "2026-11-09T20:56:45.439617851Z"
+        },
+        {
+          "version": "3.0.0",
+          "sha256": "d797a1fe698ec9bf872695e1f25f75d8cb2977f340e78c175c74476e361916da",
+          "commit": "2f6eb44e481c37834f8f4791e89945b9f52ccf7a",
+          "date": "2026-11-10T06:37:08.473275778Z"
         }
       ]
     },
     "templates/whatsapp-bot": {
-      "latest": "2.0.0",
+      "latest": "3.0.0",
       "category": "workflow",
       "versions": [
         {
@@ -9203,6 +9227,12 @@
           "sha256": "c1843779d72e4cf59aed329f886db5532d0627a4f7940c257f13595b5956e8de",
           "commit": "ccdd77b0bc42d50404e2564fdf40d3d5c26ea408",
           "date": "2026-11-09T20:56:45.439617851Z"
+        },
+        {
+          "version": "3.0.0",
+          "sha256": "a6bde97fefda887db91e91e1a57376045974c574f57e4f4d4b3d1cd9997b7c94",
+          "commit": "2f6eb44e481c37834f8f4791e89945b9f52ccf7a",
+          "date": "2026-11-10T06:37:08.473275778Z"
         }
       ]
     },
