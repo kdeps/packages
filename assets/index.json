@@ -964,6 +964,19 @@
         }
       ]
     },
+    "commands/plan": {
+      "latest": "1.0.0",
+      "description": "Show or toggle the planning council that plans each task (on by default)",
+      "category": "agent",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "fb5b3d9e6f474c0db2d360ad2251556ff07367a7755aeaa1b6b514e54bc2a658",
+          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
+          "date": "2026-11-10T11:19:50.964325087Z"
+        }
+      ]
+    },
     "commands/prompt": {
       "latest": "2.0.0",
       "description": "Show the exact messages+tools sent to the LLM on the last call, with token estimates",
@@ -5820,6 +5833,51 @@
         }
       ]
     },
+    "events/plan-council-max-orders": {
+      "latest": "1.0.0",
+      "category": "agent",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "571da98d50a775871aa0f5e3e46d28d97165ea7760a1cda85b344f2099a53e9d",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
+          "date": "2026-11-10T11:19:50.964325087Z"
+        }
+      ]
+    },
+    "events/plan-council-rounds": {
+      "latest": "1.0.0",
+      "category": "agent",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "3f17a9f438381bff10b6fe3d9d9ae3fcba638dcf92116f8d07297ea50f75fdb6",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
+          "date": "2026-11-10T11:19:50.964325087Z"
+        }
+      ]
+    },
+    "events/plan-council-size": {
+      "latest": "1.0.0",
+      "category": "agent",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "b9032cbacb31da195e0e0ecdd0939e7f32e71012289020a8af169c09081a1bdf",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
+          "date": "2026-11-10T11:19:50.964325087Z"
+        }
+      ]
+    },
     "events/preamble-token-limit": {
       "latest": "1.0.0",
       "category": "guardrails",
@@ -6940,6 +6998,71 @@
         }
       ]
     },
+    "harness/plan-council-draft": {
+      "latest": "1.0.0",
+      "category": "agent",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "f642d85c54bf355bca4f6aaed514d37a2b2797f16f354047290b181ad9063bf2",
+          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
+          "tokens": 114,
+          "date": "2026-11-10T11:19:50.964325087Z"
+        }
+      ]
+    },
+    "harness/plan-council-members": {
+      "latest": "1.0.0",
+      "category": "agent",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "04cf60af66318800c5e9a5170bcd1d2664ee1aefc261f208e6a2d0a016768798",
+          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
+          "tokens": 53,
+          "date": "2026-11-10T11:19:50.964325087Z"
+        }
+      ]
+    },
+    "harness/plan-council-plan": {
+      "latest": "1.0.0",
+      "category": "agent",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "a9155761df68f9ec509e7f4cf5d6145edc99fbcb69ede20e676129c7c5b0d9f4",
+          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
+          "tokens": 94,
+          "date": "2026-11-10T11:19:50.964325087Z"
+        }
+      ]
+    },
+    "harness/plan-council-prioritize": {
+      "latest": "1.0.0",
+      "category": "agent",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "1e13c0262697d215cdf208271aec01b45b61df7b7f989553e04240f8f5931d0d",
+          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
+          "tokens": 79,
+          "date": "2026-11-10T11:19:50.964325087Z"
+        }
+      ]
+    },
+    "harness/plan-council-revise": {
+      "latest": "1.0.0",
+      "category": "agent",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "b0175aae1dbccc356ed0776894d8f8d1dab0bc83aa64eb21d0a1570c3f3f8f92",
+          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
+          "tokens": 156,
+          "date": "2026-11-10T11:19:50.964325087Z"
+        }
+      ]
+    },
     "harness/refine-system": {
       "latest": "1.0.0",
       "category": "context",
@@ -7830,7 +7953,7 @@
       ]
     },
     "policy/permission": {
-      "latest": "1.3.0",
+      "latest": "1.4.0",
       "category": "guardrails",
       "versions": [
         {
@@ -7856,6 +7979,12 @@
           "sha256": "9776a85be8be178150b0575a9c962f749ca2015a58106598d25b6b354974940f",
           "commit": "ade2200cc416f0fc4b82489aa2ffb6d550f47037",
           "date": "2026-11-06T20:46:15.190323617Z"
+        },
+        {
+          "version": "1.4.0",
+          "sha256": "2cb83eba8726f1a0876743908e947726b6541327622d59a3a8122de2818cbf9b",
+          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
+          "date": "2026-11-10T11:19:50.964325087Z"
         }
       ]
     },
@@ -10480,6 +10609,20 @@
         }
       ]
     },
+    "tools/plan_update": {
+      "latest": "1.0.0",
+      "description": "Update the plan progress file the planning council wrote for this task. Mark a job order doing, done, blocked or dropped with a short note, or add a job order you discovered (status added, with title). The file keeps every update in order.",
+      "category": "agent",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "8e119d76e462a6acf4374860771cd4add3c0703ad0308b138f18bdfeb1e20819",
+          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
+          "tokens": 178,
+          "date": "2026-11-10T11:19:50.964325087Z"
+        }
+      ]
+    },
     "tools/python": {
       "latest": "1.0.0",
       "description": "Run a Python script and return its result: stdout parsed as JSON when possible, otherwise the raw text. Use through the python component for pipeline steps written in Python. Give either script (inline source) or scriptFile (a .py file). Optional: args, env, timeout, venvName, pythonVersion, packages.",
@@ -10613,8 +10756,8 @@
       ]
     },
     "tools/session_ops": {
-      "latest": "1.18.0",
-      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); model_record is the current model's record of caught refusals ({model, count, refusals: [{kind, text, at}]}) and model_record_clear deletes it ({model, cleared}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); judges is the judge panel ({judges: [{name, criteria, graders}], auto, last}); judge_add (name, criteria), judge_remove (name), judge_grade (name, kind, pattern) and judges_clear change it; harness_sections, harness_events, presets and harness_reminders list the harness sections, events, presets and reminders, and harness_set, event_set, preset_apply and reminder_set change them (name, enabled: on|off); efficiency is enforcement's state ({value, verbose, prompt, limits}), efficiency_limit sets one limit (setting, value: a count or off) and efficiency_reset restores the defaults; recall recalls knowledge vault notes for query, or returns the last turn's recall ({seeds, hits, tokens}); knowledge is the vault's state ({value, vault, graph, build}) and knowledge_extract reads the changed notes with the subagent channel's model ({output}); last_request is the last request sent to the LLM with token estimates (raw: true for JSON); search_index, search_folders and search_folder (action: add|remove, folder) manage the folders the project searches; commands_help lists every installed command's usages; konfig_export and konfig_import write and apply a konfig file (path); pipelines is /kartographer's live state; tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, load_tools, identity_get, session_handshake, subagent, ask_question) with args and returns its answer.",
+      "latest": "1.19.0",
+      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); model_record is the current model's record of caught refusals ({model, count, refusals: [{kind, text, at}]}) and model_record_clear deletes it ({model, cleared}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); judges is the judge panel ({judges: [{name, criteria, graders}], auto, last}); judge_add (name, criteria), judge_remove (name), judge_grade (name, kind, pattern) and judges_clear change it; harness_sections, harness_events, presets and harness_reminders list the harness sections, events, presets and reminders, and harness_set, event_set, preset_apply and reminder_set change them (name, enabled: on|off); efficiency is enforcement's state ({value, verbose, prompt, limits}), efficiency_limit sets one limit (setting, value: a count or off) and efficiency_reset restores the defaults; recall recalls knowledge vault notes for query, or returns the last turn's recall ({seeds, hits, tokens}); knowledge is the vault's state ({value, vault, graph, build}) and knowledge_extract reads the changed notes with the subagent channel's model ({output}); last_request is the last request sent to the LLM with token estimates (raw: true for JSON); search_index, search_folders and search_folder (action: add|remove, folder) manage the folders the project searches; commands_help lists every installed command's usages; konfig_export and konfig_import write and apply a konfig file (path); pipelines is /kartographer's live state; tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, load_tools, identity_get, session_handshake, subagent, ask_question, plan_update) with args and returns its answer.",
       "category": "tools",
       "versions": [
         {
@@ -10728,6 +10871,13 @@
           "commit": "ade2200cc416f0fc4b82489aa2ffb6d550f47037",
           "tokens": 1871,
           "date": "2026-11-06T20:46:15.190323617Z"
+        },
+        {
+          "version": "1.19.0",
+          "sha256": "323a46f30ffbfb3ffc115b9dd682feeaaa4649a6888f233794a15bb6f96ad561",
+          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
+          "tokens": 1879,
+          "date": "2026-11-10T11:19:50.964325087Z"
         }
       ]
     },
