@@ -10674,7 +10674,7 @@
       ]
     },
     "tools/read_file": {
-      "latest": "2.0.0",
+      "latest": "2.0.1",
       "description": "Read a file from the local filesystem. Returns the contents with a 1-based line number on every line (`  42\\tcode$`) - use those numbers for edit_file insert/view. Tabs render as ^I, other control characters as ^X, and a $ marks the true end of each line, so indentation, trailing whitespace, and stray control characters are visible instead of hidden. IMPORTANT: ^I, ^X, and the trailing $ are a display convention this tool adds - the real file does NOT contain those literal characters. When quoting text back into edit_file's old_str, write the real tab/control character (or match a whole line via view_range/anchor instead), never the literal caret sequence - copying \"^I\" as text will not match a real tab byte. Plain text, source code, configuration files, and documentation are read directly. For PDF, DOCX, EPUB, RTF, and ODT documents, CSV/HTML structured parsing, or RAG chunking, use load_document. Pass match_id (from a search_local result) instead of file_path/offset to jump straight to that hit.",
       "category": "tools",
       "versions": [
@@ -10698,6 +10698,13 @@
           "commit": "a95d505bd8f75dd07b9a43634ef9126200a63ff8",
           "tokens": 592,
           "date": "2026-10-24T15:06:57.219678409Z"
+        },
+        {
+          "version": "2.0.1",
+          "sha256": "29c1c6ac40b4fff04568b29d949d85532eeb5c561b8ff9ce0d89f64ba46dfc02",
+          "commit": "8cc280ea2426ecc77513f079cbdc63600e69985f",
+          "tokens": 592,
+          "date": "2026-11-12T14:53:39.273788183Z"
         }
       ]
     },
