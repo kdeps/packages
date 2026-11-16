@@ -11708,6 +11708,7 @@
       ],
       "code": [
         "kdeps (agent loop)",
+        "agent.LoadLoopChat",
         "yaml.(*Parser).ParseWorkflow",
         "yaml.(*Parser).loadAssetComponents"
       ]
@@ -12127,6 +12128,7 @@
       ],
       "code": [
         "kdeps (agent loop)",
+        "agent.LoadLoopChat",
         "validator.NewSchemaValidator",
         "validator.schemaFS"
       ]
