@@ -9204,7 +9204,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "1.2.0",
+      "latest": "1.3.0",
       "category": "workflow",
       "versions": [
         {
@@ -9302,6 +9302,12 @@
           "sha256": "5d3e75f4ace4b3daf005f3e18f181043d9d99fa762d42ca5c41542fbedb812df",
           "commit": "2f6eb44e481c37834f8f4791e89945b9f52ccf7a",
           "date": "2026-11-10T06:37:08.473275778Z"
+        },
+        {
+          "version": "1.3.0",
+          "sha256": "ad82dd825b359a3a87d75deae3f9571fc59cc5ebdfa92a7fc507a66ca3cd72ca",
+          "commit": "e3a88e65cfa8bfc2f6b2a0dca6be801d488b5496",
+          "date": "2026-11-16T15:14:49.037326077Z"
         }
       ]
     },
@@ -11597,7 +11603,7 @@
     },
     "codegraph": {
       "purpose": "The code graph's business rules: ranking weights, stopwords, result limits and path bounds.",
-      "mode": "agent",
+      "mode": "both",
       "flow": [
         {
           "label": "the code graph is built or queried"
@@ -11611,7 +11617,8 @@
         }
       ],
       "usedBy": [
-        "kdeps (agent loop)"
+        "kdeps (agent loop)",
+        "kdeps run"
       ],
       "code": [
         "kdeps (agent loop)",
