@@ -1143,7 +1143,7 @@
       ]
     },
     "commands/search": {
-      "latest": "2.0.0",
+      "latest": "2.0.1",
       "description": "Search the indexed directory and feed the results to the model",
       "category": "agent",
       "versions": [
@@ -1174,6 +1174,16 @@
           },
           "commit": "ddd9c26cc8c06a47224b805a6346df52d1a23f65",
           "date": "2026-10-24T23:29:13.092261924Z"
+        },
+        {
+          "version": "2.0.1",
+          "sha256": "5605a2482a6344a907898b8bae3b66896e57063523989a239b30ad34dae34f6b",
+          "requires": {
+            "tools/search_local": "",
+            "tools/session_ops": ""
+          },
+          "commit": "36ef083e4a9e1df81b16a9b88cf51c2fd87c2947",
+          "date": "2026-11-16T15:59:32.605468964Z"
         }
       ]
     },
@@ -9359,6 +9369,18 @@
         }
       ]
     },
+    "templates/assistant": {
+      "latest": "1.0.0",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "d553ed4873450ef007f90a48767618ca6649a72bbf36e88e4518813994c7d46e",
+          "commit": "36ef083e4a9e1df81b16a9b88cf51c2fd87c2947",
+          "date": "2026-11-16T15:59:32.605468964Z"
+        }
+      ]
+    },
     "templates/knowledge": {
       "latest": "2.2.1",
       "category": "workflow",
@@ -11707,6 +11729,9 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
+        "/auto-improve",
+        "/editor",
+        "/instruct",
         "kdeps run"
       ],
       "code": [
@@ -11968,7 +11993,6 @@
       ],
       "code": [
         "kdeps (agent loop)",
-        "agent.(*REPL).Run",
         "executor.(*Engine).Execute",
         "agent.InstallStagePermission",
         "agent.loadPermissionPolicy"
@@ -11998,7 +12022,6 @@
       ],
       "code": [
         "kdeps (agent loop)",
-        "agent.(*REPL).Run",
         "executor.(*Engine).Execute",
         "parallel.Run",
         "executor.(*Engine).runResources",
