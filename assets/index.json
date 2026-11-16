@@ -9204,7 +9204,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "1.3.0",
+      "latest": "1.4.0",
       "category": "workflow",
       "versions": [
         {
@@ -9308,6 +9308,12 @@
           "sha256": "ad82dd825b359a3a87d75deae3f9571fc59cc5ebdfa92a7fc507a66ca3cd72ca",
           "commit": "e3a88e65cfa8bfc2f6b2a0dca6be801d488b5496",
           "date": "2026-11-16T15:14:49.037326077Z"
+        },
+        {
+          "version": "1.4.0",
+          "sha256": "b4cdc20dbdf3ebd98bbb3dd04dd13b416a86ff01848f26da20b215dffede944e",
+          "commit": "f8ad033528a444e3df45935c058a861569802a49",
+          "date": "2026-11-16T15:35:34.301648481Z"
         }
       ]
     },
