@@ -4494,7 +4494,7 @@
       ]
     },
     "events/chat-max-rounds": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "category": "guardrails",
       "versions": [
         {
@@ -4505,6 +4505,30 @@
           },
           "commit": "a676e987c433c61d98272f2673c7b5abd1a7bbea",
           "date": "2026-11-08T13:20:27.464445464Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "8c2784addcc6274f599fbd7a6496529ecf0a9ba85212da6c16d0d556d8cec87b",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "d0a8b14876db814c57f86051037811eed9db3366",
+          "date": "2026-11-16T19:53:45.669130172Z"
+        }
+      ]
+    },
+    "events/chat-retries": {
+      "latest": "1.0.0",
+      "category": "guardrails",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "4cab84d5987373577c420300faff5e2d9f6f2bcaf276ace27e09dcc7bd03c346",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "d0a8b14876db814c57f86051037811eed9db3366",
+          "date": "2026-11-16T19:53:45.669130172Z"
         }
       ]
     },
@@ -9214,7 +9238,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "1.4.0",
+      "latest": "1.5.0",
       "category": "workflow",
       "versions": [
         {
@@ -9324,6 +9348,12 @@
           "sha256": "b4cdc20dbdf3ebd98bbb3dd04dd13b416a86ff01848f26da20b215dffede944e",
           "commit": "f8ad033528a444e3df45935c058a861569802a49",
           "date": "2026-11-16T15:35:34.301648481Z"
+        },
+        {
+          "version": "1.5.0",
+          "sha256": "e2ac463062ddbcf2d6eb2cb3bc7362bc50073c1c7801e56af3c11ecde926c71d",
+          "commit": "d0a8b14876db814c57f86051037811eed9db3366",
+          "date": "2026-11-16T19:53:45.669130172Z"
         }
       ]
     },
