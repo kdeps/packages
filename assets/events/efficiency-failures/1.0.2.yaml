@@ -1,0 +1,13 @@
+version: 1.0.2
+# kdeps update installs these with this event: the action it runs
+requires:
+  actions/block: ""
+name: efficiency-failures
+on:
+  # rounds caps how many failure briefs a workflow chat attaches per turn.
+  # The agent loop does not fire this action. A failed tool result there
+  # always ends with [TOOL FAILED].
+  rounds: 5
+# run: block is validation only. The workflow chat reads rounds. It does
+# not fire the action.
+run: block

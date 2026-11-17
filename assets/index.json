@@ -978,7 +978,7 @@
       ]
     },
     "commands/prompt": {
-      "latest": "2.0.0",
+      "latest": "2.0.1",
       "description": "Show the exact messages+tools sent to the LLM on the last call, with token estimates",
       "category": "agent",
       "versions": [
@@ -1002,6 +1002,15 @@
           },
           "commit": "ddd9c26cc8c06a47224b805a6346df52d1a23f65",
           "date": "2026-10-24T23:29:13.092261924Z"
+        },
+        {
+          "version": "2.0.1",
+          "sha256": "691b0fd9f3abfd3a92aaa94070b2a4576149a7b984ebe286d7bf5beb1f434ca8",
+          "requires": {
+            "tools/session_ops": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -1263,8 +1272,8 @@
       ]
     },
     "commands/subagent": {
-      "latest": "1.3.0",
-      "description": "Show or set the model for subagent calls (knowledge extraction, refine, judges)",
+      "latest": "1.3.1",
+      "description": "Show or set the model for subagent calls (knowledge extraction)",
       "category": "agent",
       "versions": [
         {
@@ -1272,6 +1281,12 @@
           "sha256": "7fb3da8b77520c3dbb9cfc7c6fbe44242157e040e8fa1ad77b8cf86ffdd56688",
           "commit": "2f7a6171a0752267b5303ff9c9c57518954bf797",
           "date": "2026-11-06T14:09:50.197777882Z"
+        },
+        {
+          "version": "1.3.1",
+          "sha256": "57173adc29f17769b05f7b580358a0f8ab33bde76265a3383bd17c2ae266c4b0",
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -4383,7 +4398,7 @@
       ]
     },
     "events/agent-max-rounds": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -4394,11 +4409,20 @@
           },
           "commit": "a676e987c433c61d98272f2673c7b5abd1a7bbea",
           "date": "2026-11-08T13:20:27.464445464Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "44f94b8dd2d28d4846753a058301557be37adf11ee44551b0a10a84751666e01",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "events/auto-compact": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "context",
       "versions": [
         {
@@ -4430,11 +4454,20 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "f3554d6931c6e8aa11d6912a1e6e27737287e6c5c12f6f8af5d30ef16bca9ac9",
+          "requires": {
+            "actions/compact": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "events/bash-call-budget": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "category": "guardrails",
       "versions": [
         {
@@ -4475,6 +4508,15 @@
           },
           "commit": "62af3e9192810c3cbda7022e91eb59e6f3e76be9",
           "date": "2026-10-23T20:52:35.969098504Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "8a9ae8d50b18fa30beca306268f278a57e2bceca1d400d549c5101d3e33762e9",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -4494,7 +4536,7 @@
       ]
     },
     "events/chat-max-rounds": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "category": "guardrails",
       "versions": [
         {
@@ -4514,6 +4556,15 @@
           },
           "commit": "d0a8b14876db814c57f86051037811eed9db3366",
           "date": "2026-11-16T19:53:45.669130172Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "daa7991340d5428c41fec4784ad67a573403b5000a1d3320d77d466a7b9c11fc",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -4533,7 +4584,7 @@
       ]
     },
     "events/code-call-budget": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "category": "guardrails",
       "versions": [
         {
@@ -4574,6 +4625,15 @@
           },
           "commit": "62af3e9192810c3cbda7022e91eb59e6f3e76be9",
           "date": "2026-10-23T20:52:35.969098504Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "0aaff022700dfe9ff7e24115ca05fc8fece9796ec55c5a0ee0aab644c84e1b24",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -4593,7 +4653,7 @@
       ]
     },
     "events/convergence-block": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "guardrails",
       "versions": [
         {
@@ -4625,6 +4685,15 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "0df5cbfcea5c864165ad0b724be879c125f6397a5e4e2dacd5358587755d7498",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -4728,7 +4797,7 @@
       ]
     },
     "events/efficiency-failures": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "guardrails",
       "versions": [
         {
@@ -4745,6 +4814,15 @@
           },
           "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
           "date": "2026-10-13T23:23:48.422354488Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "d6b7e6d7af810bf27ae1d7ef652f123e14f67de4a0167563c2ba2e5653dc5a03",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -4920,7 +4998,7 @@
       ]
     },
     "events/file-call-budget": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "category": "guardrails",
       "versions": [
         {
@@ -4961,11 +5039,20 @@
           },
           "commit": "62af3e9192810c3cbda7022e91eb59e6f3e76be9",
           "date": "2026-10-23T20:52:35.969098504Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "72c8c3aa168b52a1d185714b0c89628f19acebaf6b962fcc81c07394365e4bd0",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "events/file-read-limit": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "guardrails",
       "versions": [
         {
@@ -4997,11 +5084,20 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "8059f85bd81dd0e401229542bac352922b3285551bacc89b1697ea171ef2be53",
+          "requires": {
+            "actions/reject": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "events/fold": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "context",
       "versions": [
         {
@@ -5033,11 +5129,20 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "2bbec07a2110b992eb1ca2c4a65cc8216a27d77c1c32f1ea6522e1b62b3b7150",
+          "requires": {
+            "actions/compact": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "events/force-answer-digest": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "context",
       "versions": [
         {
@@ -5069,6 +5174,15 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "488670828d55e1d88144b73373969d5db4dbebefe1b0db0cf13c997344adb092",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -5139,7 +5253,7 @@
       ]
     },
     "events/history-window-old-result": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -5150,11 +5264,20 @@
           },
           "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
           "date": "2026-11-06T07:43:10.390008069Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "53a532b18bcb91b94ca8a81aa3db2728d597d5659bc82cdf75e2c87af4ecd79e",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "events/history-window-trim": {
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "category": "context",
       "versions": [
         {
@@ -5195,11 +5318,20 @@
           },
           "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
           "date": "2026-11-06T07:43:10.390008069Z"
+        },
+        {
+          "version": "1.0.5",
+          "sha256": "8b1f28588ab168b3b1bdcc34a7a0670f371d90414d5d67a8f62a4e357f92d869",
+          "requires": {
+            "actions/drop_oldest": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "events/identical-tool-calls": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "guardrails",
       "versions": [
         {
@@ -5231,11 +5363,20 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "ec84edddf342aa6e4aa11f4933f9b30c13239c6850ca2f74bda8effe7035f60b",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "events/judge-iterations": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "evals",
       "versions": [
         {
@@ -5267,11 +5408,20 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "b1180fb21437c9c4bb4dc572d85d82e1dd0d3a39c89b2a19125f9dc869c9b50c",
+          "requires": {
+            "actions/accept_last": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "events/judge-max-rounds": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "evals",
       "versions": [
         {
@@ -5303,6 +5453,15 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "3efa584d04c6fd9ab927791c16e55ef0f57ce9ecfb5639f32c01a1659709ee6e",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -5412,7 +5571,7 @@
       ]
     },
     "events/memory-capture-limit": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "memory",
       "versions": [
         {
@@ -5423,11 +5582,20 @@
           },
           "commit": "2fe211da581125bc1350208257fd5de212399d67",
           "date": "2026-10-24T15:46:26.184513156Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "105a4a488cfd725cabeb42266b9e11603aced4a4a633c07a61a6b1b9a9015894",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "events/memory-chain-max": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "memory",
       "versions": [
         {
@@ -5459,6 +5627,15 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "58720924c198437fc3dd8321c4a6f1cf18e1c6faea65a2024702c525a1a7e7bc",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -5478,7 +5655,7 @@
       ]
     },
     "events/memory-focus-max": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "memory",
       "versions": [
         {
@@ -5510,6 +5687,15 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "db6edf1cd77bb77351ba49fb1594244821062438787096e25fc6056352408d00",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -5559,7 +5745,7 @@
       ]
     },
     "events/memory-keys-limit": {
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "category": "memory",
       "versions": [
         {
@@ -5600,6 +5786,15 @@
           },
           "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
           "date": "2026-11-06T07:43:10.390008069Z"
+        },
+        {
+          "version": "1.0.5",
+          "sha256": "d33cb2d4bdf4adbdc8772e4875731abd8394a606dc62d691f5fc93bd5b04452c",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -5619,7 +5814,7 @@
       ]
     },
     "events/memory-prompt-limit": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "context",
       "versions": [
         {
@@ -5651,6 +5846,15 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "3c5769d3d00a0efc34a4f6ad365632aa5f8a3dbbe3f5a458348552832cfc1765",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -5670,7 +5874,7 @@
       ]
     },
     "events/memory-search-limit": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "memory",
       "versions": [
         {
@@ -5681,6 +5885,15 @@
           },
           "commit": "2fe211da581125bc1350208257fd5de212399d67",
           "date": "2026-10-24T15:46:26.184513156Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "a37ae51a45592730df72569f88d58fd6dabf73e3aa9cdb5be8e5dfb60c3bcf75",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -5760,7 +5973,7 @@
       ]
     },
     "events/memory-value-limit": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "memory",
       "versions": [
         {
@@ -5771,6 +5984,15 @@
           },
           "commit": "2fe211da581125bc1350208257fd5de212399d67",
           "date": "2026-10-24T15:46:26.184513156Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "12f23d9f35c3a142b02c7fcc6c56ae21eed4d8b653e6773b8f0ba5dc75bc8e03",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -6003,7 +6225,7 @@
       ]
     },
     "events/rel-memory-limit": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "memory",
       "versions": [
         {
@@ -6035,6 +6257,15 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "1bb61c549a9c6b5e9464571d065c3cf315840df2ad0f30b9cd891a721db55435",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -6054,7 +6285,7 @@
       ]
     },
     "events/subagent-max-rounds": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -6065,6 +6296,15 @@
           },
           "commit": "2f7a6171a0752267b5303ff9c9c57518954bf797",
           "date": "2026-11-06T14:09:50.197777882Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "df56e2026e80280e2bbb952c6702afd4334be7284cf9e2496c4910278fb3784d",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -6096,7 +6336,7 @@
       ]
     },
     "events/thinking-budget-auto": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "model",
       "versions": [
         {
@@ -6107,11 +6347,20 @@
           },
           "commit": "bcf5cb93b6569209300ba72ee5f71eccf741f76d",
           "date": "2026-10-24T19:49:52.127658631Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "32784591ca4595cc678989cbce46f0133772e33cf28a4736213f05b02d0a887a",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "events/thinking-budget-high": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "model",
       "versions": [
         {
@@ -6122,11 +6371,20 @@
           },
           "commit": "bcf5cb93b6569209300ba72ee5f71eccf741f76d",
           "date": "2026-10-24T19:49:52.127658631Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "ea3d176f08c6ce863d88319ff46990d9925fdc435eaec70d5dbbb3978cabc4a7",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "events/thinking-budget-low": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "model",
       "versions": [
         {
@@ -6137,11 +6395,20 @@
           },
           "commit": "bcf5cb93b6569209300ba72ee5f71eccf741f76d",
           "date": "2026-10-24T19:49:52.127658631Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "27df4c0d38106d5f47fbb385b0750a296cb2593707e6dbf4c7ff1330fd0e692d",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "events/thinking-budget-medium": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "model",
       "versions": [
         {
@@ -6152,11 +6419,20 @@
           },
           "commit": "bcf5cb93b6569209300ba72ee5f71eccf741f76d",
           "date": "2026-10-24T19:49:52.127658631Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "51ebfadc88d075c079fc1a43a6a89a5e1ff912ecfeb75f2bc8fa155f2ba3df2c",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "events/thinking-budget-minimal": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "model",
       "versions": [
         {
@@ -6167,11 +6443,20 @@
           },
           "commit": "bcf5cb93b6569209300ba72ee5f71eccf741f76d",
           "date": "2026-10-24T19:49:52.127658631Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "82339190e8434162900c52a26f7e86c19fb3eef6142b5baefa734911cbb5d38f",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "events/thinking-budget-xhigh": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "model",
       "versions": [
         {
@@ -6182,6 +6467,15 @@
           },
           "commit": "bcf5cb93b6569209300ba72ee5f71eccf741f76d",
           "date": "2026-10-24T19:49:52.127658631Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "2301422b1f8cb333d66f9c517d09c76e5db87496227cbfbbe4a5398924a390aa",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -6201,7 +6495,7 @@
       ]
     },
     "events/tool-error-truncate": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "category": "context",
       "versions": [
         {
@@ -6233,11 +6527,20 @@
           },
           "commit": "22a0f30a47baa05b687bcd7a5c28a25e384c7509",
           "date": "2026-10-23T00:43:33.519248404Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "efdfb8f7485443f4076c297db4f429860fbd9c14045e5ecdacb2816f7bfef41f",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "events/tool-result-truncate": {
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "category": "context",
       "versions": [
         {
@@ -6278,6 +6581,15 @@
           },
           "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
           "date": "2026-11-06T07:43:10.390008069Z"
+        },
+        {
+          "version": "1.0.5",
+          "sha256": "490014532775c349c754a237f226172e4c0f4803c3a43c27da67ee9e8edde510",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -6354,7 +6666,7 @@
       ]
     },
     "events/web-call-budget": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "category": "guardrails",
       "versions": [
         {
@@ -6395,6 +6707,15 @@
           },
           "commit": "62af3e9192810c3cbda7022e91eb59e6f3e76be9",
           "date": "2026-10-23T20:52:35.969098504Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "bac4948592434e787718e7f1f85b194867b5e971ff0ddf7c8b07e4085506145c",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -8089,7 +8410,7 @@
       ]
     },
     "policy/permission": {
-      "latest": "1.4.0",
+      "latest": "1.4.1",
       "category": "guardrails",
       "versions": [
         {
@@ -8121,11 +8442,17 @@
           "sha256": "2cb83eba8726f1a0876743908e947726b6541327622d59a3a8122de2818cbf9b",
           "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
           "date": "2026-11-10T11:19:50.964325087Z"
+        },
+        {
+          "version": "1.4.1",
+          "sha256": "07834dbb54b8c3f326d9c39b51d68f4c73c3e3a530413a86660519048a5f79ba",
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "policy/tool-schemas": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "category": "guardrails",
       "versions": [
         {
@@ -8139,11 +8466,17 @@
           "sha256": "1f93d00cb71d69fea3d8d4d42b44892c296c5d03612e079380e20936866796f3",
           "commit": "c210649b04c93fa242c3852f729c8c406a83c295",
           "date": "2026-11-06T15:42:33.415202005Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "7d06d0ea66abf56c48232262d8850396d526c2fd587856a109e2771355600bce",
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "presets/balanced": {
-      "latest": "1.2.1",
+      "latest": "1.2.2",
       "description": "The shipped, out-of-the-box defaults for every token-economy event. Applying this after switching to \"frugal\" or \"thorough\" resets them all in one step, without needing to hand-edit or delete override files.",
       "category": "context",
       "versions": [
@@ -8398,6 +8731,50 @@
           },
           "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
           "date": "2026-11-06T07:43:10.390008069Z"
+        },
+        {
+          "version": "1.2.2",
+          "sha256": "0dfaaf3740f19ac4006d4e3675efefd172b0bf326f90530650b556a31520054e",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "components/bash_exec": "",
+            "components/edit_file": "",
+            "components/exec": "",
+            "components/list_files": "",
+            "components/memory_query": "",
+            "components/memory_search": "",
+            "components/read_file": "",
+            "components/search_local": "",
+            "components/web_scraper": "",
+            "components/web_search": "",
+            "components/write_file": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/efficiency-failures": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-old-result": "",
+            "events/history-window-trim": "",
+            "events/memory-capture-limit": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/memory-search-limit": "",
+            "events/memory-value-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -8421,7 +8798,7 @@
       ]
     },
     "presets/frugal": {
-      "latest": "1.2.1",
+      "latest": "1.2.2",
       "description": "Minimizes token usage: compacts and folds history sooner, injects far less memory context, truncates tool output harder, and caps tool-call budgets tighter. Best for cost-sensitive sessions or a small-context- window local model.",
       "category": "context",
       "versions": [
@@ -8676,11 +9053,55 @@
           },
           "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
           "date": "2026-11-06T07:43:10.390008069Z"
+        },
+        {
+          "version": "1.2.2",
+          "sha256": "45b63988b568bffda5ecd62dc95f6e1ca487242e7196b697bb6dd57b7eb111fd",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "components/bash_exec": "",
+            "components/edit_file": "",
+            "components/exec": "",
+            "components/list_files": "",
+            "components/memory_query": "",
+            "components/memory_search": "",
+            "components/read_file": "",
+            "components/search_local": "",
+            "components/web_scraper": "",
+            "components/web_search": "",
+            "components/write_file": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/efficiency-failures": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-old-result": "",
+            "events/history-window-trim": "",
+            "events/memory-capture-limit": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/memory-search-limit": "",
+            "events/memory-value-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
     "presets/thorough": {
-      "latest": "1.2.1",
+      "latest": "1.2.2",
       "description": "Maximizes context retention: compacts and folds much less often, injects far more memory context, keeps more of every tool result, and allows larger tool-call budgets. Best for long research/investigation sessions where losing history hurts quality more than the extra tokens cost.",
       "category": "context",
       "versions": [
@@ -8935,6 +9356,50 @@
           },
           "commit": "2dbc7ead3cb14d30c78b3a36586c68e0670fb7d0",
           "date": "2026-11-06T07:43:10.390008069Z"
+        },
+        {
+          "version": "1.2.2",
+          "sha256": "aa20176923d8f6a8857baf2e61ba2400ba827a084002e6f1d40d5e7aea8d71a6",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "components/bash_exec": "",
+            "components/edit_file": "",
+            "components/exec": "",
+            "components/list_files": "",
+            "components/memory_query": "",
+            "components/memory_search": "",
+            "components/read_file": "",
+            "components/search_local": "",
+            "components/web_scraper": "",
+            "components/web_search": "",
+            "components/write_file": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/efficiency-failures": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-old-result": "",
+            "events/history-window-trim": "",
+            "events/memory-capture-limit": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/memory-search-limit": "",
+            "events/memory-value-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -9244,7 +9709,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "1.5.0",
+      "latest": "1.5.1",
       "category": "workflow",
       "versions": [
         {
@@ -9360,6 +9825,12 @@
           "sha256": "e2ac463062ddbcf2d6eb2cb3bc7362bc50073c1c7801e56af3c11ecde926c71d",
           "commit": "d0a8b14876db814c57f86051037811eed9db3366",
           "date": "2026-11-16T19:53:45.669130172Z"
+        },
+        {
+          "version": "1.5.1",
+          "sha256": "770c6dc355b8966df8f89bceee94e7f07106aa6e3b3397b20e7dbc6481ff1d5c",
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -10935,8 +11406,8 @@
       ]
     },
     "tools/session_ops": {
-      "latest": "1.19.0",
-      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); model_record is the current model's record of caught refusals ({model, count, refusals: [{kind, text, at}]}) and model_record_clear deletes it ({model, cleared}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); judges is the judge panel ({judges: [{name, criteria, graders}], auto, last}); judge_add (name, criteria), judge_remove (name), judge_grade (name, kind, pattern) and judges_clear change it; harness_sections, harness_events, presets and harness_reminders list the harness sections, events, presets and reminders, and harness_set, event_set, preset_apply and reminder_set change them (name, enabled: on|off); efficiency is enforcement's state ({value, verbose, prompt, limits}), efficiency_limit sets one limit (setting, value: a count or off) and efficiency_reset restores the defaults; recall recalls knowledge vault notes for query, or returns the last turn's recall ({seeds, hits, tokens}); knowledge is the vault's state ({value, vault, graph, build}) and knowledge_extract reads the changed notes with the subagent channel's model ({output}); last_request is the last request sent to the LLM with token estimates (raw: true for JSON); search_index, search_folders and search_folder (action: add|remove, folder) manage the folders the project searches; commands_help lists every installed command's usages; konfig_export and konfig_import write and apply a konfig file (path); pipelines is /kartographer's live state; tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, load_tools, identity_get, session_handshake, subagent, ask_question, plan_update) with args and returns its answer.",
+      "latest": "1.20.0",
+      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); model_record is the current model's record of caught refusals ({model, count, refusals: [{kind, text, at}]}) and model_record_clear deletes it ({model, cleared}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); harness_sections, harness_events, presets and harness_reminders list the harness sections, events, presets and reminders, and harness_set, event_set, preset_apply and reminder_set change them (name, enabled: on|off); recall recalls knowledge vault notes for query, or returns the last turn's recall ({seeds, hits, tokens}); knowledge is the vault's state ({value, vault, graph, build}) and knowledge_extract reads the changed notes with the subagent channel's model ({output}); last_request is the last request sent to the LLM with token estimates (raw: true for JSON); search_index, search_folders and search_folder (action: add|remove, folder) manage the folders the project searches; commands_help lists every installed command's usages; konfig_export and konfig_import write and apply a konfig file (path); pipelines is /kartographer's live state; tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, load_tools, identity_get, subagent, ask_question) with args and returns its answer.",
       "category": "tools",
       "versions": [
         {
@@ -11057,6 +11528,13 @@
           "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
           "tokens": 1879,
           "date": "2026-11-10T11:19:50.964325087Z"
+        },
+        {
+          "version": "1.20.0",
+          "sha256": "b6f1182d8431c8c97d4191fa472da3c3edef1915de2d0a588ca2186d09ca0412",
+          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
+          "tokens": 1643,
+          "date": "2026-11-17T03:51:03.246069185Z"
         }
       ]
     },
@@ -11766,9 +12244,6 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/auto-improve",
-        "/editor",
-        "/instruct",
         "kdeps run"
       ],
       "code": [
@@ -11840,7 +12315,7 @@
       ]
     },
     "harness": {
-      "purpose": "The text kdeps sends the model in agent mode: the sections of the system prompt, and the prompts behind compaction, goals, judges, prompt refinement and nudges.",
+      "purpose": "The text kdeps sends the model in agent mode: the sections of the system prompt, and the prompts behind compaction, judges, and nudges.",
       "mode": "both",
       "flow": [
         {
@@ -12040,7 +12515,7 @@
       "mode": "both",
       "flow": [
         {
-          "label": "/harness preset or /efficiency preset"
+          "label": "/harness preset"
         },
         {
           "label": "the preset rewrites events and harness sections",
@@ -12200,10 +12675,10 @@
       "mode": "both",
       "flow": [
         {
-          "label": "kdeps starts, or /theme"
+          "label": "kdeps starts"
         },
         {
-          "label": "the theme colors the terminal",
+          "label": "the normal palette colors the terminal",
           "here": true
         },
         {
@@ -12214,15 +12689,16 @@
         "kdeps (agent loop)",
         "/update",
         "kdeps run",
-        "kdeps konfig export",
         "kdeps konfig import",
         "kdeps install",
         "kdeps list",
-        "kdeps uninstall"
+        "kdeps uninstall",
+        "kdeps update"
       ],
       "code": [
         "kdeps (agent loop)",
-        "agent.SetTheme"
+        "agent.ApplyKonfig",
+        "agent.loadBuiltinThemes"
       ]
     },
     "tools": {
