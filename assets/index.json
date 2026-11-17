@@ -7537,7 +7537,7 @@
       ]
     },
     "models/cloud": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "model",
       "versions": [
         {
@@ -7545,6 +7545,12 @@
           "sha256": "99ac0a28ae3bcef25abb9a9fa39d72bd72b22109d5c3abd5dbc486cd15290215",
           "commit": "fbe6f41504e499a05bc695d2f3ba58d0f25722b6",
           "date": "2026-10-13T12:57:46.86637668Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "3339d8b88bb891a790b4d03bdfc100f86fb8eb638c75538fd13618ad5ab29b0f",
+          "commit": "d1fd532ea47f9eb512f629d436df3c1d400a6afe",
+          "date": "2026-11-17T00:15:44.408224462Z"
         }
       ]
     },
