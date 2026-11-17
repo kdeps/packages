@@ -12196,7 +12196,8 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "kdeps run"
+        "kdeps run",
+        "kdeps exec"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -12258,7 +12259,7 @@
       ],
       "code": [
         "kdeps (agent loop)",
-        "agent.LoadLoopChat",
+        "agent.LoadWorkflowFile",
         "yaml.(*Parser).ParseWorkflow",
         "yaml.(*Parser).loadAssetComponents"
       ]
@@ -12280,7 +12281,8 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "kdeps run"
+        "kdeps run",
+        "kdeps exec"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -12669,7 +12671,7 @@
       ],
       "code": [
         "kdeps (agent loop)",
-        "agent.LoadLoopChat",
+        "agent.LoadWorkflowFile",
         "validator.NewSchemaValidator",
         "validator.schemaFS"
       ]
