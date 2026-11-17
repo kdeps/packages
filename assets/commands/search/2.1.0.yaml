@@ -1,0 +1,27 @@
+version: 2.1.0
+# kdeps update installs these with this command: what its run steps use
+requires:
+  tools/session_ops: ""
+  tools/search_local: ""
+name: search
+order: 320
+usage:
+  - args: "<term>"
+    help: Search the working directory and feed the results to the model
+  - args: index
+    help: Build or update the search index of the working directory
+subcommands:
+  index:
+    run:
+      - tool: session_ops
+        args: {operation: search_index}
+        print: "{{.output}}"
+  "*":                    # /search <term>: the search_local tool over the working directory
+    run:
+      - tool: search_local
+        args: {query: "$@", index: true, limit: 20}
+        print: |-
+          {{if not .results}}search: no results for this query{{else}}**Search results ({{.count}} files):**
+          {{range .results}}
+          - {{.path}} [match={{.matchCount}} score={{printf "%.2f" .score}}]{{if .snippet}}
+            `{{trunc 160 .snippet}}`{{end}}{{end}}{{end}}
