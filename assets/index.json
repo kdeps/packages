@@ -1152,8 +1152,8 @@
       ]
     },
     "commands/search": {
-      "latest": "2.1.0",
-      "description": "Search the working directory and feed the results to the model",
+      "latest": "2.2.0",
+      "description": "Search the indexed directory and feed the results to the model",
       "category": "agent",
       "versions": [
         {
@@ -1203,6 +1203,16 @@
           },
           "commit": "dde408eb2605e5010540da10dec58359fc716b77",
           "date": "2026-11-17T05:45:31.414624005Z"
+        },
+        {
+          "version": "2.2.0",
+          "sha256": "ed78311fc3b648394d17c79e6f8d8dc7fa47b69310492232fac5c596c143f505",
+          "requires": {
+            "tools/search_local": "",
+            "tools/session_ops": ""
+          },
+          "commit": "b17f93c02d169d4e368118db7f7dd3eec2f55636",
+          "date": "2026-11-18T11:41:17.734029216Z"
         }
       ]
     },
@@ -1282,8 +1292,8 @@
       ]
     },
     "commands/subagent": {
-      "latest": "1.3.2",
-      "description": "Show or set the model for subagent calls",
+      "latest": "1.4.0",
+      "description": "Show or set the model for subagent calls (knowledge extraction)",
       "category": "agent",
       "versions": [
         {
@@ -1303,6 +1313,12 @@
           "sha256": "e5e815d99c787f5655ec900b1a9c224152c7c11482fb6b8a1ab445d3c3d95956",
           "commit": "dde408eb2605e5010540da10dec58359fc716b77",
           "date": "2026-11-17T05:45:31.414624005Z"
+        },
+        {
+          "version": "1.4.0",
+          "sha256": "2b6ae9a7393efbadb22c3333cd038a2a4c240ad05ee1cabb3bf5a29169f2a1ef",
+          "commit": "b17f93c02d169d4e368118db7f7dd3eec2f55636",
+          "date": "2026-11-18T11:41:17.734029216Z"
         }
       ]
     },
@@ -7796,7 +7812,7 @@
       ]
     },
     "knowledge/search": {
-      "latest": "1.3.2",
+      "latest": "1.4.0",
       "category": "rag",
       "versions": [
         {
@@ -7816,6 +7832,12 @@
           "sha256": "271a3a3de06c6f349e47806400de33b2641a1b6f3f96b56d928a2d74f094adfb",
           "commit": "dde408eb2605e5010540da10dec58359fc716b77",
           "date": "2026-11-17T05:45:31.414624005Z"
+        },
+        {
+          "version": "1.4.0",
+          "sha256": "9efc0f154341623735f57fe22d0ee1d5e72d5a9d78916fdd9e78fe5e0ea4985d",
+          "commit": "b17f93c02d169d4e368118db7f7dd3eec2f55636",
+          "date": "2026-11-18T11:41:17.734029216Z"
         }
       ]
     },
@@ -11382,8 +11404,8 @@
       ]
     },
     "tools/search_local": {
-      "latest": "1.4.1",
-      "description": "Search for text patterns in local files using ripgrep. Returns matching files with a snippet, and (when the query is found) a match_id/line/revision - pass match_id to read_file to jump straight to that hit. Use for finding usages, patterns, or strings across the codebase. Requires: query (search term). path is the directory to search; leave it out to search the working directory. Optional: glob (file pattern), limit (max results, default 3), index (rank results with the folder index); index also accepts fuzzy, maxDistance, indexDBPath and graphBoost.",
+      "latest": "1.5.0",
+      "description": "Search for text patterns in local files using ripgrep. Returns matching files with a snippet, and (when the query is found) a match_id/line/revision - pass match_id to read_file to jump straight to that hit. Use for finding usages, patterns, or strings across the codebase. Requires: query (search term). path is the directory to search; leave it out to search every folder of the working project (its own and the search folders its card lists). Optional: glob (file pattern), limit (max results, default 3), index (rank results with the folder index); index also accepts fuzzy, maxDistance, indexDBPath and graphBoost.",
       "category": "rag",
       "versions": [
         {
@@ -11427,6 +11449,13 @@
           "commit": "dde408eb2605e5010540da10dec58359fc716b77",
           "tokens": 376,
           "date": "2026-11-17T05:45:31.414624005Z"
+        },
+        {
+          "version": "1.5.0",
+          "sha256": "1152c5420a49f8310268ccc47d45a0e9365f6198fb2a90e81cee044b2f3dbd7a",
+          "commit": "b17f93c02d169d4e368118db7f7dd3eec2f55636",
+          "tokens": 391,
+          "date": "2026-11-18T11:41:17.734029216Z"
         }
       ]
     },
@@ -11459,8 +11488,8 @@
       ]
     },
     "tools/session_ops": {
-      "latest": "1.21.0",
-      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); model_record is the current model's record of caught refusals ({model, count, refusals: [{kind, text, at}]}) and model_record_clear deletes it ({model, cleared}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); harness_sections, harness_events, presets and harness_reminders list the harness sections, events, presets and reminders, and harness_set, event_set, preset_apply and reminder_set change them (name, enabled: on|off); last_request is the last request sent to the LLM with token estimates (raw: true for JSON); search_index builds or updates the search index of the working directory ({output}); commands_help lists every installed command's usages; konfig_export and konfig_import write and apply a konfig file (path); pipelines is /kartographer's live state; tool runs one tool that exists only in the agent session (judge_verdict, load_skill, load_tools, identity_get, subagent, ask_question) with args and returns its answer.",
+      "latest": "1.22.0",
+      "description": "Read or change the active agent session: messages lists every message ({turns, messages: [{turn, role, content}]}); last_reply is the latest assistant message ({text}); get returns a session setting's state ({value, ...}); set stores a value the setting's command asset lists and returns the new state; clear empties the history, summarizing it first when it has at least summarize_min_turns turns ({turns, summary}); compact folds older turns into a summary ({summary, turns, keep}); sessions lists this folder's saved sessions ({sessions: [{id, name, prompt, model, turns, updated}]}); save stores the session ({id, name}); load and import make a saved session (or a JSONL file at path) the live one ({id, turns}); delete removes one ({id}); checkpoint marks the current entry ({id}); goto returns to an entry, stashing the turns after it ({id, found, turns}); branches lists the stashed ones ({branches: [{branch, at, ids}]}); model switches the model (name: a model, a .gguf/.llamafile URL, or an OpenAI-compatible base URL; {model, registered?, ambiguous?, closest?}); model_pick opens the model picker ({model, picked}); model_default saves the startup model ({model}); models lists cloud models by backend and local ones ({current, cloud, local}); model_favorite stars a model (on: on|off); loop_settings reads the agent loop settings and loop_set changes one (setting, value); servers lists running local model servers and server_kill stops one (model); hf_download downloads a GGUF file from HuggingFace and registers it (repo, file; {path, alias}); model_record is the current model's record of caught refusals ({model, count, refusals: [{kind, text, at}]}) and model_record_clear deletes it ({model, cleared}); skills and prompts list the loaded skills ({skills: [{name, description}]}) and prompt templates ({prompts: [{name, hint, description}]}); reload rereads them from disk ({skills, prompts}: counts); memory_entries lists memory entries, all or the matches of query, by key or (order recent) newest first, capped by limit ({total, more, query, entries: [{key, type, value}]}); memory_entry is one entry in full ({key, type, value, related, updated, graph}); harness_sections, harness_events, presets and harness_reminders list the harness sections, events, presets and reminders, and harness_set, event_set, preset_apply and reminder_set change them (name, enabled: on|off); recall recalls knowledge vault notes for query, or returns the last turn's recall ({seeds, hits, tokens}); knowledge is the vault's state ({value, vault, graph, build}) and knowledge_extract reads the changed notes with the subagent channel's model ({output}); last_request is the last request sent to the LLM with token estimates (raw: true for JSON); search_index, search_folders and search_folder (action: add|remove, folder) manage the folders the project searches; commands_help lists every installed command's usages; konfig_export and konfig_import write and apply a konfig file (path); pipelines is /kartographer's live state; tool runs one tool that exists only in the agent session (judge_verdict, knowledge_recall, knowledge_card_get, knowledge_card_update, knowledge_note_save, load_skill, load_tools, identity_get, subagent, ask_question) with args and returns its answer.",
       "category": "tools",
       "versions": [
         {
@@ -11595,6 +11624,13 @@
           "commit": "dde408eb2605e5010540da10dec58359fc716b77",
           "tokens": 1458,
           "date": "2026-11-17T05:45:31.414624005Z"
+        },
+        {
+          "version": "1.22.0",
+          "sha256": "4c90b2c7a1513281bb2076b4084e1a3309c57e5c75f9c1c12f852073afe4aac7",
+          "commit": "b17f93c02d169d4e368118db7f7dd3eec2f55636",
+          "tokens": 1643,
+          "date": "2026-11-18T11:41:17.734029216Z"
         }
       ]
     },
@@ -12402,6 +12438,7 @@
         "/settings",
         "kdeps run",
         "kdeps konfig export",
+        "kdeps knowledge build",
         "kdeps konfig import"
       ],
       "code": [
@@ -12438,35 +12475,40 @@
       ]
     },
     "knowledge": {
-      "purpose": "How the local search index splits text: word length, stopwords, stems, and which files it reads.",
+      "purpose": "The knowledge graph's recall policy: the word lengths and stopwords a query is matched on.",
       "mode": "both",
       "flow": [
         {
-          "label": "a local search starts"
+          "label": "a knowledge-graph recall query arrives"
         },
         {
-          "label": "the search rules split words and skip secret files",
+          "label": "its words are split and stemmed"
+        },
+        {
+          "label": "the recall rules set the word lengths and stopwords",
           "here": true
         },
         {
-          "label": "matching files are scored"
+          "label": "matching nodes are scored"
         },
         {
-          "label": "the best lines come back"
+          "label": "the best notes fill the budget"
         }
       ],
       "usedBy": [
         "kdeps (agent loop)",
-        "/editor",
-        "kdeps run"
+        "kdeps run",
+        "kdeps knowledge folders remove",
+        "kdeps knowledge build",
+        "kdeps knowledge folders",
+        "kdeps knowledge folders add",
+        "kdeps knowledge folders index"
       ],
       "code": [
         "kdeps (agent loop)",
         "agent.(*REPL).Run",
-        "api.CallTool",
-        "agent.memorySearchLocalFileFallback",
-        "searchlocal.(*Executor).Execute",
-        "searchrules.SearchTokenizer"
+        "knowledge.(*Topic).Add",
+        "knowledge.recallRules"
       ]
     },
     "memory": {
@@ -12701,22 +12743,25 @@
       ]
     },
     "templates": {
-      "purpose": "Project scaffolds for kdeps new.",
-      "mode": "workflow",
+      "purpose": "Project scaffolds for kdeps new, and the knowledge vault's files (routing table, schema, graph page).",
+      "mode": "both",
       "flow": [
         {
-          "label": "kdeps new"
+          "label": "kdeps new, or the knowledge vault's first use"
         },
         {
           "label": "the template is rendered",
           "here": true
         },
         {
-          "label": "the project files are written"
+          "label": "the project or vault files are written"
         }
       ],
       "usedBy": [
-        "kdeps new"
+        "kdeps (agent loop)",
+        "kdeps new",
+        "kdeps run",
+        "kdeps knowledge build"
       ],
       "code": [
         "kdeps new",
