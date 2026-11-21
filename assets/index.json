@@ -2582,7 +2582,7 @@
       ]
     },
     "events/judge-max-rounds": {
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "category": "evals",
       "versions": [
         {
@@ -2623,6 +2623,15 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.5",
+          "sha256": "5b01314fb062e7f46c21c5644327b29ab06f3c21e08d13381072f151bdd7ff96",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "ae51f2e0b427d39de4b6f25877a892945c963f98",
+          "date": "2026-11-21T20:56:17.674193133Z"
         }
       ]
     },
@@ -3395,7 +3404,7 @@
       ]
     },
     "events/subagent-max-rounds": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "guardrails",
       "versions": [
         {
@@ -3415,6 +3424,15 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "783995682e25839d1ac2c714e59bbd86c11fe74db1830eafb0e6969c4d23f4c1",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "ae51f2e0b427d39de4b6f25877a892945c963f98",
+          "date": "2026-11-21T20:56:17.674193133Z"
         }
       ]
     },
