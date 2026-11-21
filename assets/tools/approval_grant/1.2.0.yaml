@@ -1,0 +1,7 @@
+version: 1.2.0
+description: Grant a pending approval token. Only the user grants one, on the kdeps API; the agent loop does not offer this tool to the model.
+parameters:
+  token_id:
+    type: string
+    description: The token ID to grant (from approval_request)
+    required: true
