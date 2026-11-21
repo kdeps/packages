@@ -4574,7 +4574,7 @@
       ]
     },
     "knowledge/prompts": {
-      "latest": "1.3.0",
+      "latest": "1.3.1",
       "category": "rag",
       "versions": [
         {
@@ -4594,6 +4594,12 @@
           "sha256": "d68e06aa7b474c054e2d4955ea76828082903dfb63d193365580ab578f87a7df",
           "commit": "b77ba82aa8791d86e123070184c13b3e9e3b6577",
           "date": "2026-11-03T07:35:45.754774224Z"
+        },
+        {
+          "version": "1.3.1",
+          "sha256": "064d3618459c6f9816ce2a1e4414d264e8a02bbe6fe0afed00e4a3d9b48f3efd",
+          "commit": "e3adce8e327c2936c0102377b1cb96cab48b7590",
+          "date": "2026-11-21T22:29:41.505890454Z"
         }
       ]
     },
@@ -8992,7 +8998,7 @@
       "mode": "both",
       "flow": [
         {
-          "label": "a chat resource or /model names a model"
+          "label": "a chat resource names a model"
         },
         {
           "label": "the registry resolves it: download, local server or provider",
@@ -9055,14 +9061,14 @@
       "mode": "both",
       "flow": [
         {
-          "label": "/harness preset or /efficiency preset"
+          "label": "a chat names judgePreset"
         },
         {
-          "label": "the preset rewrites events and harness sections",
+          "label": "the preset's judge panel loads",
           "here": true
         },
         {
-          "label": "every later turn uses them"
+          "label": "the judges review the answer"
         }
       ],
       "usedBy": [
