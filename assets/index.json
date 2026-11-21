@@ -2161,281 +2161,23 @@
         }
       ]
     },
-    "events/efficiency": {
-      "latest": "1.0.2",
-      "category": "guardrails",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "bdfd2c1e52f3bab6178ac584c27d90f088d022f137fa63e84f55644abb3091ef",
-          "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
-          "date": "2026-10-10T03:09:18.488367863Z"
-        },
-        {
-          "version": "1.0.1",
-          "sha256": "481c15ade94bb8f4f0fd96a61a4a2352e727fccd348272241663fdadcc909931",
-          "requires": {
-            "actions/block": ""
-          },
-          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
-          "date": "2026-10-13T23:23:48.422354488Z"
-        },
-        {
-          "version": "1.0.2",
-          "sha256": "c2b4e6faea4f583641a72d4a3248695179a0b9a160eddf55a2de6d74cc45ad51",
-          "requires": {
-            "actions/block": ""
-          },
-          "commit": "c9a6f7b2f80ec4d20d4294742ddb22a52c3087a5",
-          "date": "2026-11-21T14:28:28.615259723Z"
-        }
-      ]
-    },
-    "events/efficiency-actions": {
-      "latest": "1.0.1",
-      "category": "guardrails",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "6df1c611691c7729070c727acb02bddf0333c473bdd9a90abf42a11bad3b5e96",
-          "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
-          "date": "2026-10-10T03:09:18.488367863Z"
-        },
-        {
-          "version": "1.0.1",
-          "sha256": "9fe1790fa8a9d42bd012e70173d1eb75bf7d9e84981c208a37a20607edbc8ad6",
-          "requires": {
-            "actions/block": ""
-          },
-          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
-          "date": "2026-10-13T23:23:48.422354488Z"
-        }
-      ]
-    },
-    "events/efficiency-bash": {
-      "latest": "1.0.1",
-      "category": "guardrails",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "1655ecfb5b5403202a98c51401ea0c7c111607030f28639203f7d2a3a25dfb73",
-          "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
-          "date": "2026-10-10T03:09:18.488367863Z"
-        },
-        {
-          "version": "1.0.1",
-          "sha256": "69894005fed2951acc309e11b388fc7a745ad462c9b4b7e600e8135fc3b13f23",
-          "requires": {
-            "actions/block": ""
-          },
-          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
-          "date": "2026-10-13T23:23:48.422354488Z"
-        }
-      ]
-    },
-    "events/efficiency-code": {
-      "latest": "1.0.1",
-      "category": "guardrails",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "e8c70aad3cf305e13b7ca123421ee45f662e3a068a1cbbd08bbac1b20cc07bae",
-          "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
-          "date": "2026-10-10T03:09:18.488367863Z"
-        },
-        {
-          "version": "1.0.1",
-          "sha256": "2854027bdeee11ea6732f4f36c0fa662c6680c7ff951f3933233380403e5f44a",
-          "requires": {
-            "actions/block": ""
-          },
-          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
-          "date": "2026-10-13T23:23:48.422354488Z"
-        }
-      ]
-    },
-    "events/efficiency-drops": {
+    "events/failure-briefs": {
       "latest": "1.0.0",
       "category": "guardrails",
       "versions": [
         {
           "version": "1.0.0",
-          "sha256": "6877f06d73d936c7b438ebdf93569c1a182b8819d98df4e5338b89fc7441443a",
+          "sha256": "49b3abd65519467d040083ce57dd7473e29ccd67b404562ffe301b29ad44db2a",
           "requires": {
-            "actions/block": ""
+            "actions/cap": ""
           },
-          "commit": "b7b0917ee474c5f93287696c62379c79a42065a6",
-          "date": "2026-11-01T14:27:58.233095905Z"
-        }
-      ]
-    },
-    "events/efficiency-failures": {
-      "latest": "1.0.3",
-      "category": "guardrails",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "7bc2b5d166e413dcc6fc3adcb6ae9d9df6c782bfbc3e61524f0cbe745127597c",
-          "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
-          "date": "2026-10-10T03:09:18.488367863Z"
-        },
-        {
-          "version": "1.0.1",
-          "sha256": "35b5f7d1cce8724ec49dabd178291d1b0f4c118f58257e42fd53f6204bfbbd87",
-          "requires": {
-            "actions/block": ""
-          },
-          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
-          "date": "2026-10-13T23:23:48.422354488Z"
-        },
-        {
-          "version": "1.0.2",
-          "sha256": "d6b7e6d7af810bf27ae1d7ef652f123e14f67de4a0167563c2ba2e5653dc5a03",
-          "requires": {
-            "actions/block": ""
-          },
-          "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
-          "date": "2026-11-17T03:51:03.246069185Z"
-        },
-        {
-          "version": "1.0.3",
-          "sha256": "fd2d99dcaff7676e2590cc39502e50a7b414281e9906b4aa13274245736d70ad",
-          "requires": {
-            "actions/block": ""
-          },
-          "commit": "4bbf0fd62042f3195df8c899fddc4508273b1073",
-          "date": "2026-11-21T08:22:10.25133089Z"
-        }
-      ]
-    },
-    "events/efficiency-file": {
-      "latest": "1.0.1",
-      "category": "guardrails",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "3b74f50c81a4d1c18855d23d3b04e72bdd371ff9579c97f518f466ac64916c16",
-          "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
-          "date": "2026-10-10T03:09:18.488367863Z"
-        },
-        {
-          "version": "1.0.1",
-          "sha256": "a1c5ad350ec1c252a3e29f952cf701f913979894043f8d1bcde911a88ab3580c",
-          "requires": {
-            "actions/block": ""
-          },
-          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
-          "date": "2026-10-13T23:23:48.422354488Z"
-        }
-      ]
-    },
-    "events/efficiency-reads": {
-      "latest": "1.0.1",
-      "category": "guardrails",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "db28458aacbdd41c5100e7c13a1343176e5f4bd8a3800355d6d59d6c7e196213",
-          "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
-          "date": "2026-10-10T03:09:18.488367863Z"
-        },
-        {
-          "version": "1.0.1",
-          "sha256": "afe7cba6f2964ddf224047cd638e6ee1625b9758a80aa61a231d9a39ebae3814",
-          "requires": {
-            "actions/block": ""
-          },
-          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
-          "date": "2026-10-13T23:23:48.422354488Z"
-        }
-      ]
-    },
-    "events/efficiency-stops": {
-      "latest": "1.0.1",
-      "category": "guardrails",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "92c15e94f672e2ff6196b4295c61750b58daebb7f289914089f85c21da4b789c",
-          "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
-          "date": "2026-10-10T03:09:18.488367863Z"
-        },
-        {
-          "version": "1.0.1",
-          "sha256": "31555336f82dd582b4e2c95ee2a062ea611138c8a0e675b5cf983c9a7d502d3c",
-          "requires": {
-            "actions/block": ""
-          },
-          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
-          "date": "2026-10-13T23:23:48.422354488Z"
-        }
-      ]
-    },
-    "events/efficiency-tighten": {
-      "latest": "1.0.1",
-      "category": "guardrails",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "dce2f5e99f2e4571a194fabc4e95acfb141641b5dd8288f8858d527811504e9e",
-          "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
-          "date": "2026-10-10T03:09:18.488367863Z"
-        },
-        {
-          "version": "1.0.1",
-          "sha256": "8d6f3a88fd9a006adde8a4435c0d811326546ae356f251c89077d3072996bfb6",
-          "requires": {
-            "actions/block": ""
-          },
-          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
-          "date": "2026-10-13T23:23:48.422354488Z"
-        }
-      ]
-    },
-    "events/efficiency-verbose": {
-      "latest": "1.0.1",
-      "category": "guardrails",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "dedbccc67f0123b5a844d92534bbe2310c92841a73e9f4cb3a8bab7e85ae7364",
-          "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
-          "date": "2026-10-10T03:09:18.488367863Z"
-        },
-        {
-          "version": "1.0.1",
-          "sha256": "bd7df19d7e66a480baf5e772bc2ea1170d7f716bf58c163380785736510d626b",
-          "requires": {
-            "actions/block": ""
-          },
-          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
-          "date": "2026-10-13T23:23:48.422354488Z"
-        }
-      ]
-    },
-    "events/efficiency-web": {
-      "latest": "1.0.1",
-      "category": "guardrails",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "75468294c9efdebd4f5aeca3b36d26ee3cbde568a27444bc02cce3214ac940ca",
-          "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
-          "date": "2026-10-10T03:09:18.488367863Z"
-        },
-        {
-          "version": "1.0.1",
-          "sha256": "15d2f3b509a7231c49b0f33df369c998dc2ef5767685e68bd43670374cba5732",
-          "requires": {
-            "actions/block": ""
-          },
-          "commit": "d3d20c3eaa0a0842750663fa2cf47ed9094d18b6",
-          "date": "2026-10-13T23:23:48.422354488Z"
+          "commit": "a743cc33e0bdc7193f6ffc2900a6bf99c6b4e7d2",
+          "date": "2026-11-21T20:42:46.715923556Z"
         }
       ]
     },
     "events/failure-context-bytes": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -2446,11 +2188,20 @@
           },
           "commit": "521f64c4e5d1d6cb9735ff4ba332e2801de6c358",
           "date": "2026-11-01T14:41:13.567861053Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "b12e2ab3c8ab254829ae2c0fdcb892a5694a0d5bf85c9cd3400743adb29917c1",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "a743cc33e0bdc7193f6ffc2900a6bf99c6b4e7d2",
+          "date": "2026-11-21T20:42:46.715923556Z"
         }
       ]
     },
     "events/failure-dir-entries": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -2461,21 +2212,15 @@
           },
           "commit": "521f64c4e5d1d6cb9735ff4ba332e2801de6c358",
           "date": "2026-11-01T14:41:13.567861053Z"
-        }
-      ]
-    },
-    "events/failure-error-bytes": {
-      "latest": "1.0.0",
-      "category": "guardrails",
-      "versions": [
+        },
         {
-          "version": "1.0.0",
-          "sha256": "d45f75661b8393919f79f2f7fb64a74149119bcb975bb75ca2db9d52132bca6f",
+          "version": "1.0.1",
+          "sha256": "cc3cacd643095fd902d891b8eded34d3c3f43e9263f76a3253f3b50042370a44",
           "requires": {
-            "actions/truncate": ""
+            "actions/cap": ""
           },
-          "commit": "521f64c4e5d1d6cb9735ff4ba332e2801de6c358",
-          "date": "2026-11-01T14:41:13.567861053Z"
+          "commit": "a743cc33e0bdc7193f6ffc2900a6bf99c6b4e7d2",
+          "date": "2026-11-21T20:42:46.715923556Z"
         }
       ]
     },
@@ -3505,51 +3250,6 @@
         }
       ]
     },
-    "events/plan-council-max-orders": {
-      "latest": "1.0.0",
-      "category": "agent",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "571da98d50a775871aa0f5e3e46d28d97165ea7760a1cda85b344f2099a53e9d",
-          "requires": {
-            "actions/cap": ""
-          },
-          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
-          "date": "2026-11-10T11:19:50.964325087Z"
-        }
-      ]
-    },
-    "events/plan-council-rounds": {
-      "latest": "1.0.0",
-      "category": "agent",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "3f17a9f438381bff10b6fe3d9d9ae3fcba638dcf92116f8d07297ea50f75fdb6",
-          "requires": {
-            "actions/cap": ""
-          },
-          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
-          "date": "2026-11-10T11:19:50.964325087Z"
-        }
-      ]
-    },
-    "events/plan-council-size": {
-      "latest": "1.0.0",
-      "category": "agent",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "b9032cbacb31da195e0e0ecdd0939e7f32e71012289020a8af169c09081a1bdf",
-          "requires": {
-            "actions/cap": ""
-          },
-          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
-          "date": "2026-11-10T11:19:50.964325087Z"
-        }
-      ]
-    },
     "events/preamble-token-limit": {
       "latest": "1.0.0",
       "category": "guardrails",
@@ -4546,97 +4246,6 @@
           "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
           "tokens": 454,
           "date": "2026-10-17T19:14:40.431501918Z"
-        }
-      ]
-    },
-    "harness/plan-council-draft": {
-      "latest": "1.0.0",
-      "category": "agent",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "f642d85c54bf355bca4f6aaed514d37a2b2797f16f354047290b181ad9063bf2",
-          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
-          "tokens": 114,
-          "date": "2026-11-10T11:19:50.964325087Z"
-        }
-      ]
-    },
-    "harness/plan-council-members": {
-      "latest": "1.0.0",
-      "category": "agent",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "04cf60af66318800c5e9a5170bcd1d2664ee1aefc261f208e6a2d0a016768798",
-          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
-          "tokens": 53,
-          "date": "2026-11-10T11:19:50.964325087Z"
-        }
-      ]
-    },
-    "harness/plan-council-note": {
-      "latest": "1.0.0",
-      "category": "harness",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "6eff45233daa05f4755d3e22f70ea65fc6df04a36841f13e4fb768354b4aaa47",
-          "commit": "4bbf0fd62042f3195df8c899fddc4508273b1073",
-          "tokens": 35,
-          "date": "2026-11-21T08:22:10.25133089Z"
-        }
-      ]
-    },
-    "harness/plan-council-plan": {
-      "latest": "1.0.0",
-      "category": "agent",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "a9155761df68f9ec509e7f4cf5d6145edc99fbcb69ede20e676129c7c5b0d9f4",
-          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
-          "tokens": 94,
-          "date": "2026-11-10T11:19:50.964325087Z"
-        }
-      ]
-    },
-    "harness/plan-council-prioritize": {
-      "latest": "1.0.0",
-      "category": "agent",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "1e13c0262697d215cdf208271aec01b45b61df7b7f989553e04240f8f5931d0d",
-          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
-          "tokens": 79,
-          "date": "2026-11-10T11:19:50.964325087Z"
-        }
-      ]
-    },
-    "harness/plan-council-revise": {
-      "latest": "1.0.0",
-      "category": "agent",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "b0175aae1dbccc356ed0776894d8f8d1dab0bc83aa64eb21d0a1570c3f3f8f92",
-          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
-          "tokens": 156,
-          "date": "2026-11-10T11:19:50.964325087Z"
-        }
-      ]
-    },
-    "harness/refine-system": {
-      "latest": "1.0.0",
-      "category": "context",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "b5e1e8599eeed7c67f095023259196dbf6fab4eb838c98b8e396c14cdf432a2a",
-          "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
-          "tokens": 216,
-          "date": "2026-10-10T03:09:18.488367863Z"
         }
       ]
     },
@@ -5775,7 +5384,7 @@
       ]
     },
     "presets/balanced": {
-      "latest": "1.3.0",
+      "latest": "1.4.0",
       "description": "The shipped, out-of-the-box defaults for every token-economy event. Applying this after switching to \"frugal\" or \"thorough\" resets them all in one step, without needing to hand-edit or delete override files.",
       "category": "context",
       "versions": [
@@ -6128,6 +5737,49 @@
           },
           "commit": "4bbf0fd62042f3195df8c899fddc4508273b1073",
           "date": "2026-11-21T08:22:10.25133089Z"
+        },
+        {
+          "version": "1.4.0",
+          "sha256": "e2cef981ff2f9655f2ef8409a7e0345dea59950f280550d8786fb4dd187813e3",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "components/bash_exec": "",
+            "components/edit_file": "",
+            "components/exec": "",
+            "components/list_files": "",
+            "components/memory_query": "",
+            "components/memory_search": "",
+            "components/read_file": "",
+            "components/search_local": "",
+            "components/web_scraper": "",
+            "components/web_search": "",
+            "components/write_file": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-old-result": "",
+            "events/history-window-trim": "",
+            "events/memory-capture-limit": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/memory-search-limit": "",
+            "events/memory-value-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "a743cc33e0bdc7193f6ffc2900a6bf99c6b4e7d2",
+          "date": "2026-11-21T20:42:46.715923556Z"
         }
       ]
     },
@@ -6151,7 +5803,7 @@
       ]
     },
     "presets/frugal": {
-      "latest": "1.3.0",
+      "latest": "1.4.0",
       "description": "Minimizes token usage: compacts and folds history sooner, injects far less memory context, truncates tool output harder, and caps tool-call budgets tighter. Best for cost-sensitive sessions or a small-context- window local model.",
       "category": "context",
       "versions": [
@@ -6504,11 +6156,54 @@
           },
           "commit": "4bbf0fd62042f3195df8c899fddc4508273b1073",
           "date": "2026-11-21T08:22:10.25133089Z"
+        },
+        {
+          "version": "1.4.0",
+          "sha256": "d162c16a17004b679c48c61309485a972de4942db52ec71c74f3cdd576b0b66d",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "components/bash_exec": "",
+            "components/edit_file": "",
+            "components/exec": "",
+            "components/list_files": "",
+            "components/memory_query": "",
+            "components/memory_search": "",
+            "components/read_file": "",
+            "components/search_local": "",
+            "components/web_scraper": "",
+            "components/web_search": "",
+            "components/write_file": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-old-result": "",
+            "events/history-window-trim": "",
+            "events/memory-capture-limit": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/memory-search-limit": "",
+            "events/memory-value-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "a743cc33e0bdc7193f6ffc2900a6bf99c6b4e7d2",
+          "date": "2026-11-21T20:42:46.715923556Z"
         }
       ]
     },
     "presets/thorough": {
-      "latest": "1.3.0",
+      "latest": "1.4.0",
       "description": "Maximizes context retention: compacts and folds much less often, injects far more memory context, keeps more of every tool result, and allows larger tool-call budgets. Best for long research/investigation sessions where losing history hurts quality more than the extra tokens cost.",
       "category": "context",
       "versions": [
@@ -6861,6 +6556,49 @@
           },
           "commit": "4bbf0fd62042f3195df8c899fddc4508273b1073",
           "date": "2026-11-21T08:22:10.25133089Z"
+        },
+        {
+          "version": "1.4.0",
+          "sha256": "fc564365c9e8d5f4b7b60e7e3ce156d695dd41324444adcfc46086eb15628ed8",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "components/bash_exec": "",
+            "components/edit_file": "",
+            "components/exec": "",
+            "components/list_files": "",
+            "components/memory_query": "",
+            "components/memory_search": "",
+            "components/read_file": "",
+            "components/search_local": "",
+            "components/web_scraper": "",
+            "components/web_search": "",
+            "components/write_file": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-old-result": "",
+            "events/history-window-trim": "",
+            "events/memory-capture-limit": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/memory-search-limit": "",
+            "events/memory-value-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "a743cc33e0bdc7193f6ffc2900a6bf99c6b4e7d2",
+          "date": "2026-11-21T20:42:46.715923556Z"
         }
       ]
     },
@@ -7170,7 +6908,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "1.6.0",
+      "latest": "1.7.0",
       "category": "workflow",
       "versions": [
         {
@@ -7298,6 +7036,12 @@
           "sha256": "a178669072b4eb37e865816d14358b55d3e89d7d5b30b557b226a0c1f05e29e0",
           "commit": "4bbf0fd62042f3195df8c899fddc4508273b1073",
           "date": "2026-11-21T08:22:10.25133089Z"
+        },
+        {
+          "version": "1.7.0",
+          "sha256": "8e7876ed8a295601616a2af55cbab774ca0c9fe64ce8e2e93361e8966758284a",
+          "commit": "a743cc33e0bdc7193f6ffc2900a6bf99c6b4e7d2",
+          "date": "2026-11-21T20:42:46.715923556Z"
         }
       ]
     },
@@ -8372,20 +8116,6 @@
         }
       ]
     },
-    "tools/plan_update": {
-      "latest": "1.0.0",
-      "description": "Update the plan progress file the planning council wrote for this task. Mark a job order doing, done, blocked or dropped with a short note, or add a job order you discovered (status added, with title). The file keeps every update in order.",
-      "category": "agent",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "8e119d76e462a6acf4374860771cd4add3c0703ad0308b138f18bdfeb1e20819",
-          "commit": "61476e96be63cd646b90eab6ee28a1ee7e192cda",
-          "tokens": 178,
-          "date": "2026-11-10T11:19:50.964325087Z"
-        }
-      ]
-    },
     "tools/python": {
       "latest": "1.0.0",
       "description": "Run a Python script and return its result: stdout parsed as JSON when possible, otherwise the raw text. Use through the python component for pipeline steps written in Python. Give either script (inline source) or scriptFile (a .py file). Optional: args, env, timeout, venvName, pythonVersion, packages.",
@@ -9132,8 +8862,7 @@
         "kdeps (agent loop)",
         "executor.(*Engine).Execute",
         "parallel.Run",
-        "plancouncil.Run",
-        "agent.councilPrompts",
+        "agent.(*Loop).startSubagents",
         "agent.harnessText"
       ]
     },
