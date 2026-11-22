@@ -7144,7 +7144,7 @@
       ]
     },
     "templates/assistant": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "category": "workflow",
       "versions": [
         {
@@ -7152,6 +7152,12 @@
           "sha256": "d553ed4873450ef007f90a48767618ca6649a72bbf36e88e4518813994c7d46e",
           "commit": "36ef083e4a9e1df81b16a9b88cf51c2fd87c2947",
           "date": "2026-11-16T15:59:32.605468964Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "b465c8670552b0f5f4b2f4056e21fb2e3b006451c62a0964c5b6a6eafaf31ba7",
+          "commit": "5980729d24a8a8eb0e91e5a4fca7e31278d9c3f8",
+          "date": "2026-11-22T15:17:33.323230996Z"
         }
       ]
     },
