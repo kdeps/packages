@@ -1865,7 +1865,7 @@
       ]
     },
     "docker/image": {
-      "latest": "1.1.0",
+      "latest": "1.2.0",
       "category": "deploy",
       "versions": [
         {
@@ -1879,6 +1879,12 @@
           "sha256": "7715a4cc9d3f7c10fcb713943935a18d89b697bc59d44768e7c99504ee778214",
           "commit": "4bbf0fd62042f3195df8c899fddc4508273b1073",
           "date": "2026-11-21T08:22:10.25133089Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "270b97197610593e24b14a42d5ef9b6e9366bcd96b66ffd6612d2b4eeca84d72",
+          "commit": "eb6e4bdb8f4667bf14c753c108bf8ed2f6d6f42a",
+          "date": "2026-11-22T21:22:43.341299015Z"
         }
       ]
     },
@@ -5370,6 +5376,18 @@
           "sha256": "4486544f0e5c153be5650e4830f7b5846eb5085136274737bb7bbdfafdfa6c5f",
           "commit": "cb579cf8b2ed14c593fa791319e9085f2db3556c",
           "date": "2026-11-21T14:34:51.904464892Z"
+        }
+      ]
+    },
+    "models/pybot": {
+      "latest": "1.0.0",
+      "category": "model",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "05c92fb69e03b8321c3ed9c181c3c2686967d2c60a02e1134a822f11a8498e26",
+          "commit": "eb6e4bdb8f4667bf14c753c108bf8ed2f6d6f42a",
+          "date": "2026-11-22T21:22:43.341299015Z"
         }
       ]
     },
