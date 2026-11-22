@@ -1805,7 +1805,7 @@
       ]
     },
     "defaults/executors": {
-      "latest": "1.4.0",
+      "latest": "1.5.0",
       "category": "workflow",
       "versions": [
         {
@@ -1855,6 +1855,12 @@
           "sha256": "21ca6322950ba41c6d87dc5f35a6142c4ec32ff1fa245d5bffdc38d44bf8d0a1",
           "commit": "6f7ab8a274885f97be96f7e02deddacb48efaf55",
           "date": "2026-11-03T12:14:24.157593691Z"
+        },
+        {
+          "version": "1.5.0",
+          "sha256": "1839eacaa8ee7a8b7b70008fd18ae13f60786283295436e7f528621a3a2053ef",
+          "commit": "3d4f788561ee105719904950dcf0eaf501c4e0c7",
+          "date": "2026-11-22T09:23:43.647809138Z"
         }
       ]
     },
@@ -3918,7 +3924,7 @@
       ]
     },
     "harness/edit-workflow": {
-      "latest": "1.1.0",
+      "latest": "1.2.0",
       "category": "harness",
       "versions": [
         {
@@ -3934,6 +3940,13 @@
           "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
           "tokens": 254,
           "date": "2026-10-17T19:14:40.431501918Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "de5e9fd7d9085c04dfe824473239c7b9d28f28f260fd094360e8ee895d68cf22",
+          "commit": "3d4f788561ee105719904950dcf0eaf501c4e0c7",
+          "tokens": 263,
+          "date": "2026-11-22T09:23:43.647809138Z"
         }
       ]
     },
@@ -4071,7 +4084,7 @@
       ]
     },
     "harness/memory": {
-      "latest": "1.1.0",
+      "latest": "1.2.0",
       "category": "memory",
       "versions": [
         {
@@ -4087,6 +4100,13 @@
           "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
           "tokens": 222,
           "date": "2026-10-17T19:14:40.431501918Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "f1874fd8e1713904c1f941937018880ba537e02130978adcf15aacf6e92e0766",
+          "commit": "3d4f788561ee105719904950dcf0eaf501c4e0c7",
+          "tokens": 232,
+          "date": "2026-11-22T09:23:43.647809138Z"
         }
       ]
     },
