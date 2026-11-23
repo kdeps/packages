@@ -1,0 +1,12 @@
+version: 2.0.0
+# What the model reads from the knowledge vault: the notes recall found for a
+# chat's prompt, and the knowledge_recall tool's answer. Go templates.
+
+# .Hits, each .Path (absolute), .Summary, .Chain (the relation path), .Via (the seed it came from)
+recall: |-
+  <knowledge-recall>
+  Notes in the knowledge vault related to this request, from its link graph (best first). Read only the ones you need with read_file; status lives in the project card, the story in these notes.
+  {{range .Hits}}- {{.Path}}{{if .Summary}} - {{.Summary}}{{end}}{{if .Chain}} ({{.Chain}}){{else if .Via}} (linked from {{.Via}}){{end}}
+  {{end}}</knowledge-recall>
+# no fields: knowledge_recall found nothing
+recall_none: No notes in the knowledge vault relate to that query.

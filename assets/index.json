@@ -2647,21 +2647,6 @@
         }
       ]
     },
-    "events/knowledge-extract-per-session": {
-      "latest": "1.0.0",
-      "category": "guardrails",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "f6df953784679d7e09abd02d783a404fc79c9d58ce11df0201586fe67cd4fae6",
-          "requires": {
-            "actions/cap": ""
-          },
-          "commit": "9fbeac51a015fcc23f332defb8ca467c4fffad2e",
-          "date": "2026-11-01T19:46:38.428023036Z"
-        }
-      ]
-    },
     "events/knowledge-extract-seconds": {
       "latest": "1.0.0",
       "category": "guardrails",
@@ -2689,66 +2674,6 @@
           },
           "commit": "9fbeac51a015fcc23f332defb8ca467c4fffad2e",
           "date": "2026-11-01T19:46:38.428023036Z"
-        }
-      ]
-    },
-    "events/knowledge-recall-files": {
-      "latest": "1.0.0",
-      "category": "rag",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "c9baa265c0aff860f57a6551fa92e9e605d7f3655c51525b319cabaa19926a33",
-          "requires": {
-            "actions/cap": ""
-          },
-          "commit": "689029f78ecdff5fab4f94da4ce969a495a888b3",
-          "date": "2026-11-01T16:06:30.499475309Z"
-        }
-      ]
-    },
-    "events/live-note-items": {
-      "latest": "1.0.0",
-      "category": "guardrails",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "8c06de6aefa4235230c86bd3e2a4bf0d5e98eb24a910299bd836902f08d6155e",
-          "requires": {
-            "actions/cap": ""
-          },
-          "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
-          "date": "2026-11-03T02:51:07.438900463Z"
-        }
-      ]
-    },
-    "events/live-note-line-chars": {
-      "latest": "1.0.0",
-      "category": "guardrails",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "cb4f99278ec86f43f6836f4e9c317de01063e6a17954525d1a0bd24e7d6bcea3",
-          "requires": {
-            "actions/cap": ""
-          },
-          "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
-          "date": "2026-11-03T02:51:07.438900463Z"
-        }
-      ]
-    },
-    "events/live-note-prompts": {
-      "latest": "1.0.0",
-      "category": "guardrails",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "c058f5d3fd39f83faffd2993d53b61df87a0e0a0b8f1f6f891f546881a30388b",
-          "requires": {
-            "actions/cap": ""
-          },
-          "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
-          "date": "2026-11-03T02:51:07.438900463Z"
         }
       ]
     },
@@ -4534,7 +4459,7 @@
       ]
     },
     "knowledge/notes": {
-      "latest": "1.6.0",
+      "latest": "2.0.0",
       "category": "rag",
       "versions": [
         {
@@ -4578,11 +4503,17 @@
           "sha256": "5d2d08830796cfd8626288ae4def95c4d951ba741efab0df4406ca028e7d58e5",
           "commit": "3b1bcfd7ac5d6f14ad7f13a97f8a8a8db6b8534f",
           "date": "2026-11-03T11:02:47.172859529Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "b72c31537c03284a6aae2ac2bcb51b4cf2d1eb33820e78ce54f166e339216b4a",
+          "commit": "7b8b3ebe95c5573a941b1575d486683a08b7ad01",
+          "date": "2026-11-23T09:22:26.553667852Z"
         }
       ]
     },
     "knowledge/policy": {
-      "latest": "1.2.0",
+      "latest": "2.0.0",
       "category": "rag",
       "versions": [
         {
@@ -4596,11 +4527,17 @@
           "sha256": "ca430214ae077415a0b3d3509cb2ed266f6050c6d4b61272d398f05b76011444",
           "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
           "date": "2026-11-03T02:51:07.438900463Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "b38b18c5d80b8d3e13f87eeec0214f7ec4f1d63e2f88b2ec0bf8382ac1e13f9f",
+          "commit": "7b8b3ebe95c5573a941b1575d486683a08b7ad01",
+          "date": "2026-11-23T09:22:26.553667852Z"
         }
       ]
     },
     "knowledge/prompts": {
-      "latest": "1.3.1",
+      "latest": "2.0.0",
       "category": "rag",
       "versions": [
         {
@@ -4626,11 +4563,17 @@
           "sha256": "064d3618459c6f9816ce2a1e4414d264e8a02bbe6fe0afed00e4a3d9b48f3efd",
           "commit": "e3adce8e327c2936c0102377b1cb96cab48b7590",
           "date": "2026-11-21T22:29:41.505890454Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "6c8936421558a64747bc8455e54fc8418961e41960d9a95129bb6985d460c429",
+          "commit": "7b8b3ebe95c5573a941b1575d486683a08b7ad01",
+          "date": "2026-11-23T09:22:26.553667852Z"
         }
       ]
     },
     "knowledge/recall": {
-      "latest": "1.1.0",
+      "latest": "2.0.0",
       "category": "rag",
       "versions": [
         {
@@ -4644,6 +4587,12 @@
           "sha256": "09c189e08f7c30b0a35f5339270d561132cd51b0d7aa6a655784969509267dc5",
           "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
           "date": "2026-11-03T02:51:07.438900463Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "8f1a26e1216aff68f10b8bec322183936d1430d079dda06d109e122884d647d0",
+          "commit": "7b8b3ebe95c5573a941b1575d486683a08b7ad01",
+          "date": "2026-11-23T09:22:26.553667852Z"
         }
       ]
     },
@@ -4678,7 +4627,7 @@
       ]
     },
     "knowledge/vault": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "category": "rag",
       "versions": [
         {
@@ -4686,6 +4635,12 @@
           "sha256": "8623cc095d671c05bf9eeb9116f56dfde326a98acde79c9c24b0ce404ae0495c",
           "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
           "date": "2026-11-03T02:51:07.438900463Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "8d377a1e0b92c773de74a99538491be4d4d4632579167970b8244610c1176eb9",
+          "commit": "7b8b3ebe95c5573a941b1575d486683a08b7ad01",
+          "date": "2026-11-23T09:22:26.553667852Z"
         }
       ]
     },
@@ -7882,83 +7837,6 @@
         }
       ]
     },
-    "tools/knowledge_card_get": {
-      "latest": "1.1.0",
-      "description": "Read a project card from the knowledge vault: type, status, next step, updated date, and the places on disk it covers (repo, folder, workflow). Cards are the only home of status. Without a name, returns the working directory's project card (created on first use).",
-      "category": "memory",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "eb1260d805b5489af54090a08eb4cbc1f1f06da0bf9278a3ab851e7385a92f28",
-          "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
-          "tokens": 113,
-          "date": "2026-10-15T17:26:07.241510474Z"
-        },
-        {
-          "version": "1.1.0",
-          "sha256": "d1ec17674cf29d991f82cc25b7d390609424b2e7b68bf713503e6c9e0e56bf1a",
-          "commit": "b5797744e9751cc4c0fdba10325a2e13bed71ce2",
-          "tokens": 106,
-          "date": "2026-10-15T22:53:44.300825358Z"
-        }
-      ]
-    },
-    "tools/knowledge_card_update": {
-      "latest": "1.2.0",
-      "description": "Set a card's status and/or next step and stamp its updated date. This is the only place status and the next step are written: never put them in a note. Without a name, updates the working directory's project card (created on first use). Status archived moves the project folder to archive/. add_search_folder links a folder outside the project (docs, a shared library) so recall and search_local cover it too, and indexes it.",
-      "category": "memory",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "38813eccbb84e1f74ed0a417739c9ee3958ffc8d588a1d3db0ca0c390f9fae1b",
-          "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
-          "tokens": 121,
-          "date": "2026-10-15T17:26:07.241510474Z"
-        },
-        {
-          "version": "1.1.0",
-          "sha256": "d363d571b50e1a71e1b1b77585fc6ca8be2490901156adf0b747f08bca33841a",
-          "commit": "b5797744e9751cc4c0fdba10325a2e13bed71ce2",
-          "tokens": 139,
-          "date": "2026-10-15T22:53:44.300825358Z"
-        },
-        {
-          "version": "1.2.0",
-          "sha256": "301195139a770ec4a5aab44712f895fc5598eb9eba812e98dc2ce704f7f4c028",
-          "commit": "89430f9d7c3a0a9daf3de7919abcab1f8b20f2e1",
-          "tokens": 231,
-          "date": "2026-10-16T19:56:21.208887141Z"
-        }
-      ]
-    },
-    "tools/knowledge_note_save": {
-      "latest": "2.1.0",
-      "description": "Save a new note in the knowledge vault: one idea per note, with frontmatter (type, status, created, summary, tags, links). Refuses a title that already has a note - one home per fact, so edit that note instead. Use for a decision, a gotcha, a concept or a tool worth remembering beyond this session; it goes in the project's folder unless scope says otherwise. Status and next steps go to the card instead.",
-      "category": "memory",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "sha256": "da7435b305019210f1fef15ca87320cf9943dd1b7044e14017aa9d6d32f47212",
-          "commit": "77ee76425278b503aa255fdcf00621546c4a92e3",
-          "tokens": 287,
-          "date": "2026-10-15T17:26:07.241510474Z"
-        },
-        {
-          "version": "2.0.0",
-          "sha256": "29d27b3302731ab29a6966be0d0f7fae3443edab16ed93e00081649513abcddb",
-          "commit": "b5797744e9751cc4c0fdba10325a2e13bed71ce2",
-          "tokens": 316,
-          "date": "2026-10-15T22:53:44.300825358Z"
-        },
-        {
-          "version": "2.1.0",
-          "sha256": "a9d14fc92ed336b32f3c02afa5a7f45dbef876d3d2d07b2db9e29376fa210cbc",
-          "commit": "3b1bcfd7ac5d6f14ad7f13a97f8a8a8db6b8534f",
-          "tokens": 317,
-          "date": "2026-11-03T11:02:47.172859529Z"
-        }
-      ]
-    },
     "tools/knowledge_recall": {
       "latest": "1.0.0",
       "description": "Find the notes in the knowledge vault related to a query, by walking the vault's link graph from the words of the query (no model involved). Returns note paths with their one-line summaries, best first, within a small token budget. Each turn already carries a recall for the user's request; call this to look up something else (a project, a decision, an error). Then read only the notes you need with read_file.",
@@ -9008,7 +8886,7 @@
         "executor.(*Engine).Execute",
         "parallel.Run",
         "agent.(*Loop).startSubagents",
-        "knowledge.(*Topic).Add",
+        "knowledge.SharedIndex",
         "knowledge.recallRules"
       ]
     },
