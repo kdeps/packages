@@ -4435,7 +4435,7 @@
       ]
     },
     "knowledge/check": {
-      "latest": "1.0.0",
+      "latest": "2.0.0",
       "category": "rag",
       "versions": [
         {
@@ -4443,6 +4443,12 @@
           "sha256": "1d040ba4502edae14719e73da23b9e9265655f8772b6a28479bcd0bc52741e4a",
           "commit": "f7794bb8ce2641499f367b4c45752a78033e992e",
           "date": "2026-11-03T02:51:07.438900463Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "dd7c97ff720606edd472ab291d3bfb3bd36076b17f2180a00059f49f85d14ad0",
+          "commit": "158d6245fb7b28ed71a80630b99826f69a94a975",
+          "date": "2026-11-23T15:35:59.944349198Z"
         }
       ]
     },
@@ -4627,7 +4633,7 @@
       ]
     },
     "knowledge/vault": {
-      "latest": "1.1.0",
+      "latest": "2.0.0",
       "category": "rag",
       "versions": [
         {
@@ -4641,6 +4647,12 @@
           "sha256": "8d377a1e0b92c773de74a99538491be4d4d4632579167970b8244610c1176eb9",
           "commit": "7b8b3ebe95c5573a941b1575d486683a08b7ad01",
           "date": "2026-11-23T09:22:26.553667852Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "8d7cac5a43afbaa7cf51f5ba2273cb9c81f5d9c61b25c8de36cf3e94229b8e57",
+          "commit": "158d6245fb7b28ed71a80630b99826f69a94a975",
+          "date": "2026-11-23T15:35:59.944349198Z"
         }
       ]
     },
@@ -7147,7 +7159,7 @@
       ]
     },
     "templates/knowledge": {
-      "latest": "2.2.1",
+      "latest": "3.0.0",
       "category": "workflow",
       "versions": [
         {
@@ -7179,6 +7191,12 @@
           "sha256": "eee07c1bb6ff164d254f3a9c2d9df3fa272dffc2d821d82a9e1c8a187fd4fd3c",
           "commit": "8c3de56f31f8197e405b2fd1f1473d0e3c5aeb12",
           "date": "2026-10-27T20:27:52.283932281Z"
+        },
+        {
+          "version": "3.0.0",
+          "sha256": "24d28ccfebe27040c77ec400fe350f293bb0a94bc8d6e3924b2980038f0cc41b",
+          "commit": "158d6245fb7b28ed71a80630b99826f69a94a975",
+          "date": "2026-11-23T15:35:59.944349198Z"
         }
       ]
     },
@@ -8887,11 +8905,7 @@
       "usedBy": [
         "kdeps (agent loop)",
         "kdeps run",
-        "kdeps knowledge folders remove",
-        "kdeps knowledge build",
-        "kdeps knowledge folders",
-        "kdeps knowledge folders add",
-        "kdeps knowledge folders index"
+        "kdeps knowledge build"
       ],
       "code": [
         "kdeps (agent loop)",
