@@ -9108,7 +9108,7 @@
         "kdeps run",
         "kdeps validate",
         "kdeps doctor",
-        "kdeps edit",
+        "kdeps config",
         "kdeps env",
         "kdeps exec",
         "kdeps test"
