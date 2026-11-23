@@ -1,0 +1,105 @@
+version: 2.0.1
+# kdeps 3.4.0 and older cannot load 2.x; they keep the 1.x version.
+kdeps: ">=3.5.0"
+# The notes kdeps writes into the vault: a project's card and a workflow's
+# daily run log, plus the knowledge graph report and explain lines.
+
+none: "(none)"  # the text of an empty field
+
+session:
+  kind: session  # the type of a run log; recall ranks this kind below the notes people curate
+  id_key: session  # front matter key of a run log's id
+
+# Go templates. scalar quotes a YAML scalar only when it needs it; quote is a
+# double-quoted string. The fields each template gets are listed beside it.
+templates:
+  # .Keys (the card keys of vault.yaml), .None, .Updated, .Source, .Place
+  card: |
+    ---
+    {{.Keys.Type}}: project
+    {{.Keys.Status}}: active
+    {{.Keys.Next}}: {{scalar .None}}
+    {{.Keys.Updated}}: {{.Updated}}
+    ---
+    | {{index .Keys.LinksHeader 0}} | {{index .Keys.LinksHeader 1}} |
+    |---|---|
+    | {{.Source}} | {{.Place}} |
+
+  # .Session, .Project, .Created, .CardLink: the top of a workflow's run log for the day
+  runs_head: |
+    ---
+    type: {{.Session.Kind}}
+    status: done
+    project: {{scalar .Project}}
+    {{.Session.IDKey}}: {{scalar (printf "runs-%s" .Created)}}
+    created: {{.Created}}
+    summary: {{scalar (printf "%s workflow runs on %s" .Project .Created)}}
+    tags: [session, workflow, {{scalar .Project}}]
+    links: [{{quote .CardLink}}]
+    ---
+
+    ## Runs
+    {{""}}
+  # .Time, .Prompt, .Reply: one workflow chat call
+  run_entry: |
+    - {{.Time}} {{.Prompt}} -> {{.Reply}}
+  # .Created, .Project: the run log's file name, without .md
+  runs_file: "{{.Created}} {{.Project}} runs"
+
+  # GRAPH_REPORT.md, written next to the graph. .Marker (its first line, how kdeps
+  # knows the file is its own), .Vault, .Pct (share of extracted edges), .Method
+  # (the community method), .AmbiguousBelow, .R (the report: .Notes .Nodes .Edges
+  # .Communities .Modularity .GodNodes .Groups .Surprising .Review .Missing).
+  # ref is a node's [[link]] or `label`, refs joins several, evidence is an edge's source.
+  report: |-
+    {{.Marker}}
+
+    Vault: {{.Vault}}
+
+    ## Summary
+
+    | Notes | Nodes | Edges | Extracted edges | Communities | Modularity |
+    |---|---|---|---|---|---|
+    | {{.R.Notes}} | {{.R.Nodes}} | {{.R.Edges}} | {{.Pct}}% | {{.R.Communities}} | {{printf "%.2f" .R.Modularity}} |
+
+    Extracted edges are written in the notes (links, tags) or in code (imports); the rest are guesses.
+
+    ## God nodes
+
+    The most connected notes and packages: changing them touches the most.
+
+    | Node | Kind | Links | Community |
+    |---|---|---|---|
+    {{range .R.GodNodes}}| {{ref .Node}} | {{.Node.Kind}} | {{.Degree}} | {{.Node.Community}} |
+    {{end}}
+    ## Communities
+
+    Groups of notes that link mostly among themselves ({{.Method}}).
+
+    {{range .R.Groups}}- **Community {{.ID}}** ({{.Size}} nodes): {{refs .Top}}{{if .Summary}} - {{.Summary}}{{end}}
+    {{end}}
+    ## Surprising connections
+
+    A single link between two communities that otherwise never touch.
+
+    {{if not .R.Surprising}}(none)
+    {{end}}{{range .R.Surprising}}- {{ref .From}} (community {{.FromGroup}}, {{.FromSize}} nodes) -[{{.Edge.Relation}}, {{.Edge.Provenance}}]-> {{ref .To}} (community {{.ToGroup}}, {{.ToSize}} nodes){{evidence .Edge}}
+    {{end}}
+    ## Edges to review
+
+    Guesses a model could not settle (confidence below {{.AmbiguousBelow}}): confirm with a [[link]] or ignore.
+
+    {{if not .R.Review}}(none)
+    {{end}}{{range .R.Review}}- {{.From}} -[{{.Relation}}, {{printf "%.2f" .Confidence}}]-> {{.To}}{{evidence .}}
+    {{end}}
+    ## Links to notes that do not exist
+
+    {{if not .R.Missing}}(none)
+    {{end}}{{range .R.Missing}}- [[{{.}}]]
+    {{end}}
+
+  # .Edges (each .From .Relation .Provenance .Confidence .To): kdeps knowledge
+  # explain, one edge per line with the file and line it came from
+  explain: |-
+    {{range .Edges}}{{.From}} -[{{.Relation}}, {{.Provenance}}, {{printf "%.2f" .Confidence}}]-> {{.To}}{{evidence .}}
+    {{end}}
