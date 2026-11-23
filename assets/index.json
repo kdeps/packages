@@ -8678,9 +8678,9 @@
         "kdeps install",
         "kdeps list",
         "kdeps uninstall",
-        "kdeps exec",
-        "kdeps test",
-        "kdeps update"
+        "kdeps update",
+        "kdeps upgrade",
+        "kdeps exec"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -8836,9 +8836,9 @@
         "kdeps install",
         "kdeps list",
         "kdeps uninstall",
-        "kdeps exec",
-        "kdeps test",
-        "kdeps update"
+        "kdeps update",
+        "kdeps upgrade",
+        "kdeps exec"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -8875,7 +8875,9 @@
         "kdeps knowledge build",
         "kdeps install",
         "kdeps list",
-        "kdeps uninstall"
+        "kdeps uninstall",
+        "kdeps update",
+        "kdeps upgrade"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -8974,9 +8976,9 @@
         "kdeps install",
         "kdeps list",
         "kdeps uninstall",
-        "kdeps exec",
-        "kdeps test",
-        "kdeps update"
+        "kdeps update",
+        "kdeps upgrade",
+        "kdeps exec"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -9007,7 +9009,7 @@
         "kdeps install",
         "kdeps list",
         "kdeps uninstall",
-        "kdeps exec"
+        "kdeps update"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -9068,9 +9070,9 @@
         "kdeps install",
         "kdeps list",
         "kdeps uninstall",
-        "kdeps exec",
-        "kdeps test",
-        "kdeps update"
+        "kdeps update",
+        "kdeps upgrade",
+        "kdeps exec"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -9233,9 +9235,9 @@
         "kdeps install",
         "kdeps list",
         "kdeps uninstall",
-        "kdeps exec",
-        "kdeps test",
-        "kdeps update"
+        "kdeps update",
+        "kdeps upgrade",
+        "kdeps exec"
       ],
       "code": [
         "kdeps (agent loop)",
