@@ -8706,18 +8706,17 @@
       "usedBy": [
         "kdeps (agent loop)",
         "kdeps run",
-        "kdeps exec",
-        "kdeps test"
+        "kdeps install",
+        "kdeps list",
+        "kdeps uninstall",
+        "kdeps update",
+        "kdeps upgrade",
+        "kdeps exec"
       ],
       "code": [
         "kdeps (agent loop)",
-        "executor.(*Engine).Execute",
-        "parallel.Run",
-        "executor.(*Engine).runResources",
-        "llm.(*Adapter).Execute",
-        "agent.LoopResourceRunner",
-        "codegraph.Register",
-        "codegraph.exposedNames"
+        "agent.UseProjectAssets",
+        "codegraph.Configure"
       ]
     },
     "components": {
