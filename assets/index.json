@@ -4114,7 +4114,7 @@
       ]
     },
     "harness/nudge-fake-tool-response": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "harness",
       "versions": [
         {
@@ -4123,6 +4123,13 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 69,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "3bc54985c9b49908c025f4a118cd05c49883b584bef7beed9dfe5b614dde82c0",
+          "commit": "8abdde4ab2f993235aab7e889a40bc10ad44e3d2",
+          "tokens": 85,
+          "date": "2026-11-25T17:01:51.759421184Z"
         }
       ]
     },
@@ -4153,7 +4160,7 @@
       ]
     },
     "harness/nudge-self-limit": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "harness",
       "versions": [
         {
@@ -4169,6 +4176,13 @@
           "commit": "675624d36c55f9cb2592a6678482097bebba53d0",
           "tokens": 161,
           "date": "2026-10-21T11:26:32.967328564Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "d071e33d359037b4f824507908275addb1b4660597f249002918a02e02b1a376",
+          "commit": "8abdde4ab2f993235aab7e889a40bc10ad44e3d2",
+          "tokens": 200,
+          "date": "2026-11-25T17:01:51.759421184Z"
         }
       ]
     },
@@ -4363,7 +4377,7 @@
       ]
     },
     "harness/tools": {
-      "latest": "1.1.0",
+      "latest": "1.2.0",
       "category": "harness",
       "versions": [
         {
@@ -4379,11 +4393,18 @@
           "commit": "dabd95f4e224568629e309c3e12baa1363f1fcb9",
           "tokens": 260,
           "date": "2026-10-17T19:14:40.431501918Z"
+        },
+        {
+          "version": "1.2.0",
+          "sha256": "aed855bfedaa272571bdf0d1608b644eb20120ffe1f7ae2ec26eb34c387ac920",
+          "commit": "8abdde4ab2f993235aab7e889a40bc10ad44e3d2",
+          "tokens": 273,
+          "date": "2026-11-25T17:01:51.759421184Z"
         }
       ]
     },
     "harness/tools-reminder": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "category": "harness",
       "versions": [
         {
@@ -4392,11 +4413,18 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 108,
           "date": "2026-10-10T03:09:18.488367863Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "6d51667e24fa55a6f5fa73875516cf2f3f5fe8384ba0e1fa757a17a2368dcb7d",
+          "commit": "8abdde4ab2f993235aab7e889a40bc10ad44e3d2",
+          "tokens": 120,
+          "date": "2026-11-25T17:01:51.759421184Z"
         }
       ]
     },
     "harness/use-kdeps-tools": {
-      "latest": "1.2.0",
+      "latest": "1.3.0",
       "category": "harness",
       "versions": [
         {
@@ -4419,6 +4447,13 @@
           "commit": "09e5d099986ad51548476cf7bf21dfd052280473",
           "tokens": 706,
           "date": "2026-11-02T14:37:30.538154154Z"
+        },
+        {
+          "version": "1.3.0",
+          "sha256": "40223200104fbe32ad054388aa60fde68c4ee9bbd3fa5b3819ebdc8926f793f8",
+          "commit": "8abdde4ab2f993235aab7e889a40bc10ad44e3d2",
+          "tokens": 726,
+          "date": "2026-11-25T17:01:51.759421184Z"
         }
       ]
     },
@@ -8698,13 +8733,13 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
+        "kdeps new",
         "kdeps run",
         "kdeps install",
         "kdeps list",
         "kdeps uninstall",
         "kdeps update",
-        "kdeps upgrade",
-        "kdeps exec"
+        "kdeps upgrade"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -8729,13 +8764,13 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
+        "kdeps new",
         "kdeps run",
         "kdeps install",
         "kdeps list",
         "kdeps uninstall",
         "kdeps update",
-        "kdeps upgrade",
-        "kdeps exec"
+        "kdeps upgrade"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -8855,13 +8890,13 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
+        "kdeps new",
         "kdeps run",
         "kdeps install",
         "kdeps list",
         "kdeps uninstall",
         "kdeps update",
-        "kdeps upgrade",
-        "kdeps exec"
+        "kdeps upgrade"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -8894,13 +8929,13 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
+        "kdeps new",
         "kdeps run",
         "kdeps knowledge build",
         "kdeps install",
         "kdeps list",
         "kdeps uninstall",
-        "kdeps update",
-        "kdeps upgrade"
+        "kdeps update"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -8995,13 +9030,13 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
+        "kdeps new",
         "kdeps run",
         "kdeps install",
         "kdeps list",
         "kdeps uninstall",
         "kdeps update",
-        "kdeps upgrade",
-        "kdeps exec"
+        "kdeps upgrade"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -9026,13 +9061,13 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
+        "kdeps new",
         "kdeps run",
         "kdeps llamafile list",
         "kdeps llm models",
         "kdeps install",
         "kdeps list",
-        "kdeps uninstall",
-        "kdeps update"
+        "kdeps uninstall"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -9089,13 +9124,13 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
+        "kdeps new",
         "kdeps run",
         "kdeps install",
         "kdeps list",
         "kdeps uninstall",
         "kdeps update",
-        "kdeps upgrade",
-        "kdeps exec"
+        "kdeps upgrade"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -9191,13 +9226,13 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
+        "kdeps new",
         "kdeps validate",
         "kdeps run",
         "kdeps bundle package",
         "kdeps env",
         "kdeps export k8s",
-        "kdeps test",
-        "kdeps bundle build"
+        "kdeps test"
       ],
       "code": [
         "kdeps (agent loop)",
@@ -9254,13 +9289,13 @@
       ],
       "usedBy": [
         "kdeps (agent loop)",
+        "kdeps new",
         "kdeps run",
         "kdeps install",
         "kdeps list",
         "kdeps uninstall",
         "kdeps update",
-        "kdeps upgrade",
-        "kdeps exec"
+        "kdeps upgrade"
       ],
       "code": [
         "kdeps (agent loop)",
