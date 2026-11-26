@@ -1767,6 +1767,42 @@
         }
       ]
     },
+    "components/slack_get": {
+      "latest": "1.0.0",
+      "description": "Read the Slack Web API through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "6ea3a163b5540ede88b46077036f4b27f8caa853006e1f9a71542860fb0377f6",
+          "requires": {
+            "schemas/v1": "",
+            "tools/slack_get": ""
+          },
+          "commit": "9dda3e8d25ccc4118188d6deb9ccfd3a18aaf09c",
+          "tokens": 56,
+          "date": "2026-11-26T15:00:10.79845771Z"
+        }
+      ]
+    },
+    "components/slack_post": {
+      "latest": "1.0.0",
+      "description": "Write to the Slack Web API through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "7e50be173eb29356c1d3dc4fb32820d1f3bd8d1d1618a43456ffd799c4db473c",
+          "requires": {
+            "schemas/v1": "",
+            "tools/slack_post": ""
+          },
+          "commit": "9dda3e8d25ccc4118188d6deb9ccfd3a18aaf09c",
+          "tokens": 84,
+          "date": "2026-11-26T15:00:10.79845771Z"
+        }
+      ]
+    },
     "components/sql": {
       "latest": "1.0.3",
       "description": "Run SQL against PostgreSQL, MySQL/MariaDB, SQLite, SQL Server or Oracle - one query, or several in a transaction",
@@ -6649,7 +6685,7 @@
       ]
     },
     "policy/permission": {
-      "latest": "1.4.2",
+      "latest": "1.4.3",
       "category": "guardrails",
       "versions": [
         {
@@ -6693,6 +6729,12 @@
           "sha256": "cb01e9dddef9f35795f98ef8b9a57dc5f1950ef356a71e86c29d268225803103",
           "commit": "ef4f049084e9f0988751b15d27398e2c27e5f2ed",
           "date": "2026-11-26T14:35:15.045301Z"
+        },
+        {
+          "version": "1.4.3",
+          "sha256": "6ee3bde135ea50b4baea3b18346a771f99f8faf0733b2c651e64ca9f3c3c714a",
+          "commit": "9dda3e8d25ccc4118188d6deb9ccfd3a18aaf09c",
+          "date": "2026-11-26T15:00:10.79845771Z"
         }
       ]
     },
@@ -9667,6 +9709,34 @@
           "commit": "b17f93c02d169d4e368118db7f7dd3eec2f55636",
           "tokens": 391,
           "date": "2026-11-18T11:41:17.734029216Z"
+        }
+      ]
+    },
+    "tools/slack_get": {
+      "latest": "1.0.0",
+      "description": "Read the Slack Web API: GET https://slack.com/api/METHOD and return the JSON. Use it for channels, messages, users and threads. A failed call returns \"ok\": false and an \"error\" text. Requires SLACK_BOT_TOKEN, SLACK_TOKEN or the vault secret slack_token.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "32c3ec7771c15a18d8623f440fa503f0c7d2308d174f009f042ffc7dce6a1e59",
+          "commit": "9dda3e8d25ccc4118188d6deb9ccfd3a18aaf09c",
+          "tokens": 125,
+          "date": "2026-11-26T15:00:10.79845771Z"
+        }
+      ]
+    },
+    "tools/slack_post": {
+      "latest": "1.0.0",
+      "description": "Write to the Slack Web API: POST a JSON body to https://slack.com/api/METHOD and return the JSON. Use it to send, update and delete messages and to add reactions. A failed call returns \"ok\": false and an \"error\" text. Requires SLACK_BOT_TOKEN, SLACK_TOKEN or the vault secret slack_token.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "e6bebc51dc5595e8ac0f5bdc8dc885ee95964bf29bb52212063595d8ebb8e65f",
+          "commit": "9dda3e8d25ccc4118188d6deb9ccfd3a18aaf09c",
+          "tokens": 154,
+          "date": "2026-11-26T15:00:10.79845771Z"
         }
       ]
     },
