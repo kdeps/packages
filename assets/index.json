@@ -141,7 +141,7 @@
       ]
     },
     "components/approval_grant": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Grant a pending approval token through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -165,11 +165,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 45,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "1ec9c3c7e5847a34f373cb1b0d99af85f2cd3d4c10298bd27cbe1ae3f0299e24",
+          "requires": {
+            "schemas/v1": "",
+            "tools/approval_grant": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 45,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/approval_list": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "List approval tokens through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -193,11 +204,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 15,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "325534539218b73d26bcf05fe0501e21b83e71c8f911bf599667aa13d9a6cb24",
+          "requires": {
+            "schemas/v1": "",
+            "tools/approval_list": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 15,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/approval_request": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Request an approval token through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -221,11 +243,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 72,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "e5e92c4cb8a19232995c7189c98b9b4fca7b885853b1251ebd9a8eb444770930",
+          "requires": {
+            "schemas/v1": "",
+            "tools/approval_request": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 72,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/approval_revoke": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Revoke an approval token through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -249,11 +282,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 37,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "27c6b47eddd60f38bfae083fcbb6d64462951a6a8d493c8c8efcb52e2561be42",
+          "requires": {
+            "schemas/v1": "",
+            "tools/approval_revoke": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 37,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/bash_exec": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Run a shell command through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -277,11 +321,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 34,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "7479e4eedee0ef373c33bac0af23e772929bdd513d3debe0808d9087dfd50815",
+          "requires": {
+            "schemas/v1": "",
+            "tools/bash_exec": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 34,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/bash_job_list": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "List background shell jobs through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -305,11 +360,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 17,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "a4513ea15f4468c309d5c39edbfe6ed3c1a3ef712701bae8e00b27621ba6b920",
+          "requires": {
+            "schemas/v1": "",
+            "tools/bash_job_list": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 17,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/bash_job_wait": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Wait for a background shell job through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -333,11 +399,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 46,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "a4bd8be150cce85aa1406a0b29551c76c99c46940f08b56c191cee63f174c50e",
+          "requires": {
+            "schemas/v1": "",
+            "tools/bash_job_wait": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 46,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/calculator": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Evaluate a math expression through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -372,11 +449,22 @@
           "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
           "tokens": 47,
           "date": "2026-10-24T03:30:15.343259609Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "8bd61a6d7bb25d672838f13426149d6dea115dd1570ed198f31f0220e4e0eadf",
+          "requires": {
+            "schemas/v1": "",
+            "tools/calculator": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 47,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/clipboard_copy": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Copy text to the system clipboard through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -390,11 +478,22 @@
           "commit": "044fd20d72cb989f5768417ef720394f7c9e7cd5",
           "tokens": 37,
           "date": "2026-10-24T12:16:34.568490937Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "a70423ae9254826525441606fbb6163cfb621142bb817bd027f39e0621bccea4",
+          "requires": {
+            "schemas/v1": "",
+            "tools/clipboard_copy": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 37,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/cohere_rerank": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Rerank documents by relevance to a query through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -418,11 +517,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 130,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "456e64bdb298bce021b3977ed3982a0ba1368ab3ac873891ba74a0151416833d",
+          "requires": {
+            "schemas/v1": "",
+            "tools/cohere_rerank": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 130,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/edit_file": {
-      "latest": "2.0.0",
+      "latest": "2.0.1",
       "description": "Edit a file through the kdeps API and return the changed snippet",
       "category": "workflow",
       "versions": [
@@ -457,11 +567,22 @@
           "commit": "3e4e4b22caf5a469136d920917793871503d3f15",
           "tokens": 158,
           "date": "2026-10-23T07:56:04.615906617Z"
+        },
+        {
+          "version": "2.0.1",
+          "sha256": "11357a7652b111922442a23dce641501f899198b16e60fc278941a0fca5f6975",
+          "requires": {
+            "schemas/v1": "",
+            "tools/edit_file": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 158,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/embedding": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Run one embedding operation through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -475,11 +596,22 @@
           "commit": "960080c9b487e689cff1675403bb0af7fc630cc5",
           "tokens": 368,
           "date": "2026-10-21T17:24:18.21455353Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "ad0191661c96b1ad4b16cf1ab46e0f653bbb652867f667675c436e27340363d5",
+          "requires": {
+            "schemas/v1": "",
+            "tools/embedding": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 368,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/embedding_search": {
-      "latest": "1.1.1",
+      "latest": "1.1.2",
       "description": "Search the local embedding database through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -513,11 +645,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 91,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.1.2",
+          "sha256": "c9aa7841a19b3a11e8020dd69ae5c1aab2ca420ac50356cb438eb64ed3d924ab",
+          "requires": {
+            "schemas/v1": "",
+            "tools/embedding_search": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 91,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/embedding_vectorize": {
-      "latest": "1.1.1",
+      "latest": "1.1.2",
       "description": "Convert text into embeddings through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -551,11 +694,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 100,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.1.2",
+          "sha256": "ef88a3ca42dbff7bc4854b57e234f8f825065bef2fbe0848b50475dd44d0b60a",
+          "requires": {
+            "schemas/v1": "",
+            "tools/embedding_vectorize": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 100,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/exa_search": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Search the web with Exa neural search through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -579,11 +733,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 47,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "1988beb9761dfa42b6f7c1144dfb96aa1c3e0c096411cb66fc25a463caddefee",
+          "requires": {
+            "schemas/v1": "",
+            "tools/exa_search": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 47,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/exec": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Run a shell command through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -597,11 +762,22 @@
           "commit": "77cbc7e778ef629bfe4563d70b41f3e7f6c443d4",
           "tokens": 181,
           "date": "2026-10-21T16:38:43.868192177Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "e74d2d38b35b29584875772362d79bc0a648239fe4884b95103f6538f7b1f44d",
+          "requires": {
+            "schemas/v1": "",
+            "tools/exec": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 181,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/file": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "description": "Structured filesystem operations (read, write, patch, list, delete, exists, mkdir, copy, move, append)",
       "category": "workflow",
       "versions": [
@@ -635,11 +811,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 414,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "76abba762c7d7ed281e9c0c0b56e3926450ca2a091fc947c67689e04dc12f116",
+          "requires": {
+            "schemas/v1": "",
+            "tools/file_ops": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 414,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/git": {
-      "latest": "1.0.3",
+      "latest": "1.0.4",
       "description": "Structured git operations (status, diff, log, show, branch, remote, add, commit, checkout, init, clone, push, pull)",
       "category": "workflow",
       "versions": [
@@ -679,6 +866,17 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 340,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.4",
+          "sha256": "4366190f2a5d84362d7e0d886056bb90f940317e18d29ee2723465f3e67bf7ff",
+          "requires": {
+            "schemas/v1": "",
+            "tools/git_ops": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 340,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
@@ -778,7 +976,7 @@
       ]
     },
     "components/hf_repo_files": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "List a HuggingFace repo's GGUF files through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -792,11 +990,22 @@
           "commit": "e3208d02a54ff34dded64a05c99b757783873ff6",
           "tokens": 43,
           "date": "2026-10-24T18:49:22.240821995Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "9619cf4e48f9c2a71c39d894ab566630858ee5c55cc404744cb1726912debba1",
+          "requires": {
+            "schemas/v1": "",
+            "tools/hf_repo_files": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 43,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/hf_search": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Search HuggingFace for GGUF repos through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -810,11 +1019,22 @@
           "commit": "e3208d02a54ff34dded64a05c99b757783873ff6",
           "tokens": 65,
           "date": "2026-10-24T18:49:22.240821995Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "0b5a84682accbeac4deb50a661bc4a6f1685fc845ae41687e7a848170fee0288",
+          "requires": {
+            "schemas/v1": "",
+            "tools/hf_search": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 65,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/http_request": {
-      "latest": "1.2.0",
+      "latest": "1.2.1",
       "description": "Make an HTTP request through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -859,11 +1079,22 @@
           "commit": "eeacd82342b175d0d55e6bdb62dfcf85d75b3ca8",
           "tokens": 438,
           "date": "2026-10-21T19:11:40.811367087Z"
+        },
+        {
+          "version": "1.2.1",
+          "sha256": "df454792ec4a51c5fcaf0cc59efaa6f4cf46d04ddaf854350410d086c3bac87f",
+          "requires": {
+            "schemas/v1": "",
+            "tools/http_request": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 438,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/instruct": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Read one harness section or briefing through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -887,11 +1118,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 63,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "569d1e79919c8086f7c3ee061e5fc9b223ff2d9ab3821ba87df4bd60ae177e89",
+          "requires": {
+            "schemas/v1": "",
+            "tools/instruct": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 63,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/jina_rerank": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Rerank documents by relevance to a query through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -915,11 +1157,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 129,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "d7f7ae16786ea04274f56aa625da1d67c0fde2a3a1c25dfbfa80c41024f86158",
+          "requires": {
+            "schemas/v1": "",
+            "tools/jina_rerank": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 129,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/knowledge_recall": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Recall knowledge vault notes for a query through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -933,11 +1186,22 @@
           "commit": "fd3e5ddb522294d209810ecd5e31945e8ff67511",
           "tokens": 55,
           "date": "2026-11-09T23:15:01.595545937Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "0f7ae54a1cb5b18ed4e63c477d6cd6874fcbf6e74cba99191181848f92f34242",
+          "requires": {
+            "schemas/v1": "",
+            "tools/knowledge_recall": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 55,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/list_files": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "List a directory through the kdeps API and return names and types",
       "category": "workflow",
       "versions": [
@@ -961,11 +1225,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 48,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "86ea576fa9e4046c5b6873afda018b4b7a794be4a98fcb1b627ecb0922e6702d",
+          "requires": {
+            "schemas/v1": "",
+            "tools/list_files": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 48,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/load_document": {
-      "latest": "1.2.0",
+      "latest": "1.2.1",
       "description": "Load a document through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1010,11 +1285,22 @@
           "commit": "4e6839ea1bfb1c03b2c7b0902fc6ec82856ea579",
           "tokens": 233,
           "date": "2026-10-21T20:01:58.947831826Z"
+        },
+        {
+          "version": "1.2.1",
+          "sha256": "515cce03018f60842f354519730d086bb29775a9ba0e87d391044efc82571224",
+          "requires": {
+            "schemas/v1": "",
+            "tools/load_document": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 233,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/md5_file": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Hash a file through the kdeps API and return the path and MD5",
       "category": "workflow",
       "versions": [
@@ -1038,11 +1324,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 41,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "7dfa19857cce5338bc0d864bf96ba9781b9b65ab164bed196a927041db29e5fe",
+          "requires": {
+            "schemas/v1": "",
+            "tools/md5_file": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 41,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/memory_delete": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Delete a memory entry through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1066,11 +1363,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 36,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "15c0940a6480318261a213a95db503ba086d9b2ede7bba90a1d62274f322e273",
+          "requires": {
+            "schemas/v1": "",
+            "tools/memory_delete": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 36,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/memory_query": {
-      "latest": "1.1.1",
+      "latest": "1.1.2",
       "description": "Run a relational memory query through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1104,11 +1412,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 80,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.1.2",
+          "sha256": "5290233ca19748e09b00c4f97f3b5512db6ba259e1dfd099b266672e5a8a82ea",
+          "requires": {
+            "schemas/v1": "",
+            "tools/memory_query": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 80,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/memory_save": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Save a fact through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1132,11 +1451,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 51,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "a86cbc87f76a7f5bd678986b40443ba166284eb48a02bf7ab76bc37896b5aad7",
+          "requires": {
+            "schemas/v1": "",
+            "tools/memory_save": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 51,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/memory_search": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Search persistent memory through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1160,11 +1490,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 40,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "f14215e77b118a6bbd9f684a8c1e28a1019df9c0d05bbe7632a3c472d4011bc7",
+          "requires": {
+            "schemas/v1": "",
+            "tools/memory_search": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 40,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/ocr_image": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "description": "Extract text from an image with tesseract through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1188,11 +1529,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 159,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "28cf59f301b26436d8859bedbc8098fe05128a4ed767688d4192582306c3860d",
+          "requires": {
+            "schemas/v1": "",
+            "tools/ocr_image": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 159,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/python": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "description": "Run a Python script through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1206,11 +1558,22 @@
           "commit": "77cbc7e778ef629bfe4563d70b41f3e7f6c443d4",
           "tokens": 276,
           "date": "2026-10-21T16:38:43.868192177Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "c7e3e77f0cdc42f461e9fd887599107bd088d76f606d502151b07fd98ff6296d",
+          "requires": {
+            "schemas/v1": "",
+            "tools/python": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 276,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/read_file": {
-      "latest": "1.1.1",
+      "latest": "1.1.2",
       "description": "Read a file through the kdeps API and return its text",
       "category": "workflow",
       "versions": [
@@ -1244,11 +1607,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 210,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.1.2",
+          "sha256": "717d916e1967eb7c6aee8d4113a92de237e625b01a028aac68ad50952784f6bd",
+          "requires": {
+            "schemas/v1": "",
+            "tools/read_file": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 210,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/retrieve_context": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Retrieve relevant chunks from the RAG index through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1272,11 +1646,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 76,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "4aba45a284e0cc022efc10156cafec6087b47d993aca6a92a54446b1ba3a6fbb",
+          "requires": {
+            "schemas/v1": "",
+            "tools/retrieve_context": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 76,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/search_local": {
-      "latest": "1.3.0",
+      "latest": "1.3.1",
       "description": "Search local files through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1332,11 +1717,22 @@
           "commit": "e006219ee7026de09f6d3af83afaa3045cd2376f",
           "tokens": 277,
           "date": "2026-11-03T10:28:03.295013224Z"
+        },
+        {
+          "version": "1.3.1",
+          "sha256": "c5fcc6045316a3d1ee3662ad65dbabc70c1cc077b1fe86b2a9b7e0e5f16ff570",
+          "requires": {
+            "schemas/v1": "",
+            "tools/search_local": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 277,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/sql": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "description": "Run SQL against PostgreSQL, MySQL/MariaDB, SQLite, SQL Server or Oracle - one query, or several in a transaction",
       "category": "workflow",
       "versions": [
@@ -1370,11 +1766,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 331,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "9856eb23d1d2baa32d571f58a86f389b3f3c6234451a209fb214bda67d392bf3",
+          "requires": {
+            "schemas/v1": "\u003e=1.0.4",
+            "tools/sql_ops": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 331,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/sql_describe_table": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Describe one SQLite table through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1398,11 +1805,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 65,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "6ffdae48945ba11a7d81e9bd91b006d6c4f18e20d270e683496c40abdfee75af",
+          "requires": {
+            "schemas/v1": "",
+            "tools/sql_describe_table": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 65,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/sql_list_tables": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "List SQLite tables through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1426,11 +1844,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 45,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "f5e33f53a8a87246788f8615a8f519a74f8d0a5906c751bcde7a347870894bc4",
+          "requires": {
+            "schemas/v1": "",
+            "tools/sql_list_tables": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 45,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/sql_query": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Run a read-only SQL query through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1454,11 +1883,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 66,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "911ceb985e7b8860355ef2af126772301ae2f666a917ec43562ae97878d52fa0",
+          "requires": {
+            "schemas/v1": "",
+            "tools/sql_query": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 66,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/tail_file": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Read the last lines of a file through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1482,11 +1922,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 67,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "917fb11a62225310b5ab5882d59d31c3a188e479eccc6743cea6fab13a90a00e",
+          "requires": {
+            "schemas/v1": "",
+            "tools/tail_file": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 67,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/transcribe_audio": {
-      "latest": "1.1.1",
+      "latest": "1.1.2",
       "description": "Transcribe audio or video through a Whisper API with the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1520,11 +1971,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 269,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.1.2",
+          "sha256": "508e883c8215a9d167e43300e2078e9a00f891f6007df819ba3d0bc6546d3dfc",
+          "requires": {
+            "schemas/v1": "",
+            "tools/transcribe_audio": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 269,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/transcribe_audio_offline": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Transcribe audio offline with whisper.cpp through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1548,11 +2010,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 114,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "3cc417367d992e4d80e1b729e0d44048618a8ff78f14e7d1d29a087472c0677f",
+          "requires": {
+            "schemas/v1": "",
+            "tools/transcribe_audio_offline": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 114,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/vector_store": {
-      "latest": "1.1.0",
+      "latest": "1.1.1",
       "description": "Run one vector store operation through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1577,11 +2050,22 @@
           "commit": "3ab4e12fdbdeaca6cde58aea5c3959710955c91b",
           "tokens": 409,
           "date": "2026-11-03T10:24:31.38080418Z"
+        },
+        {
+          "version": "1.1.1",
+          "sha256": "1d64b47dbb09fc5bbe66de48d71a402b852779c6a4659bf17b8f5f24a4140e63",
+          "requires": {
+            "schemas/v1": "",
+            "tools/vector_store": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 409,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/voyageai_rerank": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Rerank documents by relevance to a query through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1605,11 +2089,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 125,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "6d9841111fa9139e8d7154950f24d7a63ab02bd7e5c8958a25096857966ec51a",
+          "requires": {
+            "schemas/v1": "",
+            "tools/voyageai_rerank": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 125,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/web_scraper": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Fetch a page through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1633,11 +2128,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 29,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "8ed884bc8620d1a9ddf255b333969111ee6a5809f452547e07f145f3c42abefa",
+          "requires": {
+            "schemas/v1": "",
+            "tools/web_scraper": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 29,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/web_search": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Search the web through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1661,11 +2167,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 31,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "ad744deb2d403aad3a79c158448a324a041811c3d3a145815b58469fa2d6771c",
+          "requires": {
+            "schemas/v1": "",
+            "tools/web_search": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 31,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/wikipedia": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Look up a Wikipedia topic through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1689,11 +2206,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 34,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "a60406ae91c5892e156d1742c3061f1ea4efe7727a3710310a9ea7be312b6113",
+          "requires": {
+            "schemas/v1": "",
+            "tools/wikipedia": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 34,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/wolfram_alpha": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Query Wolfram Alpha for a computed answer through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1717,11 +2245,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 56,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "9a8289e1c831276f971a6ca6d214a9298491f66e8b9367340ff7f0a0da3e9d6a",
+          "requires": {
+            "schemas/v1": "",
+            "tools/wolfram_alpha": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 56,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/write_file": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Write or overwrite a text file through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1745,11 +2284,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 58,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "60e76128469f530309dfb43c28078b5ad019ff1fdebc09967f4f1de15e325d15",
+          "requires": {
+            "schemas/v1": "",
+            "tools/write_file": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 58,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/zapier_list_actions": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "List the available Zapier NLA actions through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1773,11 +2323,22 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 21,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "a6cb0a57d76956e106c5cb8f54947de6bc605963eb728720542b5c942c6bf199",
+          "requires": {
+            "schemas/v1": "",
+            "tools/zapier_list_actions": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 21,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "components/zapier_run_action": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "description": "Run a Zapier NLA action through the kdeps API",
       "category": "workflow",
       "versions": [
@@ -1801,6 +2362,17 @@
           "commit": "2e804fa323e1f78e25184126870e7bb081b5c1e7",
           "tokens": 83,
           "date": "2026-10-21T11:44:36.787763914Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "6585ac9c69f1807e0e62dc60baf58ae5b8a50a7e04c8bf51c1433f8c6b3d0ad2",
+          "requires": {
+            "schemas/v1": "",
+            "tools/zapier_run_action": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "tokens": 83,
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
@@ -1889,7 +2461,7 @@
       ]
     },
     "events/agent-max-rounds": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "guardrails",
       "versions": [
         {
@@ -1909,11 +2481,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "a3e083f946a269456cdf96b8ab3225371499bdfc7a867c77288748bfb9a97c2c",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/auto-compact": {
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "category": "context",
       "versions": [
         {
@@ -1954,11 +2535,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.5",
+          "sha256": "e846f8f9d559256ad57bfdf42e4ed621f5b736e30a94c2e80ceb452d06b78684",
+          "requires": {
+            "actions/compact": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/bash-call-budget": {
-      "latest": "1.1.1",
+      "latest": "1.1.2",
       "category": "guardrails",
       "versions": [
         {
@@ -2008,11 +2598,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.1.2",
+          "sha256": "09e07993520265b49d94500a709fdb7e4affc877db8106e3d39bd2e4ce0f6424",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/chat-max-rounds": {
-      "latest": "1.1.1",
+      "latest": "1.1.2",
       "category": "guardrails",
       "versions": [
         {
@@ -2041,11 +2640,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.1.2",
+          "sha256": "4fe55dcf46cb4311590ef3db67cae0f06cd867fc7d4b915d61916ebe914a2a72",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/chat-retries": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -2056,11 +2664,20 @@
           },
           "commit": "d0a8b14876db814c57f86051037811eed9db3366",
           "date": "2026-11-16T19:53:45.669130172Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "c2ebf8d1ae5d3f162520ec2896ee9ff21e29da0782b2fec95a0f8aceb76f3591",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/code-call-budget": {
-      "latest": "1.1.1",
+      "latest": "1.1.2",
       "category": "guardrails",
       "versions": [
         {
@@ -2110,11 +2727,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.1.2",
+          "sha256": "4383fb4d33adeafa917b1cf8f636b2f2c415f4354fea67a64a7203ae5c6bd120",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/context-segment-cap": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "context",
       "versions": [
         {
@@ -2125,11 +2751,20 @@
           },
           "commit": "76f557ec84c438d266e238d2667ad1063f060515",
           "date": "2026-11-02T12:07:21.528122733Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "95cdb107ce0625d61334be70344b54cdbc5888614003c6bd9561173864dcc31b",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/convergence-block": {
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "category": "guardrails",
       "versions": [
         {
@@ -2170,11 +2805,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.5",
+          "sha256": "ab9917ce019b92ed8db28aa7bc599e4eeeb7fa61c750d290f6504f3462ec112c",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/failure-briefs": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -2185,11 +2829,20 @@
           },
           "commit": "a743cc33e0bdc7193f6ffc2900a6bf99c6b4e7d2",
           "date": "2026-11-21T20:42:46.715923556Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "e9435a3d828401251e6d46fd037769302c6d8eabac24907c510eaaa8e5215d4a",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/failure-context-bytes": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "guardrails",
       "versions": [
         {
@@ -2209,11 +2862,20 @@
           },
           "commit": "a743cc33e0bdc7193f6ffc2900a6bf99c6b4e7d2",
           "date": "2026-11-21T20:42:46.715923556Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "76bce0e473659958d31a64ab706fc4320291fb4b84c07e4483212bffafd2fad5",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/failure-dir-entries": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "guardrails",
       "versions": [
         {
@@ -2233,11 +2895,20 @@
           },
           "commit": "a743cc33e0bdc7193f6ffc2900a6bf99c6b4e7d2",
           "date": "2026-11-21T20:42:46.715923556Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "41ea3679987cced69edf9a533d2dcba4f1101da5e4283d167297d90d060a4518",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/file-call-budget": {
-      "latest": "1.1.1",
+      "latest": "1.1.2",
       "category": "guardrails",
       "versions": [
         {
@@ -2287,11 +2958,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.1.2",
+          "sha256": "6e9c4db36fd7ae59e74ea536f15d713a94dd30a275449d992a4325aae0232a8a",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/file-read-limit": {
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "category": "guardrails",
       "versions": [
         {
@@ -2332,11 +3012,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.5",
+          "sha256": "d30a6f2c4917ad074bdad971567a60a0889a386198284bf83a4d544da551fe37",
+          "requires": {
+            "actions/reject": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/fold": {
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "category": "context",
       "versions": [
         {
@@ -2377,11 +3066,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.5",
+          "sha256": "cdbe207912d22f59fe024b2c0b58aa4481aaddd8fcd33d7368d3691d709bf75a",
+          "requires": {
+            "actions/compact": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/force-answer-digest": {
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "category": "context",
       "versions": [
         {
@@ -2422,11 +3120,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.5",
+          "sha256": "c3f1931c4612fbe21800eca1c03c2ee957662b09d100d31ccab92fb61d539104",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/history-window-old-result": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "guardrails",
       "versions": [
         {
@@ -2446,11 +3153,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "560ec19f3a9699c44ac61b959762e0d894344bb3244e6f2b4c397472d3ffd0be",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/history-window-trim": {
-      "latest": "1.0.5",
+      "latest": "1.0.6",
       "category": "context",
       "versions": [
         {
@@ -2500,11 +3216,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.6",
+          "sha256": "017f8529045b37ac9e24d63286072a639b4b4d3c2191f09939171984fe50273f",
+          "requires": {
+            "actions/drop_oldest": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/identical-tool-calls": {
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "category": "guardrails",
       "versions": [
         {
@@ -2545,11 +3270,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.5",
+          "sha256": "ec027a6335cd830cfabd9a162c9dfaf27fe336989fdef950eb661e2246a11728",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/judge-iterations": {
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "category": "evals",
       "versions": [
         {
@@ -2590,11 +3324,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.5",
+          "sha256": "8a77739ad3baefc5bfa0dc83c8bab036449acfaeb3a7b2687350e227e2f0039a",
+          "requires": {
+            "actions/accept_last": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/judge-max-rounds": {
-      "latest": "1.0.5",
+      "latest": "1.0.6",
       "category": "evals",
       "versions": [
         {
@@ -2644,11 +3387,20 @@
           },
           "commit": "ae51f2e0b427d39de4b6f25877a892945c963f98",
           "date": "2026-11-21T20:56:17.674193133Z"
+        },
+        {
+          "version": "1.0.6",
+          "sha256": "6deeefe34618c940af5ce59f6bce9910975e040d3ba988bfa2710b7e1ba78872",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/knowledge-extract-seconds": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -2659,11 +3411,20 @@
           },
           "commit": "9fbeac51a015fcc23f332defb8ca467c4fffad2e",
           "date": "2026-11-01T19:46:38.428023036Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "8ade3a5d2d5c352603ac10c8a338602dd88d983acc5624e55d7ba08bed5b3f13",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/knowledge-extract-tokens": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -2674,11 +3435,20 @@
           },
           "commit": "9fbeac51a015fcc23f332defb8ca467c4fffad2e",
           "date": "2026-11-01T19:46:38.428023036Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "61f0b6cf39f803c0b2f8591b29c489c080b5bd606b4005c976a08507a87a8167",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-capture-limit": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "memory",
       "versions": [
         {
@@ -2698,11 +3468,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "2c077f006e6efc9250ef181f29839d498fffa6c9992e7ff85451f167ecd08f59",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-chain-max": {
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "category": "memory",
       "versions": [
         {
@@ -2743,11 +3522,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.5",
+          "sha256": "8f7eac76c954c20b890830c8649098853a7b687465e2934dbc5b83300952234d",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-derived-key-chars": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -2758,11 +3546,20 @@
           },
           "commit": "7527b8c5afc3bdb338e97e44a62dcc2310b323cc",
           "date": "2026-11-03T05:42:56.516966011Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "0e70275b26ff2015fba8c9ae46acbb8cbafff950299da34f802af4c69fc307fb",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-focus-max": {
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "category": "memory",
       "versions": [
         {
@@ -2803,11 +3600,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.5",
+          "sha256": "ccc372985bb1b804f75112312020c7e44132d3b45c12a565fa76042119512552",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-focus-min-word": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -2818,11 +3624,20 @@
           },
           "commit": "7527b8c5afc3bdb338e97e44a62dcc2310b323cc",
           "date": "2026-11-03T05:42:56.516966011Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "2e386762eb3277df8217ab0342b1f62832ecc1ebbaebfda05b7775c6843f72b3",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-format-tokens": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -2833,11 +3648,20 @@
           },
           "commit": "7527b8c5afc3bdb338e97e44a62dcc2310b323cc",
           "date": "2026-11-03T05:42:56.516966011Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "3bb93b86bcfe6c35031f2de476b8ac42b42f1b7967b51ac635d2142805941c34",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-key-chars": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -2848,11 +3672,20 @@
           },
           "commit": "7527b8c5afc3bdb338e97e44a62dcc2310b323cc",
           "date": "2026-11-03T05:42:56.516966011Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "e59d58a3739e74dc9f0d75da00d9a4bda186797cd081e6b5bc1e9038182a6326",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-keys-limit": {
-      "latest": "1.0.5",
+      "latest": "1.0.6",
       "category": "memory",
       "versions": [
         {
@@ -2902,11 +3735,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.6",
+          "sha256": "28117dd6ddc50be233f1da29d2237cf847b139f6ce1e3836cc67296e4dc64083",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-low-signal-limit": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "memory",
       "versions": [
         {
@@ -2917,11 +3759,20 @@
           },
           "commit": "ff0cbb83dc6dec982e353e7c2b7f5a96865cb36b",
           "date": "2026-10-25T13:52:20.437111992Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "e5a9caad1356fad64c72946113d606b3b0321e5e36a15320108e9ddc18385150",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-prompt-limit": {
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "category": "context",
       "versions": [
         {
@@ -2962,11 +3813,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.5",
+          "sha256": "e7a34aa6e36cd9f777170a785d803fd77b5847337a7876312300d4978edd99ff",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-query-rows-max": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -2977,11 +3837,20 @@
           },
           "commit": "be651aae293a50665edc876127ec53f308e5497e",
           "date": "2026-11-03T11:27:46.079480346Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "803373badbcc8ab78640d73cccaad6cdbd96a20e492cb8b37b5fd519ee829665",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-search-limit": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "memory",
       "versions": [
         {
@@ -3001,11 +3870,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "da7f0158e59f4a5d4476f6ddb67fd16b23402829b4d02247f237a3d115f43339",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-status-limit": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "memory",
       "versions": [
         {
@@ -3016,11 +3894,20 @@
           },
           "commit": "ff0cbb83dc6dec982e353e7c2b7f5a96865cb36b",
           "date": "2026-10-25T13:52:20.437111992Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "2855058b97f14a5c17805f11e87d14bb4717b3d67638f0915fd4e8f53a11bf6d",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-summary-chars": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -3031,11 +3918,20 @@
           },
           "commit": "7527b8c5afc3bdb338e97e44a62dcc2310b323cc",
           "date": "2026-11-03T05:42:56.516966011Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "bdc7d995f7ccc96805c4b654859fc4109a8f6f5e2d111797c9e25d9f23c32094",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-thinking-limit": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "memory",
       "versions": [
         {
@@ -3046,11 +3942,20 @@
           },
           "commit": "ff0cbb83dc6dec982e353e7c2b7f5a96865cb36b",
           "date": "2026-10-25T13:52:20.437111992Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "0b7726d6c123914345be1f2f5cae0e11f3b8f9a5dc27a6d2739e1203a163e9dd",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-tool-line-chars": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -3061,11 +3966,20 @@
           },
           "commit": "7527b8c5afc3bdb338e97e44a62dcc2310b323cc",
           "date": "2026-11-03T05:42:56.516966011Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "e82d91ddffde29c549e3d29907797593981ab70f6b873392884ce10dd29b3ab8",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-tool-results-limit": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "memory",
       "versions": [
         {
@@ -3076,11 +3990,20 @@
           },
           "commit": "ff0cbb83dc6dec982e353e7c2b7f5a96865cb36b",
           "date": "2026-10-25T13:52:20.437111992Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "ab5c46e17d9a23bf377cbfa4a55848d66520cac9da95b5876fa7617ffd5c2ac0",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/memory-value-limit": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "memory",
       "versions": [
         {
@@ -3100,11 +4023,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "a81715c4131e965dd93d7f4d7cf66daec2185f220a7e0cd4dac98ec8d0d525e9",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/model-record-limit": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -3115,11 +4047,20 @@
           },
           "commit": "0d9df46d9d8ef3317f1c12929ca94fd645b1a7ef",
           "date": "2026-10-25T16:32:19.514629455Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "a6fce6a1fdb754ddcd16c0b16c47eb36258e1d5b5e23173f251300fadc359248",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/openrouter-free-per-minute": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -3130,6 +4071,15 @@
           },
           "commit": "1bc8d9617b0cfb95f62194a9a9e5ce5e5a809d0c",
           "date": "2026-10-28T10:44:36.084939022Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "1a61068bc07c4a862dc0eaf569c299e4e642cd592faafa6f9ed9a1d57c9103c0",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
@@ -3182,7 +4132,7 @@
       ]
     },
     "events/parallel": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -3193,11 +4143,20 @@
           },
           "commit": "f594c7cda663e4c11dce76c35d4631e0811acc67",
           "date": "2026-11-07T06:53:51.306439924Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "09ede45fb5ce25c05f55fe0c58f4a3db4167b8280d4b4796396da48703bf242e",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/preamble-token-limit": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -3208,11 +4167,20 @@
           },
           "commit": "426b24591298489ead50b7010d0b9f9cc639413b",
           "date": "2026-11-03T11:09:09.332675634Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "a7f2ec11fa58931f3d40584325247ee5203f6bbb05af527eabd44cec881baae6",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/provider-body-limit-dashscope": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -3223,11 +4191,20 @@
           },
           "commit": "75996d7d33819a134fbc6cb2690145a6b5c6b475",
           "date": "2026-11-01T15:51:37.619229208Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "7e16335b74891e6068004f8bb7d4f3e4bb79e90c8e4ba683e5d3cd9d4429acdf",
+          "requires": {
+            "actions/reject": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/provider-body-limit-openai": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -3238,11 +4215,20 @@
           },
           "commit": "75996d7d33819a134fbc6cb2690145a6b5c6b475",
           "date": "2026-11-01T15:51:37.619229208Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "f1ea220a1928c59e786210ff64752778fcf01307c537a8ded35a95233ee39c9a",
+          "requires": {
+            "actions/reject": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/provider-body-limit-xai": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -3253,11 +4239,20 @@
           },
           "commit": "75996d7d33819a134fbc6cb2690145a6b5c6b475",
           "date": "2026-11-01T15:51:37.619229208Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "e786cb1e917d1a4b349851d6b44451adc34a08e61d886a1007019dc06760b7ff",
+          "requires": {
+            "actions/reject": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/provider-small-threshold": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -3268,11 +4263,20 @@
           },
           "commit": "75996d7d33819a134fbc6cb2690145a6b5c6b475",
           "date": "2026-11-01T15:51:37.619229208Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "01d9c68f3214124b888d9df5d9379924cf817563b223ee7006401b846aa58db4",
+          "requires": {
+            "actions/reject": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/rel-memory-limit": {
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "category": "memory",
       "versions": [
         {
@@ -3313,11 +4317,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.5",
+          "sha256": "e1f27a0d08f9ff3f5420b33b537f70e0da63f7a6e53bd1e9a6c14cabb875cde5",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/side-call-max-tokens": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "guardrails",
       "versions": [
         {
@@ -3337,11 +4350,20 @@
           },
           "commit": "4bbf0fd62042f3195df8c899fddc4508273b1073",
           "date": "2026-11-21T08:22:10.25133089Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "2168acdb85da520fa5ecee3a4e999b9e02a7f06f2f572925d8291a3f6fad19ba",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/subagent-max-rounds": {
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "category": "guardrails",
       "versions": [
         {
@@ -3370,11 +4392,20 @@
           },
           "commit": "ae51f2e0b427d39de4b6f25877a892945c963f98",
           "date": "2026-11-21T20:56:17.674193133Z"
+        },
+        {
+          "version": "1.0.3",
+          "sha256": "d502b0045639bdb7cd32944133e6bbb3545fdc8d891319b9e39cebb020145222",
+          "requires": {
+            "actions/force_answer": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/thinking-budget-auto": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "model",
       "versions": [
         {
@@ -3394,11 +4425,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "97b12163d287d4291d65fc2187ccf2fc0b9693829cd4331e5d30bc03a2dfeaea",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/thinking-budget-high": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "model",
       "versions": [
         {
@@ -3418,11 +4458,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "f37fd3e4c682811825d5eb0c366317d02fa8424a53df193780a5f4ec118bc6bc",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/thinking-budget-low": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "model",
       "versions": [
         {
@@ -3442,11 +4491,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "9de20d49aebc09a4b25c9c5f8ee55a74927d45a894d98ee9edba210b53c43b02",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/thinking-budget-medium": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "model",
       "versions": [
         {
@@ -3466,11 +4524,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "aa782415833076b5dc9ce3841a7228bf6fcba45f835400cab039035e746f7a49",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/thinking-budget-minimal": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "model",
       "versions": [
         {
@@ -3490,11 +4557,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "a25357d0f1ab878d650b87927916eec173d7c81009a51ecbfe6856a446c20963",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/thinking-budget-xhigh": {
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "category": "model",
       "versions": [
         {
@@ -3514,11 +4590,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.2",
+          "sha256": "f90b88c25b324ea5cccf4a357c349a90f874a50656e55186b9ffc4ade569233d",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/tool-allocation-increment": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -3529,11 +4614,20 @@
           },
           "commit": "426b24591298489ead50b7010d0b9f9cc639413b",
           "date": "2026-11-03T11:09:09.332675634Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "105f8b02bb9142340b636f0bb4abb081683f573d4dbeb266f30e3fce40436b5f",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/tool-error-truncate": {
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "category": "context",
       "versions": [
         {
@@ -3574,11 +4668,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.5",
+          "sha256": "0adaaeaf14f41f136422034c8d156ef8bff1bf0a9bc9fca76e4428c5033d03f2",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/tool-result-truncate": {
-      "latest": "1.0.5",
+      "latest": "1.0.6",
       "category": "context",
       "versions": [
         {
@@ -3628,11 +4731,20 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.0.6",
+          "sha256": "6864d6a119f5dd10178e25dd5ab145660edf14b00af0405ab2b01dac8d1a4c77",
+          "requires": {
+            "actions/truncate": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/trivial-prompt-max": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -3643,11 +4755,20 @@
           },
           "commit": "ae723582676b06c18d39559f84cd16c4674b806f",
           "date": "2026-11-01T17:12:59.279088879Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "24b7a77083a38317cd997f71c4fb36d71e93825cb53ef60e1a3c65d51304a809",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/trivial-prompt-short": {
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "category": "guardrails",
       "versions": [
         {
@@ -3658,11 +4779,20 @@
           },
           "commit": "ae723582676b06c18d39559f84cd16c4674b806f",
           "date": "2026-11-01T17:12:59.279088879Z"
+        },
+        {
+          "version": "1.0.1",
+          "sha256": "0c0b2203e96d849f3d6e6dc44a5ffff4e879831ad2d3080730b652af7bce661e",
+          "requires": {
+            "actions/cap": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "events/web-call-budget": {
-      "latest": "1.1.1",
+      "latest": "1.1.2",
       "category": "guardrails",
       "versions": [
         {
@@ -3712,6 +4842,15 @@
           },
           "commit": "91d980844f2245b5a39d6c6c0ea03c141ffa26ca",
           "date": "2026-11-17T03:51:03.246069185Z"
+        },
+        {
+          "version": "1.1.2",
+          "sha256": "d9ecea039e1c98dd392e21dfa8123cd359e2db4a1d6b776e75e3e0a7cd16c906",
+          "requires": {
+            "actions/block": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
@@ -5540,7 +6679,7 @@
       ]
     },
     "presets/balanced": {
-      "latest": "1.4.0",
+      "latest": "1.4.1",
       "description": "The shipped, out-of-the-box defaults for every token-economy event. Applying this after switching to \"frugal\" or \"thorough\" resets them all in one step, without needing to hand-edit or delete override files.",
       "category": "context",
       "versions": [
@@ -5936,6 +7075,49 @@
           },
           "commit": "a743cc33e0bdc7193f6ffc2900a6bf99c6b4e7d2",
           "date": "2026-11-21T20:42:46.715923556Z"
+        },
+        {
+          "version": "1.4.1",
+          "sha256": "e0d0bc429e48d3d68a50edde6ff7412b91baff308cb7f4127d17318850202972",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "components/bash_exec": "",
+            "components/edit_file": "",
+            "components/exec": "",
+            "components/list_files": "",
+            "components/memory_query": "",
+            "components/memory_search": "",
+            "components/read_file": "",
+            "components/search_local": "",
+            "components/web_scraper": "",
+            "components/web_search": "",
+            "components/write_file": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-old-result": "",
+            "events/history-window-trim": "",
+            "events/memory-capture-limit": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/memory-search-limit": "",
+            "events/memory-value-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
@@ -5959,7 +7141,7 @@
       ]
     },
     "presets/frugal": {
-      "latest": "1.4.0",
+      "latest": "1.4.1",
       "description": "Minimizes token usage: compacts and folds history sooner, injects far less memory context, truncates tool output harder, and caps tool-call budgets tighter. Best for cost-sensitive sessions or a small-context- window local model.",
       "category": "context",
       "versions": [
@@ -6355,11 +7537,54 @@
           },
           "commit": "a743cc33e0bdc7193f6ffc2900a6bf99c6b4e7d2",
           "date": "2026-11-21T20:42:46.715923556Z"
+        },
+        {
+          "version": "1.4.1",
+          "sha256": "19a6b23477bfaf0f666b07f332dd67b5e65ef61e60e324bf3ef2054619ac6eaf",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "components/bash_exec": "",
+            "components/edit_file": "",
+            "components/exec": "",
+            "components/list_files": "",
+            "components/memory_query": "",
+            "components/memory_search": "",
+            "components/read_file": "",
+            "components/search_local": "",
+            "components/web_scraper": "",
+            "components/web_search": "",
+            "components/write_file": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-old-result": "",
+            "events/history-window-trim": "",
+            "events/memory-capture-limit": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/memory-search-limit": "",
+            "events/memory-value-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
     "presets/thorough": {
-      "latest": "1.4.0",
+      "latest": "1.4.1",
       "description": "Maximizes context retention: compacts and folds much less often, injects far more memory context, keeps more of every tool result, and allows larger tool-call budgets. Best for long research/investigation sessions where losing history hurts quality more than the extra tokens cost.",
       "category": "context",
       "versions": [
@@ -6755,6 +7980,49 @@
           },
           "commit": "a743cc33e0bdc7193f6ffc2900a6bf99c6b4e7d2",
           "date": "2026-11-21T20:42:46.715923556Z"
+        },
+        {
+          "version": "1.4.1",
+          "sha256": "e5e5d99b828cb9f25be5451ec7f13efd5fe90776af93b8ecdbfe899b275fe8ea",
+          "requires": {
+            "actions/block": "",
+            "actions/cap": "",
+            "actions/compact": "",
+            "actions/drop_oldest": "",
+            "actions/truncate": "",
+            "components/bash_exec": "",
+            "components/edit_file": "",
+            "components/exec": "",
+            "components/list_files": "",
+            "components/memory_query": "",
+            "components/memory_search": "",
+            "components/read_file": "",
+            "components/search_local": "",
+            "components/web_scraper": "",
+            "components/web_search": "",
+            "components/write_file": "",
+            "events/auto-compact": "",
+            "events/bash-call-budget": "",
+            "events/code-call-budget": "",
+            "events/file-call-budget": "",
+            "events/fold": "",
+            "events/force-answer-digest": "",
+            "events/history-window-old-result": "",
+            "events/history-window-trim": "",
+            "events/memory-capture-limit": "",
+            "events/memory-chain-max": "",
+            "events/memory-focus-max": "",
+            "events/memory-keys-limit": "",
+            "events/memory-prompt-limit": "",
+            "events/memory-search-limit": "",
+            "events/memory-value-limit": "",
+            "events/rel-memory-limit": "",
+            "events/tool-error-truncate": "",
+            "events/tool-result-truncate": "",
+            "events/web-call-budget": ""
+          },
+          "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
+          "date": "2026-11-26T11:15:36.59586194Z"
         }
       ]
     },
