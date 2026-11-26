@@ -8776,7 +8776,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "1.11.0",
+      "latest": "2.0.0",
       "category": "workflow",
       "versions": [
         {
@@ -8934,6 +8934,13 @@
           "sha256": "6818fe737e0b8761ba66d04e993abc8c3023348ad69afc3079502d333ea15f12",
           "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
           "date": "2026-11-26T19:51:02.454773411Z"
+        },
+        {
+          "version": "2.0.0",
+          "sha256": "0192022c231b8759c50d82f20c43cc423b052a564caa7837829ec09a28a72410",
+          "kdeps": "\u003e=3.6.0",
+          "commit": "93896c5eedd8a5490df0b2d67a4d5f185e1a1f6b",
+          "date": "2026-11-26T20:41:59.138666031Z"
         }
       ]
     },
@@ -8956,7 +8963,7 @@
       ]
     },
     "templates/api-service": {
-      "latest": "3.0.0",
+      "latest": "3.0.1",
       "category": "workflow",
       "versions": [
         {
@@ -8976,6 +8983,12 @@
           "sha256": "671951f88bed6fb292e40aef2654167b4a4e1742b5a16298de83c404d9cc70fc",
           "commit": "2f6eb44e481c37834f8f4791e89945b9f52ccf7a",
           "date": "2026-11-10T06:37:08.473275778Z"
+        },
+        {
+          "version": "3.0.1",
+          "sha256": "25fa9c58b76283fc2b80ba3ee52bc956b3c863ab5bef055b91c8730923c652f5",
+          "commit": "93896c5eedd8a5490df0b2d67a4d5f185e1a1f6b",
+          "date": "2026-11-26T20:41:59.138666031Z"
         }
       ]
     },
