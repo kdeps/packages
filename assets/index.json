@@ -1540,6 +1540,60 @@
         }
       ]
     },
+    "components/notion_get": {
+      "latest": "1.0.0",
+      "description": "Read the Notion API through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "bcb68366edd88d768cf45d3a05c9fd4e3ccb0a3da447413987192dfa6caed98d",
+          "requires": {
+            "schemas/v1": "",
+            "tools/notion_get": ""
+          },
+          "commit": "0a13021c756e566e2913a8826d77e4cb512c0af5",
+          "tokens": 50,
+          "date": "2026-11-26T15:21:22.363797175Z"
+        }
+      ]
+    },
+    "components/notion_patch": {
+      "latest": "1.0.0",
+      "description": "Update Notion pages and blocks through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "ea81205a285d9b3c4ac6ae948d2bcc3119aa121042d0e085ecb243223d47108c",
+          "requires": {
+            "schemas/v1": "",
+            "tools/notion_patch": ""
+          },
+          "commit": "0a13021c756e566e2913a8826d77e4cb512c0af5",
+          "tokens": 87,
+          "date": "2026-11-26T15:21:22.363797175Z"
+        }
+      ]
+    },
+    "components/notion_post": {
+      "latest": "1.0.0",
+      "description": "Search, query and create in Notion through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "8e00bb05737e81c867a5386fc9acb6d0851078b7848e39844005cd618098ce29",
+          "requires": {
+            "schemas/v1": "",
+            "tools/notion_post": ""
+          },
+          "commit": "0a13021c756e566e2913a8826d77e4cb512c0af5",
+          "tokens": 88,
+          "date": "2026-11-26T15:21:22.363797175Z"
+        }
+      ]
+    },
     "components/ocr_image": {
       "latest": "1.0.3",
       "description": "Extract text from an image with tesseract through the kdeps API",
@@ -6685,7 +6739,7 @@
       ]
     },
     "policy/permission": {
-      "latest": "1.4.3",
+      "latest": "1.4.4",
       "category": "guardrails",
       "versions": [
         {
@@ -6735,6 +6789,12 @@
           "sha256": "6ee3bde135ea50b4baea3b18346a771f99f8faf0733b2c651e64ca9f3c3c714a",
           "commit": "9dda3e8d25ccc4118188d6deb9ccfd3a18aaf09c",
           "date": "2026-11-26T15:00:10.79845771Z"
+        },
+        {
+          "version": "1.4.4",
+          "sha256": "675d713d9c2708dd6e68505ea56c769136ea4a5b0039d68f61ca5b8e90e34259",
+          "commit": "0a13021c756e566e2913a8826d77e4cb512c0af5",
+          "date": "2026-11-26T15:21:22.363797175Z"
         }
       ]
     },
@@ -9557,6 +9617,48 @@
           "commit": "5c7640ea414fa530ceffff7adc18302482ee9ea1",
           "tokens": 137,
           "date": "2026-10-10T03:09:18.488367863Z"
+        }
+      ]
+    },
+    "tools/notion_get": {
+      "latest": "1.0.0",
+      "description": "Read the Notion API: GET https://api.notion.com/v1/PATH and return the JSON. Use it for pages, page properties, blocks and users. Requires NOTION_TOKEN, NOTION_API_KEY or the vault secret notion_token.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "c2c6e049f508ee22065ae05b77b8e08fb53c3bc138abd019f624a58d7af722e4",
+          "commit": "0a13021c756e566e2913a8826d77e4cb512c0af5",
+          "tokens": 106,
+          "date": "2026-11-26T15:21:22.363797175Z"
+        }
+      ]
+    },
+    "tools/notion_patch": {
+      "latest": "1.0.0",
+      "description": "Change Notion content: PATCH a JSON body to https://api.notion.com/v1/PATH and return the JSON. Use it to update page properties, append blocks and archive pages. Requires NOTION_TOKEN, NOTION_API_KEY or the vault secret notion_token.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "4bf97d656f0a40d462458f8bfcadfa70495bdd4d47b72ab7383e01a65d388d92",
+          "commit": "0a13021c756e566e2913a8826d77e4cb512c0af5",
+          "tokens": 136,
+          "date": "2026-11-26T15:21:22.363797175Z"
+        }
+      ]
+    },
+    "tools/notion_post": {
+      "latest": "1.0.0",
+      "description": "Call the Notion API: POST a JSON body to https://api.notion.com/v1/PATH and return the JSON. Use it to search, query databases and create pages. Requires NOTION_TOKEN, NOTION_API_KEY or the vault secret notion_token.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "35b12b6cea15c3b70d4e3a52da52a284699a558e6adbe6de499a2e159937c820",
+          "commit": "0a13021c756e566e2913a8826d77e4cb512c0af5",
+          "tokens": 131,
+          "date": "2026-11-26T15:21:22.363797175Z"
         }
       ]
     },
