@@ -140,6 +140,60 @@
         }
       ]
     },
+    "components/airtable_get": {
+      "latest": "1.0.0",
+      "description": "Read the Airtable API through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "fcc2064699911d89b6fa3f36df7743148da726c971e15e086f9f6a77835c7b87",
+          "requires": {
+            "schemas/v1": "",
+            "tools/airtable_get": ""
+          },
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "tokens": 67,
+          "date": "2026-11-26T16:16:23.354218237Z"
+        }
+      ]
+    },
+    "components/airtable_patch": {
+      "latest": "1.0.0",
+      "description": "Update Airtable records through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "a66b6720fa50e3620e4e2a0553f09f5da15837c86e28b128a3ffb6b69894e97c",
+          "requires": {
+            "schemas/v1": "",
+            "tools/airtable_patch": ""
+          },
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "tokens": 87,
+          "date": "2026-11-26T16:16:23.354218237Z"
+        }
+      ]
+    },
+    "components/airtable_post": {
+      "latest": "1.0.0",
+      "description": "Write to the Airtable API through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "7879f7f9a4212d5044337f032846004b8b32f3f8c40ab3515a3b5afaa24f1548",
+          "requires": {
+            "schemas/v1": "",
+            "tools/airtable_post": ""
+          },
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "tokens": 84,
+          "date": "2026-11-26T16:16:23.354218237Z"
+        }
+      ]
+    },
     "components/approval_grant": {
       "latest": "1.0.2",
       "description": "Grant a pending approval token through the kdeps API",
@@ -1207,6 +1261,60 @@
         }
       ]
     },
+    "components/jira_get": {
+      "latest": "1.0.0",
+      "description": "Read the Jira API through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "37cfceb30c8b84e9b389dc6b02847462ed7fc5f1d8d9e4aa331e8cecf5cc900f",
+          "requires": {
+            "schemas/v1": "",
+            "tools/jira_get": ""
+          },
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "tokens": 57,
+          "date": "2026-11-26T16:16:23.354218237Z"
+        }
+      ]
+    },
+    "components/jira_post": {
+      "latest": "1.0.0",
+      "description": "Write to the Jira API through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "ab472e3c8c89d9f5f38bd4ceffc74fc890a0cb40fc751fc0935b009cf005f822",
+          "requires": {
+            "schemas/v1": "",
+            "tools/jira_post": ""
+          },
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "tokens": 103,
+          "date": "2026-11-26T16:16:23.354218237Z"
+        }
+      ]
+    },
+    "components/jira_put": {
+      "latest": "1.0.0",
+      "description": "Update Jira issues through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "0c2e62a58764a3e47b09baf42c775001c00b3250e480bbc41026f5a744690356",
+          "requires": {
+            "schemas/v1": "",
+            "tools/jira_put": ""
+          },
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "tokens": 79,
+          "date": "2026-11-26T16:16:23.354218237Z"
+        }
+      ]
+    },
     "components/knowledge_recall": {
       "latest": "1.0.1",
       "description": "Recall knowledge vault notes for a query through the kdeps API",
@@ -2020,6 +2128,42 @@
           "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
           "tokens": 66,
           "date": "2026-11-26T11:15:36.59586194Z"
+        }
+      ]
+    },
+    "components/stripe_get": {
+      "latest": "1.0.0",
+      "description": "Read the Stripe API through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "9304900faee4675d4dea184631d79269083c368c7150b6658d571ac9ccd3fcbe",
+          "requires": {
+            "schemas/v1": "",
+            "tools/stripe_get": ""
+          },
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "tokens": 62,
+          "date": "2026-11-26T16:16:23.354218237Z"
+        }
+      ]
+    },
+    "components/stripe_post": {
+      "latest": "1.0.0",
+      "description": "Write to the Stripe API through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "25f02ebe58a2bfe46a668118b0a55198fe2a031a69e20bef5a258d31077579b7",
+          "requires": {
+            "schemas/v1": "",
+            "tools/stripe_post": ""
+          },
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "tokens": 104,
+          "date": "2026-11-26T16:16:23.354218237Z"
         }
       ]
     },
@@ -6739,7 +6883,7 @@
       ]
     },
     "policy/permission": {
-      "latest": "1.4.4",
+      "latest": "1.4.5",
       "category": "guardrails",
       "versions": [
         {
@@ -6795,6 +6939,12 @@
           "sha256": "675d713d9c2708dd6e68505ea56c769136ea4a5b0039d68f61ca5b8e90e34259",
           "commit": "0a13021c756e566e2913a8826d77e4cb512c0af5",
           "date": "2026-11-26T15:21:22.363797175Z"
+        },
+        {
+          "version": "1.4.5",
+          "sha256": "dc615d06643a74eba2424f470e7ceece1e0e5e944ce2d94d6b5fac9d53d634b0",
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "date": "2026-11-26T16:16:23.354218237Z"
         }
       ]
     },
@@ -8811,6 +8961,48 @@
         }
       ]
     },
+    "tools/airtable_get": {
+      "latest": "1.0.0",
+      "description": "Read the Airtable API: GET https://api.airtable.com/v0/PATH and return the JSON. Use it to list and read records and bases. Requires AIRTABLE_TOKEN, AIRTABLE_API_KEY or the vault secret airtable_token.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "9c438796559d077f487dae120c71a6c3d3de017ed099ec236f00a7d5303cac2a",
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "tokens": 107,
+          "date": "2026-11-26T16:16:23.354218237Z"
+        }
+      ]
+    },
+    "tools/airtable_patch": {
+      "latest": "1.0.0",
+      "description": "Change Airtable records: PATCH a JSON body to https://api.airtable.com/v0/PATH and return the JSON. Fields not in the body stay as they are. Requires AIRTABLE_TOKEN, AIRTABLE_API_KEY or the vault secret airtable_token.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "fd811e4b9c7bc137ba97a2944237e67447fa9ab061676a6a6116ebc3cb4a1346",
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "tokens": 131,
+          "date": "2026-11-26T16:16:23.354218237Z"
+        }
+      ]
+    },
+    "tools/airtable_post": {
+      "latest": "1.0.0",
+      "description": "Write to the Airtable API: POST a JSON body to https://api.airtable.com/v0/PATH and return the JSON. Use it to create records. Requires AIRTABLE_TOKEN, AIRTABLE_API_KEY or the vault secret airtable_token.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "7d1554a5ac8cdb1a40f9d1f2c656f05e6308ad035e6d4117b391d8cfd741c798",
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "tokens": 124,
+          "date": "2026-11-26T16:16:23.354218237Z"
+        }
+      ]
+    },
     "tools/approval_grant": {
       "latest": "1.2.0",
       "description": "Grant a pending approval token. Only the user grants one, on the kdeps API; the agent loop does not offer this tool to the model.",
@@ -9396,6 +9588,48 @@
         }
       ]
     },
+    "tools/jira_get": {
+      "latest": "1.0.0",
+      "description": "Read the Jira Cloud REST API: GET JIRA_URL/rest/api/3/PATH and return the JSON. Use it for issues, projects, transitions and JQL search. Requires JIRA_URL, JIRA_EMAIL and JIRA_API_TOKEN (or the vault secrets jira_url, jira_email and jira_api_token).",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "a53dc3a878c0a68ef9145183880df5875c6a30085f3334b73d7e7456f37859ae",
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "tokens": 110,
+          "date": "2026-11-26T16:16:23.354218237Z"
+        }
+      ]
+    },
+    "tools/jira_post": {
+      "latest": "1.0.0",
+      "description": "Write to the Jira Cloud REST API: POST a JSON body to JIRA_URL/rest/api/3/PATH and return the JSON. Use it to create issues, add comments and move issues to a new status. Requires JIRA_URL, JIRA_EMAIL and JIRA_API_TOKEN (or the vault secrets jira_url, jira_email and jira_api_token).",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "5dda4d334f50e5dc860f3fb66f4b452e0ffa9578dbc11d4f3a22cc1a1b4ece5f",
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "tokens": 164,
+          "date": "2026-11-26T16:16:23.354218237Z"
+        }
+      ]
+    },
+    "tools/jira_put": {
+      "latest": "1.0.0",
+      "description": "Change Jira issues: PUT a JSON body to JIRA_URL/rest/api/3/PATH. Use it to edit issue fields and assignees. Requires JIRA_URL, JIRA_EMAIL and JIRA_API_TOKEN (or the vault secrets jira_url, jira_email and jira_api_token).",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "761fb3f962f3a74f2fd9fa996380caddf7590e507b6ba199d073a5dc05e81e17",
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "tokens": 125,
+          "date": "2026-11-26T16:16:23.354218237Z"
+        }
+      ]
+    },
     "tools/judge_verdict": {
       "latest": "1.0.0",
       "description": "Settle your review of the candidate output. Must be called exactly once, when your review is complete.",
@@ -9916,6 +10150,34 @@
           "commit": "99376ff2da9c31bc7d2a302ff3bdabe7269305a5",
           "tokens": 118,
           "date": "2026-10-24T04:09:46.565061934Z"
+        }
+      ]
+    },
+    "tools/stripe_get": {
+      "latest": "1.0.0",
+      "description": "Read the Stripe API: GET https://api.stripe.com/v1/PATH and return the JSON. Use it for customers, payments, invoices, subscriptions and balance. Requires STRIPE_SECRET_KEY, STRIPE_API_KEY or the vault secret stripe_secret_key.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "a434ed361740c402cd80c70469404a9ea76e8f10b0022083207853e511d6aca3",
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "tokens": 109,
+          "date": "2026-11-26T16:16:23.354218237Z"
+        }
+      ]
+    },
+    "tools/stripe_post": {
+      "latest": "1.0.0",
+      "description": "Write to the Stripe API: POST form fields to https://api.stripe.com/v1/PATH and return the JSON. It creates and changes customers, payments, refunds and invoices, and can move money. Requires STRIPE_SECRET_KEY, STRIPE_API_KEY or the vault secret stripe_secret_key.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "bd647cbb1e95a4d5095a4a89dc965973ca7074725f36c1ce2ffeec4e134f972c",
+          "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
+          "tokens": 159,
+          "date": "2026-11-26T16:16:23.354218237Z"
         }
       ]
     },
