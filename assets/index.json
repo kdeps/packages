@@ -585,6 +585,42 @@
         }
       ]
     },
+    "components/discord_get": {
+      "latest": "1.0.0",
+      "description": "Read the Discord API through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "92bd5c9ab3bebe3c550b003febd4457a4f1f0928ab11e7cabfec1f32adf7bb70",
+          "requires": {
+            "schemas/v1": "",
+            "tools/discord_get": ""
+          },
+          "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
+          "tokens": 44,
+          "date": "2026-11-26T19:51:02.454773411Z"
+        }
+      ]
+    },
+    "components/discord_post": {
+      "latest": "1.0.0",
+      "description": "Write to the Discord API through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "950dd62de00929723c27cc755f868669b98a7fdbcb939ca4574cd11f3e6c4738",
+          "requires": {
+            "schemas/v1": "",
+            "tools/discord_post": ""
+          },
+          "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
+          "tokens": 79,
+          "date": "2026-11-26T19:51:02.454773411Z"
+        }
+      ]
+    },
     "components/edit_file": {
       "latest": "2.0.1",
       "description": "Edit a file through the kdeps API and return the changed snippet",
@@ -1965,6 +2001,24 @@
         }
       ]
     },
+    "components/slack_socket_open": {
+      "latest": "1.0.0",
+      "description": "Open a Slack Socket Mode connection through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "47de28c78721a75632d8423da8548f4c3d5019eb64905a22f8288b72f81d9fea",
+          "requires": {
+            "schemas/v1": "",
+            "tools/slack_socket_open": ""
+          },
+          "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
+          "tokens": 20,
+          "date": "2026-11-26T19:51:02.454773411Z"
+        }
+      ]
+    },
     "components/sql": {
       "latest": "1.0.3",
       "description": "Run SQL against PostgreSQL, MySQL/MariaDB, SQLite, SQL Server or Oracle - one query, or several in a transaction",
@@ -2203,6 +2257,42 @@
           "commit": "6368138b8bbc7756182b51a819a5395daf69d569",
           "tokens": 67,
           "date": "2026-11-26T11:15:36.59586194Z"
+        }
+      ]
+    },
+    "components/telegram_get": {
+      "latest": "1.0.0",
+      "description": "Read the Telegram Bot API through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "3ce8d0fb32f71a5bb2a630e892a9e401dac6e9f038aa888298980c2c63cc1dcd",
+          "requires": {
+            "schemas/v1": "",
+            "tools/telegram_get": ""
+          },
+          "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
+          "tokens": 48,
+          "date": "2026-11-26T19:51:02.454773411Z"
+        }
+      ]
+    },
+    "components/telegram_post": {
+      "latest": "1.0.0",
+      "description": "Write to the Telegram Bot API through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "8916b9b254afd4f073e56cee5f104525e96b66c8fb694be43ba70451695966ef",
+          "requires": {
+            "schemas/v1": "",
+            "tools/telegram_post": ""
+          },
+          "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
+          "tokens": 72,
+          "date": "2026-11-26T19:51:02.454773411Z"
         }
       ]
     },
@@ -6132,6 +6222,54 @@
         }
       ]
     },
+    "listeners/discord_gateway": {
+      "latest": "1.0.0",
+      "description": "Discord messages over the Gateway: runs the workflow once for each new message in a guild channel or a DM. The event is the message: input('content'), input('channel_id'), input('author').username. Messages from bots are left out. Reply with the discord_post component. Enable the Message Content intent for the bot. Requires DISCORD_BOT_TOKEN or the vault secret discord_bot_token.",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "07aa153808c77b35a868769fdef9542a4769c08cd09b797d45a6dc18ddcec56a",
+          "kdeps": "\u003e=3.6.0",
+          "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
+          "date": "2026-11-26T19:51:02.454773411Z"
+        }
+      ]
+    },
+    "listeners/slack_events": {
+      "latest": "1.0.0",
+      "description": "Slack events over Socket Mode (no public URL): runs the workflow once for each message event. The event is the Slack event: input('text'), input('channel'), input('user'). Messages from bots are left out. Reply with the slack_post component (chat.postMessage). Needs SLACK_APP_TOKEN (xapp-) for the connection.",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "42bb329ec6d36c924d83e7403b7fcccef985315303049ae3312fd8a276c0d1da",
+          "kdeps": "\u003e=3.6.0",
+          "requires": {
+            "tools/slack_socket_open": ""
+          },
+          "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
+          "date": "2026-11-26T19:51:02.454773411Z"
+        }
+      ]
+    },
+    "listeners/telegram_updates": {
+      "latest": "1.0.0",
+      "description": "Telegram bot messages: polls getUpdates and runs the workflow once for each update. The event is the update: input('message').text, input('message').chat.id. Reply with the telegram_post component (sendMessage).",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "652cd4b9235f9b7dde47c95c3f6f17e8b57ba862d39de1bbe292c789f428635f",
+          "kdeps": "\u003e=3.6.0",
+          "requires": {
+            "tools/telegram_get": ""
+          },
+          "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
+          "date": "2026-11-26T19:51:02.454773411Z"
+        }
+      ]
+    },
     "memory/rules": {
       "latest": "1.6.0",
       "category": "memory",
@@ -6889,7 +7027,7 @@
       ]
     },
     "policy/permission": {
-      "latest": "1.4.5",
+      "latest": "1.4.6",
       "category": "guardrails",
       "versions": [
         {
@@ -6951,6 +7089,12 @@
           "sha256": "dc615d06643a74eba2424f470e7ceece1e0e5e944ce2d94d6b5fac9d53d634b0",
           "commit": "774a5ee48e894405087bf6808d24c9a4e4b050af",
           "date": "2026-11-26T16:16:23.354218237Z"
+        },
+        {
+          "version": "1.4.6",
+          "sha256": "f706d0b21a625885002a24138f1359190d51dc1c370b81ba692dd5ab941bfcd2",
+          "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
+          "date": "2026-11-26T19:51:02.454773411Z"
         }
       ]
     },
@@ -8632,7 +8776,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "1.10.0",
+      "latest": "1.11.0",
       "category": "workflow",
       "versions": [
         {
@@ -8784,6 +8928,12 @@
           "sha256": "4506b4d2920966deda668398e948c298eab83f7ae1b6ffbe53fde87f3e5c6794",
           "commit": "a9e06926278a2ea208cd5177351968eda040aa99",
           "date": "2026-11-26T16:45:34.31498475Z"
+        },
+        {
+          "version": "1.11.0",
+          "sha256": "6818fe737e0b8761ba66d04e993abc8c3023348ad69afc3079502d333ea15f12",
+          "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
+          "date": "2026-11-26T19:51:02.454773411Z"
         }
       ]
     },
@@ -9226,6 +9376,34 @@
           "commit": "eb2225e3bb536184501ac840c1ed3be966bad6fe",
           "tokens": 153,
           "date": "2026-10-13T10:21:23.350067888Z"
+        }
+      ]
+    },
+    "tools/discord_get": {
+      "latest": "1.0.0",
+      "description": "Read the Discord API: GET https://discord.com/api/v10/PATH and return the JSON. Use it for channels, messages, guilds and users. Requires DISCORD_BOT_TOKEN or the vault secret discord_bot_token.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "6dab385bef9c8a09685330e18980e88da391d8ededc775574f63b0e4240dd3fc",
+          "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
+          "tokens": 101,
+          "date": "2026-11-26T19:51:02.454773411Z"
+        }
+      ]
+    },
+    "tools/discord_post": {
+      "latest": "1.0.0",
+      "description": "Write to the Discord API: POST a JSON body to https://discord.com/api/v10/PATH and return the JSON. Use it to send messages and add reactions. Requires DISCORD_BOT_TOKEN or the vault secret discord_bot_token.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "0f9a56a81f3768aa829404220aa3cd2794fd34551ce0343fe9fd94e052aaa828",
+          "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
+          "tokens": 136,
+          "date": "2026-11-26T19:51:02.454773411Z"
         }
       ]
     },
@@ -10100,6 +10278,20 @@
         }
       ]
     },
+    "tools/slack_socket_open": {
+      "latest": "1.0.0",
+      "description": "Open a Slack Socket Mode connection: POST https://slack.com/api/apps.connections.open with the app-level token and return the JSON with the websocket url. The slack_events listener calls it before each connect. Requires SLACK_APP_TOKEN or the vault secret slack_app_token.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "40d629e77b44a5e43af08c58a6ff43d35b2ea51fbc56fc44b689acc8512a1421",
+          "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
+          "tokens": 75,
+          "date": "2026-11-26T19:51:02.454773411Z"
+        }
+      ]
+    },
     "tools/sql_describe_table": {
       "latest": "2.0.0",
       "description": "Return the schema (column names and types) for a table in a SQLite database. Use before writing queries to know the exact column names.",
@@ -10251,6 +10443,34 @@
           "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
           "tokens": 145,
           "date": "2026-10-24T03:30:15.343259609Z"
+        }
+      ]
+    },
+    "tools/telegram_get": {
+      "latest": "1.0.0",
+      "description": "Read the Telegram Bot API: GET https://api.telegram.org/bot\u003cTOKEN\u003e/METHOD and return the JSON. Use it for getMe, getUpdates, getChat and getFile. Requires TELEGRAM_BOT_TOKEN, TELEGRAM_TOKEN or the vault secret telegram_bot_token.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "867d8afb465995d7692b52e648336a8a3e2ebd493c2a738a8db2abc81497f896",
+          "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
+          "tokens": 105,
+          "date": "2026-11-26T19:51:02.454773411Z"
+        }
+      ]
+    },
+    "tools/telegram_post": {
+      "latest": "1.0.0",
+      "description": "Write to the Telegram Bot API: POST a JSON body to https://api.telegram.org/bot\u003cTOKEN\u003e/METHOD and return the JSON. Use it to send, edit and delete messages. Requires TELEGRAM_BOT_TOKEN, TELEGRAM_TOKEN or the vault secret telegram_bot_token.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "f215d89cf08830797ca359899ca4ce9d3438d895a7fb9a4fe2c6fa42c217fc33",
+          "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
+          "tokens": 133,
+          "date": "2026-11-26T19:51:02.454773411Z"
         }
       ]
     },
@@ -10813,6 +11033,35 @@
         "agent.(*Loop).startSubagents",
         "knowledge.SharedIndex",
         "knowledge.recallRules"
+      ]
+    },
+    "listeners": {
+      "purpose": "Ready-made event sources for deploy.input.listen: a Telegram poll, Slack Socket Mode and the Discord Gateway, each one transport block in YAML.",
+      "mode": "both",
+      "flow": [
+        {
+          "label": "a workflow names a listener under deploy.input.listen"
+        },
+        {
+          "label": "the listener is read from the listeners set when kdeps run starts",
+          "here": true
+        },
+        {
+          "label": "its transport (poll, websocket, ...) starts"
+        },
+        {
+          "label": "each event runs the workflow once"
+        }
+      ],
+      "usedBy": [
+        "kdeps (agent loop)",
+        "kdeps run",
+        "kdeps exec"
+      ],
+      "code": [
+        "kdeps (agent loop)",
+        "listen.Run",
+        "listen.readListenerAsset"
       ]
     },
     "memory": {
