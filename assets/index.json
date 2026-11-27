@@ -2541,6 +2541,24 @@
         }
       ]
     },
+    "components/whatsapp_post": {
+      "latest": "1.0.0",
+      "description": "Write to the WhatsApp Cloud API through the kdeps API",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "09d3f9f16707c4ce0a501631f44893cdbf76326e748cedc82fc88b337d9e6a97",
+          "requires": {
+            "schemas/v1": "",
+            "tools/whatsapp_post": ""
+          },
+          "commit": "202f9554d45c48ffc2667320eae3325d26373f1d",
+          "tokens": 96,
+          "date": "2026-11-27T05:45:58.877554761Z"
+        }
+      ]
+    },
     "components/wikipedia": {
       "latest": "1.0.2",
       "description": "Look up a Wikipedia topic through the kdeps API",
@@ -6270,6 +6288,20 @@
         }
       ]
     },
+    "listeners/whatsapp_webhook": {
+      "latest": "1.0.0",
+      "description": "WhatsApp Cloud API webhook on /whatsapp: answers the Meta verification handshake and runs the workflow once for each signed notification. The event is the notification: input('entry')[0].changes[0].value.messages[0]. Status callbacks (sent, delivered, read) get 200 and start no run. Reply with the whatsapp_post component. Needs WHATSAPP_VERIFY_TOKEN and WHATSAPP_APP_SECRET.",
+      "category": "workflow",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "3e4b0376811dca0e2cccef4f865f181b497dbab7f80a2559b97e1d5fb270abc8",
+          "kdeps": "\u003e=3.6.0",
+          "commit": "202f9554d45c48ffc2667320eae3325d26373f1d",
+          "date": "2026-11-27T05:45:58.877554761Z"
+        }
+      ]
+    },
     "memory/rules": {
       "latest": "1.6.0",
       "category": "memory",
@@ -7027,7 +7059,7 @@
       ]
     },
     "policy/permission": {
-      "latest": "1.4.6",
+      "latest": "1.4.7",
       "category": "guardrails",
       "versions": [
         {
@@ -7095,6 +7127,12 @@
           "sha256": "f706d0b21a625885002a24138f1359190d51dc1c370b81ba692dd5ab941bfcd2",
           "commit": "b72f23a753cb9e1eb77051cd3d900ed7c6351651",
           "date": "2026-11-26T19:51:02.454773411Z"
+        },
+        {
+          "version": "1.4.7",
+          "sha256": "cdd9b1680efcd74dd03c0e60a30861d7872c77b0afac5478d3a5c83e763bc576",
+          "commit": "202f9554d45c48ffc2667320eae3325d26373f1d",
+          "date": "2026-11-27T05:45:58.877554761Z"
         }
       ]
     },
@@ -8776,7 +8814,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "2.0.0",
+      "latest": "2.1.0",
       "category": "workflow",
       "versions": [
         {
@@ -8941,6 +8979,13 @@
           "kdeps": "\u003e=3.6.0",
           "commit": "93896c5eedd8a5490df0b2d67a4d5f185e1a1f6b",
           "date": "2026-11-26T20:41:59.138666031Z"
+        },
+        {
+          "version": "2.1.0",
+          "sha256": "acc7acc624af0ca1bd67e003611c09feba670cbbf1ecb98fdd8819abb0c4013f",
+          "kdeps": "\u003e=3.6.0",
+          "commit": "202f9554d45c48ffc2667320eae3325d26373f1d",
+          "date": "2026-11-27T05:45:58.877554761Z"
         }
       ]
     },
@@ -9119,7 +9164,7 @@
       ]
     },
     "templates/whatsapp-bot": {
-      "latest": "3.0.0",
+      "latest": "4.0.0",
       "category": "workflow",
       "versions": [
         {
@@ -9145,6 +9190,13 @@
           "sha256": "a6bde97fefda887db91e91e1a57376045974c574f57e4f4d4b3d1cd9997b7c94",
           "commit": "2f6eb44e481c37834f8f4791e89945b9f52ccf7a",
           "date": "2026-11-10T06:37:08.473275778Z"
+        },
+        {
+          "version": "4.0.0",
+          "sha256": "0df9c085bc06b95802b0feef5beae58966fefe990b5a3f762bcf8b1f998473ac",
+          "kdeps": "\u003e=3.6.0",
+          "commit": "202f9554d45c48ffc2667320eae3325d26373f1d",
+          "date": "2026-11-27T05:45:58.877554761Z"
         }
       ]
     },
@@ -10636,6 +10688,20 @@
           "commit": "5ff6d7ae5ceb5b151c439d8bdf258bb1dd7f6051",
           "tokens": 109,
           "date": "2026-10-24T03:30:15.343259609Z"
+        }
+      ]
+    },
+    "tools/whatsapp_post": {
+      "latest": "1.0.0",
+      "description": "Write to the WhatsApp Cloud API: POST a JSON body to https://graph.facebook.com/PATH and return the JSON. Use it to send messages and mark them read. Requires WHATSAPP_ACCESS_TOKEN or the vault secret whatsapp_access_token.",
+      "category": "tools",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "sha256": "25d43d4ce921a986fe45229f4da9d93a74b2e624a1f594c83730aea677f27d14",
+          "commit": "202f9554d45c48ffc2667320eae3325d26373f1d",
+          "tokens": 146,
+          "date": "2026-11-27T05:45:58.877554761Z"
         }
       ]
     },

@@ -1,0 +1,97 @@
+version: 4.0.0
+kdeps: '>=3.6.0'
+files:
+    README.md.j2: |
+        # {{ name }}
+
+        {{ description }}
+
+        A WhatsApp bot as a kdeps workflow. The `whatsapp_webhook` listener receives Meta's webhook, `llm` answers the message, and `reply` sends the answer with the `whatsapp_post` connector.
+
+        ```text
+        Meta -> GET  /whatsapp -> hub.challenge (verify token matches) - no run
+        Meta -> POST /whatsapp (signed) -> 202 -> llm -> reply (whatsapp_post: /messages)
+        ```
+
+        ## Quick Start
+
+        1. Give kdeps the credentials from your Meta app (WhatsApp > API Setup):
+           ```bash
+           export WHATSAPP_PHONE_NUMBER_ID=1234567890     # the sending number's ID
+           export WHATSAPP_ACCESS_TOKEN=EAAG...           # or: kdeps secret set whatsapp_access_token
+           export WHATSAPP_VERIFY_TOKEN=pick-any-string   # or: kdeps secret set whatsapp_verify_token
+           export WHATSAPP_APP_SECRET=abc123...           # App settings > Basic; or: kdeps secret set whatsapp_app_secret
+           ```
+
+        2. Run it and expose port 16396 over HTTPS (Meta only calls HTTPS URLs):
+           ```bash
+           kdeps run workflow.yaml
+           # e.g. cloudflared tunnel --url http://localhost:16396
+           ```
+
+        3. In Meta's webhook settings, set the callback URL to `https://<host>/whatsapp` and the verify token to `WHATSAPP_VERIFY_TOKEN`. Subscribe to `messages`.
+
+        ## How it works
+
+        - A `GET /whatsapp` gets `hub.challenge` back only when `hub.verify_token` equals `WHATSAPP_VERIFY_TOKEN`.
+        - A `POST /whatsapp` must carry a valid `X-Hub-Signature-256` (HMAC-SHA256 of the body with `WHATSAPP_APP_SECRET`). A forged POST gets 401 and starts no run.
+        - Status callbacks (sent, delivered, read) have no text message: `llm` and `reply` are skipped.
+        - The first text message of each notification is answered.
+
+        Change the model or persona in `resources/llm.yaml`. The Graph API version is in the `path` of `resources/reply.yaml`.
+    resources/llm.yaml.j2: |
+        actionId: llm
+        name: Generate Reply
+
+        validations:
+          # Status callbacks (sent, delivered, read) carry no text message: nothing to answer.
+          skip:
+            - "{% raw %}(input('entry')?.[0]?.changes?.[0]?.value?.messages?.[0]?.text?.body ?? '') == ''{% endraw %}"
+
+        chat:
+          model:
+            name: llama3.2:1b  # llamafile alias - auto-downloaded to ~/.kdeps/models (~1.1 GB, first run only)
+            timeout: 60s
+          context:
+            scenario:
+              - role: assistant
+                prompt: Answer in a few short sentences, in the language of the message.
+            prompt: "{% raw %}{{ input('entry')[0].changes[0].value.messages[0].text.body }}{% endraw %}"
+    resources/reply.yaml.j2: |
+        actionId: reply
+        name: Send WhatsApp Reply
+        flow:
+          requires:
+            - llm
+
+        validations:
+          skip:
+            - "{% raw %}(input('entry')?.[0]?.changes?.[0]?.value?.messages?.[0]?.text?.body ?? '') == ''{% endraw %}"
+
+        # WhatsApp Cloud API: send the answer back to the sender's number.
+        component:
+          name: whatsapp_post
+          with:
+            path: "{% raw %}v23.0/{{ env('WHATSAPP_PHONE_NUMBER_ID') }}/messages{% endraw %}"
+            body:
+              messaging_product: whatsapp
+              to: "{% raw %}{{ input('entry')[0].changes[0].value.messages[0].from }}{% endraw %}"
+              type: text
+              text:
+                body: "{% raw %}{{ get('llm').message.content }}{% endraw %}"
+    workflow.yaml.j2: |
+        apiVersion: kdeps.io/v1
+        kind: Workflow
+
+        metadata:
+          name: {{ name }}
+          description: {{ description }}
+          version: "{{ version }}"
+          targetActionId: reply
+
+        deploy:
+          input:
+            listen:
+              # POST /whatsapp on :16396. Answers Meta's verification GET and checks
+              # X-Hub-Signature-256 on every POST; each signed notification is one run.
+              - listener: whatsapp_webhook
