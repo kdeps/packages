@@ -5975,7 +5975,7 @@
       ]
     },
     "k8s/manifests": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "category": "deploy",
       "versions": [
         {
@@ -5983,6 +5983,13 @@
           "sha256": "1eb5838cc7baba42dc5d7dc80a137113d62416464100e1a3d9297041d3c43a68",
           "commit": "c6ce3d0e2a888a9b381baf855b5ff9b527c43cce",
           "date": "2026-10-13T09:32:09.351981983Z"
+        },
+        {
+          "version": "1.1.0",
+          "sha256": "77cb27064a3d313fc616ce7379442674b77769d7fb5ec9251c4391c8cc9350fe",
+          "kdeps": "\u003e=3.7.0",
+          "commit": "dd461db9b59c7dd47f4bbf8be8709a6e418c0faa",
+          "date": "2026-11-28T09:49:06.891729284Z"
         }
       ]
     },
@@ -8832,7 +8839,7 @@
       ]
     },
     "schemas/v1": {
-      "latest": "2.2.0",
+      "latest": "2.3.0",
       "category": "workflow",
       "versions": [
         {
@@ -9011,6 +9018,13 @@
           "kdeps": "\u003e=3.7.0",
           "commit": "704def2b19b3161f62790b6e4de0c7e480b06822",
           "date": "2026-11-27T15:03:40.863199702Z"
+        },
+        {
+          "version": "2.3.0",
+          "sha256": "0ebc99d3f301e524a318678eff1aab09cb6f23f41430ac5210609d5e95fb886e",
+          "kdeps": "\u003e=3.7.0",
+          "commit": "dd461db9b59c7dd47f4bbf8be8709a6e418c0faa",
+          "date": "2026-11-28T09:49:06.891729284Z"
         }
       ]
     },
